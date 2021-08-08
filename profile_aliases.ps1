@@ -37,6 +37,7 @@ Set-Alias -Name codee -Value code-insiders
 Set-Alias -Name rundocker -Value startdocker
 Set-Alias -Name refreshenv -Value Update-Environment
 
+# Ensure `R` is for launching an R Terminal:
 if (Get-Command R.exe -ErrorAction SilentlyContinue | Test-Path) {
   Remove-Item Alias:r -ErrorAction SilentlyContinue
   ${function:r} = { R.exe @args }
@@ -63,17 +64,13 @@ if (Get-Command R.exe -ErrorAction SilentlyContinue | Test-Path) {
 # Set-Alias -Name sysclean -Value cleanup
 # Set-Alias -Name wifitest -Value speed-test
 # Set-Alias -Name refresh -Value refreshenv
-
 # # Missing Bash aliases
 # Set-Alias time Measure-Command
-
 # # Correct PowerShell Aliases if tools are available (aliases win if set)
-
 # # WGet: Use `wget.exe` if available
 # if (Get-Command wget.exe -ErrorAction SilentlyContinue | Test-Path) {
 #   rm alias:wget -ErrorAction SilentlyContinue
 # }
-
 # # Directory Listing: Use `ls.exe` if available
 # if (Get-Command ls.exe -ErrorAction SilentlyContinue | Test-Path) {
 #   rm alias:ls -ErrorAction SilentlyContinue
@@ -92,7 +89,6 @@ if (Get-Command R.exe -ErrorAction SilentlyContinue | Test-Path) {
 #   # List only directories
 #   ${function:lsd} = { Get-ChildItem -Directory -Force @args }
 # }
-
 # # curl: Use `curl.exe` if available
 # if (Get-Command curl.exe -ErrorAction SilentlyContinue | Test-Path) {
 #   rm alias:curl -ErrorAction SilentlyContinue
@@ -105,14 +101,12 @@ if (Get-Command R.exe -ErrorAction SilentlyContinue | Test-Path) {
 #   # Gzip-enabled `curl`
 #   ${function:gurl} = { curl -TransferEncoding GZip }
 # }
-
 # # remove R alias to enable R.exe from PATH
 # # 'R' taken by PS Invoke-History
 # if (Get-Command R.exe -ErrorAction SilentlyContinue | Test-Path) {
 #   Remove-Item Alias:r -ErrorAction SilentlyContinue
 #   ${function:r} = { R.exe @args }
 # }
-
 # # Create a new directory and enter it
 # Set-Alias mkd CreateAndSet-Directory
 # # Determine size of a file or total size of a directory
