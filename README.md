@@ -1,6 +1,14 @@
 # PowerShell
 
+My customized powershell (core) profile directory `~/Documents/PowerShell`.
+
 ## Contents
+
+- [$PROFILE](#profile)
+- [Custom Functions](#custom-functions)
+- [Custom Aliases](#custom-aliases)
+- [Modules](#modules)
+- [Scripts](#scripts)
 
 ## $PROFILE
 
