@@ -1,6 +1,6 @@
 # PowerShell
 
-My customized powershell (core) profile directory `~/Documents/PowerShell`.
+My customized powershell (core) profile directory `~/Documents/PowerShell` (or `~/Documents/OneDrive/PowerShell`).
 
 ## Contents
 
