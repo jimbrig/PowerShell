@@ -55,7 +55,7 @@ if (Test-Path($ChocolateyProfile)) {
 }
 
 # Keep Completion
-Invoke-Expression -Command '$(keep completion | Out-String)'
+# Invoke-Expression -Command '$(keep completion | Out-String)'
 
 # WSL interop
 Import-WslCommand "awk", "grep", "ls", "head", "less", "man", "sed", "seq", "ssh", "tail", "cal", "top", "wget", "tree", "vim", "curl", "gcalcli"
