@@ -129,8 +129,7 @@ ${function:krak} = {
   $lapd = $env:localappdata
   $logf = "$env:temp\krakstart.log"
   $newestExe = Get-Item "$lapd\gitkraken\app-*\gitkraken.exe"
-  Select-Object -Last 1
-  start-process -filepath $newestExe[2] -ArgumentList "--path $curpath" -redirectstandardoutput $logf
+  start-process -filepath $newestExe -ArgumentList "--path $curpath" -redirectstandardoutput $logf
 }
 
 # Open RStudio in Current Repo
