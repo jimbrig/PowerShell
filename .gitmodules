@@ -1,3 +1,0 @@
-[submodule "file_sync"]
-	path = file_sync
-	url = git@github.com:iWoz/file_sync.git
