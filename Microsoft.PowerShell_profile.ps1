@@ -15,6 +15,9 @@ Import-Module WslInterop
 Import-Module PSWindowsUpdate
 Import-Module ZLocation
 
+# enable
+$env:POSH_GIT_ENABLED = $true
+
 # arrows for PSReadLine
 Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
@@ -23,7 +26,7 @@ Set-PSReadlineKeyHandler -Key Tab -Function Complete
 # Shell Completion
 Import-Module DockerCompletion
 Import-Module Microsoft.PowerShell.Utility
-Import-Module C:\Users\jimbr\scoop\modules\scoop-completion
+Import-Module C:\Users\jimmy\scoop\modules\scoop-completion
 
 # Github CLI autocompletion
 # see issue for reference: https://github.com/cli/cli/issues/695#issuecomment-619247050
@@ -72,8 +75,9 @@ $psdir = (Split-Path -parent $profile)
 . "$psdir\profile_aliases.ps1"
 
 # edit prompt
-oh-my-posh --init --shell pwsh --config "$(scoop prefix oh-my-posh)\themes\wopian.omp.json" | Invoke-Expression
+Set-PoshPrompt -Theme wopian
 # try { $null = Get-Command pshazz -ea stop; pshazz init 'default' } catch { }
+
 Write-Host “Custom PowerShell Environment Loaded”
 Write-Host -Foreground Green "`n[ZLocation] knows about $((Get-ZLocation).Keys.Count) locations.`n"
 
