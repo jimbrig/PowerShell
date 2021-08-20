@@ -1,5 +1,5 @@
 # create modules.json
-$mods = Get-ChildItem
+$mods = Get-ChildItem -Directory
 Write-Color "Removing previous ", "modules.json", " file." -Color "green", "red", "green"
 if (test-path modules.json) { remove-item -Path modules.json }
 $mods.Name | ConvertTo-Json >> modules.json

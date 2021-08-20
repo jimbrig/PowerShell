@@ -18,8 +18,5 @@
   "Terminal-Icons",
   "WindowsCompatibility",
   "WslInterop",
-  "ZLocation",
-  ".gitignore",
-  "modules.json",
-  "modules.ps1"
+  "ZLocation"
 ]
