@@ -80,4 +80,8 @@ Set-PoshPrompt -Theme wopian
 
 Write-Host “Custom PowerShell Environment Loaded”
 Write-Host -Foreground Green "`n[ZLocation] knows about $((Get-ZLocation).Keys.Count) locations.`n"
+Write-Host -ForegroundColor Blue `n"Calendar:`n"
+gcalcli.exe calw
+Write-Host -ForegroundColor Blue "📝 Note: clear console with 'cls'"
+
 
