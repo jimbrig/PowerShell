@@ -1,41 +1,44 @@
-# Navigational Functions
-${function:~} = { Set-Location ~ }
-${function:Set-ParentLocation} = { Set-Location .. }; Set-Alias ".." Set-ParentLocation
-${function:...} = { Set-Location ..\.. }
-${function:....} = { Set-Location ..\..\.. }
-${function:.....} = { Set-Location ..\..\..\.. }
-${function:......} = { Set-Location ..\..\..\..\.. }
+# Title
 
-# System Directories
-${function:programfiles} = { Set-Location 'C:\Program Files' }
-${function:programfiles86} = { Set-Location 'C:\Program Files (x86)' }
-${function:programdata} = { Set-Location C:\ProgramData }
-${function:windows} = { Set-Location C:\Windows }
-
-# Custom C: Directories
-${function:tools} = { Set-Location C:\tools }
-${function:env} = { Set-Location C:\env }
-${function:setup} = { Set-Location C:\Setup }
-
-# Specific to My User Profile Directories
-${function:onedrive} = { Set-Location ~\OneDrive }
-${function:desktop} = { Set-Location ~\Desktop }
-${function:documents} = { Set-Location ~\Documents }
-${function:downloads} = { Set-Location ~\Downloads }
-
-# Important DotFiles and AppData Directories
-${function:dotfiles} = { Set-Location ~\.dotfiles }
-${function:rdotfiles} = { Set-Location ~\.config\R }
-${function:config} = { Set-Location ~\.config }
-${function:localappdata} = { Set-Location ~\Appdata\Local }
-${function:appdata} = { Set-Location ~\AppData\Roaming }
+# easier code-insiders
+Set-Alias codee code-insiders
 
 # Start Docker:
 ${function:startdocker} = { Start-Process "C:\Program Files\Docker\Docker\Docker Desktop.exe" }
 
+# Get's
+Function Get-ProDir { Split-Path -Path $PROFILE -Parent }
+Function Get-DevDir { "$HOME\Dev" }
+
+# "Open" Functions
+${function:Open-Profile} = { code-insiders $PROFILE }
+${function:Open-ProDir} = { & $path = Get-ProDir && Set-Location $path && explorer.exe . }
+${function:Open-Aliases} = { & $path = Get-ProDir && Set-Location $path && code-insiders profile_aliases.ps1 }
+${function:Open-Functions} = { & $path = Get-ProDir && Set-Location $path && code-insiders profile_functions.ps1 }
+
+# System Directories
+${function:cdprogramfiles} = { Set-Location 'C:\Program Files' }
+${function:cdprogramfiles86} = { Set-Location 'C:\Program Files (x86)' }
+${function:cdprogramdata} = { Set-Location C:\ProgramData }
+${function:cdwindows} = { Set-Location C:\Windows }
+
+# Change Directory Functions for Common Places (can remove and utilize `z`)
+${function:cddev} = { Set-Location ~\Dev } # && explorer.exe . }
+${function:cdsetup} = { Set-Location C:\Setup }
+${function:cdtools} = { Set-Location C:\tools }
+${function:cdenv} = { Set-Location C:\env }
+${function:cdonedrive} = { Set-Location ~\OneDrive }
+${function:cddesktop} = { Set-Location ~\Desktop }
+${function:cddocuments} = { Set-Location ~\Documents }
+${function:cddownloads} = { Set-Location ~\Downloads }
+${function:cddots} = { Set-Location ~\.dotfiles }
+${function:cdrdots} = { Set-Location ~\.config\R }
+${function:cdconfig} = { Set-Location ~\.config }
+${function:cdprodir} = { Set-Location ~\Documents\PowerShell }
+
 # R
-${function:search_gh} = { Rscript -e "search_gh('$args')" }
-${function:search_ghr} = { Rscript -e "search_ghr('$args')" }
+${function:Search-GitHub} = { s -p github $args } # { Rscript -e "search_gh('$args')" }
+#${function:Search-GitHubR} = { $out = $args + Rscript -e "search_ghr('$args')" } https://github.com/search?q=language%3AR+%s
 
 # Dev Directory
 ${function:dev} = { Set-Location ~\Dev }
@@ -44,12 +47,7 @@ ${function:docs} = { Set-Location ~\Dev\docs }
 ${function:sandbox} = { Set-Location ~\Dev\sandbox }
 ${function:mycode} = { Set-Location ~\Dev\code } # do not use code here due to `vscode`
 
-# "Open" Functions
-${function:openprofile} = { code-insiders $PROFILE }
-${function:openprofilefolder} = { & $path = Get-ProDir && Set-Location $path && explorer.exe . }
-${function:openaliases} = { & $path = Get-ProDir && Set-Location $path && code-insiders profile_aliases.ps1 }
-${function:openfunctions} = { & $path = Get-ProDir && Set-Location $path && code-insiders profile_functions.ps1 }
-${function:opendev} = { Set-Location ~\Dev && explorer.exe . }
+
 
 # Online Openers
 ${function:opengh} = { open https://github.com }
@@ -155,12 +153,16 @@ ${function:editaliases} = {
   notepad.exe $funcpath
 }
 
+function Make-Link ($target, $link) {
+  New-Item -Path $link -ItemType SymbolicLink -Value $target
+}
+
 function Take-Ownership ( $path ) {
   if ((Get-Item $path) -is [System.IO.DirectoryInfo]) {
-    sudo takeown /r /d Y /f $path
+    sudo TAKEOWN /F $path /R /D Y
   }
   else {
-    sudo takeown /f $path
+    sudo TAKEOWN /F $path
   }
 }
 
@@ -245,3 +247,11 @@ Function Invoke-RemoteScript {
 
   Invoke-Expression "& { $(Invoke-RestMethod $address) } $remainingArgs"
 }
+
+# Navigational Functions
+# ${function:~} = { Set-Location ~ }
+# ${function:Set-ParentLocation} = { Set-Location .. }; Set-Alias ".." Set-ParentLocation
+# ${function:...} = { Set-Location ..\.. }
+# ${function:....} = { Set-Location ..\..\.. }
+# ${function:.....} = { Set-Location ..\..\..\.. }
+# ${function:......} = { Set-Location ..\..\..\..\.. }

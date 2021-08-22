@@ -22,6 +22,9 @@ Import-Module PSWriteColor
 # Enable Posh-Git
 $env:POSH_GIT_ENABLED = $true
 
+# Devdir
+$env:devdir = "$HOME\Dev"
+
 # WSL Interop
 Import-WslCommand "awk", "head", "less", "man", "sed", "seq", "tail", "cal", "top", "vim"
 $WslDefaultParameterValues = @{}
