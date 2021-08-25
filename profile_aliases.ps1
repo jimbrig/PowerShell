@@ -37,6 +37,14 @@ Set-Alias -Name codee -Value code-insiders
 Set-Alias -Name rundocker -Value startdocker
 Set-Alias -Name refreshenv -Value Update-Environment
 
+# gcalcli
+Set-Alias -Name gcal -Value gcalcli
+# Set-Alias -Name calm -Value gcalcli calm
+# Set-Alias -Name agenda -Value gcalcli agenda 
+
+# Need to use Ubuntu (not CommPrev) for Cal Command
+${function:cal} = { wsl -d Ubuntu --exec cal }
+
 # Ensure `R` is for launching an R Terminal:
 if (Get-Command R.exe -ErrorAction SilentlyContinue | Test-Path) {
   Remove-Item Alias:r -ErrorAction SilentlyContinue
