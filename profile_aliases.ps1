@@ -1,49 +1,25 @@
 Set-Alias -Name irs -Value Invoke-RemoteScript
-Set-Alias -Name ver -Value Get-MrPSVersion
-Set-Alias -Name propath -Value Get-ProPath
-Set-Alias -Name pro -Value openprofile
-Set-Alias -Name proex -Value profilefolder
-Set-Alias -Name aliases -Value listaliases
-Set-Alias -Name lsalias -Value listaliases
-Set-Alias -Name rvan -Value rvanilla
-Set-Alias -Name rstudio -Value launchrstudio
-Set-Alias -Name gstatus -Value gitstatus
+Set-Alias -Name pro -Value Edit-Profile
+Set-Alias -Name aliases -Value Get-Alias
 Set-Alias -Name cpkgs -Value chocopkgs
 Set-Alias -Name cclean -Value chococlean
 Set-Alias -Name csearch -Value chocosearch
 Set-Alias -Name cup -Value chocoupgrade
-Set-Alias -Name cbackup -Value backupchoco
-Set-Alias -Name cs -Value csearch
-Set-Alias -Name clone -Value ghclone
-Set-Alias -Name pipup -Value pipupgradeall
-Set-Alias -Name sysclean -Value cleanup
-Set-Alias -Name wifitest -Value speed-test
+Set-Alias -Name cbackup -Value chocobackup
 Set-Alias -Name refresh -Value refreshenv
-Set-Alias -Name touch -Value newfile
+Set-Alias -Name touch -Value New-File
 Set-Alias -Name rproj -Value openrproj
-Set-Alias -Name sysupdate -Value System-Update
-Set-Alias -Name check -Value checkdisk
-Set-Alias -Name mkd -Value CreateAndSet-Directory
-Set-Alias -Name diskusage -Value Get-DiskUsage
-Set-Alias -Name emptytrash -Value Empty-RecycleBin
-Set-Alias -Name cleandisks -Value Clean-Disks
-Set-Alias -Name reload -Value Reload-Powershell
-Set-Alias -Name mute -Value Set-SoundMute
-Set-Alias -Name unmute -Value Set-SoundUnmute
-Set-Alias -Name update -Value System-Update
-Set-Alias -Name o -Value open
-Set-Alias -Name rad -Value Open-Radian
+Set-Alias -Name chkdisk -Value Check-Disk
+Set-Alias -Name cdd -Value CreateAndSet-Directory
+Set-Alias -Name emptytrash -Value Clear-RecycleBin
 Set-Alias -Name codee -Value code-insiders
-Set-Alias -Name rundocker -Value startdocker
-Set-Alias -Name refreshenv -Value Update-Environment
-
-# gcalcli
+Set-Alias -Name cpkgs -Value chocopkgs
+Set-Alias -Name cup -Value chocoupgrade
 Set-Alias -Name gcal -Value gcalcli
-# Set-Alias -Name calm -Value gcalcli calm
-# Set-Alias -Name agenda -Value gcalcli agenda 
-
-# Need to use Ubuntu (not CommPrev) for Cal Command
-${function:cal} = { wsl -d Ubuntu --exec cal }
+Set-Alias -Name agenda -Value Get-Agenda
+Set-Alias -Name gcalm -Value Get-CalendarMonth
+Set-Alias -Name gcalw -Value Get-CalendarWeek
+Set-Alias -Name gcalnew -Value New-CalendarEvent
 
 # Ensure `R` is for launching an R Terminal:
 if (Get-Command R.exe -ErrorAction SilentlyContinue | Test-Path) {
