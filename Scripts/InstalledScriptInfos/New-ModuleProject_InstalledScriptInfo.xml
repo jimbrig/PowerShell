@@ -1,0 +1,126 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">New-ModuleProject</S>
+      <S N="Version">1.3.10</S>
+      <S N="Type">Script</S>
+      <S N="Description">Script which quickly creates a folder structure, Module Manifest and downloads a build.ps1 script_x000A_to use with Invoke-Build module for easy developing, maintaining, building and publishing your_x000A_powershell module._x000A_Follow project at: https://github.com/ScriptingChris/New-ModuleProject_x000A_For in-depth help: https://scriptingchris.tech/new-moduleproject_ps1/</S>
+      <S N="Author">Christian Hoejsager</S>
+      <S N="CompanyName">ScriptingChris</S>
+      <S N="Copyright">Copyright (c) 2021 ScriptingChris</S>
+      <DT N="PublishedDate">2021-08-11T12:17:22-04:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2021-09-05T17:12:35.0551973-04:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://scriptingchris.tech/new-moduleproject_ps1/</URI>
+      <URI N="ProjectUri">https://github.com/ScriptingChris/New-ModuleProject</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>module</S>
+          <S>project</S>
+          <S>build</S>
+          <S>PSScript</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">DscResource</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">Created a lot of bug fixes to the build.ps1 script._x000A_Added the the process of exporting aliases from the public functions aswell_x000A_Help documentation and use cases for the Script can be found here:_x000A_https://scriptingchris.tech/new-moduleproject_ps1/</S>
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2/items/psscript</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="7">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) 2021 ScriptingChris</S>
+          <S N="description">Script which quickly creates a folder structure, Module Manifest and downloads a build.ps1 script_x000A_to use with Invoke-Build module for easy developing, maintaining, building and publishing your_x000A_powershell module._x000A_Follow project at: https://github.com/ScriptingChris/New-ModuleProject_x000A_For in-depth help: https://scriptingchris.tech/new-moduleproject_ps1/</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="releaseNotes">Created a lot of bug fixes to the build.ps1 script._x000A_Added the the process of exporting aliases from the public functions aswell_x000A_Help documentation and use cases for the Script can be found here:_x000A_https://scriptingchris.tech/new-moduleproject_ps1/</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">6</S>
+          <S N="downloadCount">83</S>
+          <S N="packageSize">4269</S>
+          <S N="published">8/11/2021 12:17:22 PM -04:00</S>
+          <S N="created">8/11/2021 12:17:22 PM -04:00</S>
+          <S N="lastUpdated">8/31/2021 8:17:29 PM -04:00</S>
+          <S N="tags">module project build PSScript</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2021-08-31T20:17:29Z</S>
+          <S N="NormalizedVersion">1.3.10</S>
+          <S N="Authors">Christian Hoejsager</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Script</S>
+          <S N="FileList">New-ModuleProject.nuspec|New-ModuleProject.ps1</S>
+          <S N="GUID">55ef3a83-4365-4e5e-844b-6ab2d323963b</S>
+          <S N="CompanyName">ScriptingChris</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\jimmy\OneDrive\Documents\PowerShell\Scripts</S>
+    </MS>
+  </Obj>
+</Objs>
