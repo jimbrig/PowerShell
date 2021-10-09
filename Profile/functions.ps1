@@ -6,8 +6,14 @@
 # System Utilities
 # ----------------------
 
+# Troubleshooters
+
 # Hardware Troubleshooter (unavailable in settings)
 ${function:Invoke-HardwareDiagnostic} = { & msdt.exe -id DeviceDiagnostic }
+${function:Invoke-NetworkDiagnostic} = { & msdt.exe -id NetworkDiagnosticsNetworkAdapter }
+${function:Invoke-SearchDiagnostic} = { & msdt.exe -id SearchDiagnostic }
+${function:Invoke-WindowsUpdateDiagnostic} = { & msdt.exe -id WindowsUpdateDiagnostic }
+${function:Invoke-MaintenanceDiagnostic} = { & msdt.exe -id MaintenanceDiagnostic }
 
 # Check Disk
 ${function:Check-Disk} = { & chkdsk C: /f /r /x }
