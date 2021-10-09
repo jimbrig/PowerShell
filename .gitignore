@@ -96,3 +96,5 @@ ENV/
 .ropeproject
 
 *.bak
+
+Custom/KeeperDotNetSDK/
