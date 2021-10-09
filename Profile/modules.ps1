@@ -1,6 +1,24 @@
+# -----------------------------
+# Modules and Helper Functions
+# -----------------------------
+
+Import-Module posh-git
+Import-Module oh-my-posh
+Import-Module Terminal-Icons
+Import-Module WslInterop
+Import-Module PSWindowsUpdate
+Import-Module PSWriteColor
+
+# Enable Posh-Git
+$env:POSH_GIT_ENABLED = $true
+
+# --------
+# Helpers
+# --------
+
 Function Backup-Modules {
   $savefile = "$env:OneDrive\Documents\PowerShell\modules.json"
-  if (test-path $savefile) { Rename-Item -Path $savefile -NewName ($savefile + ".bak") }
+  if (Test-Path $savefile) { Rename-Item -Path $savefile -NewName ($savefile + ".bak") }
   $mods = Get-ChildItem -Path $env:OneDrive\Documents\PowerShell\Modules -Directory
   $mods.Name | ConvertTo-Json > $savefile
 }
@@ -13,3 +31,4 @@ Function Restore-Modules {
     Install-Module $mod -Scope CurrentUser -Force
   }
 }
+
