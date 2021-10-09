@@ -8,6 +8,16 @@
 $galleryinfo = Get-PSRepository | Where-Object { $_.Name -eq "PSGallery" }
 if (-not($galleryinfo.InstallationPolicy.Equals("Trusted"))) { Set-PSRepository -Name PSGallery -InstallationPolicy Trusted }
 
+# Default Parameters
+$PSDefaultParameterValues = @{ 
+	"Update-Module:Confirm"=$False; 
+	"Update-Module:Force"=$True; 
+	"Update-Module:Scope"="CurrentUser"; 
+	"Update-Module:ErrorAction"="SilentlyContinue";
+	"Update-Help:Force"=$True;
+	"Update-Help:ErrorAction"="SilentlyContinue"
+}
+
 # Prompt
 Set-PoshPrompt -Theme wopian
 
