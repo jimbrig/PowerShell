@@ -4,10 +4,9 @@
 # Current User, Current Host Powershell Core v7 $PROFILE:
 # -------------------------------------------------------
 
-# Load Functions, Aliases, and Completion
-$psdir = (Split-Path -parent $profile)
+$psdir = (Split-Path -Parent $profile)
 
-. "$psdir\profile_functions.ps1"
-. "$psdir\profile_aliases.ps1"
-. "$psdir\profile_completion.ps1"
-
+. "$psdir\Profile\functions.ps1"
+. "$psdir\Profile\aliases.ps1"
+. "$psdir\Profile\completion.ps1"
+. "$psdir\Profile\modules.ps1"
