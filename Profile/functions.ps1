@@ -83,6 +83,10 @@ Function Invoke-ForceDelete ( $path ) {
 # Network Utilities
 # ------------------
 
+${function:Get-IP} = {
+  ((ipconfig | findstr [0-9].\.)[0]).Split()[-1]
+}
+
 # Get Public IP
 ${function:Get-PublicIP} = {
   $ip = Invoke-RestMethod -Uri 'https://api.ipify.org?format=json'
