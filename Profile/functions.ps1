@@ -6,6 +6,9 @@
 # System Utilities
 # ----------------------
 
+# Hardware Troubleshooter (unavailable in settings)
+${function:Invoke-HardwareDiagnostic} = { & msdt.exe -id DeviceDiagnostic }
+
 # Check Disk
 ${function:Check-Disk} = { & chkdsk C: /f /r /x }
 
