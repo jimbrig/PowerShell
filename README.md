@@ -2,6 +2,8 @@
 
 My customized powershell (core) profile directory `~/Documents/PowerShell` (or `~/Documents/OneDrive/PowerShell`).
 
+See the [Changelog](CHANGELOG.md) for details on this repository's development over time.
+
 ## Contents
 
 - [PowerShell](#powershell)
