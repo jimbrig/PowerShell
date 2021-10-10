@@ -129,7 +129,7 @@ ${function:Edit-Aliases} = {
 }
 
 # Edit profile_completion.ps1
-${function:Edit-Aliases} = {
+${function:Edit-Completion} = {
   $prodir = Split-Path -Path $PROFILE -Parent
   $funcpath = "$prodir\Profile\completion.ps1"
   notepad.exe $funcpath
