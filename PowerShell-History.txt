@@ -1,0 +1,2873 @@
+cd .dotfiles
+lsd
+ls
+cd edge
+ls
+explorer .
+winget --version
+Get-AppXPackage
+get-help Reset-AppxPackage
+get-help Reset-AppxPackage -online
+get-appxpackage *killer*
+Remove-AppxPackage -AllUsers RivetNetworks.KillerControlCenter
+Remove-AppxPackage -AllUsers RivetNetworks.KillerControlCenter_3.1021.729.0_x64__rh07ty8m5nkag
+refreshenv
+winget --version
+winget search edge
+winget source list
+winget features
+winget search edge -s winget
+winget install Microsoft.EdgeDev; winget install Obsidian.Obsidian; winget install Microsoft.EdgeWebView2Runtime; winget install Docker.DockerDesktop; winget install gsudo
+cd .dotfiles
+cd edge
+ls
+touch restore-edge-settings.ps1
+new-item -itemtype file restore-edge-settings.ps1
+winget search code-insiders
+winget --help
+winget list
+winget install obsidian.obsidian --scope machine
+winget install Microsoft.VisualStudioCode.Insiders --scope machine
+ls
+ise --help
+ise .
+cd '.\Edge Dev\'
+ls
+$env:TEMP
+winget install typora.typora
+winget search terminal
+cd .\.dotfiles\winget\
+ls
+cat .\winget-export
+cat .\winget-export.txt
+winget search powershell
+winget install Ubuntu 20.04 LTS
+winget install "Ubuntu 20.04 LTS"
+winget install 9N6SVWS3RX71
+winget search --id=9N6SVWS3RX71
+winget search --id 9N6SVWS3RX71
+winget search powertoys
+winget install Microsoft.PowerToys
+get-command *policy*
+gsudo Set-ExecutionPolicy Unrestricted
+Set-ExecutionPolicy Unrestricted
+Set-ExecutionPolicy -Scope CurrentUser Unrestricted
+. $PROFILE
+test-path $PROFILE
+notepad $PROFILE
+refreshenv
+test-file $PROFILE.CurrentUserAllHosts
+test-path $PROFILE.CurrentUserAllHosts
+$PROFILE.CurrentUserAllHosts
+explorer ~/Documents
+cd ~/Documents/PowerShell
+cd Modules
+cd ..
+cd .\OneDrive\Documents\PowerShell\Modules\
+.\modules.ps1
+Get-PSRepository
+Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
+winget install obsidian.obsidian
+get-appxpackage *edge*
+Remove-AppxPackage Microsoft.MicrosoftEdge_44.22449.1000.0_neutral__8wekyb3d8bbwe
+Get-WindowsOptionalFeature -FeatureName *edge*
+Get-WindowsOptionalFeature
+Get-WindowsOptionalFeature -Online
+Get-WindowsOptionalFeature -Online -FeatureName *edge*
+cd "C:\Program Files (x86)\Microsoft\EdgeCore\93.0.961.44\Installer"
+setup.exe --uninstall --system-level --verbose-logging --force-uninstall
+.\setup.exe --uninstall --system-level --verbose-logging --force-uninstall
+cd "C:\Program Files (x86)\Microsoft\EdgeCore\95.0.1000.0\Installer"
+.\setup.exe --uninstall --system-level --verbose-logging --force-uninstall
+winget search uninstalltool
+winget install CrystalIDEASoftware.UninstallTool -scope machine -i
+winget install CrystalIDEASoftware.UninstallTool --scope machine -i
+winget install CrystalIDEASoftware.UninstallTool -i
+cd .\.docker\
+cd ..
+cd .\.dotfiles\
+cd dotfiles:\
+cd .\chocolatey\
+ls
+s --help
+cd C:\
+ls
+cd bin
+ls
+cd ..
+cd .\exported-configs\
+ls
+cd .\rapidee\
+ls
+.\backup_210826_131550.reg
+cd ../..
+s --help
+cd .\chocolatey\
+cd ..
+codee .
+code-insiders .
+cd .\chocolatey\
+.\install-choco.ps1
+cd .\.dotfiles\chocolatey\
+.\install-choco.ps1
+Set-ExecutionPolicy Unrestricted -Scope CurrentUser
+Set-ExecutionPolicy Unrestricted
+refreshenv
+.\config-choco.ps1
+cd .\.dotfiles\chocolatey\
+cd .\backup\MSI\
+ls
+notepad .\packages.config
+refreshenv
+topgrade
+install-module -scope CurrentUser PSWindowsUpdate
+install-module -scope CurrentUser PSWindowsUpdate -AllowClobber
+topgrade --only system
+refreshenv
+topgrade --only system
+gsudo topgrade --only system
+gsudo
+sudo
+sudo topgrade --only system
+import-module PSWindowsUpdate
+install-module -scope CurrentUser PSWindowsUpdate -AllowClobber -Force
+sudo install-module -scope CurrentUser PSWindowsUpdate -AllowClobber -Force
+Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
+install-module -scope CurrentUser PSWindowsUpdate -AllowClobber -Force
+get-command -module PsWindowsUpdate
+winget search keeper
+cd .\.dotfiles\
+ls
+mkdir dotnet
+cd dotnet
+Move-Item -Path C:\Users\jimmy\Downloads\dotnet-install.ps1 -Destination \
+Move-Item -Path C:\Users\jimmy\Downloads\dotnet-install.ps1 -Destination .
+ls
+cd .\.dotfiles\dotnet\
+sudo .\dotnet-install.ps1
+Unblock-File .\dotnet-install.ps1
+sudo .\dotnet-install.ps1
+cd C:\Users\jimmy\AppData\Local\Microsoft\dotnet\
+dotnet.exe -?
+cd .\.dotfiles\
+cd wsl
+ls
+code-insiders .
+wsl --shutdown
+wsl config
+wsl --config
+wslconfig.exe
+wslconfig /l
+wslconfig /s Ubuntu-CommPrev
+wsl --set-default-version 2
+wsl --list
+wsl --help
+wsl --set-version Ubuntu-CommPrev 2
+wsl --set-version Ubuntu-20.04 2
+notepad .\.wslconfig
+Stop-Service msedge
+Get-Service *edge*
+python3.9
+python.exe -m pip install --upgrade pip
+C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python39_64\python.exe -m pip install --upgrade pip
+"C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python39_64\python.exe" -m pip install --upgrade pip
+cd "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python39_64\"
+python.exe -m pip install --upgrade pip
+ls
+cd .\ConsoleApp1\
+ls
+.\Program.cs
+cd bin
+ls
+cd .\Release\
+ls
+cd ../..
+ls
+c:\Users\jimmy\source\repos\ConsoleApp1\ConsoleApp1\Program.cs
+.Net
+dotnet
+dotnet --list-sdks
+dotnet --list-runtimes
+dotnet --help
+dotnet new console --framework net5.0
+refreshenv
+dotnet new console --framework net5.0
+dotnet new console --framework net5.0 --force
+dotnet new console --framework net5.0
+dotnet run
+dotnet buikd
+dotnet build
+which code-insiders
+wsl --update
+wsl --help
+wsl --list
+wsl --tatus
+wsl --status
+wsl --shutdown
+gpg --export
+cls
+choco --help
+scoop list
+scoop bucket add nerd-fonts
+scoop search cascaydia
+scoop search -NF
+scoop search firacode
+cd .\scoop\buckets\
+lsd
+cd .\nerd-fonts\
+ls
+cd .\bucket\
+ls
+sudo scoop install --global CascadiaCode-NF
+cinst powershell-core
+sudo cinst powershell-core powershell-preview
+cinst gcloudsdk --not-silent
+ If (Test-Path "C:\Program Files\openssh-win64\Set-SSHDefaultShell.ps1")         *
+ If (Test-Path "C:\Program Files\openssh-win64\Set-SSHDefaultShell.ps1") {`
+& "C:\Program Files\openssh-win64\Set-SSHDefaultShell.ps1"`
+}
+wsl --shutdown
+s -p github powerline
+cat .\.gitconfig
+cd .\.dotfiles\
+cd git
+ls
+cat .\.gitattributes
+cat .\.gitattributes_global
+codee .
+code-insiders.cmd .
+sudo topgrde
+sudo topgrade
+sudo sfc /scannow
+sudo cinst everything
+cd .config
+mkdir keeper-commander
+cd .\keeper-commander\
+keeper shell
+cd .\OneDrive\Documents\PowerShell\
+cd .\Functions\
+. .\Extract-Icon.ps1
+where.exe keeper-commander.exe
+where.exe keeper-commander.exe | cd
+cd (where.exe keeper-commander.exe)
+cd { where.exe keeper-commander.exe }
+Set-Location (where.exe keeper-commander.exe)
+Set-Location { where.exe keeper-commander.exe }
+set-location "C:\Program Files\Keeper Commander\"
+get-help Extract-Icon
+. C:\Users\jimmy\OneDrive\Documents\PowerShell\Functions\Extract-Icon.ps1
+get-help Extract-Icon
+Extract-Icon -Path .\keeper-commander.exe -Destination C:\Users\jimmy\OneDrive\Pictures\Icons\Programs\
+sudo cinst file-converter
+where file-converter
+where file-converter.exe
+.\FileConverter.exe --help
+.\FileConverter.exe /?
+.\FileConverter.exe -?
+sudo .\FileConverter.exe /?
+cd C:\Users\jimmy\OneDrive\Pictures\Icons\Programs\
+ls *keep*
+"C:\Program Files\File Converter\FileConverter.exe" --conversion-preset "To Ico" ".\keeper-commander.png"
+cmd.exe /k "C:\Program Files\File Converter\FileConverter.exe" --conversion-preset "To Ico" ".\keeper-commander.png"
+Start-Process "C:\Program Files\File Converter\FileConverter.exe" --conversion-preset "To Ico" ".\keeper-commander.png"
+cmd.exe "C:\Program Files\File Converter"
+get-help start-process
+new-guid
+keeper
+keeper --help
+keeper shell
+refreshenv
+keeper shell
+code-insiders.cmd
+code-insiders.cmd .
+pip install keepercommander
+cd .\OneDrive\Desktop\
+touch test.cmd
+notepad test.cmd
+cd ~
+keeper
+install-module PowerCommander
+cd $env:ONEDRIVE\Documents\PowerShell
+cd .\Modules\
+cd ..
+git submodule add git@github.com:Keeper-Security/keeper-sdk-dotnet.git ./Modules/KeeperDotNetSDK
+mkdir Custom
+cd .\Custom\
+git clone git@github.com:Keeper-Security/keeper-sdk-dotnet.git KeeperDotNetSDK
+cd .\KeeperDotNetSDK\
+cd .\PowerCommander\
+ls
+copy-item
+mkdir C:\Users\jimmy\OneDrive\Documents\PowerShell\Modules\KeeperPowerCommander
+copy-item * -Destination C:\Users\jimmy\OneDrive\Documents\PowerShell\Modules\KeeperPowerCommander\
+cd C:\Users\jimmy\OneDrive\Documents\PowerShell\Modules\KeeperPowerCommander\
+explorer .
+import-module PowerCommander
+ls
+exit
+cd $env:PSModulePath
+cd $env:PSModulePath[0]
+$env:PSModulePath -split ";"
+cd "C:\Users\jimmy\OneDrive\Documents\PowerShell\Modules"
+cd ..
+code-insiders.cmd .
+get-command -module PowerCommander
+Connect-Keeper
+kdir
+Get-KeeperLocation
+lsd
+ls
+get-help Set-KeeperLocation
+keeper record-type-info
+keeper
+keeper shell
+get-command -module PowerCommander
+initialize
+get-help Sync-Keeper
+Sync-Keeper
+Connect-Keeper
+Sync-Keeper
+keepercommander
+refreshenv
+keepercommander --help
+cd C:\Python39\Scripts\
+ls
+keeper --help
+keeper --config --help
+keeper config -h
+config -h
+keeper record-type-info
+keeper whoami
+keeper --config
+keeper --config "C:\Users\jimmy\.keeper\config.json"
+keeper shell
+keeper --config "C:\Users\jimmy\.keeper\config.json"
+cd C:\Users\jimmy\OneDrive\Desktop\
+keeper test.cmd
+echo ls -l
+(echo ls -l)
+exit
+exit
+keeper --help
+keeper edit --help
+keeper ls *hims*
+sudo choco search chrome
+sudo cinst GoogleChrome.Dev
+sudo cinst sumatrapdf
+choco list --local-only
+winget --help
+choco search insiders
+cd .\.dotfiles\chocolatey\backup\MSI\
+ls
+cd .\.dotfiles\chocolatey\backup\MSI\
+ls
+cat .\packages.config
+cinst ussf
+choco info vscode-insiders.install 
+choco install vscode-insiders.install --install-arguments='"/DIR="C:\Program Files\Microsoft-VSCode-Insiders" /VERYSILENT /NORESTART /MERGETASKS=runcode,addcontextmenufiles,addcontextmenufolders,associatewithfiles"' --params "/NoDesktopIcon"
+choco uninstall vscode-insiders.install
+choco install vscode-insiders.install --install-arguments="/VERYSILENT /NORESTART /MERGETASKS=runcode,addcontextmenufiles,addcontextmenufolders,associatewithfiles" --params "/NoDesktopIcon"
+get-path restartshellexperience.bat
+cd c:\bin
+ls
+pip install cloudinary-cli
+cd .dotfiles
+cd .\cloudinary-cli\
+ls
+touch README.md
+touch cloudinary-cli.env
+notepad .\cloudinary-cli.env
+touch install-cloudinary-cli.ps1
+notepad .\install-cloudinary-cli.ps1
+cld config
+notepad .\install-cloudinary-cli.ps1
+npm -g install cloudinary-cli
+sudo cinst nvm.install
+sudo cinst nvm
+New-Item $HOME/.cloudinary -ItemType File
+get-command *json*
+nvm install node
+nvm install "latest"
+nvm use 16.9.1
+npm --version
+npm install -g npm@latest
+npm install -g npm@7.23.0
+npm install -g cloudinary-cli
+cloudinary --help
+cloudinary config
+refreshenv
+cloudinary config
+cloudinary config --help
+cloudinary config -ls
+cloudinary config -n
+cloudinary config -n --help
+cloudinary config --new --help
+cloudinary config --url
+cloudinary --url
+cld config
+set CLOUDINARY_URL=cloudinary://544727895633948:3ZVjrCB_oeBKKfL3He_ePQtsHbs@jimbrig
+cld config
+$env:CLOUDINARY_URL=cloudinary://544727895633948:3ZVjrCB_oeBKKfL3He_ePQtsHbs@jimbrig
+$env:CLOUDINARY_URL="cloudinary://544727895633948:3ZVjrCB_oeBKKfL3He_ePQtsHbs@jimbrig"
+cld config
+cld admin upload_presets
+npm star get-links-cli
+cd ~
+ls -a
+wsl -e ls -a
+copy-item $HOME\.dotfiles\npm\.npmrc ~/.npmrc
+cd $HOME\.dotfiles\npm\
+copy-item $HOME\.dotfiles\nodejs\.npmrc ~/.npmrc
+npm star get-links-cli
+cat ~/.npmrc
+npm login
+npm star get-links-cli
+npm star cloudinary-cli
+npm star speedtest-cli
+npm stars
+npm install -g speedtest-cli get-links-cli yarn eslint prettier jshint dbdocs vercel trash-cli npm-check npm-windows-upgrade
+speedtest
+pip install you-get
+cd .\Downloads\
+you-get https://github.com/soimort/you-get/archive/master.zip
+pip install lastversion
+cd .dotfiles
+ls
+mkdir ntlite
+cd ntlite
+touch README.md
+touch install-ntlite.ps1
+mkdir config
+sudo cinst ntlite
+sudo cinst ntlite --pre
+choco search ntlite
+sudo cinst ntlite-free
+sudo cinst ntlite-free --ignore-checksums
+notepad .\install-ntlite.ps1
+start-process 'C:\Program Files\NTLite\NTLite.exe'
+topgrade --only system
+Get-WindowsUpdate
+cd .\.dotfiles\gcloud\
+lsd
+choco search lsd
+sudo cinst lsd
+lsd
+lsd --config
+lsd config
+cd ..
+cd lsd
+lsd
+cat .\setup-lsd.ps1
+.\setup-lsd.ps1
+vim .\setup-lsd.ps1
+.\setup-lsd.ps1
+lsd config
+lsd config --help
+cat .\config.yaml
+refreshenv
+lsd config
+lsd config --verbose
+lsd --help
+tldr lsd
+npm seach tldr
+choco search tldr
+choco infor tldr-plusplus
+choco info tldr-plusplus
+choco install tldr-plusplus
+refreshenv
+tldr lsd
+tldr ls
+cd ..
+mkdir tldr
+explorer C:\Users\jimmy\AppData\Roaming/tldr
+explorer C:\Users\jimmy\AppData\Roaming\tldr
+tldr --help
+cinst lse
+choco search extension
+cinst LinkShellExtension
+choco search rapidee
+choco info devbox-rapidee
+choco info rapidee
+cinst rapidee
+rapidee --help
+rapidee
+$env:USERDOMAIN_ROAMINGPROFILE
+$env:USERPROFILE
+$env:OneDrive
+cinst dotnet
+cinst pandoc
+dotnet --help
+dotnet tool --help
+dotnet tool list --help
+dotnet tool list --tool-path
+dotnet tool list -g
+dotnet tool list --local
+dotnet tool install --help
+tldr dotnet
+s dotnet tools
+dotnet tool install Paket
+dotnet tool install --global Paket --version 6.0.13
+dotnet tool install --global PowerShell --version 7.2.0-preview.5
+dotnet source --help
+dotnet sources --help
+dotlist list
+dotnet --help
+dotnet tool --help
+dotnet tool search powershell
+dotnet tool install powershell
+dotnet -d
+choco search gnupg
+cinst gnupg
+radian
+cd .R
+lsd
+$env:USERPROFILE
+cd .\.dotfiles\R\
+.\r-setup-script.ps1
+$rconfigdir = Read-Host "Set default User R Configuration Directory (Default $HOME\.R):"
+$rconfigdir
+!($rconfigdir)
+$env:R_BINARY
+Rscript -e R.version.string
+Rscript -e "grep('\d.\d.\d', R.version.string)" 
+Rscript -e "grep('/d./d./d', R.version.string)" 
+Rscript -e "grep('[:digit:][:punct:]', R.version.string)" 
+Rscript -e "R.version.string" 
+get-command *version*
+lastversion R
+lastversion R.exe
+Rscript -e "Sys.getenv('R_BINARY')" 
+$rbinary = Rscript -e "Sys.getenv('R_BINARY')" 
+get-command *path*
+$rver = Split-Path $rbinary -Parent 2
+$rver = Split-Path $rbinary -Parent
+$rver
+Get-RegistryValue -key HKEY_LOCAL_MACHINE\SOFTWARE\R-core\R
+get-help Get-RegistryValue -examples
+get-help Get-RegistryValue
+get-command Get-RegistryValue
+get-command -module WinRegistry
+Get-RegistryValueData -key HKLM\SOFTWARE\R-core\R
+Get-RegistryValueData -key HKLM\SOFTWARE\R-core\R -item Current Version
+Get-RegistryValueData -key HKLM\SOFTWARE\R-core\R -item "Current Version"
+Get-RegistryValueData -key $env:HKLM\SOFTWARE\R-core\R -item "Current Version"
+Get-RegistryValueData -key "Computer\HKLM\SOFTWARE\R-core\R" -item "Current Version"
+get-help Get-RegistryValue
+Get-ChildItem -Path HKLM:\SOFTWARE\R-core\R | Select-Object 'Current Version'
+Get-ChildItem -Path HKLM:\SOFTWARE\R-core\R
+Get-ChildItem -Path HKLM:\SOFTWARE\R-core\R | Select-Object Name
+$t = Get-ChildItem -Path HKLM:\SOFTWARE\R-core\R
+$t
+$t.Name
+$t.View
+$t.Property
+$t.PSChildName
+(Get-ChildItem -Path HKLM:\SOFTWARE\R-core\R | Select-Object Name).PSChildName
+(Get-ChildItem -Path HKLM:\SOFTWARE\R-core\R).PSChildName
+subst.exe --help
+$rver = "4.1.1"
+grep $rver -2
+$rver = "4.1.1" | split "."
+"4.1.1" | split "."
+"4.1.1" | Split-Path "."
+"4.1.1" | Split-String "."
+"4.1.1" | Split-String -RegexSeparator "."
+"4.1.1" | Split-String "." -SingleLine
+"4.1.1" | Split-String -Separator "." -SingleLine
+"4.1.1" | Split-String -SingleLine
+"4.1.1" | Split-String -SingleLine -RegexSeparator .
+"4.1.1" | Split-String -SingleLine -RegexSeparator
+"4.1.1" | Split-String -SingleLine -RegexSeparator "/d"
+"4.1.1" | Split-String -SingleLine -RegexSeparator "$."
+"4.1.1" | Split-String -SingleLine -RegexSeparator "^."
+"4.1.1" | Split-String -SingleLine -RegexSeparator ".^"
+"4.1.1" | Split-String -SingleLine -RegexSeparator "^.^"
+"4.1.1" | Split-String -SingleLine -RegexSeparator ".$"
+"4.1.1" | Split-String -SingleLine -RegexSeparator ".$."
+"4.1.1" | Split-String -SingleLine -RegexSeparator "^.$"
+"4.1.1" | Split-String -SingleLine -RegexSeparator ".$"
+"4.1.1" | Split-String -SingleLine -RegexSeparator ".$$"
+$rver = (Get-ChildItem -Path HKLM:\SOFTWARE\R-core\R).PSChildName
+$rver | Split-String -SingleLine -RegexSeparator ".$$"
+[string]:$rver | Split-String -SingleLine -RegexSeparator ".$$"
+[string]:[$rver] | Split-String -SingleLine -RegexSeparator ".$$"
+sudo .\r-setup-script.ps1
+R
+wsl --status
+wsl --shutdown
+cd Downloads
+& '.\OneDriveSetup (1).exe' /?
+OneDriveSetup.exe /?
+.\OneDriveSetup.exe /?
+ussf
+if (!(Test-Path -Path "C:\Program Files\PackageManagement\ProviderAssemblies\nuget")) {Find-PackageProvider -Name 'Nuget' -ForceBootstrap -IncludeDependencies}
+if (!(Get-Module -ListAvailable -Name Evergreen)) {Install-Module Evergreen -Force | Import-Module Evergreen}
+Update-Module Evergreen
+function Get-PythonVersion {`
+    [cmdletbinding()]`
+    [outputtype([string])]`
+    $uri = "https://www.python.org/downloads/windows/"`
+    $web = wget -UseBasicParsing -Uri $uri`
+    $m = $web.ToString() -split "[`r`n]" | Select-String "Latest Python 3 Release" | Select-Object -First 1`
+    $m = $m -replace "<((?!@).)*?>"`
+    $m = $m.Replace('Latest Python 3 Release - Python','')`
+    $m = $m.Replace(')','')`
+    $m = $m.Replace(' ','')`
+    $Version = $m`
+    Write-Output $Version `
+}
+Get-PythonVersion
+Get-WmiObject -Class "Win32_OperatingSystem"
+(Get-WmiObject -Class "Win32_OperatingSystem").Caption
+([System.Environment]::OSVersion.Version).Build
+Install-Module Az
+Get-Module
+Get-Module -All
+Get-Module -All -ListAvailable
+Import-Module Az
+Get-AzureAccount | format-table id
+import-module Az
+Get-AzureAccount | format-table id
+import-module Az.Accounts
+Get-AzureAccount | format-table id
+get-module
+Connect-AzAccount
+get-command Get-AzureAccount
+get-command -module Az
+get-command -module Az.Account
+get-command -module Az.Accounts
+Get-AzAccount
+Get-AzDomain
+Get-AzDefault
+Remove-AzAccount jimbrig2011outlook.onmicrosoft.com
+Get-AzureRmSubscription
+Get-AzRmSubscription
+Get-AzADGroup
+Get-AzResource
+Logout-AzAccount jimbrig2011outlook.onmicrosoft.com
+Get-AzActivityLog
+cd .\Downloads\
+.\OneDriveSetup-x64.exe /allusers
+hoco search onedrive
+choco search onedrive
+choco info onedrive
+sfc /scannow
+choco search sqlite
+cinst sqlitebrowser.install
+npm i -g sqlite3
+gcloud --help
+gcloud auth
+gcloud auth list
+gsutil mb gs://winisoimages
+gsutil ls
+cd downloads
+ls *.iso
+gsutil cp .\Windows11_InsiderPreview_Client_x64_en-us_22000.iso gs://winisoimages/
+cd Dev/sandbox
+git clone https://github.com/luzeagithub/techbench-json-dump.git
+cd .\techbench-json-dump\
+pip3 install -r requirements.txt
+main.py -h
+ls
+.\main.py -h
+.\main.py start 2058 stop 2058 test.json
+notepad main.py
+.\main.py start 2058 stop 2058 test.json
+pip3 install -r requirements.txt
+.\main.py start 2058 stop 2058 test.json
+pip install progress
+.\main.py start 2058 stop 2058 test.json
+pip --help
+lsd
+.\main.py start 2058 stop 2058
+.\main.py -h
+notepad main.py
+pip install progress.bar
+.\main.py -h
+pip install progress
+refreshenv
+.\main.py -h
+pip install -U progress
+get-command *mount*
+get-help Mount-DiskImage -examples
+Mount-DiskImage C:\Users\jimmy\Downloads\Windows11_InsiderPreview_Client_x64_en-us_22000.iso
+cd g:\
+lsd
+mkdir S:\ISOO
+copy-item .\* S:\ISOO\ -r
+Dism /Get-WimInfo /WimFile:G:\Sources\install.wim
+sudo Dism /Get-WimInfo /WimFile:G:\Sources\install.wim
+mkdir S:\Mount
+Dism /Mount-Image /ImageFile:G:\Sources\install.wim /Index:6 /MountDir:S:\Mount
+sudo Dism /Mount-Image /ImageFile:G:\Sources\install.wim /Index:6 /MountDir:S:\Mount
+cd s:\ISOO
+lsd
+cd .\sources\
+Dism /Mount-Image /ImageFile:S:\ISOO\sources\install.wim /Index:6 /MountDir:S:\Mount
+sudo Dism /Mount-Image /ImageFile:S:\ISOO\sources\install.wim /Index:6 /MountDir:S:\Mount
+sudo cmd
+cd P:\
+lsd
+ls
+cd .\tools\
+ls
+cd ..
+ls
+cd .\Installers\
+ls
+cd B:\
+lsd
+ls
+cd Programs
+ls
+cd .\AltTabTerminator\
+ls
+sudo .\install-alt-tab-terminator.ps1
+cat .\install-alt-tab-terminator.ps1
+.\install-alt-tab-terminator.ps1
+notepad install-alt-tab-terminator.ps1
+cd B:\Programs\AltTabTerminator\
+.\install-alt-tab-terminator.ps1
+Start-Process '$env:ProgramFiles\Alt-Tab Terminator\AltTabTer.exe'
+cd '$env:ProgramFiles\Alt-Tab Terminator\'
+cd '$env:ProgramFiles\'
+$env:ProgramFiles
+cd $env:ProgramFiles
+Start-Process 'C:\Program Files\Alt-Tab Terminator\AltTabTer.exe'
+cd B:\Programs\AltTabTerminator\
+.\install-alt-tab-terminator.ps1
+get-module *registry*
+get-command *registry*
+get-help Set-RegistryValueData
+.\install-alt-tab-terminator.ps1
+$env:ISO_URL = "gs://winisoimages/Windows11_InsiderPreview_Client_x64_en-us_22000.iso"
+$env:DISK_NAME = "Win11"
+gcloud compute disks create $DISK_NAME --size=10GB --zone=(gcloud config get-value compute/zone)
+gcloud compute disks create $DISK_NAME --size=10GB --zone=$(gcloud config get-value compute/zone)
+$zone = (gcloud config get-value compute/zone)
+$zone
+gcloud compute disks create $DISK_NAME --size=10GB --zone=$zone
+gcloud compute disks create $env:DISK_NAME --size=10GB --zone=$zone
+gcloud compute disks create "ISO" --size=10GB --zone=$zone
+gcloud compute disks create iso --size=10GB --zone=$zone
+gcloud shell
+gcloud cloud-shell
+gcloud cloud-shell get-mount-command
+gcloud cloud-shell get-mount-command --help
+gpg --list-keys
+which gpg
+git config --list
+choco uninstall gnupg
+refreshenv
+which gpg
+cd C:\Users\jimmy\OneDrive\Documents\PowerShell\
+gh repo view -w
+sudo topgrade
+wsl --help
+wsl --unregister Ubuntu-CommPrev
+wsl -d Ubuntu-CommPrev
+wsl --install -d Ubuntu-CommPrev
+wsl --list --online
+C:\Users\jimmy\.dotfiles\wsl
+cd C:\Users\jimmy\.dotfiles\wsl
+lsd
+cd config
+sld
+lsd
+cd B:\Programs\
+lsd
+ls
+cd ..
+ls
+start https://espn.com
+b2 --help
+b2 get-bucket
+b2 get-account-info
+b2 list-buckets
+b2 create-bucket -h
+tldr b2
+s -p gh b2*.ps1
+sudo cinst gh
+cd .\Downloads\Visual-C-Runtimes-All-in-One-July-2021\
+.\install_all.bat
+cd .\dev\sandbox\
+cd C:\Users\jimmy\.dotfiles\
+cd .\github-cli\
+ls
+touch install-gh-cli.ps1
+codee .
+code-insiders .
+cd ~
+cd .config
+ls
+cd ..
+ls
+cd AppData\Roaming
+lsd
+cd ../local
+lsd
+gh --version
+docker pull chocolateyfest/chocolatey
+docker pull chocolateyfest/chocolatey
+cd ~/Dev/sandbox
+mkdir Choco-Docker
+cd .\Choco-Docker\
+touch Dockerfile
+notepad .\Dockerfile
+docker build .
+docker build 
+docker build .
+docker run -it chocolateyfest/chocolatey powershell.exe
+docker pull benknight135/winservercore-ltsc2019-choco
+choco features
+ls
+docker build .
+cd Dev/sandbox/Choco-Docker
+touch build.ps1
+touch push.ps1
+touch test.ps1
+touch README.md
+codee .
+docker build . -t win10choco
+docker pull mcr.microsoft.com/windows/servercore:20H2-amd64
+refreshenv
+docker pull mcr.microsoft.com/windows/servercore:20H2-amd64
+docker --version
+refreshenv
+docker --version
+docker pull mcr.microsoft.com/windows/servercore:20H2-amd64
+docker pull mcr.microsoft.com/windows/insider:10.0.17763.107_amd64
+Enable-WindowsOptionalFeature -Online -FeatureName $("Microsoft-Hyper-V", "Containers") -All
+Get-WindowsOptionalFeature -FeatureName Containers
+Get-WindowsOptionalFeature -Online
+docker pull mcr.microsoft.com/windows/insider:10.0.17763.107_amd64
+Get-WindowsOptionalFeature -Online -FeatureName Containers
+(Get-WindowsOptionalFeature -Online -FeatureName Containers).state
+(Get-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All).State
+(Get-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V).State
+$containers = (Get-WindowsOptionalFeature -Online -FeatureName Containers).State
+$hyperv = (Get-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V).State
+($containers -and $hyperv)
+& $Env:ProgramFiles\Docker\Docker\DockerCli.exe -SwitchDaemon
+& $Env:ProgramFiles\Docker\Docker\DockerCli.exe -h
+& $Env:ProgramFiles\Docker\Docker\DockerCli.exe --help
+$Env:ProgramFiles\Docker\Docker\DockerCli.exe --help
+cd $Env:ProgramFiles\Docker\Docker\
+DockerCli.exe --help
+.\DockerCli.exe --help
+.\DockerCli.exe -Help
+.\DockerCli.exe /?
+& $Env:ProgramFiles\Docker\Docker\DockerCli.exe -SwitchWindowsEngine
+cd .\Dev\sandbox\Choco-Docker\
+docker build . -t choco
+choco --version
+docker run -it mcr.microsoft.com/windows/insider:10.0.17763.107_amd64 powershell.exe
+docker ps
+docker commit 8daa8580bdac jimbrig/choco:0.11.1
+docker container stop 8daa8580bdac
+docker commit 8daa8580bdac jimbrig/choco:0.11.1
+cd C:\Users\jimmy\Dev\sandbox\Choco-Docker\
+.\build.ps1
+echo $env:GITHUB_PAT
+refreshenv
+.\push.ps1
+cd .\Python\
+.\test-python.ps1
+cinst gh
+cd ~/.dotfiles
+cd .\github-cli\
+ls
+codee .
+gh --help
+gh auth login
+gh auth --help
+cd C:\Users\jimmy\Dev\sandbox\Choco-Docker\
+gh repo create
+$PROFILE
+$PROFILE.AllUsersAllHosts
+$PROFILE.CurrentUserAllHosts
+$PROFILE.CurrentUserCurrentHost
+$PROFILE.AllUsersCurrentHost
+Get-WindowsOptionalFeature -FeatureName 'Containers-DisposableClientVM'
+Get-WindowsOptionalFeature -Online 'Containers-DisposableClientVM'
+Get-WindowsOptionalFeature -Online
+Enable-WindowsOptionalFeature -Online -FeatureName Containers-DisposableClientVM
+topgrade
+cpkgs
+choco list --local-only
+cinst raindropio
+cinst raindrop
+choco search raindrop
+winget search raindrop
+winget install RustemMussabekov.Raindrop --interactive --global
+winget install RustemMussabekov.Raindrop --i --global
+winget install RustemMussabekov.Raindrop --i --scope machine
+sudo winget install RustemMussabekov.Raindrop --i --scope=machine
+sudo winget install RustemMussabekov.Raindrop -i --scope=machine
+sudo winget install RustemMussabekov.Raindrop -i
+sfc /scannow
+wttop
+cd .dotfiles
+cd .\windows-terminal\
+ls
+touch Setup-WindowsTerminal.ps1
+touch Backup-WindowsTerminal.ps1
+touch Install-WindowsTerminal.ps1
+codee .
+prodir
+codee C:\Users\jimmy\OneDrive\Documents\PowerShell
+get-help where-object
+ping 192.168.1.3
+vlc --help
+choco search vlc
+choco search cmus
+choco search misikcube
+choco search musikcube
+cinst musikcube
+refreshenv
+musikcube --help
+which musikcube
+cd $env:ChocolateyInstall
+cd bin
+lsd
+cd ~/OneDrive/Documents/PowerShell/Functions
+lsd
+. .\Extract-Icon.ps1
+cd $env:ChocolateyInstall\bin
+extract-icon .\musikcube.exe
+extract-icon .\musikcube.exe -Destination C:\Users\jimmy\OneDrive\Pictures\Icons\Programs\ -Format ico
+get-command *ip*
+Get-PublicIP
+choco search cmus
+scoop search cmus
+choco search nnn
+scoop search nnn
+scoop search midnight
+choco search midnight
+choco info mc
+sudo cinst mc
+choco info choco-persistent-packages
+mc
+choco info mc
+sudo choco install mc --package-params="modifypath" --force
+choco install -y mc --package-parameters='/modifypath' --force
+choco uninstall mc
+choco install -y mc --package-parameters='/modifypath'
+choco install -y mc --package-parameters='/modifypath' --not-silent
+cplb
+choco search far
+choco info far
+cinst far --not-silent
+mc
+refreshenv
+mc
+which mc
+cd 'C:\Program Files (x86)\Midnight Commander\'
+codee
+select-object
+refreshenv
+Load-Function
+Load-Function.ps1
+sudo rapidee
+refreshenv
+Load-Function.ps1
+Extract-Icon
+Load-Function.ps1
+Extract-Icon 
+$load = "C:\Users\jimmy\OneDrive\Documents\PowerShell\Functions\Extract-Icon.ps1"
+. $load
+Extract-Icon 
+Load-Function.ps1
+Import-Module -Global $load
+$load
+Load-Function.ps1
+get-help New-IconFromExe
+get-help New-IconFromExe -Examples
+New-IconFromExe "C:\Program Files\PowerShell\7\pwsh.exe" "$HOME\OneDrive\Pictures\Icons\Programs\" "PowerShellCore" "ico"
+New-IconFromExe "C:\Program Files\PowerShell\7\pwsh.exe" "C:\Users\jimmy\OneDrive\Pictures\Icons\Programs" "PowerShellCore" "ico"
+Load-Function.ps1
+New-IconFromExe "C:\Program Files\PowerShell\7\pwsh.exe" "C:\Users\jimmy\OneDrive\Pictures\Icons\Programs" "PowerShellCore" "ico"
+New-IconFromExe($Path = "C:\Program Files\PowerShell\7\pwsh.exe", $Destination = "C:\Users\jimmy\OneDrive\Pictures\Icons\Programs", $Name = "PowerShellCore", $Format = "ico")
+New-IconFromExe($Path = "C:\Program Files\PowerShell\7\pwsh.exe", $Destination = "C:\Users\jimmy\OneDrive\Pictures\Icons\Programs\", $Name = "PowerShellCore", $Format = "ico")
+New-IconFromExe($Path = "C:\Program Files\PowerShell\7\pwsh.exe", $Name = "PowerShellCore", $Format = "ico")
+Extract-Icon.ps1 -Path "C:\Program Files (x86)\Midnight Commander\mc.exe" -Destination "C:\Users\jimmy\OneDrive\Pictures\" -Name "MidnightCommander" -Format "ico"
+refreshenv
+Extract-Icon.ps1 -Path "C:\Program Files\Far Manager\Far.exe" -Destination "C:\Users\jimmy\OneDrive\Pictures\Icons\Programs\" -Name "FarManager" -Format "ico"
+mc
+far --help
+far
+gcal add
+gcalw
+gcalm
+agenda
+exit
+far
+topgrade
+git init
+codee .
+krak
+sudo cinst gitkraken
+sudo cinst cmake
+make docker-query-player ARGS='munchinxbox69'
+refreshenv
+make docker-query-player ARGS='munchinxbox69'
+make --version
+choco search make
+sudo cinst make
+refreshenv
+make --version
+make docker-query-player ARGS='munchinxbox69'
+make ensure-bootstrap && make docker-run
+make docker-run
+docker build .
+make ensure-bootstrap && make docker-run
+docker build .
+make ensure-bootstrap && make docker-run
+agenda
+cd .\Dev\jimbrig\
+lsd
+cd .\jimbrig
+lsd
+codee .
+krak
+cd ..
+gh repo clone jimbrig/devfolio
+cd .\devfolio\
+npm install
+npm run dev
+cd Dev/jimbrig/devfolio
+codee .
+npm install
+npm run dev
+topgrade
+C:\Users\jimmy\AppData\Local\Microsoft\WindowsApps\CanonicalGroupLimited.UbuntuonWindowsCommunityPrev_79rhkp1fndgsc\ubuntupreview.exe
+tree
+get-command
+get-module
+tree
+cist steelseries
+choco seach steel
+sudo cinst steelseries
+choco search steel
+sudo cinst steelseries-engine
+cinst tortoisegit
+cpkgs
+sudo pwsh
+csearch tortoise
+csearch resetwu
+csearch settingsbackup
+csearch *settings* backup
+csearch backup
+s --config
+cd .\.config\s\
+lsd
+cat .\config
+s -p choco backup
+csearch intel
+csearch everything
+cinst espanso autohotkey.install TortoiseGit reset-windows-update-tool intel-dsa everything.beta.install everythingtoolbar
+topgrade
+tree
+cd ~
+tree
+cinst git-lfs
+cd .\.dotfiles\
+git stash *
+git stash .
+git stash
+git add edge/.gitignore
+git commit -m "temporarilly ignore edge"
+refreshenv
+cd ,,
+cd ..
+cd .\Dev\sandbox\
+gh repo create toast-test
+cd .\toast-test\
+touch toast.yml
+vim .\toast.yml
+docker run ``
+  --init ``
+  --rm ``
+  --tty ``
+  --name docuum ``
+  --volume //var/run/docker.sock:/var/run/docker.sock ``
+  --volume docuum:/root ``
+  stephanmisc/docuum --threshold '10 GB'
+AddPath --help
+AddPath -?
+AddPath "C:\bin"
+sudo AddPath "C:\bin"
+Ask -?
+Ask "Make a a selection:" /a /t:5 /d:y
+$r = Ask "Make a a selection:" /a /t:5 /d:y
+$r
+bundle -?
+refreshenv
+cd C:\tools\Bundle\
+.\Bundle.exe
+cd C:\Users\jimmy\Dev\sandbox\
+mkdir bundle-test
+cd .\bundle-test\
+touch install.ps1
+touch install.bat
+touch install.cmd
+explorer .
+Get-ChildItem "." -Filter "*.zip" | Expand-Archive -DestinationPath "." -Force
+Get-ChildItem "." -Filter "*.zip" | Expand-Archive -OutputPath "." -ShowProgress
+Function Unzip-All($input, $output) {`
+test-path $input`
+mkdir $output`
+test-path $output`
+$zips = Get-ChildItem $input -filter *.zip`
+foreach ($zip in $zips) {`
+$zip_output = $output + "\" + $zip.BaseName`
+Expand-Archive -Path $zip.FullName -OutputPath $zip_output`
+}`
+}
+Unzip-All . ./Unzipped
+Unzip-All . .
+cd .\Downloads\
+nst yori
+cinst yori
+which yori
+refreshenv
+which yori
+$env:ProgramData/chocolatey/bin/yori
+$env:ProgramData\chocolatey\bin\yori
+cd $env:ProgramData\chocolatey\bin\yori
+cd "$env:ProgramData\chocolatey\bin\yori"
+cd "$env:ChocolateyInstall"
+cd bin
+lsd
+yori
+z C:\Users\jimmy\Dev\sandbox
+npx create-strapi-app strapi-app --quickstart
+nvm list
+nvm install lts
+nvm list --online
+nvm list available
+nvm install 14.17.6
+nvm use 14.17.6
+rm -r .\strapi-app\
+npx create-strapi-app strapi-app --quickstart
+npm install -g eslint
+npm install -g jshint prettier
+npm i -g vercel
+cd Dev:\sandbox\
+clone jimbrig/devfolio
+get-alias
+gh alias list
+gh clone jimbrig/devfolio
+gh repo view jimbrig/devfolio -w
+gh repo clone git@github.com:jimbrig/devfolio.git
+gh auth status
+krak
+lsd
+mkdir devfolio
+cd .\devfolio\
+git init
+lsd
+touch README.md
+git add *
+pip search khard
+pip install khard
+mkdir ~/.config/khard/
+cd ~/.config/khard
+touch khard.conf
+vim .\khard.conf
+khard --help
+pip install khal
+khal --help
+cd .\.config\
+lsd
+mkdir khal
+cd khal
+touch khal.conf
+notepad.exe .\khal.conf
+cd ..
+codee .
+cd ..
+mkdir .calendars
+cd .\.calendars\
+mkdir work
+mkdir home
+mkdir tickler
+mkdir family
+pip install goobook
+goobook authenticate
+goobook authenticate -- 85945715847-svmek8tjer42rci48t11rv96nfvogqpo.apps.googleusercontent.com f4yvMqCmgrk2wx-pG9qKuAMA
+pip install --user goobook
+goobook authenticate -- 85945715847-svmek8tjer42rci48t11rv96nfvogqpo.apps.googleusercontent.com f4yvMqCmgrk2wx-pG9qKuAMA
+goobook authenticate
+goobook authenticate -h
+goobook authenticate 85945715847-svmek8tjer42rci48t11rv96nfvogqpo.apps.googleusercontent.com f4yvMqCmgrk2wx-pG9qKuAMA
+mkdir ~/.local/share/
+cd ~/.local/share/
+touch goobook_auth.json
+explorer .
+goobook config-template > ~/.config/goobookrc
+cd Dev:
+cd .\sandbox\
+gh repo clone mrmattwilkins/google-contacts-sync
+cd dotfiles
+cd dotfiles:
+git-crypt unlock
+cd dev:\sandbox
+gh repo clone mrmattwilkins/google-contacts-sync
+refreshenv
+gh repo clone mrmattwilkins/google-contacts-sync
+cd .\google-contacts-sync\
+pip3 install -r requirements.txt
+python sync.py -v
+notepad C:\Users\jimmy\AppData\Local\mcw\google-contacts-sync\config.ini
+python sync.py -v
+python sync.py -v --init
+gcloud auth login
+python sync.py -v
+cd .\Dev\sandbox\google-contacts-sync\
+python sync.py -v
+cd .\Dev\sandbox\google-contacts-sync\
+python sync.py -v --init
+cd .\Dev\sandbox\google-contacts-sync\
+python sync.py -v --init
+sld
+lsd
+python contacts.py
+python contacts.py --help
+python contacts.py -v
+python sync.py -v
+pip install
+pip install -r .\requirements.txt
+python sync.py -v
+pip install --upgrade google-api-python-client
+csearch dotnet
+exit
+Runas /savecred /user:DOMAIN\Administrator pwsh.exe
+runas /user:administrator cmd
+runas /user:DESKTOP-MSI cmd
+rundll32.exe keymgr.dll,KRShowKeyMgr
+runas /user:DESKTOP-MSI cmd
+refreshenv
+runas /user:DESKTOP-MSI cmd
+runas /user:administrator cmd
+runas /savecred /user:administrator cmd
+rundll32.exe keymgr.dll,KRShowKeyMgr
+net user administrator
+pip install starred
+starred --help
+cd .\Dev\jimbrig\
+gh repo clone jimbrig/jimsghstars
+cd .\jimsghstars\
+git pull
+codee .
+R
+cd .\scripts\
+radian
+cd .\Dev\jimbrig\jimsghstars\
+cd app
+docker build -t "jimsghstars:test" .
+docker login --help
+docker login ghcr.io
+docker tag jimsghstars:test ghcr.io/jimbrig/jimsghstars:latest
+docker push ghcr.io/jimbrig/jimsghstars:latest
+docker build -t "jimsghstars" .
+docker run jimsghstars -p 8080 -it
+docker run jimsghstars -it
+docker run -it jimsghstars
+docker build -t "jimsghstars" .
+docker run -it jimsghstars
+docker build -t "jimsghstars" .
+gcal
+gcalm
+gcal new
+gcal add
+agenda
+cat .\.ssh\id_rsa
+cat .\.ssh\id_rsa | clip
+cat .\.ssh\id_rsa.pub | clip
+cd dev
+mkdir bitbucket
+cd .\bitbucket\
+git clone git@bitbucket.org:jimbrig/pswinsetup.git
+cd .\pswinsetup\
+git branch develop
+git checkout develop
+git push
+git push --set-upstream origin develop
+pip install buku
+buku --help
+pip install readline
+refreshenv
+buku --help
+buku -h
+pip install pyreadline
+buku -h
+buku -w
+$env:EDITOR = "code-insiders"
+buku -w
+$env:EDITOR = "code-insiders.cmd"
+buku -w
+npm install -g nb.sh
+refreshenv
+nb --help
+nb https://githhub.com
+nb https://github.com
+exit
+wsl --shutdown
+wsl -e nb shell
+wsl -e "nb shell"
+wsl -d Ubuntu-CommPrev -e "nb shell"
+wsl -d Ubuntu-CommPrev -e nb shell
+wsl -d Ubuntu-CommPrev --exec nb shell
+refreshenv
+wsl -e nb shell
+nb
+npm --help
+npm uninstall nb
+npm uninstall -g nb
+nb
+wsl -e nb shell
+wsl --exec nb shell
+wsl nb shell
+npm stars
+npm star readability-cli
+npm star nb
+npm star notes.sh
+npm star nb.sh
+apt list tig
+which explorer
+pip install socli
+socli -u
+> scoop install winfetch
+scoop install winfetch
+winfetch -genconf
+winfetch --help
+refreshenv
+winfetch
+winfetch -?
+Get-Help C:\Users\jimmy\scoop\apps\winfetch\current\winfetch.ps1 -Examples
+Get-Help C:\Users\jimmy\scoop\apps\winfetch\current\winfetch.ps1 -Detailed
+winfetch -showpkgs
+winfetch -showpkgs -?
+Install-Script posh-winfetch -Scope CurrentUser
+npm install --global paperboard
+scoop search gpg-tui
+choco search gpg-tui
+scoop install timetrace
+scoop bucket add https://github.com/Br1ght0ne/scoop-bucket
+scoop bucket add bright https://github.com/Br1ght0ne/scoop-bucket
+scoop install timetrace
+timetrace create project windows-setup
+timetrace create project backup@windows-setup
+timetrace list projects
+cd .\Dev\jimbrig\
+lsd
+cd .\PSWinSetup\
+gtm init
+refreshenv
+gtm init
+gtm status
+lsd
+codee .
+gtm status
+gtm report
+git pushgtm
+git fetchgtm
+git status
+gtm --help
+gtm status
+gtm verify
+gtm init -tags windows,setup,dev
+gtm record
+gtm status
+gtm status -color
+gtm commit
+gtm report
+gtm record -terminal
+gtm status
+gtm status -all
+gtm commit -yes
+git status
+git add Source/Private/Windows-Helpers.ps1
+git commit -m "feat: initialize windows-helpers.ps1"
+git push
+git pull
+git push
+gh repo view -w
+expl .
+explorer .
+git-cliff --help
+git-cliff -i
+git-cliff -l
+git-cliff -u
+git-cliff -o CHANGELOG.md
+git status
+git diff cliff.toml
+.\build.ps1
+cd ..
+lsd
+get-help New-ModuleProject.ps1
+New-ModuleProject.ps1 -Path "PSWindowsSetup" -ModuleName PSWindowsSetup -Prerequisites -Initialize -Scripts
+lsd
+cd .\PSWindowsSetup\
+lsd
+git status
+gtm init
+git init
+gtm init
+git-cliff init
+revspec
+lsd
+gtm status
+git-cliff --help
+git-cliff -c
+git-cliff -i
+lsd
+bat cliff.toml
+scoop install bat
+bat cliff.toml
+gtm status
+gtm commit
+git status
+git add .gitignore
+dos2unix.exe .gitignore
+git add .gitignore
+git add cliff.toml
+git commit -m "initialize repo"
+gh repo create
+git push
+git push --set-upstream origin main
+gtm status
+gtm commit
+gtm report
+git-cliff --help
+git-cliff
+git-cliff -o CHANGLOG.md
+lsd
+git-cliff -o CHANGELOG.md
+rm .\CHANGLOG.md
+bat .\CHANGELOG.md
+vim .\cliff.toml
+git-cliff -o CHANGELOG.md
+bat .\CHANGELOG.md
+git status
+git add CHANGELOG.md
+git commit -m "doc: Initialize CHANGELOG.md via git-cliff"
+cd .\PSWindowsSetup\
+lsd
+git status
+git add ../cliff.toml
+git commit -m "config: Configure git-cliff via cliff.toml config file"
+git-cliff -o ../CHANGELOG.md
+cd ..
+git-cliff -o CHANGELOG.md
+bat .\CHANGELOG.md
+git commit -m "doc: Update CHANGELOG.md"
+git push
+krak
+cd .\PSWindowsSetup\
+lsd
+cd Docs
+lsd
+touch NOTES.md
+.\NOTES.md
+git add .\NOTES.md
+git commit -m "docs: Add NOTES.md regarding Windows Setup checklist."
+git push
+cd ..
+lsd
+touch README.md
+.\README.md
+mkdir assets
+git add README.md
+git commit -m "docs: Initialize README.md"
+git push
+git add assets/**
+git commit -m "docs: add image assets dir"
+git push
+git add assets/powershell.ico
+git commit -a
+git commit --amend
+git push
+git pull
+git push
+git add PSWindowsSetup/**
+git commit -m "feat: initialize module skaffold"
+git push
+git pull
+git push
+git-cliff -o .\CHANGELOG.md
+git add CHANGELOG.md
+git commit -m "docs: update changelog"
+git push
+cd PS
+cd .\PSWindowsSetup\
+.\build.ps1
+import-module psake
+import-module pester
+.\build.ps1
+gcal new
+gcal add
+sudo topgrade --only system
+ npm list
+ npm -g list
+pip list
+npm list -g
+lsd
+rm .\package-lock.json
+npm list -g
+cd .config
+lsd
+clone .obsidian
+gh alias ls
+gh alias list
+gh clone .obsidian
+cd .\obsidian\.obsidian\
+lsd
+codee .
+sudo cinst nuclear
+cd ..
+cd ..
+cd .\sandbox\
+git clone git@github.com:dantheman213/spotify-playlist-to-json.git
+cd spotify-playlist-to-json/
+docker-compose up --build -d
+npm install -g organize-cli
+organize-cli --help
+organize --help
+organize -s Downloads -o . -t exe zip tar -f "Test"
+$ pip install classifier
+pip install classifier
+cd .\Downloads\
+classifier
+explorer .
+classifier
+lsd
+npm install --global dev-time-cli
+curl.exe -A "MS" https://webinstall.dev/zoxide | powershell
+notepad $PROFILE
+scoop install fzf
+. $PROFILE
+zoxide --version
+refreshenv
+zoxide --version
+. $PROFILE
+zoxide import --from z C:\Users\jimmy\z-location.db
+zoxide import --from C:\Users\jimmy\z-location.db
+zoxide import --from z C:\Users\jimmy\z-location.db
+cd ..
+dos2unix.exe .\z-location.db
+zoxide import --from z C:\Users\jimmy\z-location.db
+zoxide init
+zoxide init --help
+zoxide init powershell
+z foo
+z jim
+z dev
+z dotfiles
+z .dotfiles
+z
+z list
+zoxide
+zoxide init
+zoxide init powershell
+zoxide --help
+zoxide query downloads
+zoxide query -ls
+z ~
+z .\OneDrive\
+zoxide query -ls
+z Documents/PowerShell
+zoxide query -ls
+refreshenv
+broot
+z downloads
+z ~/Downlaods
+z ~/Downloads
+.\broot.exe
+scoop bucket add scoop-bucket https://github.com/Rigellute/scoop-bucket
+scoop install spotify-tui
+spt
+spt --completions
+spt --completions powershell
+spt --completions power-shell
+z ~/.config
+lsd
+z spotify-tui
+lsd
+bat client.yml
+touch config.yml
+codee config.yml
+npm i -g surge
+surge --help
+z dev
+lsd
+z jimbrig
+lsd
+cd gists
+surge
+lsd
+npm i -g serve
+serve
+serve --help
+npm i -g dockly
+npm star dockly serve surge
+dockly
+scoop install lazydocker
+lazydocker
+npm install --global yo
+z jimbrig
+z dev
+z jimbrig
+mkdir generator-rproj
+z .\generator-rproj\
+touch package.json
+touch README.md
+codee .
+npm install --save yeoman-generato
+npm install --save yeoman-generator
+yo --generators
+yo doctor
+yo --help
+npm audit fix
+npm install -g generator-webapp
+cd ..
+cd sandbox
+yo webapp
+npm install -g yo generator-generator
+cd ..
+yo generator
+npm install --global imgur-uploader-cli
+imgur-uploader.cmd
+imgur-uploader --help
+z OneDrive/Pictures
+lsd
+imgur-uploader background.jpg
+sudo cinst googler
+npm install --global idea
+idea
+idea --help
+idea create
+idea create test
+idea list
+npm audit fix
+lsd
+cd .\generator-rproject\
+npm audit fix
+z .\generators\app\templates\
+mkdir R
+mkdir man
+mkdir tests
+mkdir inst
+mkdir vignettes
+touch DESCRIPTION
+touch NAMESPACE
+touch README.md
+touch .rbuildignore
+mkdir .github
+npm link
+cd ..
+yo rproject
+cd .\generator-rproject\
+lsd
+bar .\package.json
+bat .\package.json
+npm install -g share-cli
+npm install -g @aweary/alder
+scoop install tre-command
+npm install -g gistup
+alder
+npm install -g ipfs-deploy
+pip install rebound-cli
+npm install --global pageres-cli
+sudo cinst psql
+csearch heroku
+sudo cinst heroku-cli postgresql
+z sandbox
+z dev/sandbox
+npx create-next-app --example https://github.com/nikolasburk/blogr-nextjs-prisma/tree/main blogr-nextjs-prisma
+cd blogr-nextjs-prisma && npm run dev
+npm audit fix
+npx browserslist@latest --update-db
+npm audit fix --force
+npm install prisma --save-dev
+npx prisma init
+npx prisma db push
+npm i -g yarn
+npx prisma studio
+npm install @prisma/client
+npx prisma generate
+mkdir lib && touch lib/prisma.ts
+npm run dev
+npm install next-auth
+prisma db push
+npx prisma db push
+npm run dev
+mkdir -p pages/api/auth && touch pages/api/auth/nextauth.ts
+npm run dev
+z sandbox
+lsd
+cd .\blogr-nextjs-prisma\
+touch pages/create.tsx
+mkdir -p pages/api/post && touch pages/api/post/index.ts
+touch pages/drafts.tsx
+npm i -g vercel
+vercel
+cd ..
+npx create-next-app
+cd .\next-app\
+yarn dev
+cd ../jimbrig
+cd ..
+cd jimbrig
+cd devfolio
+cd ..
+lsd
+Rename-Item devfolio devfolio-old
+cd ..
+gh repo clone jimbrig/devfolio
+cd devfolio
+codee .
+npm run dev
+npx run dev
+next --help
+nextjs --help
+npm list -g
+npm run
+npm start
+yarn run dev
+yarn start
+npm --help
+npm run
+npm run-script
+npm run-script dev
+npm run-script dev next
+npm run-script dev/next
+next start
+npx next start
+npm install react
+npm install react-dom
+npx next start
+npm run-script build
+npm i -g next
+npm run-script build
+npm install next
+npm run-script build
+npm run-script next
+next start
+next --help
+npm install react
+npm install react-dom
+next --help
+next start
+next --help
+next dev
+yarn dev
+next dev
+yarn add next nextra react react-dom
+yarn add nextra-theme-docs
+yarn next
+cd ..
+cd jimbrig
+npx create-next-app -e with-tailwindcss developer-portfolio
+cd .\developer-portfolio\
+yarn dev
+mkdir components
+cd .\components\
+touch Navigation.js
+cd ..
+codee .
+yarn dev
+yarn add next-themes
+yarn dev
+cd ..
+lsd
+cd .\devfolio\
+git status
+krak
+codee .
+cd ..
+cd .\developer-portfolio\
+lsd
+cd ..
+cd .\devfolio\
+lsd
+codee .
+yarn next
+yarn next --help
+yarn next build --help
+yarn next dev
+yarn install
+yarn ev
+yarn dev
+yarn next build
+yarn next
+cd ..
+gh repo clone jimbrig/portfolio-test
+cd .\portfolio-test\
+yarn next
+yarn install
+yarn next
+npx browserslist@latest --update-db
+yarn next
+yarn dev
+npm run dev
+npm install
+npm audit fix --force
+npm run dev
+npm --help
+npm clean-install
+npm prune
+rpm rebuild
+npm rebuild
+npm start
+npm add react
+npm add react-dom
+npm start
+npx npm start
+npm run
+next start
+npx next start
+npm next start
+npm list
+npm doctor
+npm i -g npm@7.24.0
+npm i -g npm@7.24.0 --force
+nvm install node
+nvm --help
+nvm list
+nvm use 16.9.1
+npm install
+npm run dev
+topgrade --only system
+sfc /scannow
+agenda
+gcalw
+gcalm
+cd dev
+npm install -g @sanity/cli && sanity init
+cd .\jimbrig\sanity-setup\
+lsd
+codee .
+git init
+gh repo create sanity-setup
+git status
+sanity start
+z dev/jimbrig/sanity-setup
+git pull
+git status
+git pull
+sanity start
+sanity deploy
+sanity start
+cd ..
+gh clone jimbrig/next-js-blog
+cd .\next-js-blog\
+lsd
+git status
+touch .env.local
+notepad .gitignore
+notepad .\.env.local
+codee .
+npm install
+npm run dev
+z .\Dev\jimbrig\next-js-blog\
+npm run start:sanity
+cinst postman
+z dev/sandbox
+mkdir api-server
+cd .\api-server\
+npm init -y
+npm install json-server
+touch .gitignore
+vim .gitignore
+git init
+touch db.json
+codee .
+npm start
+z .\.dotfiles\chocolatey\
+z .\backup\
+z .\MSI\
+lsd
+cat .\packages.config | clip
+z api-server
+npm start
+Get-TroubleshootingPack
+Get-TroubleshootingPack -Path "C:\Users\jimmy\Downloads\wushowhide.diagcab"
+Get-TroubleshootingPack -Path "C:\Users\jimmy\Downloads"
+Get-TroubleshootingPack -Path "C:\Windows\diagnostics\system\Apps\"
+(Get-TroubleshootingPack -Path "C:\Windows\diagnostics\system\Apps\")[2]
+Get-TroubleshootingPack -Path "C:\Windows\diagnostics\system\Apps\" | Invoke-TroubleshootingPack
+explorer C:\Windows\diagnostics\system\
+Get-TroubleshootingPack -Path "C:\Windows\diagnostics\system\"
+Get-TroubleshootingPack -Path "C:\Windows\diagnostics\system\BITS"
+Get-TroubleshootingPack -Path "C:\Windows\diagnostics\system\BITS" | Invoke-TroubleshootingPack
+Get-TroubleshootingPack -Path "C:\Windows\diagnostics\system\Device" | Invoke-TroubleshootingPack
+Get-TroubleshootingPack -Path "C:\Windows\diagnostics\system\Power" | Invoke-TroubleshootingPack
+Get-TroubleshootingPack -Path "C:\Windows\diagnostics\system\Power" | Invoke-TroubleshootingPack
+Get-TroubleshootingPack -Path "C:\Windows\diagnostics\system\IESecurity\" | Invoke-TroubleshootingPack
+Get-TroubleshootingPack -Path "C:\Windows\diagnostics\system\Search" | Invoke-TroubleshootingPack
+Get-TroubleshootingPack -Path "C:\Windows\diagnostics\system\Networking" | Invoke-TroubleshootingPack
+Get-TroubleshootingPack -Path "C:\Windows\diagnostics\system\WindowsUpdate" | Invoke-TroubleshootingPack
+s -p bing add troubleshooters to windows diagnostics
+msdt -id DeviceDiagnostic
+Get-AppBackgroundTask
+Get-AppBackgroundTask -PackageFamilyName "Microsoft.BingSports_8wekyb3d8bbwe"
+Get-AppBackgroundTask
+Get-DiagnosticData
+Enable-DiagnosticDataViewing
+Get-DiagnosticData
+Enable-DiagnosticDataViewing
+Get-NetConnectionProfile
+Confirm-SecureBootUEFI
+Enable-DiagnosticDataViewing
+Get-AppBackgroundTask
+Export-StartLayout .\OneDrive\Desktop\
+Export-StartLayout .\OneDrive\Desktop\startmenu.json
+Export-StartLayout .\OneDrive\Desktop\startmenu.xml
+Get-StartApps
+ls S:\Installers\EaseUS | clip
+(ls S:\Installers\EaseUS).Name | clip
+cd S:\Installers\EaseUS\
+iexpress.exe /N /Q Install-EaseUS.SED
+iexpress.exe /N /Q easeus.SED
+cinst vscode
+Get-DiagnosticData
+Export-StartLayout .\OneDrive\Desktop\startmenu.json
+Import-StartLayout .\OneDrive\Desktop\startmenu.json
+get-help Import-StartLayout 
+get-help Import-StartLayout -online
+update-help
+z .dotfiles
+lsd
+z office
+lsd
+cd install
+lsd
+cat .\install.ps1
+.\install.ps1
+explorer .
+Copy-Item "$HOME\OneDrive\Backup\Programs\Office\OfficeSetup.exe" -Destination .
+.\OfficeSetup.exe /configure ./configs/configuration-Office365-x64.xml
+s -p bing powertoys run auto move cursor to box
+cd .\Downloads\
+cd .\MarkFolderGitRepo\
+.\Install_in_SendTo-Folder.bat
+cd C:\bin
+lsd
+.\restartshellexperience.bat
+topgrade --only system
+tree
+z obsidian
+lsd
+gh repo clone jimbrig/obsidian_vault
+gh repo clone jimbrig/Engineered-Knowledge
+gh repo clone jimbrig/Notes
+gh repo clone jimbrig/notes
+gh repo list
+gh repo list *vault*
+gh repo list --help
+gh repo list --topic obsidianmd
+gh repo list --topic obsidian
+gh repo list --topic "obsidian"
+gh repo list --topic "obsidianmd"
+dig +nocmd +noall +answer www.google.com
+wsl --list
+wsl --set-default Ubuntu-CommPrev
+wsl --set-version 2
+wsl --set-default-version 2
+wsl --shutdown
+wsl list
+wsl --list
+wsl -e nb shell
+wsl nb shell
+agenda
+gcalm
+gcal --help
+gcal search Hitt
+wsl.exe -d Ubuntu-CommPrev -e nb shell
+wsl.exe nb shell
+wsl nb
+wsl
+wsl --help
+wsl nb shell
+wsl -- nb shell
+bash nb shell
+wsl -e "nb shell"
+idea --help
+npm list
+npm -g list
+nvm list
+nvm use 14.17.6
+npm -g list
+git-bash
+git
+nvm use 16*
+nvm list
+nvm use 16.9.1
+npm install -g nb.sh
+cls
+tree
+exit
+wsl nb shell
+cow
+wsl
+Restart-Computer
+cinst watchexec
+watchexec -h
+cd .dotfiles
+watchexec
+cd ~/OneDrive/Documents/PowerShell
+z Downloads
+Expand-7Zip -ArchiveFileName .\dnote_0.12.0_windows_amd64.tar.gz -TargetPath dnote
+cd dnote
+lsd
+Expand-7Zip -ArchiveFileName .\dnote_0.12.0_windows_amd64.tar -TargetPath dnote
+cd dnote
+lsd
+cp dnote.exe c:\bin
+refreshenv
+dnote
+touch ~/.config/dnote/dnoterc
+notepad ~/.config/dnote/dnoterc
+cd C:\Users\jimmy\.config\dnote
+lsd
+notepad .\dnoterc
+curl https://raw.githubusercontent.com/dnote/dnote/master/host/docker/docker-compose.yml > docker-compose.yml
+docker-compose pull
+ Get-Service docker | Restart-Service
+Get-WinEvent -logname application | where ProviderName -eq docker | sort TimeCreated
+& 'C:\Program Files\Docker\Docker\DockerCli.exe' -SwitchDaemon
+docker-compose pull
+docker-compose up -d
+dnote login
+dnote
+dnote add
+dnote help
+dnote add --help
+dnote add git
+sudo cinst vim
+dnote add git
+vi
+refreshenv
+dnote add git
+vi --version
+refreshenv
+dnote add git
+dnote --help
+dnote login --help
+cd ~/.ssh
+lsd
+cat id_rsa.pub >> authorized_keys
+lsd
+cat .\authorized_keys
+Start-Process PowerShell -Verb RunAs
+gpg-option --options
+gpg --options
+gpg --list-keys
+gpg --list-sigs
+gpg --edit-key 3970755CB8844CDACB681B4C0917266E974D7790
+gpg --list-keys
+gpg --help
+gpg --check-signatures
+gpg --card-status
+gpg --server
+cd .\.gnupg\
+lsd
+touch gpg.conf
+vim gpg.conf
+gpg --list-keys
+vim gpg.conf
+gpg -K
+cp gpg.conf ~/.dotfiles/gpg/
+cd ~/Dev/sandbox
+gh repo clone duxco/gpg-config-and-scripts
+cd .\gpg-config-and-scripts\
+lsd
+wsl .
+wsl
+gpg --list-keys
+gpg --gen-revoke 3970755CB8844CDACB681B4C0917266E974D7790
+cinst gpg4win
+git config --global gpg.program "/c/Program Files (x86)/GnuPG/bin/gpg.exe"
+git config --global gpg.program "C:\Program Files (x86)\GnuPG\bin\gpg.exe"
+ssh -T git@github.com
+cinst winaerotweaker.install
+csearch winaero
+cinst winaero-tweaker.install
+cinst winaero-tweaker.install --ignore-checksums
+cinst winaero-tweaker
+choco uninstall winaero-tweaker
+cinst winaero-tweaker.install --ignore-checksums --pre
+choco info winaero-tweaker
+ssh -T git@github.com
+refreshenv
+ssh -T git@github.com
+ssh --help
+ssh -F
+ssh-add C:\Users\jimmy\.dotfiles\ssh\MSI\MSI_id_rsa
+Add-WindowsCapability -Online -Name OpenSSH.Client*
+Add-WindowsCapability -Online -Name OpenSSH.Client*
+ssh-add C:\Users\jimmy\.dotfiles\ssh\MSI\MSI_id_rsa
+ssh-add
+ssh-add --help
+cd $env:ProgramFiles
+cd git
+cd bin
+lsd
+cd ..
+cd .\cmd\
+lsd
+scoop install pshazz
+sudo Set-Service ssh-agent -StartupType Manual
+rm -r .ssh/id_rsa
+cd .ssh
+lsd
+rm config
+rm id_rsa.pub
+rm known_hosts
+rename-item .\MSI_id_rsa .\id_rsa
+rename-item .\MSI_id_rsa.pub .\id_rsa.pub
+rm .\authorized_keys
+refreshenv
+ssh-add .ssh\id_rsa
+New-Variable -Name Key -Value "$env:UserProfile\.ssh\id_rsa.pub"
+# Remove Inheritance:
+  Icacls $Key /c /t /Inheritance:d
+# Set Ownership to Owner:
+  # Key's within $env:UserProfile:
+    Icacls $Key /c /t /Grant ${env:UserName}:F
+   # Key's outside of $env:UserProfile:
+     TakeOwn /F $Key
+     Icacls $Key /c /t /Grant:r ${env:UserName}:F
+# Remove All Users, except for Owner:
+  Icacls $Key /c /t /Remove:g Administrator "Authenticated Users" BUILTIN\Administrators BUILTIN Everyone System Users
+# Verify:
+  Icacls $Key
+# Remove Variable:
+  Remove-Variable -Name Key
+ssh -T git@github.com
+scoop install https://raw.githubusercontent.com/lukesampson/shimexe/master/scoop/shim.json
+csearch WAMP
+choco info wamp-server
+cd c:\bitnami
+cd .\wampstack-8.0.11-0\
+cd .\apache2\
+cd .\htdocs\
+lsd
+rm -r .
+lsd -a
+explorer .
+git clone -b develop https://github.com/ampache/ampache.git .
+composer install --prefer-source --no-interaction
+refreshenv
+composer install --prefer-source --no-interaction
+lsd
+composer install --prefer-source --no-interaction
+composer update
+cd C:\Bitnami\wampstack-8.0.11-0\php\
+lsd
+bat php.ini
+php --ini
+cd ..
+lsd
+cd .\apache2\
+lsd
+cd ..
+cd .\apache2\htdocs\
+lsd
+composer install
+composer install --prefer-source --no-interaction
+composer update
+composer install --prefer-source --no-interaction
+php --ini
+notepad C:\Bitnami\wampstack-8.0.11-0\php\php.ini
+phpinfo()
+composer install --prefer-source --no-interaction
+composer update
+composer install oomphinc/composer-installers-extender
+composer install --prefer-source --no-interaction
+z sandbox
+mkdir homelab-dashboard
+cd .\homelab-dashboard\
+git init
+git submodule add git@github.com:Lissy93/dashy.git src/dashy
+touch launch.ps1
+touch launch.sh
+codee .
+code-insiders .
+touch Dockerfile
+touch docker-compose.yml
+touch config.yml
+mkdir public
+mv config.yml public/conf.yml
+lsd -a
+mkdir scripts
+mkdir assets
+docker run -it --rm ,`
+    --volume /var/run/docker.sock:/var/run/docker.sock ,`
+    --volume ${pwd}/appwrite:/usr/src/code/appwrite:rw ,`
+    --entrypoint="install" ,`
+    appwrite/appwrite:0.10.4
+docker run -it --rm --entrypoint="install" appwrite/appwrite:0.10.4
+iwr -useb https://raw.githubusercontent.com/filebrowser/get/master/get.ps1 | iex
+cd $env:LOCALAPPDATA\Temp\
+Expand-Archive .\tmp4240.tmp.zip
+lsd *tmp42*
+Expand-Archive .\tmp4240.tmp.zip "tmp"
+Expand-Archive .\tmp4240.tmp.zip -OutputPath .
+explorer .
+filebrowser -r 'D:\My ISO Files\'
+wsl --help
+wsl --install Ubuntu
+wsl --install -d Ubuntu
+cd .\Dev\sandbox\
+gh repo clone canonical/ubuntu-cooker
+cd .\ubuntu-cooker\
+.\cook.ps1 -Release insider
+exit
+.\cook.ps1 -Release insider -InsiderImageLocation exit
+agenda
+gcalw
+cls
+gcalm
+ttopgrade --edit-config
+topgrade --edit-config
+copy-item C:\Users\jimmy\.dotfiles\config\topgrade\
+C:\Users\jimmy\.dotfiles\config\topgrade\
+cd C:\Users\jimmy\.dotfiles\config\topgrade\
+lsd
+touch apply-config.ps1
+vim .\apply-config.ps1
+$env:dot
+.\apply-config.ps1
+vim .\apply-config.ps1
+.\apply-config.ps1
+vim .\apply-config.ps1
+.\apply-config.ps1
+vim .\apply-config.ps1
+.\apply-config.ps1
+topgrade --edit-config
+topgrade
+get-command
+get-module
+get-module -All
+get-module -All -ListAvailable
+get-module -ListAvailable -Refresh
+get-module -Name *Az*
+get-module -Name *az*
+get-module -Name Az*
+get-module *az*
+get-module *Az*
+get-module "*Az*"
+get-module *Az.*
+get-module Az.*
+get-module
+get-module -All -Name "*az.*`
+`
+"
+get-module -name "Az.*" -All -ListAvailable
+(get-module -name "Az.*" -All -ListAvailable).Name
+(get-module -name "Az.*" -All -ListAvailable).Name | Uninstall-Module 
+$mods = (get-module -name "Az.*" -All -ListAvailable).Name 
+foreach ($mod in $mods) { Uninstall-Module $mod -Force }
+npm audit fix --force
+npm i --package-lock-only
+touch package.json
+npm i --package-lock-only
+rm package.json
+npm doctor
+nvm list
+nvm install 16.10.0
+nvm use 16.10.0
+npm doctor
+npm i -g npm@7.24.1
+npm doctor
+cd dev/jimbrig
+cd .\loss_development\
+git status
+git remote
+git remote ls
+krak
+git init
+krak
+editfunctions
+git remote add git@github.com:jimbrig/Slipbox.git
+git remote add origin git@github.com:jimbrig/Slipbox.git
+git pull
+git branch --set-upstream-to=origin/main
+git branch --set-upstream-to=origin/master
+git pull
+git checkout master
+git brack rm main
+git branch --help
+git --help
+git branch delete main
+git branch delete rm
+git branch delete delete
+git branch --help
+tldr git branch
+git branch -d delete
+git branch -D delete
+git branch -D main
+git branch -D rm
+git checkout master
+git pull
+git push
+gh repo view -w
+git add *
+git commit -m "infrastructure: re-structure vault layout"
+git commit -m "infrastructure: re-structure vault layout"
+git status
+git add *
+git commit -m "cha"
+which git
+sudo rapidee
+refreshenv
+git commit -m "cha"
+git --config
+git config
+git config ls
+git config --list
+where.exe git
+where.exe gpg
+notepad .gitconfig
+refreshenv
+gpg -K
+git list-installed-software
+mkdocs --help
+mkdocs build --help
+cd .\Dev\docs\Obsidian\
+lsd
+gh repo clone jimbrig/obsidian_published
+cd .\obsidian_published\
+copy-item -Recurse .\cinder\ C:\Users\jimmy\Dev\obsidian\Slipbox\cinder\
+mkdocs build
+cd .\Dev\obsidian\Slipbox\
+mkdocs build
+pip install mkdocs /
+    mkdocs-autolinks-plugin /
+    mkdocs-awesome-pages-plugin /
+    mkdocs-git-revision-date-localized-plugin /
+    mkdocs-monorepo-plugin /
+    mkdocs-roamlinks-plugin /
+pip install mkdocs ``
+    mkdocs-autolinks-plugin ``
+    mkdocs-awesome-pages-plugin ``
+    mkdocs-git-revision-date-localized-plugin ``
+    mkdocs-monorepo-plugin ``
+    mkdocs-roamlinks-plugin ``
+    mkdocs-minify-plugin
+touch requirements.txt
+pip freeze --help
+pip freeze -r requirements.txt -path .
+pip freeze -r requirements.txt --path .
+cd .\Dev\obsidian\Slipbox\
+pip freeze -r requirements.txt --path .
+pip freeze -r requirements.txt
+lsd
+cat .\requirements.txt
+rm .\requirements.txt
+pip freeze -r requirements.txt
+touch requirements.txt
+pip freeze -r requirements.txt
+pip freeze >> requirements.txt
+mkdocs build
+mkdocs serve
+git push
+editfunctions
+Edit-Functions
+get-help throw
+ throw "This is an error."
+lsd
+cd .\api_keys\
+lsd
+explorer .
+Install-Module -Scope CurrentUser PSUnixUtilCompleters
+Install-Module PSUnixUtilCompleters
+import-Module PSUnixUtilCompleters
+z sandbox
+cd ..
+ls
+explorer .
+gh repo clone PowerShell/Modules PowerShell-Modules
+cd .\PowerShell-Modules\
+cd .\Modules\
+cd .\Microsoft.PowerShell.UnixCompleters\
+.\build.ps1
+./build.ps1 -Clean
+.\build.ps1 -Clean
+scoop bucket add doppler https://github.com/DopplerHQ/scoop-doppler.git
+scoop install doppler
+doppler login
+doppler --help
+cd dev/sandbox
+mkdir doppler-test
+cd .\doppler-test\
+doppler setup
+doppler run --help
+touch doppler-template.yml
+codee .
+notepad ~/.gitconfig
+git commit -m "init"
+gh repo view -w
+docker login
+docker login -u jimbrig2011
+cd .
+cd ..
+git clone https://github.com/codebushi/nextjs-starter-dimension.git
+cd .\nextjs-starter-dimension\
+npm install
+$env:PYTHON = "C:\Python39\python.exe"
+npm install
+npm run dev
+nvm ls
+npm list
+npm --help
+npm audit
+npm audit fix
+npm uninstall
+npm uninstall *
+sudo rapidee
+rm -r $env:LOCALAPPDATA\npm-cache
+npm uninstall *
+cd ..
+gh repo clone saadpasta/developerFolio
+cd developerFolio
+codee .
+cd ~/dev/sandbox/developerfolio
+docker build -t devfolio:latest .
+docker run -t -p 3000:3000 devfolio:latest
+cd .\Dev\sandbox\developerFolio\
+docker build -t devfolio:latest .
+docker run -t -p 3000:3000 devfolio:latest
+docker build -t devfolio:latest .
+docker run -t -p 3000:3000 devfolio:latest
+docker build -t devfolio:latest .
+docker run -t -p 3000:3000 devfolio:latest
+docker build -t devfolio:latest .
+docker run -t -p 3000:3000 devfolio:latest
+docker build -t devfolio:latest .
+docker run -t -p 3000:3000 devfolio:latest
+docker build -t devfolio:latest .
+docker run -t -p 3000:3000 devfolio:latest
+vercel --version
+npm i -g vercel
+vercel --help
+vercel init
+vercel link
+vercel deploy
+npm install next
+npm i
+git init
+gh repo create devpholio
+krak
+npx npm i
+vercel deploy
+cd ..
+ls
+cd .\devfolio\
+git remote
+vercel deploy
+cd .\Dev\sandbox\devfolio\
+docker build -t devfolio:latest .
+docker run -t -p 3000:3000 devfolio:latest
+vercel deploy
+next --version
+npm version next
+cd dev/pwc
+gh repo clone jimbrig/loss_development_app
+cd .\loss_development_app\
+lsd
+gh repo view -w
+code-insiders .
+code-insiders --help
+docker images
+az --version
+choco search az
+cd ~/.dotfiles
+cd azure
+lsd
+krak
+cd ~/dev
+lsd
+cd jimbrig
+lsd
+gh repo clone jimsdots
+git-crypt --version
+cd dev/jimbrig/jimsdots
+git-crypt unlock
+cd .\azure-cli\
+lsd
+cat .\install-azure-cli.ps1
+touch install-az-cli-msi.ps1
+cd ..
+codee .
+$ProgressPreference = 'SilentlyContinue'; Invoke-WebRequest -Uri https://aka.ms/installazurecliwindows -OutFile .\AzureCLI.msi; Start-Process msiexec.exe -Wait -ArgumentList '/I AzureCLI.msi /quiet'; rm .\AzureCLI.msi
+refreshenv
+az login
+az group list
+az group create shinyapps
+az group create shinyapps --location eastus
+az group create --name shinyapps --location eastus
+az acr create -n shinyimages -g shinyapps --sku Basic
+docker pull ghcr.io/jimbrig/lossdevt:latest
+az appservice plan create -g shinyapps -n shinyappplan --sku FREE --is-linux
+az acr create -n acrshiny -g shinyapps --sku Basic
+az appservice plan create -g shinyapps -n shinyappplan --sku FREE --is-linux
+docker tag ghcr.io/jimbrig/lossdevt:latest acrshiny.azurecr.io/lossdevt:latest
+cls
+docker images
+docker push acrshiny.azurecr.io/lossdevt:latest
+docker login acrshiny.azurecr.io
+docker push acrshiny.azurecr.io/lossdevt:latest
+cd dev/pwc
+cd .\loss_development_app\
+ls
+az webapp up --sku B1 --name lossdevt
+az webapp create --help
+az --help
+refreshenv
+az --help
+az webapp --help
+az webapp create --help
+az appservice plan create -g shinyapps -n shinyappplan --sku FREE --is-linux
+az acr repository list -n acrshiny
+az webapp create -g shinyapps -p shinyappplan -n lossdevt -i acrshiny.azurecr.io/lossdevt
+az webapp create -g shinyapps -p shinyappplan -n lossdevtapp -i acrshiny.azurecr.io/lossdevt
+az --help
+az configure
+docker images
+docker run -p 8080:8080 ghcr.io/jimbrig/lossdevt:latest
+cd ..
+cd pwc
+cd .\loss_development_app\
+docker build -t lossdevelopment_app
+docker build -t lossdevelopment_app .
+keep pull
+keep init
+keep pull
+$env:GITHUB_PAT
+$env:GITHUB_PAT | clip
+cinst lepton
+cd dev/jimbrig/jimsdots
+cd lepton
+ls
+copy-item .\.leptonrc ~/
+start lepton
+keep pull
+keep list
+keep run install-azcli
+keep --help
+keep edit 
+sudo powershell
+$ProgressPreference = 'SilentlyContinue'; Invoke-WebRequest -Uri https://aka.ms/installazurecliwindows -OutFile .\AzureCLI.msi; Start-Process msiexec.exe -Wait -ArgumentList '/I AzureCLI.msi /quiet'; rm .\AzureCLI.msi
+refreshenv
+az login
+az help
+s add to path context menu
+get-command *environ*
+get-command *variable*
+lastversion
+lastversion firefox
+lastversion firefox-developer
+lastversion https://www.mozilla.org/en-US/firefox/developer/
+lastversion --help
+lastversion firefox --pre
+lastversion firefox --source
+lastversion https://www.mozilla.org/en-US/firefox/developer/ --at website-feed
+lastversion https://www.mozilla.org/en-US/firefox/developer/atom --at website-feed
+lastversion https://www.mozilla.org/en-US/firefox/developer/atom.xml --at website-feed
+lastversion https://www.mozilla.org/en-US/firefox/developer/feed --at website-feed
+lastversion https://www.mozilla.org/en-US/firefox/developer/feed.xml --at website-feed
+lastversion https://download.mozilla.org/?product=firefox-devedition-stub&os=win&lang=en-US --at website-feed
+lastversion https://download.mozilla.org/?product=firefox-devedition-stub&os=win&lang=en-US
+lastversion "https://download.mozilla.org/?product=firefox-devedition-stub&os=win&lang=en-US"
+lastversion --at website-feed "https://download.mozilla.org/?product=firefox-devedition-stub&os=win&lang=en-US"
+lastversion --at website-feed="https://download.mozilla.org/?product=firefox-devedition-stub&os=win&lang=en-US"
+iwr https://download.mozilla.org/?product=firefox-devedition-stub&os=win&lang=en-US
+Invoke-RestMethod -Uri "https://download.mozilla.org/?product=firefox-devedition-msi-latest-ssl&os=win64&lang=en-US"
+Invoke-RestMethod -Uri "https://download.mozilla.org/?product=firefox-devedition-msi-latest-ssl&os=win64&lang=en-US" -OutFile firefox-dev.msi
+explorer .
+rm .\firefox-dev.msi
+Invoke-RestMethod -Uri "https://download-installer.cdn.mozilla.net/pub/devedition/releases/93.0b9/win32/en-US/Firefox%20Installer.exe" -OutFile ~/Downloads/Firefox.exe
+cd dev
+cd .\jimbrig\
+mkdir reserving-insights-app
+cd .\reserving-insights-app\
+git init
+gh repo create
+krak
+git status
+gpg --list-private-keys
+gpg --list
+gpg --help
+gpg -K
+cd dev/jimbrig/jimsdots
+ls
+cd gpg
+ls
+bat .\README.md
+mkdir .gnupg/exports
+gpg --export-ownertrust > ~/.gnupg/exports/owner-trust.txt
+gpg -a --export > ~/.gnupg/exports/publickeys.asc
+explorer C:\Users\jimmy\OneDrive\Documents\
+cd .dotfiles
+git-crypt --help
+git-crypt add-gpg-user
+git-crypt add-gpg-user --trusted jimmy.briggs@jimbrig.com
+topgrade
+prodir
+Get-Profile
+pro
+codee ~/OneDrive/Documents/PowerShell
+cd ~/OneDrive/Documents/PowerShell
+codee .
+keep list
+sudo msdt.exe -id DeviceDiagnostic
+runas explorer
+RunAs
+get-command *runas*
+choco search runas
+Get-ComputerInfo
+Get-ComputerInfo.CsCaption
+(Get-ComputerInfo).CsCaption
+runas /noprofile /user:((Get-ComputerInfo).CsCaption)\administrator cmd
+runas /noprofile /user:((Get-ComputerInfo).CsCaption).ToChar()\administrator cmd
+runas /noprofile /user:"((Get-ComputerInfo).CsCaption)\administrator" cmd
+runas /noprofile /user:"((Get-ComputerInfo).CsCaption)\administrator" /savecred cmd
+Edit-Functions
+z C:\Users\jimmy\OneDrive\Documents\PowerShell
+git status
+git add *
+git commit -m "feat: add hardware troubleshooting function sysutil"
+git push
+sudo topgrade
+cpkgs
+choco uninstall postgresql13 postgresql14 everything.beta.install
+get-command topgrade
+scoop which topgrade
+scoop list
+scoop install topgrade
+scoop which topgrade
+sudo topgrade
+get-help update-module
+get-help update-module -Examples
+get-help update-module -examples
+update-help
+get-help update-module -examples
+get-command update-module
+Update-Help -Module PowerShellGet
+Update-Help -Module PowerShellGet -Force
+get-help update-module -examples
+get-help update-module -online
+Edit-Profile
+$PSDefaultParameterValues
+get-help $PSDefaultParameterValues
+get-help about_CommonParameters
+s -p google $PSDefaultParameterValues
+get-help update-help
+$PSDefaultParameterValues = @{ "Update-Help:Confirm"=$True; "Update-Help:Force"=$True }
+$PSDefaultParameterValues = @{ "Update-Module:Confirm"=$True; "Update-Module:Force"=$True }
+Update-Module
+Update-Module -Module 0install -Confirm
+Update-Module 0install -Confirm
+Update-Module 0install -PassThru
+Update-Module 0install -Force
+s -p google Powershell update-module disable prompt
+Update-Module 0install -Confirm=$false
+Update-Module 0install -Confirm:$false
+$PSDefaultParameterValues = @{ "Update-Module:Confirm"=$False; "Update-Module:Force"=$True; "Update-Module:Scope"="CurrentUser" }
+Update-Module
+$PSDefaultParameterValues = @{ "Update-Module:Confirm"=$False; "Update-Module:Force"=$True; "Update-Module:Scope"=CurrentUser }
+$PSDefaultParameterValues = @{ "Update-Module:Confirm"=$False; "Update-Module:Force"=$True; "Update-Module:Scope"="CurrentUser"; "Update-Module:ErrorAction"="SilentlyContinue" }
+Update-Module
+z C:\Users\jimmy\OneDrive\Documents\PowerShell
+git status
+git add profile.ps1
+git commit -m "feat: add PSDefaultParams to profile.ps1"
+git push
+gh repo view -w
+topgrade --only wsl
+sudo topgrade --only wsl
+topgrade --only wsl
+Restart-Computer
+keep list
+Get-AppxPackage -allusers *dragon* | foreach {Add-AppxPackage -register "$($_.InstallLocation)\appxmanifest.xml" -DisableDevelopmentMode}
+sudo powershell
+Get-AppxPackage -allusers *dragon* | foreach {Add-AppxPackage -register "$($_.InstallLocation)\appxmanifest.xml" -DisableDevelopmentMode}
+Invoke-HardwareDiagnostic
+keep run virusscan
+powershell
+start-mpscan -scantype fullscan
+s -p google enable driver updates windows policy
+csearch dns
+csearch todoist
+choco info flow
+todoist.exe
+get-command *todoist*
+which todoist
+where.exe todoist
+where /?
+where.exe /?
+WHERE *doist*
+s launch programs from terminal
+ping yahoo.com
+Invoke-HardwareDiagnostic
+Edit-Functions
+s msdt.exe ids
+Invoke-HardwareDiagnostic
+msdt /?
+wsl --shutdown
+${function:Invoke-PerformanceDiagnostic} = { & msdt.exe -id PerformanceDiagnostic }
+Invoke-PerformanceDiagnostic
+${function:Invoke-MaintenanceDiagnostic} = { & msdt.exe -id MaintenanceDiagnostic }
+Invoke-MaintenanceDiagnostic
+${function:Invoke-HardwareDiagnostic} = { & msdt.exe -id DeviceDiagnostic }
+${function:Invoke-NetworkDiagnostic} = { & msdt.exe -id NetworkDiagnosticsNetworkAdapter }
+${function:Invoke-SearchDiagnostic} = { & msdt.exe -id SearchDiagnostic }
+${function:Invoke-WindowsUpdateDiagnostic} = { & msdt.exe -id WindowsUpdateDiagnostic }
+${function:Invoke-MaintenanceDiagnostic} = { & msdt.exe -id MaintenanceDiagnostic }
+Invoke-WindowsUpdateDiagnostic
+z C:\Users\jimmy\OneDrive\Documents\PowerShell
+git status
+git add Profile/functions.ps1
+git commit -m "feat: Add Troubleshooting Functions"
+git push
+refreshenv
+DnsJumper.exe /?
+DnsJumper.exe /T
+DnsJumper.exe /B
+cd bin
+lsd
+bat .\DnsJumper.exe
+bat .\DnsJumper.ini
+speed-test
+npm list
+npm i -g speedtest-cli
+scoop bucket add nirsoft
+z C:\Users\jimmy\Dev\sandbox
+git clone git@gist.github.com:9001831.git
+cd .ssh
+bat .\known_hosts
+z C:\Users\jimmy\Dev\sandbox
+git clone git@gist.github.com:9001831.git
+cd .\9001831\
+lsd
+lsa
+explorer .
+cd ..
+git clone git@gist.github.com:9001831.git
+cd ..\jimbrig\
+lsd
+Rscript -e "usethis::create_package('rsetup')"
+cd .\rsetup\
+rstudio
+git pull
+ping yahoo.com
+scoop search stow
+choco search stow
+s record terminal
+pip install asciinema
+npm list
+npm list -g
+speedtest-cli
+speedtest
+get-command -module PSEverything
+install-module PSEverything -scope CurrentUser
+install-module PSEverything -scope CurrentUser
+ping yahoo.com
+install-module PSEverything -scope CurrentUser
+Get-PSRepository
+get-command powershellget
+get-command -module powershellget
+find-module everything
+ipconfig
+Invoke-NetworkDiagnostic
+install-module PSEverything -scope CurrentUser
+find-module everything
+ping https://www.powershellgallery.com/api/v2
+ping https://www.powershellgallery.com
+ping www.powershellgallery.com
+find-module everything
+refreshenv
+find-module everything
+ping www.powershellgallery.com
+s accessing internet from terminal issues windows
+find-module everything
+find-module *everything*
+install-module PSEverything
+netsh winsock reset
+netsh winsock reset
+netsh int ip reset all
+netsh winhttp reset proxy
+ipconfig /flushdns
+edit-functinos
+Edit-Functions
+${function:Reset-Network} = {`
+  Write-Host "Resetting Windows Sockets.." -ForegroundColor Yellow`
+  netsh winsock reset`
+  Write-Host "Resetting Internal IP Addresses.." -ForegroundColor Yellow`
+  netsh int ip reset all`
+  Write-Host "Resetting Windows HTTP Proxy.." -ForegroundColor Yellow`
+  netsh winhttp reset proxy`
+  Write-Host "Flushing DNS.." -ForegroundColor Yellow `
+  ipconfig /flushdns`
+  Write-Host "✔️ Done." -ForegroundColor Green`
+  $restart = Read-Host "To apply changes a restart is required, restart now? (y/n)"`
+  If ($restart -eq "y") { Restart-Computer }`
+}
+Reset-Network
+z C:\Users\jimmy\OneDrive\Documents\PowerShell
+git status
+git add Profile/functions.ps1
+git commit -m "feat: add new 'Reset-Network' function."
+git push
+wsl --shutdown
+git push
+gh repo view -w
+get-command *link*
+get-help new-symlink
+get-help new-symlink -examples
+get-command psreadline
+get-command -module psreadline
+Get-PSReadlineoption
+(Get-PSReadlineoption).HistorySavePath
+Edit-Functions
+$frompath = (Get-PSReadlineoption).HistorySavePath
+$topath = $HOME\OneDrive\Documents\PowerShell\PowerShell-History.txt
+$topath = "$HOME\OneDrive\Documents\PowerShell\PowerShell-History.txt"
+New-Symlink -LiteralPath $frompath -TargetPath $topath
+New-Symlink -LiteralPath $topath -TargetPath $frompath
+explorer .
+$frompath
+notepad $frompath
+get-command New-Link
+get-command -Syntax New-Link
+touch $topath; New-Symlink -LiteralPath $frompath -TargetPath $topath
+touch $topath
+touch PowerShell-History.txt
+New-Item -ItemType file PowerShell-History.txt
+get-alias touch
+edit-aliases
+. $PROFILE
+. $PROFILE.CurrentUserAllHosts
+edit-aliases
+get-command *alias*
+get-help remove-alias
+get-help remove-alias -examples
+remove-alias touch
+touch test.txt
+get-alias touch
+rm test.txt
+New-Symlink -LiteralPath $frompath -TargetPath $topath
+explorer .
+New-Symlink -LiteralPath $topath -TargetPath $frompath
+(Get-PSReadlineoption).HistorySavePath
+notepad (Get-PSReadlineoption).HistorySavePath
+explorer 'C:\Users\jimmy\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\'
+git status
+krak
+git config --global core.symlinks true
+krak
+dos2unix .\PowerShell-History.txt
