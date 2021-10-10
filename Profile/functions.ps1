@@ -141,6 +141,7 @@ ${function:Edit-ProfileDirectory} = {
   code-insiders $prodir
 }
 
+${function:Get-HistPath} = { (Get-PSReadlineoption).HistorySavePath }
 
 # ----------
 # Secrets
