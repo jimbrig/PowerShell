@@ -1,7 +1,7 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [unreleased]
+## [1.0.0] - 2021-10-10
 
 ### Bug Fixes
 
@@ -19,6 +19,7 @@ All notable changes to this project will be documented in this file.
 ### Documentation
 
 - Add Changelog.md (resolves #1)
+- Update Changelog.md
 
 ### Features
 
