@@ -83,6 +83,20 @@ Function Invoke-ForceDelete ( $path ) {
 # Network Utilities
 # ------------------
 
+${function:Reset-Network} = {
+  Write-Host "Resetting Windows Sockets.." -ForegroundColor Yellow
+  netsh winsock reset
+  Write-Host "Resetting Internal IP Addresses.." -ForegroundColor Yellow
+  netsh int ip reset all
+  Write-Host "Resetting Windows HTTP Proxy.." -ForegroundColor Yellow
+  netsh winhttp reset proxy
+  Write-Host "Flushing DNS.." -ForegroundColor Yellow 
+  ipconfig /flushdns
+  Write-Host "✔️ Done." -ForegroundColor Green
+  $restart = Read-Host "To apply changes a restart is required, restart now? (y/n)"
+  If ($restart -eq "y") { Restart-Computer }
+}
+
 ${function:Get-IP} = {
   ((ipconfig | findstr [0-9].\.)[0]).Split()[-1]
 }
