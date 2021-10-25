@@ -7,6 +7,11 @@ All notable changes to this project will be documented in this file.
 
 - Remove unnecessary module imports
 
+### Documentation
+
+- New CHANGELOG
+- Update README with latest details and code
+
 ### Features
 
 - Add s-search completion
@@ -14,6 +19,7 @@ All notable changes to this project will be documented in this file.
 - Add update-profilemodules + tweak vscode cmd
 - Add aws-cli shell completion
 - Adjust shell completions to only run if found
+- Update modules functionality and functions
 
 ## [1.0.0] - 2021-10-10
 
