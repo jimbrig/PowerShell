@@ -30,7 +30,7 @@ if (Get-Command R.exe -ErrorAction SilentlyContinue | Test-Path) {
 }
 
 # Ensure gpg points to correct program
-Set-Alias -Name gpg -Value 'C:\Program Files (x86)\GnuPG\bin\gpg.exe'
+# Set-Alias -Name gpg -Value 'C:\Program Files (x86)\GnuPG\bin\gpg.exe'
 
 # Remove stupid 'touch' alias for 'set-filetime'
 Remove-Alias -Name touch 
