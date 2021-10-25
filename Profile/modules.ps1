@@ -17,10 +17,28 @@ $env:POSH_GIT_ENABLED = $true
 # --------
 
 Function Backup-Modules {
-  $savefile = "$env:OneDrive\Documents\PowerShell\modules.json"
-  if (Test-Path $savefile) { Rename-Item -Path $savefile -NewName ($savefile + ".bak") }
-  $mods = Get-ChildItem -Path $env:OneDrive\Documents\PowerShell\Modules -Directory
-  $mods.Name | ConvertTo-Json > $savefile
+  $modpath = ($env:PSModulePath -split ";")[0]
+  $ymlpath = "$modpath\modules.yml"
+  $jsonpath = "$modpath\modules.json"
+  $mods = (Get-ChildItem $modpath -Directory).Name
+  If (!(Get-Module -Name powershell-yaml -ErrorAction SilentlyContinue)) {
+    ConvertTo-Json $mods > $jsonpath
+  } else {
+    ConvertTo-Yaml -Data $mods -OutFile $ymlpath -Force  
+  }
+  
+}
+
+Function Sync-Modules {
+  $psdir = (Split-Path -Parent $profile)
+  Set-Location $psdir
+  git pull
+  git add PowerShell/Modules/**
+  git commit -m "config: Updated modules configurations"
+  git-cliff -o "$HOME\Documents\CHANGELOG.md"
+  git add CHANGELOG.md
+  git commit -m "doc: update CHANGELOG.md for added modules"
+  git push
 }
 
 Function Restore-Modules {
