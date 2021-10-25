@@ -1,6 +1,20 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [unreleased]
+
+### Configuration
+
+- Remove unnecessary module imports
+
+### Features
+
+- Add s-search completion
+- Enhance loading of profile scripts
+- Add update-profilemodules + tweak vscode cmd
+- Add aws-cli shell completion
+- Adjust shell completions to only run if found
+
 ## [1.0.0] - 2021-10-10
 
 ### Bug Fixes
@@ -40,6 +54,7 @@ All notable changes to this project will be documented in this file.
 - Add Test-WiFi function
 - Add new 'Reset-Network' function.
 - Add hardlinked PowerShell-History log to profile dir
+- Add new Get-HistPath function 
 
 ### Cleanup
 
