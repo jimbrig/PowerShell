@@ -1,7 +1,7 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [unreleased]
+## [1.1.0] - 2021-10-25
 
 ### Configuration
 
@@ -20,6 +20,10 @@ All notable changes to this project will be documented in this file.
 - Add aws-cli shell completion
 - Adjust shell completions to only run if found
 - Update modules functionality and functions
+
+### Gitflow-release-stash
+
+- V1.1.0
 
 ## [1.0.0] - 2021-10-10
 
