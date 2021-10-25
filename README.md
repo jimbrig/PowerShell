@@ -419,50 +419,42 @@ if (Get-Command R.exe -ErrorAction SilentlyContinue | Test-Path) {
 
 ## Custom Shell Completions
 
-- Shell completion for:
-  - Docker
-  - PowerShell
-  - Scoop
-  - Chocolatey
-  - WinGet
-  - Github-CLI
-  - Git Cliff (changelog generator)
-  - Keep
-  - DotNet
+All custom shell completion scripts and invokations are housed in the [Profile/completions](./Profile/completions) directory and dot sourced in via [Profile/completion.ps1](Profile/completion.ps1).
 
-- See [profile_completion.ps1](profile_completion.ps1):
+Included are shell completions for the following tools:
+
+- PowerShell: Imported with `Microsoft.PowerShell.Utility` Module (see code below)
+
+plus,
+
+- AWS-CLI: [Profile/completions/aws.ps1](Profile/completions/aws.ps1)
+- Chocolatey: [Profile/completions/choco.ps1](Profile/completions/choco.ps1)
+- Docker: [Profile/completions/docker.ps1](Profile/completions/docker.ps1) *(via `DockerCompletion` Module)*
+- DotNet: [Profile/completions/dotnet.ps1](Profile/completions/dotnet.ps1)
+- GitHub-CLI: [Profile/completions/gh-cli.ps1](Profile/completions/gh-cli.ps1)
+- Git-Cliff: [Profile/completions/git-cliff.ps1](Profile/completions/git-cliff.ps1)
+- S (search): [Profile/completions/s-search.ps1](Profile/completions/s-search.ps1)
+- Scoop: [Profile/completions/scoop.ps1](Profile/completions/scoop.ps1) *(via `scoop-completion` Module)*
+- Spotify: [Profile/completions/spotify.ps1](Profile/completions/spotify.ps1)
+- WinGet: [Profile/completions/winget.ps1](Profile/completions/winget.ps1)
+
+*See [Profile/completion.ps1](Profile/completion.ps1):*
 
 <details><summary>🔎 View Code</summary>
  <p>
 
 ```powershell
-# Completion
+# -------------------------
+# PowerShell Completion
+# -------------------------
 
-# Shell Completion Modules
-Import-Module DockerCompletion
 Import-Module Microsoft.PowerShell.Utility
-Import-Module C:\Users\jimmy\scoop\modules\scoop-completion
 
-# Github CLI autocompletion - see issue for reference: https://github.com/cli/cli/issues/695#issuecomment-619247050
-Invoke-Expression -Command $(gh completion -s powershell | Out-String)
-
-# winget (see https://github.com/microsoft/winget-cli/blob/master/doc/Completion.md#powershell)
-Register-ArgumentCompleter -Native -CommandName winget -ScriptBlock {
-  param($wordToComplete, $commandAst, $cursorPosition)
-  [Console]::InputEncoding = [Console]::OutputEncoding = $OutputEncoding = [System.Text.Utf8Encoding]::new()
-  $Local:word = $wordToComplete.Replace('"', '""')
-  $Local:ast = $commandAst.ToString().Replace('"', '""')
-  winget complete --word="$Local:word" --commandline "$Local:ast" --position $cursorPosition | ForEach-Object {
-    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterValue', $_)
-  }
+$path = "$PSScriptRoot\completions"
+$files = Get-ChildItem -Path $path -Filter "*.ps1"
+ForEach ($file in $files) {
+  . $file
 }
-
-# Chocolatey Completion
-$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
-if (Test-Path($ChocolateyProfile)) {
-  Import-Module "$ChocolateyProfile"
-}
-
 ```
 
  </p>
@@ -470,7 +462,7 @@ if (Test-Path($ChocolateyProfile)) {
 
 ## Modules
 
-![image](https://user-images.githubusercontent.com/32652297/128624682-4f1483c2-98b4-4b61-84e0-735580607a79.png)
+Varies with time but common modules I utilize are:
 
 - 7Zip4PowerShell
 - AU
@@ -505,7 +497,47 @@ if (Test-Path($ChocolateyProfile)) {
 - WslInterop
 - ZLocation
 
-- See [modules.json](modules.json) and [modules.ps1](modules.ps1):
+- See [Profile/modules.ps1](Profile/modules.ps1) and the functions `Backup-Modules`, `Sync-Modules` and `Restore-Modules` that interact with [Modules/modules.yml](Modules/modules.yml).
+
+```powershell
+# --------
+# Helpers
+# --------
+
+Function Backup-Modules {
+  $modpath = ($env:PSModulePath -split ";")[0]
+  $ymlpath = "$modpath\modules.yml"
+  $jsonpath = "$modpath\modules.json"
+  $mods = (Get-ChildItem $modpath -Directory).Name
+  If (!(Get-Module -Name powershell-yaml -ErrorAction SilentlyContinue)) {
+    ConvertTo-Json $mods > $jsonpath
+  } else {
+    ConvertTo-Yaml -Data $mods -OutFile $ymlpath -Force  
+  }
+  
+}
+
+Function Sync-Modules {
+  $psdir = (Split-Path -Parent $profile)
+  Set-Location $psdir
+  git pull
+  git add PowerShell/Modules/**
+  git commit -m "config: Updated modules configurations"
+  git-cliff -o "$HOME\Documents\CHANGELOG.md"
+  git add CHANGELOG.md
+  git commit -m "doc: update CHANGELOG.md for added modules"
+  git push
+}
+
+Function Restore-Modules {
+  $mods = Get-Content ~/.dotfiles/powershell/modules.json | ConvertFrom-Json
+
+  foreach ($mod in $mods) {
+    Write-Host "Installing PowerShell Module for Current User: $mod" -ForegroundColor Yellow
+    Install-Module $mod -Scope CurrentUser -Force
+  }
+}
+```
 
 ## Scripts
 
