@@ -16,5 +16,5 @@ If (Test-Path "$psdir\Profile\modules.ps1") { . "$psdir\Profile\modules.ps1" }
 If (!(!((Get-Module -Name PSReadLine).Version.Major -ge 2)) -and (!(Get-Module -Name PSReadLine).Version.Minor -ge 2)) {
     Install-Module -Name PSReadLine -AllowPrerelease -Force -AllowClobber -Scope CurrentUser
 }
-Set-PSReadLineOption -PredictionSource History
-Set-PSReadLineOption -PredictionViewStyle ListView
+Set-PSReadLineOption -PredictionSource History -WarningAction SilentlyContinue -ErrorAction SilentlyContinue
+Set-PSReadLineOption -PredictionViewStyle ListView -WarningAction SilentlyContinue -ErrorAction SilentlyContinue
