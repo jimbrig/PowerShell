@@ -19,7 +19,7 @@ $PSDefaultParameterValues = @{
 }
 
 # Prompt
-Set-PoshPrompt -Theme wopian
+Set-PoshPrompt -Theme wopian -ErrorAction SilentlyContinue
 
 # ZLocation must be after all prompt changes:
 Import-Module ZLocation
