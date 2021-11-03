@@ -4,12 +4,12 @@
 # Title : Keeper Password Manager Functions
 # ------------------------------------------
 
-Get-KeeperSecret {
+Function Get-KeeperSecret {
     $secret_names = ("ls 'Secrets/Access-Tokens'" | keeper --batch-mode) -split ';'
     Read-Host -Prompt "Select a secret to retrieve: $secret_names" 
 }
 
-Get-TodoistAPIToken {
+Function Get-TodoistAPIToken {
     "cc 'Secrets/Access-Tokens/Todoist API Token'" | keeper --batch-mode
     Write-Host "Todoist API Token has been copied to your clipboard."
 }
