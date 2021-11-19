@@ -1,3 +1,13 @@
+# ----------
+# Launchers
+# ----------
+
+Function Open-Todoist { start-process -PassThru 'C:\Users\jimmy\AppData\Local\Programs\todoist\Todoist.exe' }
+
+Function Open-GitHub { start-process -PassThru 'https://github.com/' }
+
+Function Open-Docker { start-process -PassThru 'C:\Program Files\Docker\Docker\frontend\Docker Desktop.exe' }
+
 # ---------------------------------
 # PowerShell Core Profile Functions
 # ---------------------------------
