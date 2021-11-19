@@ -1,6 +1,31 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [unreleased]
+
+### Bug Fixes
+
+- Fix custom keeper commander functions
+
+### Configuration
+
+- Gpg changes due to using git native gpg now
+
+### Documentation
+
+- Release v1.1.0 Changelog
+
+### Features
+
+- Format config.json
+- Add keeper-commander functions
+- Avoid errors with oh-my-posh theme through erroraction flag
+- Silently continue for PSReadLine options
+- Tweak aliases
+- Add yq cli shell completion
+- Add custom dir
+- Add new launcher open functions
+
 ## [1.1.0] - 2021-10-25
 
 ### Configuration
