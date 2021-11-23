@@ -10,6 +10,8 @@ Set-Alias -Name rproj -Value openrproj
 Set-Alias -Name chkdisk -Value Check-Disk
 Set-Alias -Name cdd -Value CreateAndSet-Directory
 Set-Alias -Name emptytrash -Value Clear-RecycleBin
+Set-Alias -Name checkdisk -Value Invoke-Checkdisk
+Set-Alias -Name sfc -Value Invoke-SFCScan
 
 # Remove stupid 'touch' alias for 'set-filetime'
 Remove-Alias -Name touch 
