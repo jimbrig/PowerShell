@@ -140,27 +140,27 @@ ${function:Get-PublicIP} = {
 # --------------------------
 
 # Edit `profile.ps1`
-${function:Edit-Profile} = { notepad.exe $PROFILE.CurrentUserAllHosts }
+${function:Edit-Profile} = { code $PROFILE.CurrentUserAllHosts }
 
 # Edit profile_functions.ps1
 ${function:Edit-Functions} = {
   $prodir = Split-Path -Path $PROFILE -Parent
   $funcpath = "$prodir\Profile\functions.ps1"
-  notepad.exe $funcpath
+  code $funcpath
 }
 
 # Edit profile_aliases.ps1
 ${function:Edit-Aliases} = {
   $prodir = Split-Path -Path $PROFILE -Parent
   $funcpath = "$prodir\Profile\aliases.ps1"
-  notepad.exe $funcpath
+  code $funcpath
 }
 
 # Edit profile_completion.ps1
 ${function:Edit-Completion} = {
   $prodir = Split-Path -Path $PROFILE -Parent
   $funcpath = "$prodir\Profile\completion.ps1"
-  notepad.exe $funcpath
+  code $funcpath
 }
 
 # Open Profile Directory in VSCode:
