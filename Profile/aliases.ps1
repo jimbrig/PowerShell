@@ -51,6 +51,13 @@ If (Get-Command gcalcli -ErrorAction SilentlyContinue) {
   Set-Alias -Name caladd -Value New-CalendarEvent
 }
 
+# git-crypt
+If (Get-Command git-crypt -ErrorAction SilentlyContinue) {
+  Set-Alias -Name gcrypts -Value Get-GitCryptStatus
+  Set-Alias -Name gcrypt -Value git-crypt
+  Set-Alias -Name gcryptf Invoke-GitCryptStatus
+}
+
 # If using code-insiders
 If (Get-Command code-insiders -ErrorAction SilentlyContinue) {
 	Set-Alias -Name codee -Value code-insiders

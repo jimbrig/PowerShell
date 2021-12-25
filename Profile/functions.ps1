@@ -181,6 +181,14 @@ Function Get-MySecret($name) {
   Get-Secret -Name $name -AsPlainText
 }
 
+Function Get-GitCryptStatus {
+  git-crypt status -e
+}
+
+Function Invoke-GitCryptStatus {
+  git-crypt status -f
+}
+
 # ------------------
 # Remoting
 # ------------------
