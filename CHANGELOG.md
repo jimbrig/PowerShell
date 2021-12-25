@@ -1,7 +1,7 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [unreleased]
+## [1.2.0] - 2021-12-25
 
 ### Bug Fixes
 
@@ -10,10 +10,12 @@ All notable changes to this project will be documented in this file.
 ### Configuration
 
 - Gpg changes due to using git native gpg now
+- Restructure - move history to Archive dir
 
 ### Documentation
 
 - Release v1.1.0 Changelog
+- Update CHANGELOG
 
 ### Features
 
@@ -25,6 +27,16 @@ All notable changes to this project will be documented in this file.
 - Add yq cli shell completion
 - Add custom dir
 - Add new launcher open functions
+- Update aliases
+- Add custom system functions
+- Add new console host history
+- Update modules.yml
+- Add new Obsidian Helper Functions
+- Add archived previous versions
+- Use code as core editor in functions
+- Update gcalcli aliases and functions
+- Add Remove-CalendarEvent ps1 function
+- Add git-crypt custom functions and aliases to match WSL
 
 ## [1.1.0] - 2021-10-25
 
