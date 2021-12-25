@@ -1,2 +1,5 @@
 *
 !.gitignore
+!*.txt
+!*.md
+!History
