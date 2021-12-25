@@ -1,11 +1,18 @@
-- DockerCompletion
-- oh-my-posh
-- posh-git
-- powershell-yaml
-- psake
-- PSReadLine
-- PSWindowsUpdate
-- PSWriteColor
-- scoop-completion
-- Terminal-Icons
-- ZLocation
+modules:
+  - oh-my-posh
+  - ZLocation
+  - posh-git
+  - Terminal-Icons
+  - pester
+  - psake
+  - PSWindowsUpdate
+  - PSFzf
+  - PSEverything
+  - PSWriteColor
+  - powershell-yaml
+  - Plaster
+  - DockerCompletion
+  - scoop-completion
+  - PSReadLine: 
+    - AllowPrerelease
+  - WslInterop

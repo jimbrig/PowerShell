@@ -118,7 +118,7 @@ ${function:Reset-Network} = {
   netsh int ip reset all
   Write-Host "Resetting Windows HTTP Proxy.." -ForegroundColor Yellow
   netsh winhttp reset proxy
-  Write-Host "Flushing DNS.." -ForegroundColor Yellow 
+  Write-Host "Flushing DNS.." -ForegroundColor Yellow
   ipconfig /flushdns
   Write-Host "✔️ Done." -ForegroundColor Green
   $restart = Read-Host "To apply changes a restart is required, restart now? (y/n)"
@@ -140,27 +140,27 @@ ${function:Get-PublicIP} = {
 # --------------------------
 
 # Edit `profile.ps1`
-${function:Edit-Profile} = { notepad.exe $PROFILE.CurrentUserAllHosts }
+${function:Edit-Profile} = { code $PROFILE.CurrentUserAllHosts }
 
 # Edit profile_functions.ps1
 ${function:Edit-Functions} = {
   $prodir = Split-Path -Path $PROFILE -Parent
   $funcpath = "$prodir\Profile\functions.ps1"
-  notepad.exe $funcpath
+  code $funcpath
 }
 
 # Edit profile_aliases.ps1
 ${function:Edit-Aliases} = {
   $prodir = Split-Path -Path $PROFILE -Parent
   $funcpath = "$prodir\Profile\aliases.ps1"
-  notepad.exe $funcpath
+  code $funcpath
 }
 
 # Edit profile_completion.ps1
 ${function:Edit-Completion} = {
   $prodir = Split-Path -Path $PROFILE -Parent
   $funcpath = "$prodir\Profile\completion.ps1"
-  notepad.exe $funcpath
+  code $funcpath
 }
 
 # Open Profile Directory in VSCode:
@@ -269,6 +269,7 @@ If (Get-Command gcalcli -ErrorAction SilentlyContinue) {
   ${function:Get-CalendarMonth} = { & gcalcli calm }
   ${function:Get-CalendarWeek} = { & gcalcli calw }
   ${function:New-CalendarEvent} = { & gcalcli add }
+  ${function:Remove-CalendarEvent} = { & gcalcli delete $args }
 }
 
 # -----
@@ -278,5 +279,3 @@ If (Get-Command gcalcli -ErrorAction SilentlyContinue) {
 If (Get-Command lsd -ErrorAction SilentlyContinue) {
   ${function:lsa} = { & lsd -a }
 }
-
-

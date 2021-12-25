@@ -1,0 +1,4543 @@
+Get-ExecutionPolicy
+set-executionpolicy unrestricted
+set-executionpolicy unrestricted -scope currentuser
+ls
+ls -a
+get-childitem . -Hidden
+cd Templates
+ls
+sudo ls
+winget install --help
+winget install powertoys -i
+winget install powertoys -i -s winget
+winget install git -i -s winget
+exit
+winget install powershell -i -s winget
+get-module
+winget install obsidian.obsidian -i
+choco search pandoc
+Get-ExecutionPolicy
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+refreshenv
+choco features
+choco feature enable allowGlobalConfirmation
+choco feature --enable allowGlobalConfirmation
+choco feature --h
+choco feature --help
+choco feature enable -n=allowGlobalConfirmation
+choco features
+choco feature enable -n=logEnvironmentValues
+choco feature enable -n=useRememberedArgumentsForUpgrades
+choco feature enable -n=removePackageInformationOnUninstall
+ls
+git config list
+git config -list
+git config -l
+mkdir .dotfiles; cd .dotfiles
+git init
+winget search vscode
+winget --help
+winget features
+winget settings
+winget features
+winget source --help
+winget source list
+winget source remove msstore
+winget source list
+mkdir winget
+cd winget
+winget source export --help
+winget source export -n winget
+winget source export -n winget > sources.json
+ls
+cat sources.json
+winget --help
+winget experimental
+winget --info
+winget search vscode
+winget list
+winget install --help
+winget install Microsoft.VisualStudioCode -i
+winget install Microsoft.VisualStudioCode -i --scope machine
+refreshenv
+code --help
+code --install-extension github.github-vscode-theme
+cd .\.dotfiles\
+ls
+mkdir chocolatey
+mkdir windows-terminal
+mkdir vscode
+mkdir obsidian
+winget list
+mkdir git
+mkdir powershell
+mkdir edge
+explorer .
+code .
+touch vscode/install-extensions.ps1
+cd vscode
+code --list-extensions
+code --list-extensions > extensions.txt
+code --install-extension ms-vscode.powershell
+code --list-extensions > extensions.txt
+code --install-extension vscode-icons-team.vscode-icons
+code --install-extension miguelsolorio.fluent-icons
+code --install-extension ms-vscode-remote.vscode-remote-extensionpack
+code --list-extensions > extensions.txt
+code --install-extension alefragnani.project-manager
+code --list-extensions > extensions.txt
+wsl --shutdown
+choco search cascadia
+cinst cascadia-code-nerd-font
+cd dev
+ls
+mkdir jimbrig
+cd jimbrig
+git --version
+git --global config -l
+git config --global -l
+ls
+cd ~
+gpg -K
+gpg -K
+notepad.exe .gitconfig
+cd dev
+cd jimbrig
+iwr -useb get.scoop.sh | iex
+scoop bucket add extras
+scoop install topgrade wttop git-crypt
+git clone https://github.com/jimbrig/jimsdots.git
+get-command s
+get-module *get*
+get-module *ps*
+get-module
+get-module -All
+get-module -All -ListAvailable
+get-module
+Rename-Item -Path "$env:OneDrive\Documents\PowerShell" -NewName "$env:OneDrive\Documents\PowerShell_"
+exit
+cd .\OneDrive\Documents\
+ls
+get-module PSWindowsUpdate
+install-module PSWindowsUpdate
+get-module PSWindowsUpdate
+get-module
+$env:PSModulePath
+$env:PSModulePath -split ";"
+ls "C:\Users\jimmy\OneDrive\Documents\PowerShell\Modules"
+ls "C:\Program Files\PowerShell\Modules"
+ls "C:\Program Files\PowerShell\"
+cd "C:\Program Files\PowerShell\"
+cd 7
+ls
+cd Modules
+ls
+$env:PSModulePath -split ";"
+ls "C:\Program Files\WindowsPowerShell\Modules"
+ls "C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules"
+get-module
+get-help get-module
+gmo -refresh
+get-command -module PSWindowsUpdate
+Get-WindowsUpdate
+Install-WindowsUpdate
+cd $env:onedrive\documents\_powershell\modules
+cd "$env:onedrive\documents\_powershell\modules"
+cd "$env:onedrive\documents\"
+ls
+cd .\PowerShell_\
+ls
+cd modules
+ls
+cd .\PSWinSetup\
+ls
+cat PSWinSetup.psm1
+$params = @{`
+Path = ".\PSWinSetup.psm1"`
+Version = "0.0.0.9999"`
+Author = "Jimmy Briggs"`
+CompanyName = "Jimmy Briggs"`
+Description = "Setup Windows Utils"`
+}
+New-ScriptFileInfo @params -PassThru
+explorer .
+$params = @{`
+Path = ".\PSWindowsSetup.ps1"`
+Version = "0.0.0.9999"`
+Author = "Jimmy Briggs"`
+CompanyName = "Jimmy Briggs"`
+Description = "Setup Windows Utils"`
+}
+New-ScriptFileInfo @params -PassThru
+choco list --local-only
+scoop --version
+scoop install scoop
+scoop uninstall scoop
+scoop checkup
+scoop install sudo
+ping yahoo.com
+scoop install sudo
+ping https://github.com/lukesampson/scoop
+scoop install sudo
+scoop uninstall sudo
+scoop install sudo
+scoop uninstall sudo
+scoop install sudo
+scoop checkup
+sudo cinst 7zip
+scoop install innounp dark
+scoop uninstall 7zip
+scoop list
+refreshenv
+scoop install aria2
+scoop checkup
+get-alias gcm
+gcm 7z
+scoop checkup
+scoop update
+scoop install 7zip
+sudo Add-MpPreference -ExclusionPath 'C:\Users\jimmy\scoop'
+sudo Add-MpPreference -ExclusionPath 'C:\ProgramData\scoop'
+sudo Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1
+sudo Add-MpPreference -ExclusionPath 'C:\ProgramData\chocolatey\'
+scoop checkup
+refreshenv
+scoop checkup
+`
+sudo Add-MpPreference -ExclusionPath 'C:\ProgramData\scoop'
+choco search java
+sudo pwsh
+cd dev/jimbrig
+ls
+cd jimsdots
+git-crypt unlock --help
+git-crypt help unlock
+git-crypt unlock ..\..\..\OneDrive\Dev\configs\git-crypt\git-crypt-key
+git-crypt status
+epoe 
+xlrr.epoe 
+l
+cd dev/jimbrig/jimsdots
+explorer .
+git-crypt add-gpg-user jimmy.briggs@jimbrig.com
+git-crypt add-gpg-user B8BA217A94B30E9D25FE01F601163DF4AE4BA708
+gpg -K
+gpg -k
+where gpg
+where.exe gpg
+gpg --help
+gpg --update-trustdb
+git status
+sudo cinst gitkraken
+sudo cinst choco-package-list-backup choco-cleanup -y
+sudo cinst InstChoco choco-cleaner
+cd dev/jimbrig/jimsdots
+gk graph
+gk --help
+gk help
+gpg -K
+cd dev/jimbrig/jimsdots
+git-crypt add-gpg-user FF361E144EE31125E028D670786742B2314D2B34
+git-crypt add-gpg-user 7B6A462F595FA24EC24B40E663FCA87061A4E0D6
+git add *
+git push
+gh --version
+sudo cinst gh
+gh auth login
+refreshenv
+gh auth login
+gh repo view -w
+topgrade --edit-config
+topgrade
+sudo cinst docker-desktop
+topgrade --only wsl
+topgrade --only wsl
+sudo cinst typora
+sudo cinst python
+refreshenv
+pip --help
+pip -U install keep radian gcalcli
+pip install keep radian gcalcli
+python.exe -m pip install --upgrade pip
+refreshenv
+python.exe -m pip install --upgrade pip
+C:\Python310\python.exe -m pip install --upgrade pip
+C:\Python310\python.exe -m pip install --upgrade --user pip
+sudo C:\Python310\python.exe -m pip install --upgrade pip
+refreshenv
+sudo pip install keep radian gcalcli
+sudo choco uninstall python
+remove-item -Recurse "C:\Python310\"
+sudo remove-item -Recurse "C:\Python310\"
+ls c:\
+sudo cinst python39
+choco search python
+choco info python
+sudo cinst uninstalltool
+where.exe pip
+where.exe python
+pip --version
+pip install keep radian gcalcli
+sudo cinst rapidee file-converter lepton
+C:\Program Files\Python39\python.exe -m pip install --upgrade pip
+& 'C:\Program Files\Python39\python.exe' -m pip install --upgrade pip
+pip install lastversion
+pip install virtualenv
+refreshenv
+pip install wheel
+gcalcli --help
+cd .\dev\jimbrig\jimsdots\gcalcli\
+ls
+cat .\install-gcalcli.ps1
+stow --help
+choco search stow
+scoop search stow
+s --help
+scoop search s-search
+choco search s-search
+gh repo --help
+gh --help
+gh release --help
+gh release download --help
+gh release download -p "*windows_amd64.zip" -R zquestz/s
+ls
+move-item .\s-windows_amd64.zip ~/Downloads
+ls
+Expand-7Zip C:\Users\jimmy\Downloads\s-windows_amd64.zip -TargetPath ~/Downloads/s-search
+cd ~/Downloads
+ls
+cd ~/dev/jimbrig/jimsdots
+git status
+cd .\gcalcli\~
+ls
+explorer .
+z dev
+z .\.git-crypt\
+get-module
+refreshenv
+New-Item -ItemType Directory "$HOME/.config/s" -Force
+Copy-Item "s-cli\config -Destination $HOME\.config\s\"
+Copy-Item "s-cli\config" -Destination "$HOME\.config\s\"
+s --help
+refreshenv
+s --help
+s --version
+s --completion
+s --completion powershell
+cd dev/jimbrig
+git clone git@github.com:jimbrig/PowerShell
+git clone git@github.com:jimbrig/PowerShell.git
+copy-item "C:\Users\jimmy\.ssh\gitkraken_DESKTOP-MSI_github_Personal_rsa" "C:\Users\jimmy\.ssh\id_rsa"
+copy-item "C:\Users\jimmy\.ssh\gitkraken_DESKTOP-MSI_github_Personal_rsa.pub" "C:\Users\jimmy\.ssh\id_rsa.pub"
+git clone git@github.com:jimbrig/PowerShell.git
+cd .\PowerShell\
+ls
+git pull
+cd .\Profile\completions\
+ls
+touch s-search.ps1
+cat gh-cli.ps1
+vim s-search.ps1
+git status
+git add *
+git commit -m "feat: add s-search completion"
+git push
+gh repo view -w
+$env:POWERSHELL_DISTRIBUTION_CHANNEL
+$PSCommandPath
+$PSHOME
+cd $PSHOME
+ls
+cat powershell.exe.config
+$PSEdition
+$PSHOME
+cd $PSHOME
+ls
+sudo cinst lsd
+lsd
+cinst alttabterminator
+cinst alt-tab-terminator
+cinst fzf everything bat
+choco search firefox
+choco search firefox-dev
+winget search firefox-dev
+choco search *firefox|dev*
+choco search firefox
+choco info Firefox
+cinst chrome-dev
+cinst chrome
+choco search chrome
+choco search google-chrome
+cinst GoogleChrome.Dev
+choco search r-cor
+choco search r.project
+sudo cinst R.Project R.Studio rtools pandoc tinytex nvm
+docker run -d -p 80:80 docker/getting-started
+& "C:\Program Files\Docker\Docker\resources\com.docker.diagnose.exe" check
+refreshenv
+& "C:\Program Files\Docker\Docker\resources\com.docker.diagnose.exe" check
+sudo & "C:\Program Files\Docker\Docker\resources\com.docker.diagnose.exe" check
+sudo "C:\Program Files\Docker\Docker\resources\com.docker.diagnose.exe" check
+sudo cmd
+get-module
+cd .\OneDrive\Documents\
+ls
+cd .\PowerShell\
+ls
+cd .\Modules\
+ls
+cd ..
+cd .\PowerShell_\
+ls
+s change powershell profile location
+$PROFILE.CurrentUserAllHosts
+$PROFILE.CurrentUserAllHosts = "$HOME\.config\pwsh\profile.ps1"
+$PROFILE.CurrentUserAllHosts
+$PROFILe.AllUsersAllHosts
+notepad $PROFILe.AllUsersAllHosts
+cd "C:\Program Files\PowerShell\7"
+ls
+lsd *.ps1
+touch profile.ps1
+sudo touch profile.ps1
+sudo notepad profile.ps1
+notepad profile.ps1
+notepad.exe profile.ps1
+cd "C:\Users\jimmy\OneDrive\Documents\PowerShell\"
+lsd
+cd ../PowerShell_
+lsd
+bat .\README.md
+bat copy-item .\powershell.config.json ..\PowerShell\
+copy-item .\powershell.config.json ..\PowerShell\
+copy-item .\config.json ..\PowerShell\
+cd .\Modules\
+lsd
+bat .\modules.json
+notepad.exe .\modules.json
+bat ..\profile.ps1
+Get-PSRepository
+Set-PSRepository -Name PSGallery -InstallationPo
+install-module oh-my-posh -scope currentuser
+install-module pester -scope currentuser
+install-module psake -scope currentuser
+install-module PSWriteColor -scope currentuser
+install-module Terminal-Icons -scope currentuser
+install-module ZLocation -scope currentuser
+install-module posh-git -scope currentuser
+cinst linkshellextension
+s stow equivalent on windows
+gpg -K
+topgrade
+Update-Help
+$PROFILE
+test-path $PROFILE
+exit
+scoop list
+get-module PSReadline
+update-module PSReadLine -AllowPrerelease -Force -Scope CurrentUser -AllowClobber
+update-module PSReadLine -AllowPrerelease -Force -Scope CurrentUser
+get-module PSReadLine
+get-module PSReadLine -All
+get-module PSReadLine -ListAvailable
+install-module PSReadLine -Scope CurrentUser -AllowPrerelease -Force
+get-module PSReadLine
+get-module PSReadLine -All
+get-module PSReadLine -ListAvailable
+cd dev
+ls
+z jimbrig
+ls
+cd ..
+z pwc
+ls
+gh alias set clone 'repo clone $1'
+gh clone jimbrig/PowerShell-Work
+gh repo list
+gh repo list --help
+gh alias set clone 'repo clone "$1"'
+z pwc
+ls
+lsd
+gh clone PowerShell-Profile-Work
+gh repo list
+gh repo list | grep *powershell*
+(gh repo list)[1] | grep *powershell*
+(gh repo list)[1]
+gh completion
+gh completion -s powershell
+z PowerShell
+z OneDrive
+z jimmy
+z OneDrive
+z Documents
+z PowerShell
+lsd
+cd .\Modules\
+lsd
+get-command PSReadLine
+get-command -module PSReadLine
+gh repo list --help
+gh repo list --topic powershell
+z pwc
+gh clone jimbrig/PowerShell-Profiles-Work
+z .\PowerShell-Profiles-Work\
+lsd
+cd .\PowerShell\
+lsd
+bat profile.ps1
+code .
+s missing vscode context menu
+code .
+(get-module -Name PSReadLine).Version
+If (!(!(Get-Module -Name PSReadLine).Version.Major -ge 2) -or (!(Get-Module -Name PSReadLine).Version.Minor -ge 2)) {`
+    Install-Module -Name PSReadLine -AllowPrerelease -Force -AllowClobber -Scope CurrentUser`
+}
+sudo Install-Module -Name PSReadLine -AllowPrerelease -Force -AllowClobber -Scope CurrentUser
+sudo pwsh
+Install-Module -Name PSReadLine -AllowPrerelease -Force -AllowClobber -Scope CurrentUser
+Install-Module -Name PSReadLine -AllowPrerelease -Force -AllowClobber
+Update-Module -Name PSReadLine -AllowPrerelease -Force
+get-module *get*
+Install-Module PSReadLine -AllowPrerelease -Force
+sudo pwsh.exe -noprofile -command "Install-Module PSReadLine -Force -SkipPublisherCheck -AllowPrerelease"
+sudo pwsh.exe -noprofile -command "Install-Module PSReadLine -Force -SkipPublisherCheck -AllowPrerelease -Scope CurrentUser"
+s braves nlcs win gear
+nvm install "latest"
+nvm use 17.0.1
+npm login
+npm install -g npm@8.1.1
+npm stars
+npm i -g npq
+npq jshiny eslint prettier yarn npm-check-updates speedtest-cli dockly rimraf npm-check serve tldr
+npq i -g jshiny eslint prettier yarn npm-check-updates speedtest-cli dockly rimraf npm-check serve tldr
+npq i -g jshint eslint prettier yarn npm-check-updates speedtest-cli dockly rimraf npm-check serve tldr
+npm --help
+npm doctor
+npm -g list
+sudo cinst jq
+refreshnev
+refreshenv
+npm -g list | jq 
+npm -g list
+npm -g list | Out-String
+jq --help
+get-command *json*
+npm -g list | ConvertFrom-Json
+npm -g list | ConvertTo-Json
+npm -g list | ConvertTo-Json -EnumsAsStrings
+npm -g list | ConvertTo-Json | jq
+jq --help
+npm -g list | ConvertTo-Json | jq
+s npm output
+npm -g list -json | ConvertTo-Json | jq
+npm -g list -json | jq
+cd .dotfiles
+git init
+scoop search git-cliff
+npm search git-cliff
+pip search git-cliff
+mkdir npm
+cd npm
+$DOTDIR = "$HOME\.dotfiles"
+touch export-npm-pkgs.ps1
+code .
+npm -g list -json | jq > "$DOTDIR\npm\npm-packages.json"
+cd ..
+gh repo create
+git status
+git-crypt init
+git-crypt add-gpg-user
+gpg -K
+git-crypt add-gpg-user jimmy.briggs@jimbrig.com
+git-crypt add-gpg-user FF361E144EE31125E028D670786742B2314D2B34
+git-crypt add-gpg-user 7B6A462F595FA24EC24B40E663FCA87061A4E0D6
+git push
+gh repo view -w
+git status
+touch .gitignore
+vim .gitignore
+touch .gitattributes
+git status
+s -p github git-cliff
+gh releases --help
+gh release --help
+gh release download --help
+mkdir gh
+cd git
+ls
+mkdir git-cliff
+cd git-cliff
+touch README.md
+touch install git-cliff.ps1
+git pull
+git branch --set-upstream-to=origin/main main
+git pull
+cd ~
+mkdir .git-faker
+mkdir tools
+move-item -Path tools -Destination Dev\Tools
+cd dev
+lsd
+Rename-Item Tools tools
+explorer .
+cd tools
+gh repo clone KimDarren/git-faker
+invoke-expression -command $(gh completion -s powershell | out-string)
+gh release download --repo gesquive/git-user --dir "$HOME\Downloads" --pattern "*windows-x64*"
+z Downloads
+lsd
+Expand-Archive .\git-user-v2.0.5-windows-x64.zip -DestinationPath .
+lsd
+cd .\git-user-v2.0.5-windows-x64\
+lsd
+copy-item .\git-user.exe "$HOME\bin"
+refreshenv
+git-user --help
+git-user list
+z tools
+z dev
+z tools
+lsd
+gh repo clone gesquive/git-user
+gh repo clone ricardobeat/git-commands
+cd .\git-commands\
+lsd
+./README.md
+$ npm install --global git-branch-select
+npm star git-branch-select; \npm install --global git-branch-select
+npm star git-branch-select; npm install --global git-branch-select
+git branch-select --help
+z .dotfiles
+gh release download --repo laughedelic/gtm --dir "$HOME\Downloads"
+lastversion --help
+lastversion laughedelic/gtm
+lastversion download laughedelic/gtm 
+lsd
+expand-archive .\gtm-0.9.4.zip .
+lsd
+cd .\gtm-0.9.4\
+lsd
+bat .\Readme.md
+copy-item gtm "$HOME\bin"
+bat gtm
+cd ..
+gtm init
+wsl -e gtm init
+lsd
+rm -r .\gtm-0.9.4.zip
+move-item .\gtm-0.9.4\ "$HOME\Downloads"
+lsd
+gtm status
+wsl -e gtm status
+z tools
+gh rpeo clone madx/git-identity
+gh repo clone madx/git-identity
+cd .\git-identity\
+lsd
+cd ..
+gh repo clone tj/git-extras
+cd .\git-extras\
+lsd
+git checkout $(git describe --tags $(git rev-list --tags --max-count=1))
+krak
+install.cmd "$HOME\bin"
+z dev
+lsd
+mkdir docs
+cd dovs
+z docs
+gh repo clone https://github.com/wraybowling/wiki-cheatsheets.wiki.git
+cd .\wiki-cheatsheets.wiki\
+lsd
+explorer .
+gh repo clone jimbrig/.obsidian
+gh repo clone Engineered-Knowledge
+gh repo clone obsidian_vault
+gh repo clone jimsvault
+choco search git
+choco info git-helper
+choco info git-flow-hooks
+choco info gitviz
+choco info WSLgit
+exit
+get-module
+cd C:\Users\jimmy\OneDrive\Documents\PowerShell\
+lsd
+cd .\Modules\
+lsd
+explorer .
+get-module
+import-module oh-my-posh
+get-command -module oh-my-posh
+Get-PoshThemes
+set-poshprompt -Theme wopian
+split-path $profile -Parent
+cd (split-path $profile -Parent)
+lsd
+touch profile.ps1
+notepad profile.ps1
+notepad.exe profile.ps1
+s --help
+s --completion -s powershell
+s --completion powershell
+install-module DockerCompletion
+install-module scoop-completion
+install-module scoop-completion -AllowClobber
+get-module
+code .
+z C:\Users\jimmy\OneDrive\Documents\PowerShell
+code .
+git-cliff -o CHANGELOG.md
+gpg -K
+git-crypt add-gpg-user FF361E144EE31125E028D670786742B2314D2B34
+git-crypt init
+git-crypt add-gpg-user FF361E144EE31125E028D670786742B2314D2B34
+git-crypt add-gpg-user 7B6A462F595FA24EC24B40E663FCA87061A4E0D6
+git-crypt status -e
+git-crypt unlock
+git-crypt status
+git pull
+krak
+z PowerShell
+git status
+git restore config.json
+git pull
+refreshenv
+git pull
+git status
+git-crypt status -e
+git-crypt unlock
+cd .dotfiles
+lsd
+cd .\chocolatey\
+ls
+explorer .
+choco search winaero
+cinst winaero-tweaker qttabbar
+s --help
+s -l
+cd .config
+ls
+cd s
+ls
+explorer .
+cd dev/jimbrig/jimsdots
+z jimsdots
+z -l
+get-command -module ZLocation
+Get-ZLocation
+get-command -module ZLocation
+Update-ZLocation
+z jimsdots
+z chocolatey
+ls
+z backup
+lsd
+z MSI
+lsd
+bat .\packages.config
+notepad .\packages.config
+where.exe where
+where notepad
+which where
+get-alias where
+remove-alias where
+set-alias where -value where.exe
+sudo remove-alias where
+s powershell where alias overwrites where.exe
+where notepad
+where.exe notepad
+explorer C:\Program Files\Git\usr\bin
+notepad .\packages.config
+sudo cinst boxstarter autohotkey.install choco-cleaner chocolateygui cmake.install espanso file-converter googler instchoco lepton ntlite-free nvm pandoc postman qpdf rapidee steelseries-engine sumatrapdf.install ussf yori
+where gpg
+get-alias where
+get-help where-object
+update-help
+where.exe python
+cd C:\Users\jimmy\AppData\Local\Microsoft\WindowsApps\
+lsd
+explorer .
+wpa --help
+cls
+lsd
+refreshenv
+lsd
+s os error 1920
+cplb
+exit
+sudo choco uninstall steelseries-engine
+cd downloads
+.\SteelSeriesGG10.0.0Setup.exe
+s msi dragon download
+topgrade
+cd onedrive/documents
+cd powershell
+git status
+git diff config.json
+git add *
+git commit -m "feat: format config.json"
+git push
+gh repo view -w
+krak
+git pull
+git fetch
+git merge main
+git checkout main
+git pull
+git-crypt unlock
+git checkout main
+topgrade
+git status
+git checkout main
+git merge develop
+git checkout develop
+ping github.com
+speedtest
+speetest --help
+speedtest --help
+speedtest -h
+where.exe speedtest
+cd 'C:\Program Files\nodejs\'
+lsd
+bat .\speedtest.cmd
+npq-hero --help
+npm uninstall speedtest
+lsd
+explorer .
+npm -g uninstall speedtest
+npm list
+npm --version
+nvm install npm
+nvm --help
+nvm on
+npq -g install npm
+npm doctor
+cd 'C:\Program Files\nodejs\'
+ls
+npm-check
+.\npm-check-updates.cmd
+nvm install "latest"
+nvm --help
+nvm arch
+nvm root
+nvm version
+nvm install --help
+nvm help install
+s nvm docs
+where.exe nvm
+where.exe npm
+sudo npm i -g npm
+npm --version
+nvm install "latest"
+nvm install --npm
+nvm help
+nvm list
+npm cache clean --force
+cinst nvm
+cinst nvm --force
+refreshenv
+nvm list
+nvm uninstall 17.0.1
+nvm list
+nvm install 17.0.1
+nvm use 17.0.1
+npm doctor
+npm i -g npm@8.1.1
+npm i -g npq pnpm 
+pnpm -g i dockly eslint jshint prettier npm-check npm-check-updates tldr yarn serve
+eslint --help
+npm-check
+npm-check --help
+npm-check -g 
+npm-check -g --debug
+pnpm --help
+pnpm outdated
+pnpm -g outdated
+pnpm -g list
+npm doctor
+npm stars
+npm i -g pm2 doctoc surge
+pnpm --help
+npm doctor
+npm-check --help
+npm-check -gu
+npm -g rm npm-check
+npm-check --version
+npm --help
+npm -g uninstall npm-check
+pnpm -g uninstall npm-check
+pnpm --help
+pnpm -g --help
+pnpm -g audit
+refreshenv
+npm-check
+npm l
+npm -gl
+npm -g list
+lsd
+explorer .
+pnpm --list
+pnpm --global list
+npm i -g dockly eslint jshint prettier serve tldr yarn
+npm -g list
+npm i -g dockly eslint jshint prettier serve tldr
+npm i -g dockly eslint jshint prettier serve tldr yarn --force
+npm -g list
+npm -g uninstall pnpm
+pnpm -g list
+choco serach speedtest
+choco search speed
+cinst speedtest-by-ookla
+speedspeedtest-by-ookla
+speedtest
+speedtest-cli
+npm search speedtest-cli
+npm i -g @dominickolbe/speedtest-cli
+speedtest-cli
+npm -g list
+speedtest
+topgrade
+scoop unstall topgrade
+scoop uninstall topgrade
+scoop install topgrade
+topgrade
+npm i -g dockly --force
+npm uninstall -g dockly
+sudo npm uninstall -g dockly
+topgrade --only npm
+topgrade --only node
+npm cache clean --force
+npm -g cache clean --force
+topgrade --only node
+refreshenv
+topgrade --only node
+npm -g list
+npm i -g doctoc --force
+npm -g list
+nvm uninstall 17.0.1
+sudo remove-item -Path C:\ProgramData\nvm\v17.0.1 -Recurse -Force
+nvm install 17.0.1
+npm use 17.0.1
+nvm use 17.0.1
+npm list -g
+npm i -g doctoc @dominickolbe/speedtest-cli eslint jshiny prettier tldr npq serve
+npm i -g doctoc @dominickolbe/speedtest-cli eslint jshint prettier tldr npq serve
+topgrade --only node
+cinst teracopy freefilesync ntlite
+winget search ntlite
+winget install ntlite
+topgrade
+sudo cinst gcloudsdk az-cli aws-cli
+choco search gcloud
+lastversion gcloud
+lastversion gcloudsdk
+scoop search gcloud
+winget search gcloud
+winget install Google.CloudSDK -i --scope machine
+winget install Google.CloudSDK -i
+choco search aws
+sudo cinst awscli
+refreshenv
+sudo cinst jq
+choco search azcli
+choco search azure
+sudo cinst azure-cli
+refreshenv
+az auth
+az --help
+az login
+az --help
+az upgrade
+az config set auto-upgrade.enable=yes
+cd .dotfiles
+mkdir azure-cli
+cd azure-cli
+touch install-azure-cli.ps1
+vim .\install-azure-cli.ps1
+az configure
+az extension --help
+az extension list
+az extension list-available
+aws --help
+aws help
+aws login
+aws account
+aws help configure
+aws configure help
+aws configure list
+aws auth
+aws configure help
+aws configure
+aws configure list
+aws profile
+aws configure profile
+aws configure list
+aws configure set profile
+aws configure set help
+aws configure list-profiles
+explorer .
+topgrade
+refreshenv
+topgrade --only gcloud
+chkdsk /?
+sudo chkdsk c: /F /R
+restart-computer
+az --version
+z .dotfiles
+lsd
+cd vscode
+lsd
+vim .\install-extensions.ps1
+vim .\extensions.txt
+vim .\install-extensions.ps1
+.\install-extensions.ps1
+z obsidian
+cd kaas
+git init
+krak
+gh repo create
+mkdir .config
+cd .config
+touch convert-wikilinks-to-mdlinks.sh
+touch convert-wikilinks-to-mdlinks.ps1
+cd ..
+code .
+s shebangs
+git status
+git checkout -b gh-pages
+git add *
+git commit -m "add gh-pages branch"
+git push
+gh repo view -w
+topgrade
+z documents
+cd .\PowerShell\
+git status
+gh --help
+gh repo --help
+gh release --help
+gh release list keeper-security/keeper-sdk-dotnet
+gh release list "keeper-security/keeper-sdk-dotnet"
+gh release list -r "keeper-security/keeper-sdk-dotnet"
+gh release list -R "keeper-security/keeper-sdk-dotnet"
+refreshenv
+Commander --help
+cd .keeper
+cd ~
+cd .keeper
+lsd
+ls -a
+lsd -a
+explorer .
+get-command -module PowerShellGet
+Find-Module *keeper*
+Find-Module *commander*
+install-module PSCommander -Scope CurrentUser
+Connect-Keeper
+refreshenv
+import-module PSCommander
+Connect-Keeper
+get-command PSCommander
+get-command -module PSCommander
+uninstall-module PSCommander
+keeper --help
+code
+keeper
+exit
+exit
+exit
+s obsidian find and replace whole vault
+z kaas
+code .
+cinst zotero
+cd $env:onedrive\documents\_powershell\modules
+cd $env:onedrive\documents\powershell\modules
+cd ../Custom
+lsd
+cd .\Functions\
+ls
+cat .\Keeper-Functions.ps1
+. .\Keeper-Functions.ps1
+vim .\Keeper-Functions.ps1
+. .\Keeper-Functions.ps1
+s -p msoft azure
+cd .config
+cd .\s
+;s
+cat .\config
+vim config
+copy-item config config.json
+code .
+s -p msoft azure
+refreshenv
+s -p msoft azure
+exit
+s -p msoft azure
+s --help
+s --list-providers
+s -p msoft azure
+s -p msoft azure machine learning
+where.exe autohotkey
+z jimsdots
+lsd
+lsd *a*
+lsd a
+lsd --help
+lsd --tree
+cd ..
+gh repo clone jimbrig/scripts
+lsd
+gh repo clone jimbrig/windowspowershell
+gh repo clone jimbrig/.dotfiles
+gh repo clone jimbrig/dotfiles-wsl
+gh repo clone jimbrig/buildtools
+gh repo clone jimbrig/jimstools
+gh repo clone jimbrig/terraform-azure
+explorer .
+s open terminal obsidian
+vim
+obsidian://open-vault?vault=KaaS
+start 'obsidian://open-vault?vault=KaaS'
+gh repo clone jimbrig/kaas KaaS-2
+cd KaaS-2
+krak
+espanso --help
+espanso package --help
+espanso package list
+espanso status
+espanso path
+s espanso docs
+espanso install obsidian-in-colour
+espanso install obsidian-in-colour --external
+espanso restart
+cd "C:\Users\jimmy\AppData\Roaming\espanso"
+ls
+cd "C:\Users\jimmy\AppData\Local\espanso\packages"
+lsd
+cd .\obsidian-in-colour\
+lsd
+cd .\scripts\
+lsd
+code .\obsidian_colour.py
+espanso install html-utils-package
+espanso restart
+espanso install espanso install excel-package
+espanso install excel-package
+espanso install cht
+espanso --help
+espanso stop
+cd $env:appdata\espanso
+cd ..
+sudo New-Item -ItemType SymbolicLink -Path .\espanso\ -Target "$HOME\.dotfiles\espanso"
+sudo New-Item -ItemType SymbolicLink -Path "$HOME\.dotfiles\espanso" -Target .\espanso\
+explorer $HOME
+code .
+cpkgs
+tldr aws
+s aws-cli docs
+aws configure
+aws configure help
+aws configure import help
+aws configure list-profile
+aws configure list-profiles
+aws configure list
+cd $HOME\aws
+cd $HOME\.aws
+mkdir cli
+cd cli
+echo [toplevel] > alias
+notepad alias
+aws whoami
+cpkgs
+csearch jp
+sudo cinst jp
+aws myip
+code alias
+aws configure
+cd $HOME\.dotfiles\aws
+lsd
+touch README.md
+code .
+gpg -K
+cd ..
+git-crypt export-key git/git-crypt/keys/unlock-key
+git-crypt unlock
+git-crypt status -e
+cd .dotfiles
+git-crypt status -e
+z jimbrig
+ls
+gh repo clone espanso
+cd espanso
+code .
+explorer .
+git-filter-repo --help
+scoop search git-filter-repo
+scoop install git-filter-repo
+git filter-repo --use-base-name --path aws/scripts/config-aws.ps1 --invert-paths
+sudo cinst python39
+choco search python
+where.exe python
+git filter-repo --use-base-name --path aws/scripts/config-aws.ps1 --invert-paths
+git filter-repo --help
+gh pr checkout 1
+git filter-repo --use-base-name --path aws/scripts/config-aws.ps1 --invert-paths
+git filter-repo help
+s -p github git-filter-repo
+git-filter-repo --help
+git-filter-repo 
+git-cliff -o CHANGELOG.md
+topgrade
+z .dotfiles
+lsd
+cd gpg
+cd gnupg
+lsd
+lsd --help
+s -p github lsd
+mkdir lsd
+cd lsd
+touch lsd.env
+touch lsd.conf
+mkdir .config
+cd .config
+mkdir lsd
+cd lsd
+touch config.yaml
+explorer .
+npm install -g doctoc
+cls
+exit
+z .dotfiles
+doctoc --help
+doctoc --github
+doctoc --github .
+krak
+doctoc --github .
+cd Docker
+doctoc README.md
+cd ../edge
+doctoc README.md
+cd ..
+doctoc
+doctoc .
+doctoc --help
+s -p github doctoc
+doctoc .
+git-cliff -o CHANGELOG.md
+doctoc CHANGELOG.md
+git-cliff -o CHANGELOG.md
+doctoc CHANGELOG.md
+doctoc .
+krak
+topgrade
+cd .dotfiles
+mkdir WSL
+cd WSL
+touch README.md
+touch .wslconfig
+mkdir homebrew
+cd homebrew
+touch README.md
+mkdir docs
+cd docs
+explorer .
+git status
+git add ../../../powertoys/**
+git commit -m "config: update PowerToys configurations with latest update"
+git add ../../../scoop/config.json
+git commit -m "config: update scoop config.json"
+git push
+git status
+cd ../..
+cd ..
+git status
+git add WSL/**
+git commit -m "feat: initialize WSL directory for WSL specific configs"
+git push
+gh repo view -w
+cd .dotfiles
+doctoc .
+git-cliff -o CHANGELOG.md
+doctoc .
+git-crypt unlock
+git-crypt unlock
+z .dotfiles
+z C:\Users\jimmy\.dotfiles
+git-crypt unlock
+git status
+git-crypt status -e
+krak
+git-crypt unlock
+cd espanso
+cd user
+git-crypt unlock
+code .
+z espanso
+ls
+cd user
+git status
+cd ..
+krak
+git-crypt unlock
+cd user
+la
+ls
+git-crypt unlock --help
+git-crypt --help
+git-crypt unlock "C:\Users\jimmy\.dotfiles\git\git-crypt\keys\git-crypt-keyfile-PWC"
+git stash
+git-crypt unlock "C:\Users\jimmy\.dotfiles\git\git-crypt\keys\git-crypt-keyfile-PWC"
+git status
+cd espanso
+espanso restart
+cat .\emails.yml
+git-crypt status -e
+git add *
+git-crypt status -e
+cd ../..
+git-crypt status -e
+git add aws/**
+git commit -m "config: re-encrypt AWS configs"
+git add aws/**
+git-crypt status -e
+git add azure-cli/**
+git commit -m "config: re-encrypt az-cli configs"
+git add firefox/**
+git commit -m "config: re-encrypt firefox profile config"
+git add gh/**
+git commit -m "re-encrypt GitHub CLI configs"
+git add git/**
+git commit -m "re-encrypt git-crypt-keyfiles"
+git add gitkraken/**
+git commit -m "re-encrypt gitkraken keys and profile"
+git add keeper-commander/**
+git commit -m "re-encrypt keeper commander credentials config.json"
+git add lastversion/**
+git commit -m "re-encrypt lastversion GITHUB PAT"
+git-crypt status -e ssh/**
+git add ssh/**
+git commit -m "config: re-encrypt ssh keys"
+git-crypt unlock
+git push
+gh repo view -w
+git-crypt unlock
+git stash
+git-crypt unlock
+git status
+cd shell:AppsFolder
+shell:AppsFolder
+env:shell:AppsFolder
+$env:shell
+s shell environment powershell
+z powershell
+ls
+code .
+z jimbrig
+lsd
+sudo cinst gh --force
+gh completion -s powershell
+gh config
+gh config --help
+gh login
+gh auth login
+gh completion -s powershell
+refreshenv
+gh repo clone PSWinSetup
+cd .\PSWinSetup\
+code .
+cd ..
+gh repo clone PSWindowsSetup
+cd ..
+gh repo clone PSWindowsSetup-Old
+explorer .
+lsd
+cd docs
+lsd
+ls
+mkdir Templates
+cd templates
+mkdir PowerShell-Module-Template
+cd .\PowerShell-Module-Template\
+mkdir "{{Module_Name}}"
+touch README.md
+explorer .
+choco search dotnet
+dotnet --version
+dotnet new -i Microsoft.PowerShell.Standard.Module.Template
+cd Dev/sandbox
+mkdir PSModule
+cd .\PSModule\
+dotnet new psmodule
+dotnet new -i Microsoft.PowerShell.Standard.Module.Template
+cd ..
+gh repo clone tonypags/PsModuleTemplate
+cd .\PsModuleTemplate\
+explorer .
+& .\Scripts\Start-ThisPlaster.ps1
+Get-Module PsModuleTemplate
+Import-Module .\PsModuleTemplate.psm1
+& .\Scripts\Start-ThisPlaster.ps1
+Install-Module -Name Pester -Force -SkipPublisherCheck
+install-module stucco
+cd ..
+$template = Get-PlasterTemplate -IncludeInstalledModules | Where-Object TemplatePath -Match 'Stucco'
+Invoke-Plaster -TemplatePath $template.TemplatePath
+ls
+cd .\TestMod\
+explorer .
+code .
+$template = Get-PlasterTemplate -IncludeInstalledModules | Where-Object TemplatePath -Match 'Stucco'
+cd ~
+cd Dev
+cd jimbrig
+ls
+cd ..
+cd .\sandbox\
+Invoke-Plaster -TemplatePath $template.TemplatePath
+cd .\PSWinSetup\
+code .
+./build.ps1
+Install-Module -Name 'Sampler' -Scope 'CurrentUser'
+$newSampleModuleParameters = @{`
+    DestinationPath   = 'C:\Users\jimmy\Dev\sandbox'`
+    ModuleType        = 'SimpleModule'`
+    ModuleName        = 'MySimpleModule'`
+    ModuleAuthor      = 'Jimmy Briggs'`
+    ModuleDescription = 'MySimpleModule Description'`
+}
+New-SampleModule @newSampleModuleParameters
+z sandbox
+lsd
+cd .\MySimpleModule\
+lsd
+code .
+$newSampleModuleParameters = @{`
+    DestinationPath   = 'C:\Users\jimmy\Dev\sandbox'`
+    ModuleType        = 'CompleteSample'`
+    ModuleName        = 'MyCompleteSample'`
+    ModuleAuthor      = 'Jimmy Briggs'`
+    ModuleDescription = 'MyCompleteSample Description'`
+}
+New-SampleModule @newSampleModuleParameters
+code 'C:\Users\jimmy\Dev\sandbox\CompleteSample'
+cd 'C:\Users\jimmy\Dev\sandbox\CompleteSample'
+cd 'C:\Users\jimmy\Dev\sandbox\'
+lsd
+cd .\MyCompleteSample\
+code .
+cd .ssh
+lsd
+cat id_rsa.pub
+espanso start
+cd $env:APPDATA
+cd espanso
+;sd
+lsd
+cat default.yml
+explorer .
+z .dotfiles
+git-crypt unlock
+espanso start
+git status
+git pull
+z obsidian
+gh repo clone KaaS KaaS-ReDo
+cd kaas-redo
+code .
+espanso --help
+espanso edit
+$env:EDITOR = "code --wait"
+espanso edit
+$env:EDITOR = "code"
+espanso edit
+$env:EDITOR = code
+git config --global core.editor "code --wait"
+s espanso EDITOR
+$env:EDITOR = "C:\Program Files\Microsoft VS Code\bin\code.cmd"
+espanso edit
+cd ..
+cd .dotnet
+mkdir tools
+git-crypt unlock
+git-crypt unlock "$HOME\.dotfiles\git\git-crypt\keys\git-crypt-keyfile-PWC"
+gpg -K
+git-crypt add-gpg-user FF361E144EE31125E028D670786742B2314D2B34
+git-crypt add-gpg-user 7B6A462F595FA24EC24B40E663FCA87061A4E0D6
+git-crypt add-gpg-user B8BA217A94B30E9D25FE01F601163DF4AE4BA708
+git status
+git-crypt unlock
+git-crypt status -e
+cat ~/.ssh/id_rsa | clip
+csearch modulo
+scoop search modulo
+refreshenv
+modulo --help
+:greet
+espanso restart
+code .
+python -m SimpleHTTPServer 3000
+pip install SimpleHTTPServer
+python -m SimpleHTTPServer 3000
+servve
+serve
+espanso edit
+z .dotfiles
+mkdir winaero-tweaker
+git status
+krak
+z jimbrig
+lsd
+gh repo clone dotfiles
+cd dotfiles
+lsd
+git-crypt unlock
+cd aws
+lsd
+cat .\aws-credentials.csv
+cd .aws
+ls
+cat .\credentials
+cat .\credentials | clip
+git-crypt status -e
+krak
+cd ..
+krak
+z .dotfiles
+git add aws/**
+git-crypt status -e
+git commit -m "config: tweak aws excryptions"
+git push
+gh repo view -w
+git status
+git-crypt status -e azure/**
+git-crypt status -e azure-cli/*
+git add azure-cli/**
+git commit -m "config: adjust Az-CLI configs"
+git push
+git status
+git-crypt status -e
+git add environment/**
+git status
+git restore --staged  environment/rapidee-exports/2021-10-31-RapidEE-Exported-Environment-Variables
+git-crypt status -e environment/*
+git add environment/**
+git commit -m "feat: add new RapidEE exported Environment Variables"
+git push
+git status
+git diff espanso/default.yml
+git diff espanso/user/credit-cards.yml
+git-crypt status --help
+git-crypt status -f
+git diff espanso/user/credit-cards.yml
+git-crypt status -e espanso/**
+git add espanso/**
+git commit -m "feat: add new obsidian espanso's and update encrypted files"
+git push
+git status
+git-crypt status -e gh/**
+git add gh/**
+git commit -m "config: re-encrypt githubCLI"
+git push
+git add git/**
+git commit -m "re-encrypt and sync git dotfiles"
+git add gitkraken/**
+git commit -m "re-encrypt and add new gitkraken configs"
+git add keeper-commander/**
+git commit -m "re-encrypt and add keeper-commander config"
+git add lastversion/**
+git commit -m "re-encrypt and add lastversion back"
+git add obsidian/**
+git commit -m "feat: update obsidian vaults"
+git add powertoys/**
+git commit -m "config: updated powertoys configs"
+git add qttabbar/**
+git commit -m "feat: add QTTabBar exported configurations"
+git add rstudio/**
+git commit -m "feat: rstudio crash handler"
+git add ssh/**
+git commit -m "config: re-encrypt SSH keys"
+git push
+git-crypt unlock
+git add ssh/**
+git commit -m "config: re-encrypt and add SSH private keys"
+git push
+doctoc
+git-cliff -o CHANGELOG.md
+doctoc
+git add CHANGELOG.md
+git commit -m "doc: update CHANGELOG.md"
+git push
+git status
+git restore *
+git-crypt status
+git-crypt status -f
+z dev
+cd system
+gh repo clone xl-config
+gh repo list *excel*
+gh repo list xl
+gh repo clone xl-macros
+gh repo clone excel-macros
+gh repo clone excel-config
+cd .\excel-config\
+code .
+explorer .
+sudo topgrade
+espanso edit
+espanso path
+explorer "C:\Users\jimmy\AppData\Roaming\espanso"
+espanso stop
+cat "$HOME\.ssh\id_rsa.pub"
+cat "$HOME\.ssh\id_rsa.pub" | clip
+cat "$HOME\.ssh\gitkraken_rsa.pub" | clip
+wsl --help
+wsl -d Ubuntu-CommPrev -e wslfetch
+Rscript -e "devtools::install_github('r-hub/sysreqs')"
+exit
+R -e "devtools::install_github('r-hub/sysreqs')"
+R
+radian
+sudo topgrade
+scoop uninstall topgrade
+scoop install topgrade
+exit
+sudo topgrade
+gcloud components update
+sudo gcloud components update
+keep list
+keep new
+exit
+s -p msoft data science virtual mac
+choco search pulumi
+choco info pulumi
+explorer .
+s compare two folders
+sudo cinst windiff
+sudo cinst winmerge
+z obsidian
+winmergeu /?
+refreshenv
+WinMergeU /?
+refreshenv
+winmerge /?
+refreshenv
+winmerge /?
+s dataview to markdown
+docker pull linuxserver/heimdall
+z powershell
+lsd
+cd .\Modules\oh-my-posh\
+lsd
+cd 5.16.5
+lsd
+cd themes
+lsd
+get-command -module oh-my-posh
+Set-PoshPrompt -Theme wopian
+Get-PoshThemes
+Set-PoshPrompt -Theme powerlevel10k_lean
+Set-PoshPrompt -Theme powerlevel10k_lean -Force
+. $PROFILE
+docker run -d -p 80:80 linuxserver/heimdall
+start http://localhost:80
+docker run -d -p 8000:8000 linuxserver/heimdall
+docker-compose up
+z sandbox
+cd .\heimdall-dash\
+docker-compose up
+ipconfig
+docker-compose up
+git status
+git diff Custom/Functions/Keeper-Functions.ps1
+git add Custom/**
+git commit -m "bug: fix custom keeper commander functions"
+git add profile.ps1
+git commit -m "feat: avoid errors with oh-my-posh theme through erroraction flag" 
+git push
+gh repo view -w
+git checkout main
+git pull
+git rebase develop
+git checkout develop
+git push
+krak
+git checkout main
+git merge --ff-only develop
+git checkout develop
+git merge --ff-only main
+z obsidian
+gh repo clone kaas KaaS-2
+z .dotfiles
+git status
+git-crypt status -e
+git add uninstalltool/**
+git commit -m "feat: add uninstalltool prefs"
+git add qttabbar/**
+git commit -m "feat: add qttabbar exported configurations"
+git push
+git add obsidian/**
+git commit -m "feat: update obsidian settings.json"
+git push
+z appdata
+ls
+cd 'C:\Users\jimmy\AppData\Local\Packages\Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe\LocalState'
+explorer .
+topgrade
+z .dotfiles
+git status
+git add windows-terminal/**\
+git add windows-terminal/**
+git commit -m "feat: add windows terminal custom settings"
+git push
+git add scoop/**
+git commit -m "feat: update scoop config"
+git add docker/**
+git commit -m "feat: docker contexts"
+git add gitkraken/**
+git commit -m "feat: new gitkraken profile adjustments"
+git add powertoys/**
+git commit -m "feat: add powertoys"
+git status
+git push
+gh repo view -w
+cd firefox
+ls
+cd profiles
+cd .\jimmy.briggs@jimbrig.com\
+ls
+cd ..
+ls
+ls -a
+lsa
+cd ..
+ls
+cd profiles
+ls
+cd .\jimmy.briggs@jimbrig.com\
+ls
+git checkout main
+git pull
+git status
+rm signinUser.json
+git stash
+git status
+git restore signedInUser.json
+git status
+git pull --force
+git stash
+git-crypt status -f
+git pull
+git status
+git add signedInUser.json
+git commit -m "remove signedInUser"
+git pull
+git checkout develop
+git checkout main
+git merge --ff-only develop
+git checkout develop
+git merge --ff-only main
+git push
+gh repo view -w
+doctoc .
+cd ~/.dotfiles
+doctoc .
+git-cliff -o CHANGELOG.md
+git commit -a -m "doc: update docs"
+git push
+git checkout main
+git merge develop
+git push
+gh repo view -w
+z powershell
+git status
+exit
+exit
+exit
+New-Guid
+notepad $PROFILE
+code $PROFILE
+espanso list
+espanso --help
+espanso path
+espanso edit dev
+exit
+exit
+sudo topgrade
+cd dev/sandbox
+gh repo clone jimsbucket
+cd .\jimsbucket\
+code .
+sudo choco install rainmeter
+cd dev/jimbrig/jimsdots
+cd leptop
+cd lepton
+copy-item .\.leptonrc $HOME
+cls
+sudo gcloud components update
+wsl --shutdown
+sudo gcloud components update
+az --version
+pip list
+cpkgs
+sudo cinst azure-cli awscli
+az --version
+sudo cinst azure-cli --force
+aws --version
+az --version
+refreshenv
+az help
+where.exe az
+az.cmd
+s azure-cli python issue
+az
+wsl --shutdown
+wsl --shutdown
+Invoke-HardwareDiagnostic
+Invoke-NetworkDiagnostic
+get-appxpackage *immersive*
+get-appxpackage *immersive* | Reset-AppxPackage
+choco search resetwu
+sudo cinst reset-windows-update-tool
+choco features
+choco feature enable -n=allowemptycheckups
+sudo choco feature enable -n=allowemptychecksums
+sudo cinst reset-windows-update-tool
+choco search reset
+choco info reset-windows-update-tool
+sudo topgrade --only system
+choco search db
+sudo cinst sqlitebrowser
+choco search epub
+choco search kindle
+topgrade
+todoist --help
+edit-aliases
+gh repo view -w jimbrig/powershell-profiles-work
+Get-Command choco-cleaner
+set-alias lsa -Value '& lsd -a'
+lsa
+set-alias lsa -Value { & lsd -a }
+set-alias lsa -Value (lsd -a)
+get-help set-alias
+get-help export-alias
+get-help export-alias -examples
+z powershell
+cd profile
+mkdir exports
+cd exports
+export-alias -Path aliases-export.ps1 -As Script
+bat .\aliases-export.ps1
+git status
+cd ../../
+git status
+cd .dotfiles
+git status
+mkdir rainmeter
+cd rainmeter
+mkdir -p AppData\Roaming
+cd appdata
+cd .\Roaming\
+mkdir Rainmeter
+topgrade --edit-config
+where.exe topgrade
+topgrade
+topgrade --edit-config
+sudo New-Item -ItemType SymbolicLink -Path "$HOME\.dotfiles\topgrade\AppData\Roaming\topgrade.toml" -Target "$HOME\AppData\Roaming\topgrade.toml"
+sudo New-Item -ItemType SymbolicLink -Path "$HOME\AppData\Roaming\topgrade.toml" -Target "$HOME\.dotfiles\topgrade\AppData\Roaming\topgrade.toml"
+topgrade --edit-config
+refreshenv
+topgrade --edit-config
+refreshenv
+topgrade --edit-config
+scoop uninstall topgrade
+scoop install topgrade
+topgrade --edit-config
+topgrade --edit-config --verbose
+topgrade --edit-config
+topgrade --help
+topgrade --config-reference
+set-alias topgrade 'topgrade --config "$HOME\.config\topgrade\topgrade.toml'`
+
+cd .dotfiles
+topgrade
+set-alias topgrade 'topgrade --config "$HOME\.config\topgrade\topgrade.toml"'`
+
+topgrade
+get-help set-alias
+${function:Invoke-Topgrade} = { & topgrade.exe --config ~/.config/topgrade/topgrade.toml --cleanup -- --disable-predefined-git-repos --no-retry --show-skipped }
+Set-Alias topgrade Invoke-Topgrade
+topgrade
+${function:Invoke-Topgrade} = { & topgrade.exe --config ~/.config/topgrade/topgrade.toml --cleanup --disable-predefined-git-repos --no-retry --show-skipped }
+Set-Alias topgrade Invoke-Topgrade
+topgrade
+${function:Invoke-Topgrade} = { & topgrade.exe --config "$HOME/.config/topgrade/topgrade.toml" --cleanup -- --disable-predefined-git-repos --no-retry --show-skipped }
+${function:Invoke-Topgrade} = { & topgrade.exe --config "$HOME/.config/topgrade/topgrade.toml" --cleanup --disable-predefined-git-repos --no-retry --show-skipped }
+Set-Alias topgrade Invoke-Topgrade
+topgrade
+${function:Invoke-Topgrade} = { & topgrade.exe --config "$HOME/.config/topgrade/topgrade.toml" --cleanup --disable-predefined-git-repos --no-retry --show-skipped }
+Set-Alias topgrade Invoke-Topgrade
+topgrade
+cd ../../
+cd ..
+git status
+git add .stowrc
+git add topgrade/.stow-local-ignore
+git commit -m "feat: add GNU stow configuration/ignore files to repo"
+gpg -K
+git commit -m "feat: add GNU stow configuration/ignore files to repo"
+git status
+krak
+git-crypt status -e
+cd .dotfiles
+git-cliff -o CHANGELOG.md
+restart-computer
+s gsuite desktop client
+z tools
+z dev
+cd jimbrig
+ls
+gh repo clone tools
+espanso list
+espanso --help
+espanso match list
+sudo cinst yq
+z powershell
+code .
+csearch buildah
+cd dev/sandbox
+cd ~
+cd dev/sandbox
+gh repo clone MartinHeinz/python-project-blueprint
+cd .\python-project-blueprint\
+cd ..
+ls
+cd .\python-project-blueprint\
+ls
+explorer .
+s -p github jimbrig/powershell
+z powershell
+git checkout main
+git pull
+git checkout develop
+git merge --ff-only main
+git push
+exit
+z obsidian
+ls
+cd .obsidian
+ls
+git status
+git pull
+gh repo view -w
+cd ..
+gh repo create --help
+gh repo create --template-repository obsidian-vault-template
+gh repo create obsidian-vault-template --template-repository 
+gh repo create obsidian-vault-template --template
+gh repo create obsidian-vault-template
+gh repo clone obsidian-vault-template
+move-item .\Obsidian-Vault-Template\ obsidian
+cd .\obsidian\
+ls
+cd .\Obsidian-Vault-Template\
+ls
+git init
+mkdit Templates
+mkdir Templates
+mkdir .obsidian
+mkdir Slipbox
+mkdir Reference
+mkdir Daily
+mkdir Meta
+mkdir MOC
+mkdir Resources
+touch README.md
+touch .gitignore
+krak
+cd ..
+cd .\.obsidian\
+code .
+cd ..
+cd .\Obsidian-Vault-Template\
+code .
+cd ..
+cd .\KaaS\
+code .
+espanso start
+z C:\Users\jimmy\Dev\jimbrig\espanso
+git status
+git pull
+krak
+git-crypt status -e
+vim .\.gitattributes
+git-crypt status -e
+git add user/**
+gh repo view -w
+ls
+cd user
+;s
+ls
+git-crypt unlock
+cd ../..
+gh repo clone espanso
+cd ..
+gh repo clone espanso
+cd .\espanso\
+git-crypt unlock
+git pull
+krak
+git-crypt add-gpg-user FF361E144EE31125E028D670786742B2314D2B34
+git-crypt init
+cd ..\jimbrig\espanso\
+git-crypt status -e
+git add user/**
+git push
+git-crypt add-gpg-user FF361E144EE31125E028D670786742B2314D2B34
+git-crypt add-gpg-user B8BA217A94B30E9D25FE01F601163DF4AE4BA708
+gpg -K
+git-crypt add-gpg-user 7B6A462F595FA24EC24B40E663FCA87061A4E0D6
+git push
+git status
+git checkout main
+git pull
+git checkout develop
+git merge --ff-only main
+git push
+espanso start
+z $env:APPDATA\espanso
+ls
+code .
+git-crypt unlock
+z espanso
+git-crypt unlock
+git-crypt lock
+git-crypt status -e
+git status
+git-crypt status -e
+git push
+git checkout develop
+git merge --ff-only main
+git push
+z C:\Users\jimmy\Dev\obsidian\Obsidian-Vault-Template
+cd ..
+cd kaas
+cd .obsidian
+cat .\community-plugins.json | clip
+topgrade
+radian
+cd bin
+ls
+rm winmerge.lnk
+touch update-Rpackages
+touch update-Rpackages.ps1
+rm .\update-Rpackages
+vim .\update-Rpackages.ps1
+.\update-Rpackages.ps1
+rapidee
+refreshenv
+.\update-Rpackages.ps1
+vim .\update-Rpackages.ps1
+.\update-Rpackages.ps1
+vim .\update-Rpackages.ps1
+.\update-Rpackages.ps1
+vim .\update-Rpackages.ps1
+.\update-Rpackages.ps1
+vim .\update-Rpackages.ps1
+Rscript -e "update.packages(ask = FALSE, repos = 'https://cran.rstudio.com')"
+.\update-Rpackages.ps1
+refreshenv
+update-Rpackages
+csearch toggl
+sudo cinst toggl
+agenda
+gcalcli --help
+lsa
+lsa *gcal*
+cd .config
+ls
+explorer .
+s -p gh toggl
+cd ../bin
+ls
+touch pakk.ps1
+vim pakk.ps1
+z jimsdots
+lsd
+cd bin
+lsd
+cat pakk.cmd
+vim pakk.cmd
+notepad pakk.cmd
+s obsidian yaml metadata best practices
+where.exe pandoc
+git init
+touch .gitignore
+krak
+topgrade
+s github action convert wikilinks to markdown
+refreshenv
+obsidian-export --version
+z Downloads
+.\obsidian-export_Windows-x64_64.cmd
+Invoke-HardwareDiagnostic
+az --version
+s Traceback (most recent call last):
+  File "runpy.py", line 194, in _run_module_as_main
+  File "runpy.py", line 87, in _run_code
+  File "D:\a\1\s\build_scripts\windows\artifacts\cli\Lib\site-packages\azure/cli/__main__.py", line 38, in <module>
+  File "D:\a\1\s\build_scripts\windows\artifacts\cli\Lib\site-packages\azure/cli/core/__init__.py", line 912, in get_default_cli
+  File "D:\a\1\s\build_scripts\windows\artifacts\cli\Lib\site-packages\azure/cli/core/__init__.py", line 80, in __init__
+  File "D:\a\1\s\build_scripts\windows\artifacts\cli\Lib\site-packages\azure/cli/core/_session.py", line 39, in load
+  File "json\__init__.py", line 293, in load
+  File "codecs.py", line 322, in decode
+  File "encodings\utf_8_sig.py", line 69, in _buffer_decode
+where.exe az
+cpkgs
+sudo choco uninstall azure-cli
+choco search azure
+winget search azure
+winget install Microsoft.AzureCLI Microsoft.AzureDataStudio.Insiders Microsoft.AzureStorageExplorer Microsoft.AzureFunctionsCoreTools --interactive
+winget --version
+refreshenv
+winget --version
+choco search winget
+where.exe winget
+which winget
+get-appxpackage *app*
+get-appxpackage *installer*
+get-appxpackage *installer* | Reset-Appxpackage
+s -p gh Update-PowerShell
+z C:\Users\jimmy\Dev\jimbrig\PSWinSetup
+install-module -Name 'PSEverything' -Scope User -AllowClobber -AllowPrerelease
+install-module -Name 'PSEverything' -Scope CurrentUser -AllowClobber -AllowPrerelease
+install-module -Name 'PSFzf' -Scope CurrentUser -AllowClobber -AllowPrerelease
+sudo cinst fzf
+get-command -module PSEverything
+get-help Search-Everything
+get-help Search-Everything -examples
+se PSWinSetup
+se -Include PSWinSetup
+z jimbrig
+gh repo clone PSWinSetup
+cd .\PSWinSetup\
+lsd
+code .
+winget
+winget install --help
+winget install Microsoft.AzureCLI --interactive
+z powershell
+lsd
+cd Custom
+lsd
+cd Functions
+explorer .
+az login
+pip list
+pip uninstall pyasn1 pyasn1-modules
+az login
+pip uninstall wrapt wcwidth urllib3 uritemplate tqdm terminaltables soupsieve six sgmllib3k rsa PyNaCl pycparser oauth2client idna CacheControl cachetools click
+refreshenv
+az --version
+az upgrade
+az --verbose
+az help
+az login
+az extension list-available
+az config set auto-upgrade.enable=yes
+az account --help
+az account list --help
+az account list list
+az account list
+az account show --output table
+az account list --output table
+az account set --subscription AzDevSub
+az account show
+az group list --output table
+az group delete terrtest-resources
+az group delete --name terrtest-resources
+az group create --name AzureResourceGroup --location eastus
+az config set core.output=table core.disable_confirm_prompt=true core.collect_telemetry=false logging.enable_log_file=true logging.log_dir="$HOME\.azure\logs" defaults.group=AzureResourceGroup defaults.location=eastus defaults.acr=ACRcontainerz extension.use_dynamic_install=true extension.run_after_dynamic_install
+az config set core.output=table core.disable_confirm_prompt=true core.collect_telemetry=false logging.enable_log_file=true logging.log_dir="$HOME\.azure\logs" defaults.group=AzureResourceGroup defaults.location=eastus defaults.acr=ACRcontainerz extension.use_dynamic_install=true extension.run_after_dynamic_install=true
+topgrade
+z dev
+lsa
+cd jimbrig
+ls
+lsd
+ls
+cd ..
+cd .\sandbox\
+ls
+topgrade
+topgrade --only system
+az
+az upgrade
+az webapp
+aws --version
+gh --version
+R
+s -p ghr sysreqs
+pip uninstall radian
+pip install -U radian
+pip install -U cachecontrol
+pip install -U pynacl tqdm click terminaltables
+pip install -U radian
+radian
+Y
+topgrade --only system
+topgrade --edit-config
+cd $env:APPDATA
+lsd
+cat .\topgrade.toml
+notepad topgrade.toml
+which notepad
+which notepad.exe
+where.exe notepad.exe
+s windows cannot find notepad
+get-appxpackage *installer* | Reset-Appxpackage
+get-appxpackage *notepad* | Reset-Appxpackage
+refreshenv
+notepad
+topgrade --edit-config
+notepad topgrade.toml
+topgrade --help
+topgrade --config-reference
+scoop update topgrade
+scoop status
+s -p gh topgrade
+topgrade
+cd ~/.dotfiles
+git status
+git pull
+git checkout main
+git pull
+git checkout develop
+git merge --ff-only main
+git push
+doctoc .
+npx doctoc .
+npm --version
+nvm --version
+nvm install "latest"
+nvm use 17.1.0
+sudo assoc .vbs=VBSFile
+git status
+git add registry/**
+git commit -m "feat: add registration edits for default file associations"
+git push
+nvm use 17.1.0
+npm install -g doctoc
+npm init
+ls
+doctoc .
+git status
+git-cliff -o CHANGELOG.md
+git status
+git add CHANGELOG.md
+git commit -m "doc: update CHANGELOG.md"
+git push
+cd .\registry\
+cd ..
+cd .\registry\
+.\README.md
+doctoc README.md
+.\README.md
+git add README.md
+git commit -m "doc: Update Registy directory README.md"
+git push
+cd ..
+git-cliff -o CHANGELOG.md
+git add CHANGELOG.md
+git commit -m "doc: update CHANGELOG.md"
+git push
+git pull
+git checkout main
+git pull
+git checkout develop
+git merge --ff-only main
+git push
+git-cliff -o CHANGELOG.md
+new-guid
+topgrade --help
+topgrade --only custom_commands
+topgrade --edit-config
+notepad "$env:APPDATA\topgrade.toml"
+topgrade --only custom_commands
+notepad "$env:APPDATA\topgrade.toml"
+topgrade --only custom_commands
+gcloud components update
+notepad "$env:APPDATA\topgrade.toml"
+Rscript -e 'update.packages(lib.loc = .libPaths()[[1]], repos = 'https://cloud.r-project.org/', ask = FALSE)'
+Rscript -e "update.packages(lib.loc = .libPaths()[[1]], repos = 'https://cloud.r-project.org/', ask = FALSE)"
+topgrade --only custom_commands
+get-help update-module
+get-help update-module -examples
+Get-Command "update-module"
+update-help -Module PowerShellGet
+get-help update-module -examples
+Update-Help
+. "C:\Users\jimmy\OneDrive\Documents\PowerShell\Custom\Update-EveryModule.ps1"
+Update-EveryModule
+. "C:\Users\jimmy\OneDrive\Documents\PowerShell\Custom\Update-EveryModule.ps1"
+Update-EveryModule
+& "C:\Users\jimmy\OneDrive\Documents\PowerShell\Custom\Update-EveryModule.ps1"
+"C:\Users\jimmy\OneDrive\Documents\PowerShell\Custom\Update-EveryModule.ps1"
+./C:\Users\jimmy\OneDrive\Documents\PowerShell\Custom\Update-EveryModule.ps1
+cd $env:OneDrive
+cd Documents
+cd Powershell
+cd Custom
+. .\Update-EveryModule.ps1
+Update-EveryModule
+".\Update-EveryModule"
+.\Update-EveryModule
+update-module
+exit
+update-module -Name ZLocation
+cplb
+choco-cleaner
+topgrade --only custom_commands
+cmd.exe -?
+sfcscanow
+topgrade --only custom_commands
+cd .dotfiles
+git status
+git add topgrade/**
+git commit -m "feat: add new topgrade custom commands: gcloud, r-packages, choco utils, cleanmgr, and sfc /scannow"
+git add windows-terminal/**
+git commit -m "feat: add new profile to windows terminal for 'PowerShell (NoProfile)'"
+git diff docker/**
+git add docker/**
+git commit -m "config: update docker settings"
+git push
+gh pr --help
+gh pr create --help
+gh pr create --title "Adjust user settings files" --body "Windows Terminal, Docker, and Topgrade" --project "@jimbrig's dotfiles" --base main --head develop
+gh pr create --title "Adjust user settings files" --body "Windows Terminal, Docker, and Topgrade" --project "dotfiles" --base main --head develop
+gh pr create --title "Adjust user settings files" --body "Windows Terminal, Docker, and Topgrade" --base main --head develop
+doctoc .
+git-cliff -o CHANGELOG.md
+git add *
+git commit -m "doc: changelog and readme toc's"
+git push
+git checkout main
+git pull
+git checkout develop
+git merge --ff-only main
+git push
+cd .dotfiles\topgrade
+lsd
+tree
+touch topgrade.config.example.toml
+notepad topgrade.config.example.toml
+doctoc .\README.md
+.\README.md
+cd ..
+git-cliff -o CHANGELOG.md
+git add topgrade/**
+git add CHANGELOG.md
+git commit -m "doc: Changelog and README for topgrade"
+git push
+cls
+systeminfo
+exit
+exit
+z obsidian
+ls
+explorer .
+gh repo clone kaas-new KaaS
+cd KaaS
+ls
+z .dotfiles
+ls
+cd R
+lsd
+mkdir R
+cd R
+mkdir .config
+cd .config
+mkdir R
+cd R
+z jimsdots
+ls
+cd r
+ls
+copy-item . "$HOME\.dotfiles\R\.config\R" -Recurse
+[System.Environment]::SetEnvironmentVariable("Path", $pathout, "Machine") 
+sudo cinst rapidee
+exit
+[System.Environment]::SetEnvironmentVariable("Path", "C:\Program Files\PowerShell\7;C:\Users\jimmy\AppData\Local\cloud-code\installer\google-cloud-sdk\bin;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\Program Files\R\R-4.1.2\bin\x64;C:\tools\Keeper-Commander\Commander-1.0.2-beta05;C:\ProgramData\Boxstarter;C:\Program Files\Python39\Scripts\;C:\Program Files\Python39\;C:\Users\jimmy\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\jimmy\AppData\Local\Programs\Python\Python310\;C:\Python310\Scripts\;C:\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\tools\BCURRAN3;C:\ProgramData\nvm;C:\Program Files\nodejs;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files (x86)\Keeper Commander;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\jimmy\AppData\Local\Programs\espanso;C:\Program Files\wureset;C:\Program Files\CMake\bin;C:\Program Files\PowerShell\7\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\jimmy\bin;C:\Users\jimmy\scoop\shims;C:\Users\jimmy\.dotnet\tools;C:\Users\jimmy\AppData\Local\Microsoft\WindowsApps;C:\Users\jimmy\AppData\Roaming\Python\Python39;C:\Users\jimmy\AppData\Roaming\Python\Python39\Scripts;C:\Users\jimmy\AppData\Local\gitkraken\bin;C:\Users\jimmy\AppData\Local\Pandoc\;C:\Users\jimmy\AppData\Local\Programs\espanso;C:\ProgramData\chocolatey\lib\googler\tools\googler;C:\tools\TinyTeX\bin\win32;C:\Program Files (x86)\GitHub CLI\;C:\Python310\;C:\Python310\Scripts\;C:\Users\jimmy\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\R\R-4.1.1\bin\x64;C:\Program Files\R\R-4.1.2\bin\x64", "Machine") 
+exit
+cd ~
+cd .dotfiles
+Copy-Item "$env:APPDATA\RStudio\rstudio-prefs.json" "$env:APPDATA\RStudio\rstudio-prefs-default.json"
+ls
+ radian
+cd .dotfiles\R
+cd R
+touch .gitattributes
+notepad .\.gitattributes
+cd ..
+gcrypts
+git-crypt status -e
+gcrypts
+git-crypt status -e
+cd ~/Dev
+cd jimbrig
+gh repo clone lossdevt
+cd "C:\Users\jimmy\Dev\jimbrig\loss_development_app"
+rstudio
+topgrade
+ls -a
+lsa
+topgrade --only wsl
+exit
+exit
+get-command *process*
+Stop-Process -Name gpg-agent.exe
+Stop-Process -Id 9476
+exit
+choco search backblaze
+winget search backblaze
+scoop search backblaze
+s install backblaze
+z scripts
+z jimbrig
+ls
+cd Scripts
+ls
+cd PowerShell
+ls
+cd .\Installations\
+ls
+touch install-backblaze.ps1
+code .
+topgrade
+keep list
+cd .dotfiles
+ls
+cd keep
+z jimsdots
+cd keep
+ls
+.\README.md
+cd .keep
+ls
+cd ../..
+ls
+cd keep
+copy-item -Recurse .\.keep ~
+copy-item -Recurse .\.keep ~ -Force
+keep list
+keep pull
+keep --help
+keep update
+keep init
+copy-item -Recurse .\.keep ~\.dotfiles\keep -Force
+z .dotfiles
+cd keep
+ls
+mkdir .keep
+explorer .
+keep init
+keep new
+keep --help
+keep list
+ls
+cd ..
+cd ~
+rm -r .keep
+cd .\.dotfiles\
+wsl -e stow keep
+keep list
+keep list | grep *clean*
+get-command *table*
+keep list | Format-table
+keep list | Format-table | Out-GridView
+keep list | Format-List
+keep list | Format-Custom
+topgrade --edit-config
+notepad $env:APPDATA\topgrade.toml
+topgrade --only custom_commands
+git status
+git add gitkraken/**
+git commit -m "update gkrak"
+git add rstudio/**
+git commit -m "feat: fix issues with RStudio configs and update with latest stowed configs"
+git status
+git add scoop/**
+git commit -m "config: update sccop configs"
+git add topgrade/**
+git commit -m "feat: enhance topgrade custom commands and cleanmgr deepclean"
+git status
+git add uninstalltool/**
+git commit -m "config: update uninstalltool configs"
+git status
+git add windows-terminal/**
+git commit -m "feat: enhance windows terminal settings.json with latest tweaks"
+git status\
+git status
+git add R/**
+git status
+git-crypt status -e
+git commit -m "feat: add R configurations and scripts"
+git status
+git add keep/**
+cd keep
+ls
+cd .keep
+ls -a
+lsa
+cat .\.credentials
+cd ../..
+cd keep
+touch .gitattributes
+notepad .\.gitattributes
+espanso edit dev
+git-crypt status -e
+git restore *
+git status
+git restore --staged .keep/**
+git status
+cd ..
+git-crypt status -e
+git add keep/**
+git commit -m "feat: add keep configs"
+git status
+git add qttabbar/**
+git commit -m "config: backup qttabbar configs"
+git add registry/**
+git commit -m "feat: add new registry miscellaneous tweaks"
+git push
+gh repo view -w
+git-cliff -o CHANGELOG.md
+doctoc *
+doctoc .
+git status
+git add *
+git commit -m "doc: update CHANGELOG.md and run doctoc"
+git push
+cd rstudio
+touch .gitattributes
+notepad .\.gitattributes
+git-crypt status -e
+git add .gitattributes
+git-crypt status -f
+git status
+git add *
+git commit -m "config: encryption of rstudio configs"
+git push
+git pull
+git checkout main
+git pull
+git checkout develop
+git merge --ff-only main
+git push
+espanso start
+espanso --help
+espanso log
+espanso restart
+espanso status
+espanso paths
+espanso path
+cd C:\Users\jimmy\AppData\Local\espanso\packages
+ls
+explorer .
+espanso dump
+cpkgs
+cpkgs
+choco --help
+cinst espanso --force
+espanso start
+cd .dotfiles
+wsl -e stow espanso
+espanso start
+espanso list
+espanso --help
+espanso match
+espanso match --help
+espanso match list
+git status
+git-crypt status -e
+git add espanso/**
+git commit -m "feat: re-configure espanso for use with GNU stow"
+git push
+gh repo view -w
+git checkout main
+git pull
+git checkout develop
+git merge --ff-only main
+git push
+espanso match list
+espanso edit
+espanso restart
+Creative and entrepreneurial Software Engineer and Actuarial Scientist with background working in dynamic and progressive environments as both an actuary and a developer in large and small organizations.
+Fluent in a multitude of programming languages and frameworks used to develop software within a wide variety of industries.
+Collaborative team player focused on scoping projects and achieving objectives with speed and accuracy.
+espanso match list
+z obsidian
+gh repo clone pwc-vault
+cd .\PwC-Vault\
+git checkout obsidian
+z sandbox
+gh repo clone ohmyzsh
+gh pr checkout 1
+krak
+cd .\ohmyzsh\
+gh pr checkout 1
+krak
+s struggle with GTD processing
+s tiago forte
+topgrade
+devdash --help
+devdash list
+devdash
+cd .config/devdash
+cd .config
+ls
+cd $env:APPDATA
+lsd
+cd $env:LOCALAPPDATA
+lsd
+ls
+cd devdash
+ls
+copy-item default.yml "$HOME\.dotfiles\devdash\.config" -force
+copy-item default.yml "$HOME\.dotfiles\devdash\.config\devdash\default.yml" -force
+copy-item default.yml "$HOME\.dotfiles\devdash\.config\devdash\default.yml" -recurse -force
+explorer .
+devdash
+cd .dotfiles
+devdash
+topgrade
+z sandbox
+gh repo clone flask-sandbox
+gh repo create flask-sandbox
+cd flask-sandbox
+get-alias venv
+get-command -module oh-my-posh
+Set-PoshPrompt -Theme powerlevel10k_lean -Force
+Set-PoshPrompt -Theme powerlevel10k_lean
+Set-PoshPrompt -Theme wopian
+import-module oh-my-posh
+Set-PoshPrompt -Theme wopian
+cls
+z powershell
+code .
+start todoist.exe
+where.exe todoist
+where.exe todoist.exe
+where.exe Todoist
+set-location shell:
+shell:AppsFolder
+cd shell:AppsFolder
+cd $env:AppsFolder
+$env:AppsFolder
+$en
+$env:
+$env
+set-location $env
+set-location $env:
+set-location env:
+ls
+set-location HKEY_CLASSES_ROOT:
+set-location reg:HKEY_CLASSES_ROOT:
+set-location HKCR:
+cd C:
+s set location registry pwsh
+set-location "HKCR:"
+set-location -Path "HKCR:"
+set-location -Path "HKLM:"
+set-location Registry::HKEY_CLASSES_ROOT\todoist\shell\open\command
+ls
+ls -a
+dir
+Get-ItemProperty -Path Registry::HKEY_CLASSES_ROOT\todoist\shell\open\command
+(Get-ItemProperty -Path Registry::HKEY_CLASSES_ROOT\todoist\shell\open\command)[1]
+(Get-ItemProperty -Path Registry::HKEY_CLASSES_ROOT\todoist\shell\open\command).Name
+(Get-ItemProperty -Path Registry::HKEY_CLASSES_ROOT\todoist\shell\open\command).ValueCount
+echo (Get-ItemProperty -Path Registry::HKEY_CLASSES_ROOT\todoist\shell\open\command).ValueCount
+Get-ItemProperty -Path Registry::HKEY_CLASSES_ROOT\todoist\shell\open\command -Name "(default)"
+Get-ItemProperty -Path Registry::HKEY_CLASSES_ROOT\todoist\shell\open\command -Verbose
+Get-ItemProperty -Path Registry::HKEY_CLASSES_ROOT\todoist\shell\open\command -Name ""
+Get-ItemProperty -Path Registry::HKEY_CLASSES_ROOT\todoist\shell\open\command
+Get-Item -Path Registry::HKEY_CLASSES_ROOT\todoist\shell\open\command
+(Get-Item -Path Registry::HKEY_CLASSES_ROOT\todoist\shell\open\command).Property
+(Get-Item -Path Registry::HKEY_CLASSES_ROOT\todoist\shell\open\command).Property.Value
+(Get-Item -Path Registry::HKEY_CLASSES_ROOT\todoist\shell\open\command).Property.Value()
+((Get-Item -Path Registry::HKEY_CLASSES_ROOT\todoist\shell\open\command).Property).Value()
+get-command todoist
+Get-ItemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\* |  Select-Object DisplayName, DisplayVersion, Publisher, InstallDate |`
+Format-Table –AutoSize
+Get-ItemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\* |  Select-Object DisplayName, DisplayVersion, Publisher, InstallDate |`
+Format-Table –AutoSize | Out-GridView
+Get-ItemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\* |  Select-Object DisplayName, DisplayVersion, Publisher, InstallDate | Out-GridView
+Get-ItemProperty HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\* | Select-Object DisplayName, DisplayVersion, Publisher, InstallDate |`
+Format-Table –AutoSize
+Function Open-Todoist { & 'C:\Users\jimmy\AppData\Local\Programs\todoist\Todoist.exe' }
+Open-Todoist
+Function Open-Todoist { start-process -PassThru 'C:\Users\jimmy\AppData\Local\Programs\todoist\Todoist.exe' }
+Open-Todoist
+Function Open-GitHub { start-process -PassThru 'https://github.com/' }
+Open-GitHub
+where.exe docker
+Function Open-Docker { start-process -PassThru 'C:\Program Files\Docker\Docker Desktop.exe' }
+Open-Docker
+get-process -Name *docker*
+Get-ProcessMitigation -Name "Docker Desktop"
+Get-Process -Id 4480
+Get-Process -Id 4480 -IncludeUserName
+Get-Process -Id 4480 -FileVersionInfo
+Function Open-Docker { start-process -PassThru 'C:\Program Files\Docker\Docker\frontend\Docker Desktop.exe' }
+Open-Docker
+git-crypt status -e
+git add Custom/**
+git commit -m "feat: add custom dir"
+git add Profile/**
+git commit -m "feat: add new launcher open functions"
+git push
+gh repo view -w
+git-cliff -o CHANGELOG.md
+git add CHANGELOG.md
+git commit -m "doc: Update CHANGELOG"
+git push
+git tag --help
+git checkout main
+git pull
+git checkout develop
+git merge --ff-only main
+git push
+cd ~
+exit
+exit
+topgrade
+s rainmeter setup windows 11
+cd dev/jimbrig
+cd jimsdots
+git status
+git add .\winaero-tweaker\**
+git commit -m "feat: add updated winaero tweaker configs"
+git push
+gh repo view -w
+new-guid
+"name": ""
+cpkgs
+sudo wsl -d alpine
+wsl --set-default-version 2
+wsl -l
+wsl --help
+wsl --install alpine
+wsl --list --online
+wsl --install Debin
+wsl --install Debian
+exit
+exit
+topgrade
+exit
+ping intel.com
+speedtest-cli
+speedtest
+speed-test
+npm list
+npm login
+cat .npmrc
+npm stars
+npm i -g doctoc eslint jshint gh-search-cli tldr yarn dockly
+npm i -g speedtest-cli
+speedtest-cli
+speedtest
+speedtest help
+help speedtest
+where.exe speedtest
+where.exe speed-test
+where.exe speedtest-cli
+npm list
+npm list -g
+npm stars
+npm stars | grep *speed*
+npm stars | grep speed
+npm i -g npq
+npw i -g speed-test
+npq i -g speed-test
+npm --help
+npm uninstall -g dockly speedtest-cli
+speed-test
+speed-test --help
+npm uninstall -g speed-test
+z powershell
+code .
+refreshenv
+speedtest --help
+speedtest
+where.exe speedtest
+cd C:\Users\jimmy\scoop\shims\
+lsd
+speedtest
+exit
+choco-cleaner
+topgrade
+cls
+exit
+topgrade
+speedtest
+choco uninstall qttabbar
+cinst qttabbar
+cpkgs
+scoop list
+winget list
+restart-computer
+checkdisk
+keep list | grep check
+edit-aliases
+keep list >> keep-commands.txt
+notepad .\keep-commands.txt
+Invoke-TroubleshootingPack
+exit
+exit
+cmd.exe /c Cleanmgr /sageset:65535 & Cleanmgr /sagerun:65535
+Get-CimInstance Win32_WinSat
+winSAT formal -restart
+checkdisk
+keep list | grep check
+keep run checkdisk -n
+exit
+Get-CimInstance Win32_WinSat
+speedtest
+restart-computer
+code .
+notepad .\keep-commands.txt
+topgrade
+choco search gcloudsdk
+choco install --help
+cinst gcloudsdk --notsilent
+s gcloud install script
+(New-Object Net.WebClient).DownloadFile("https://dl.google.com/dl/cloudsdk/channels/rapid/GoogleCloudSDKInstaller.exe", "$env:Temp\GoogleCloudSDKInstaller.exe")
+& $env:Temp\GoogleCloudSDKInstaller.exe
+    choco search drive
+cinst googledrive
+choco uninstall googledrive
+topgrade
+diskpart
+s change disk drive letter windows cmd
+Get-WmiObject -Class Win32_NetworkAdapter | Where-Object {$_.Name -like "*Wireless*"}
+Get-NetAdapter
+gh --help
+gh gist --help
+gh gist create --help
+cd dev
+mkdir gists
+cd gists
+gh gist create --help
+gh gist create --public -d "PowerShell Scripts"
+touch Repair-Network.ps1
+touch Reset-Network.ps1
+code .
+ipconfig /release
+ipconfig /renew
+arp -d *
+.\Repair-Network.ps1
+ls
+cd .\PowerShell-Scripts\
+.\Repair-Network.ps1
+espanso edit dev
+espanso restart
+sudo .\Repair-Network.ps1
+Get-NetAdapter
+Get-NetAdapterGet-NetAdapter | Where-Object {$_.Status -eq "Up" }
+Get-NetAdapter | Where-Object {$_.Status -eq "Up" }
+Get-NetAdapter | Where-Object {$_.Status -eq "Up" } | ForEach-Object -Process { Restart-NetAdapter -Name $_.Name }
+sudo Get-NetAdapter | Where-Object {$_.Status -eq "Up" } | ForEach-Object -Process { Restart-NetAdapter -Name $_.Name }
+sudo pwsh
+Get-NetAdapter | Where-Object {$_.Status -eq "Up" } | ForEach-Object -Process { Restart-NetAdapter -Name $_.Name }
+Get-NetAdaptor
+Get-NetAdapter
+get-command *troubleshoot*
+Get-TroubleshootingPack
+get-command -module troubleshootingPack
+function Get-Elevation {`
+    #Admin Privleges Check`
+    $AdminConsole = [bool](([System.Security.Principal.WindowsIdentity]::GetCurrent()).groups -match "S-1-5-32-544")`
+`
+    if ($AdminConsole -like "False*") {`
+        Write-Warning "You need to run PowerShell as an admin to use this function!"`
+        Write-Host ' '`
+        Break`
+    }`
+}
+Get-Elevation
+}
+function Get-Elevation {`
+    #Admin Privleges Check`
+    $AdminConsole = [bool](([System.Security.Principal.WindowsIdentity]::GetCurrent()).groups -match "S-1-5-32-544")`
+`
+    if ($AdminConsole -like "False*") {`
+        Write-Warning "You need to run PowerShell as an admin to use this function!"`
+        Write-Host ' '`
+        Break`
+    }`
+`
+    Write-Information "Admin rights detected."`
+}
+Get-Elevation
+Get-Elevation -verbose
+$AdminConsole = [bool](([System.Security.Principal.WindowsIdentity]::GetCurrent()).groups -match "S-1-5-32-544")
+$AdminConsole
+Write-Warning "You need to run PowerShell as an admin to use this function!"
+Write-Information "Admin rights detected."
+Write-Verbose "Admin rights detected."
+Write-Verbose "Admin rights detected." -Verbose
+Write-Host "SUCCESS: Admin rights detected." -ForegroundColor Green
+Function Get-IntroFM {`
+    Write-Host "`
+    ____  ______        ___       ____       _               `
+    |  _ \/ ___\ \      / (_)_ __ / ___|  ___| |_ _   _ _ __  `
+    | |_) \___ \\ \ /\ / /| | '_ \\___ \ / _ \ __| | | | '_ \ `
+    |  __/ ___) |\ V  V / | | | | |___) |  __/ |_| |_| | |_) |`
+    |_|   |____/  \_/\_/  |_|_| |_|____/ \___|\__|\__,_| .__/ `
+                                                       |_|                                             `
+" -Foregroundcolor Green`
+`
+    Write-Host "             --------------------------------------------------------------------"      -Foregroundcolor Green`
+    Write-Host "             > "                                                                        -Foregroundcolor Green   -NoNewline`
+    Write-Host "Functions for Settings up Windows                                    "                      -ForegroundColor Yellow  -NoNewline`
+    Write-Host "<"                                                                                      -Foregroundcolor Green`
+    Write-Host "             --------------------------------------------------------------------"      -Foregroundcolor Green`
+`
+    Write-Host " "`
+}
+Get-IntroFM
+Function Get-IntroFM {`
+    Write-Host "`
+    ____  ______        ___       ____       _               `
+    |  _ \/ ___\ \      / (_)_ __ / ___|  ___| |_ _   _ _ __  `
+    | |_) \___ \\ \ /\ / /| | '_ \\___ \ / _ \ __| | | | '_ \ `
+    |  __/ ___) |\ V  V / | | | | |___) |  __/ |_| |_| | |_) |`
+    |_|   |____/  \_/\_/  |_|_| |_|____/ \___|\__|\__,_| .__/ `
+                                                       |_|                                             `
+" -Foregroundcolor Green`
+`
+    Write-Host "             --------------------------------------------------------------------"      -Foregroundcolor Green`
+    Write-Host "             > "                                                                        -Foregroundcolor Green   -NoNewline`
+    Write-Host "Functions for Settings up Windows                                "                      -ForegroundColor Yellow  -NoNewline`
+    Write-Host "<"                                                                                      -Foregroundcolor Green`
+    Write-Host "             --------------------------------------------------------------------"      -Foregroundcolor Green`
+`
+    Write-Host " "`
+}
+Get-IntroFM
+Function Get-IntroFM {`
+    Write-Host "`
+    ____  ______        ___       ____       _               `
+    |  _ \/ ___\ \      / (_)_ __ / ___|  ___| |_ _   _ _ __  `
+    | |_) \___ \\ \ /\ / /| | '_ \\___ \ / _ \ __| | | | '_ \ `
+    |  __/ ___) |\ V  V / | | | | |___) |  __/ |_| |_| | |_) |`
+    |_|   |____/  \_/\_/  |_|_| |_|____/ \___|\__|\__,_| .__/ `
+                                                       |_|                                             `
+" -Foregroundcolor Green`
+`
+    Write-Host "    --------------------------------------------------------------------"      -Foregroundcolor Green`
+    Write-Host "    > "                                                                        -Foregroundcolor Green   -NoNewline`
+    Write-Host "Functions for Settings up Windows"                                             -ForegroundColor Yellow  -NoNewline`
+    Write-Host "<"                                                                             -Foregroundcolor Green`
+    Write-Host "    --------------------------------------------------------------------"      -Foregroundcolor Green`
+`
+    Write-Host " "`
+}
+Get-IntroFM
+Function Get-IntroFM {`
+    Write-Host "`
+    ____  ______        ___       ____       _               `
+    |  _ \/ ___\ \      / (_)_ __ / ___|  ___| |_ _   _ _ __  `
+    | |_) \___ \\ \ /\ / /| | '_ \\___ \ / _ \ __| | | | '_ \ `
+    |  __/ ___) |\ V  V / | | | | |___) |  __/ |_| |_| | |_) |`
+    |_|   |____/  \_/\_/  |_|_| |_|____/ \___|\__|\__,_| .__/ `
+                                                       |_|                                             `
+" -Foregroundcolor Green`
+`
+    Write-Host "    --------------------------------------------------------------------"      -Foregroundcolor Green`
+    Write-Host "    > "                                                                        -Foregroundcolor Green   -NoNewline`
+    Write-Host "Functions for Settings up Windows"                                             -ForegroundColor Yellow  -NoNewline`
+    Write-Host "    <"                                                                         -Foregroundcolor Green`
+    Write-Host "    --------------------------------------------------------------------"      -Foregroundcolor Green`
+`
+    Write-Host " "`
+}
+Get-IntroFM
+Function Get-IntroFM {`
+    Write-Host "`
+    ____  ______        ___       ____       _               `
+    |  _ \/ ___\ \      / (_)_ __ / ___|  ___| |_ _   _ _ __  `
+    | |_) \___ \\ \ /\ / /| | '_ \\___ \ / _ \ __| | | | '_ \ `
+    |  __/ ___) |\ V  V / | | | | |___) |  __/ |_| |_| | |_) |`
+    |_|   |____/  \_/\_/  |_|_| |_|____/ \___|\__|\__,_| .__/ `
+                                                       |_|                                             `
+" -Foregroundcolor Green`
+`
+    Write-Host "    --------------------------------------------------------------------"      -Foregroundcolor Green`
+    Write-Host "    > "                                                                        -Foregroundcolor Green   -NoNewline`
+    Write-Host "Functions for Settings up Windows"                                             -ForegroundColor Yellow  -NoNewline`
+    Write-Host "                           <"                                                   -Foregroundcolor Green`
+    Write-Host "    --------------------------------------------------------------------"      -Foregroundcolor Green`
+`
+    Write-Host " "`
+}
+Get-IntroFM
+Function Get-IntroFM {`
+    Write-Host "`
+    ____  ______        ___       ____       _               `
+    |  _ \/ ___\ \      / (_)_ __ / ___|  ___| |_ _   _ _ __  `
+    | |_) \___ \\ \ /\ / /| | '_ \\___ \ / _ \ __| | | | '_ \ `
+    |  __/ ___) |\ V  V / | | | | |___) |  __/ |_| |_| | |_) |`
+    |_|   |____/  \_/\_/  |_|_| |_|____/ \___|\__|\__,_| .__/ `
+                                                       |_|                                             `
+" -Foregroundcolor Green`
+`
+    Write-Host "    --------------------------------------------------------------------"      -Foregroundcolor Green`
+    Write-Host "    <               Functions for Settings up Windows                  >"      -ForegroundColor Yellow  -NoNewline`
+    Write-Host "    --------------------------------------------------------------------"      -Foregroundcolor Green`
+    Write-Host " "`
+}
+Get-IntroFM
+Function Get-IntroFM {`
+    Write-Host "`
+    ____  ______        ___       ____       _               `
+    |  _ \/ ___\ \      / (_)_ __ / ___|  ___| |_ _   _ _ __  `
+    | |_) \___ \\ \ /\ / /| | '_ \\___ \ / _ \ __| | | | '_ \ `
+    |  __/ ___) |\ V  V / | | | | |___) |  __/ |_| |_| | |_) |`
+    |_|   |____/  \_/\_/  |_|_| |_|____/ \___|\__|\__,_| .__/ `
+                                                       |_|                                             `
+" -Foregroundcolor Green`
+`
+    Write-Host "    --------------------------------------------------------------------"      -Foregroundcolor Green`
+    Write-Host "    <               Functions for Settings up Windows                  >"      -ForegroundColor Yellow`
+    Write-Host "    --------------------------------------------------------------------"      -Foregroundcolor Green`
+    Write-Host " "`
+}
+Get-IntroFM
+Function Get-IntroFM {`
+    Write-Host "`
+    ____  ______        ___       ____       _               `
+    |  _ \/ ___\ \      / (_)_ __ / ___|  ___| |_ _   _ _ __  `
+    | |_) \___ \\ \ /\ / /| | '_ \\___ \ / _ \ __| | | | '_ \ `
+    |  __/ ___) |\ V  V / | | | | |___) |  __/ |_| |_| | |_) |`
+    |_|   |____/  \_/\_/  |_|_| |_|____/ \___|\__|\__,_| .__/ `
+                                                       |_|                                             " -Foregroundcolor Green`
+`
+    Write-Host "    --------------------------------------------------------------------"      -Foregroundcolor Green`
+    Write-Host "    <               Functions for Settings up Windows                  >"      -ForegroundColor Yellow`
+    Write-Host "    --------------------------------------------------------------------"      -Foregroundcolor Green`
+    Write-Host " "`
+}
+Get-IntroFM
+code .
+choco install act-cli
+choco
+where.exe choco
+cinst act-cli
+choco --version
+where.exe choco
+sudo cinst act-cli
+z dev
+ls
+cd obsidian
+cd kaas
+ls
+act -l
+act -n
+code .
+act -l
+act -n
+act --help
+act -l
+act export
+act
+keep list
+keep list | grep *reset*
+keep list | grep *reset
+keep list | grep *store*
+keep list | grep *reset*
+keep list | format-table
+keep list | Out-GridView
+keep list | clip
+keep --help
+keep grep reset
+sudo powershell
+Get-AppxPackage -allusers | foreach {Add-AppxPackage -register "$($_.InstallLocation)\appxmanifest.xml" -DisableDevelopmentMode}
+sudo powershell
+function removeApp {`
+  Param ([string]$appName)`
+  Write-Output "Trying to remove $appName"`
+  Get-AppxPackage $appName -AllUsers | Remove-AppxPackage`
+  Get-AppXProvisionedPackage -Online | Where DisplayName -like $appName | Remove-AppxProvisionedPackage -Online`
+}
+);
+$applicationList = @(`
+  "Microsoft.549981C3F5F10" # Cortana`
+  "MicrosoftTeams*"`
+  "Microsoft.Todos*"`
+  "Microsoft.PowerAutomateDesktop"`
+  "Microsoft.3DBuilder"`
+  "Microsoft.BingFinance"`
+  "Microsoft.BingFinance"`
+  "Microsoft.BingNews"`
+  "Microsoft.BingSports"`
+  "Microsoft.BingWeather"`
+  "Microsoft.CommsPhone"`
+  "Microsoft.Getstarted"`
+  "Microsoft.WindowsMaps"`
+  "*MarchofEmpires*"`
+  "Microsoft.GetHelp"`
+  "Microsoft.Messaging"`
+  "*Minecraft*"`
+  "Microsoft.MicrosoftOfficeHub"`
+  "Microsoft.OneConnect"`
+  "Microsoft.WindowsPhone"`
+  "Microsoft.WindowsSoundRecorder"`
+  "*Solitaire*"`
+  "Microsoft.MicrosoftStickyNotes"`
+  "Microsoft.Office.Sway"`
+  "Microsoft.XboxApp"`
+  "Microsoft.XboxIdentityProvider"`
+  "Microsoft.ZuneMusic"`
+  "Microsoft.ZuneVideo"`
+  "Microsoft.NetworkSpeedTest"`
+  "Microsoft.FreshPaint"`
+  "*Autodesk*"`
+  "*BubbleWitch*"`
+  "king.com*"`
+  "G5*"`
+  "*Dell*"`
+  "*Facebook*"`
+  "*Netflix*"`
+  "*Twitter*"`
+  "*Plex*"`
+  "*.Duolingo-LearnLanguagesforFree"`
+  "*.EclipseManager"`
+  "ActiproSoftwareLLC.562882FEEB491" # Code Writer`
+  "*.AdobePhotoshopExpress"`
+);
+foreach ($app in $applicationList) {`
+  removeApp $app`
+  Write-Host " Successfully removed $app" -foregroundcolor green`
+}
+Function Add-WindowsDefenderExclusions {`
+    <#`
+      .SYNOPSIS`
+      This function add Windows defender exclusions.`
+      .DESCRIPTION`
+      This function in details adds exclusions for:`
+      * specified processes,`
+      * specified folders,`
+      * specified files,`
+      * specified extensions.`
+      The primary aim is to improve developer machine performance.`
+      .PARAMETER ProcessesPaths`
+      Paths where specified processess should be search for.`
+      .PARAMETER ProcessesList`
+      Processess to exclude within Windows Defender.`
+      .PARAMETER FoldersPaths`
+      Paths where specified folders should be search for.`
+      .PARAMETER FoldersList`
+      Folders to exclude within Windows Defender.`
+      .PARAMETER FilesList`
+      Files to exclude within Windows Defender.`
+      .PARAMETER ExtensionsList`
+      File extensions to exclude within Windows Defender.`
+      .LINK`
+      https://github.com/a4099181/vagrant-provvin/blob/master/docs/Add-WindowsDefenderExclusions.md`
+      .LINK`
+      https://github.com/a4099181/vagrant-provvin/blob/master/modules/defender.psm1`
+  #>`
+    Param ( [String[]] $ProcessesPaths = ( ${env:ProgramFiles(x86)}, $env:ProgramW6432 )`
+      , [String[]] $ProcessesList = ( 'msbuild.exe', 'devenv.exe', 'sqlcmd.exe', 'sqllocaldb.exe', 'sqlservr.exe', 'sqlwriter.exe')`
+      , [String[]] $FoldersPaths = ( $env:USERPROFILE )`
+      , [String[]] $FoldersList = ( 'MyProjects', '.nuget', '.babun' )`
+      , [String[]] $FilesList = ( 'C:\pagefile.sys' )`
+      , [String[]] $ExtensionsList = ( 'config', 'cs' , 'ldf', 'lnk', 'mdf', 'ttf', 'txt', 'xml', 'log' ) )`
+`
+    Get-ChildItem -Path $ProcessesPaths -Include $ProcessesList -File -Recurse |`
+    ForEach-Object { Add-MpPreference -ExclusionProcess $_.FullName }`
+`
+    Get-ChildItem -Path $FoldersPaths -Include $FoldersList -Directory -Recurse |`
+    ForEach-Object { Add-MpPreference -ExclusionPath $_.FullName }`
+`
+    Add-MpPreference -ExclusionPath $FilesList -ExclusionExtension $ExtensionsList`
+  }
+Add-WindowsDefenderExclusions
+cd .dotfiles
+cd git
+ls
+cd git-extras
+ls
+.\install.cmd
+sudo .\install.cmd
+sudo pwsh
+.\install.cmd
+ls
+cd etc
+ls
+cd ..
+ls
+s -p gh git-extras
+cd ..
+gh repo clone tj/git-extras git-exts
+cd git-exts
+ls
+.\install.cmd
+explorer .
+where.exe column
+git contrib
+git contrib jimbrig
+git contrib "Jimmy Briggs"
+git summary
+git count
+git ignore
+git info
+git authors
+i hl
+gtccl
+l
+cs
+z .dotfiles
+git changelog && cat History.md
+git show-tree
+choco search b2
+scoop search b2
+s b2 backblaze
+pip install --upgrade b2
+b2
+b2 authorize-account
+b2 get-account-info
+b2 list-buckets
+$uri = "https://www.easeus-down.com/temp/EPM_16.0_Trial.exe"
+$name = "EaseUS-PartitionMaster-v16.0"
+$out = "$env:USERPROFILE\Downloads\$name.exe"
+Invoke-WebRequest -Uri $uri -OutFile $out
+Start-Process $out
+pip install -U gcalcli
+gcalcli --help
+ls
+cd gcalcli
+mkdir gcalcli
+explorer
+cd gcalcli
+touch .gitattributes
+notepad .\.gitattributes
+notepad.exe .\.gitattributes
+gcrypts
+git-crypt status -e
+if (-not (test-path("~/.gcalclirc"))) { Copy-Item "~\.dotfiles\gcalcli\.gcalclirc" -destination "~" }
+if (-not (test-path("~/.config/gcalcli"))) {`
+  Copy-Item "~\.dotfiles\gcalcli\gcalcli" -Destination "~\.config" -Recurse`
+}
+cd ~
+ls -a
+lsa
+gcalcli calm
+gcalcli calw
+cd .dotfiles
+git status
+krak
+cd devdash
+cd .config
+cd ..
+touch .gitattributes
+notepad.exe .\.gitattributes
+git-crypt status -e
+git add .
+git status
+git commit -m "feat: add new experimental devdash configs"
+cd ..
+git add gcalcli/**
+git commit -m "feat: add gcalcli configs"
+explorer .
+git add git/**
+git commit -m "feat: add git-extras and git configs"
+git-cliff -o CHANGELOG.md
+doctoc *
+npx doctoc .
+git checkout main
+git pull
+git checkout develop
+git merge --ff-only main
+git push
+git-crypt status -e
+git status
+exit
+exit
+exit
+exit
+krak
+Function Add-WindowsDefenderExclusions {`
+  <#`
+      .SYNOPSIS`
+      This function add Windows defender exclusions.`
+      .DESCRIPTION`
+      This function in details adds exclusions for:`
+      * specified processes,`
+      * specified folders,`
+      * specified files,`
+      * specified extensions.`
+      The primary aim is to improve developer machine performance.`
+      .PARAMETER ProcessesPaths`
+      Paths where specified processess should be search for.`
+      .PARAMETER ProcessesList`
+      Processess to exclude within Windows Defender.`
+      .PARAMETER FoldersPaths`
+      Paths where specified folders should be search for.`
+      .PARAMETER FoldersList`
+      Folders to exclude within Windows Defender.`
+      .PARAMETER FilesList`
+      Files to exclude within Windows Defender.`
+      .PARAMETER ExtensionsList`
+      File extensions to exclude within Windows Defender.`
+      .LINK`
+      https://github.com/a4099181/vagrant-provvin/blob/master/docs/Add-WindowsDefenderExclusions.md`
+      .LINK`
+      https://github.com/a4099181/vagrant-provvin/blob/master/modules/defender.psm1`
+      .LINK`
+      https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-exclusions-microsoft-defender-antivirus?view=o365-worldwide`
+  #>`
+  Param ( [String[]] $ProcessesPaths = ( ${env:ProgramFiles(x86)}, $env:ProgramW6432 )`
+    , [String[]] $ProcessesList = ( 'msbuild.exe', 'devenv.exe', 'sqlcmd.exe', 'sqllocaldb.exe', 'sqlservr.exe', 'sqlwriter.exe')`
+    , [String[]] $FoldersPaths = ( $env:USERPROFILE )`
+    , [String[]] $FoldersList = ( 'MyProjects', '.nuget', '.babun' )`
+    , [String[]] $FilesList = ( 'C:\pagefile.sys' )`
+    , [String[]] $ExtensionsList = ( 'config', 'cs' , 'ldf', 'lnk', 'mdf', 'ttf', 'txt', 'xml', 'log' ) )`
+`
+  Get-ChildItem -Path $ProcessesPaths -Include $ProcessesList -File -Recurse |`
+  ForEach-Object { Add-MpPreference -ExclusionProcess $_.FullName }`
+`
+  Get-ChildItem -Path $FoldersPaths -Include $FoldersList -Directory -Recurse |`
+  ForEach-Object { Add-MpPreference -ExclusionPath $_.FullName }`
+`
+  Add-MpPreference -ExclusionPath $FilesList -ExclusionExtension $ExtensionsList`
+}
+Function Add-DefenderExclusions {`
+  <#`
+      .SYNOPSIS`
+      This function detects and applies various Windows defender exclusions.`
+      .DESCRIPTION`
+      This function adds exclusions for:`
+      * node.exe`
+      * git.exe`
+      * gitkraken.exe`
+      * devenv.exe`
+      * code.exe / code-insiders.exe`
+      * ~/Dev/*`
+      * %APPDATA%\npm`
+      * %APPDATA%\npm-cache`
+      * ~/.dotfiles`
+      * ~/scoop`
+      * %PROGRAMDATA%\scoop`
+      * %PROGRAMDATA%\chocolatey`
+      * %PROGRAMDATA%\DockerDesktop`
+      * %PROGRAMDATA%\nvm`
+      * %PROGRAMDATA%\ssh`
+      The primary aim is to improve developer machine performance.`
+      .LINK`
+      https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-exclusions-microsoft-defender-antivirus?view=o365-worldwide`
+  #>`
+`
+  $extensions = @(`
+    "*.vhd"`
+    "*.vhdx"`
+    "*.iso"`
+    "*.bin"`
+    "*.R"`
+    "*.py"`
+    "*.cmd"`
+    "*.ps1"`
+    "*.psm1"`
+    "*.exe"`
+  )`
+`
+  $paths = @(`
+    "$env:PROGRAMDATA\DockerDesktop"`
+    "$env:PROGRAMDATA\chocolatey"`
+    "$env:PROGRAMDATA\scoop"`
+    "$env:PROGRAMDATA\Boxstarter"`
+    "$env:PROGRAMDATA\Backblaze"`
+    "$env:PROGRAMFILES\Docker"`
+    "$env:PROGRAMFILES\Everything"`
+    "$env:PROGRAMFILES\Git"`
+    "$env:PROGRAMFILES\Hyper-V"`
+    "$env:PROGRAMFILES\7-Zip"`
+    "$env:PROGRAMFILES\nodejs"`
+    "$env:PROGRAMFILES\NTLite"`
+    "$env:PROGRAMFILES\PowerShell"`
+    "$env:PROGRAMFILES\R"`
+    "$env:PROGRAMFILES\Rainmeter"`
+    "$env:PROGRAMFILES\RStudio"`
+    "$env:PROGRAMFILES\Teracopy"`
+    "$env:PROGRAMFILES\Uninstall Tool"`
+    "$env:PROGRAMFILES\Winaero Tweaker"`
+    "$env:PROGRAMFILES\Windows Defender"`
+    "$env:PROGRAMFILES\WindowsApps"`
+    "$env:PROGRAMFILES\wureset"`
+    "${env:ProgramFiles(x86)}\Backblaze"`
+    "${env:ProgramFiles(x86)}\EaseUS"`
+    "${env:ProgramFiles(x86)}\GitHub Cli"`
+    "${env:ProgramFiles(x86)}\Google"`
+    "${env:ProgramFiles(x86)}\Java"`
+    "${env:ProgramFiles(x86)}\Keeper Commander"`
+    "$env:ONEDRIVE\Documents\PowerShell"`
+    "$env:ONEDRIVE\Documents\WindowsPowerShell"`
+  )   `
+`
+  foreach ($item in $extensions) {`
+    Write-Host "Adding $item to Exlusion Extensions..." -ForegroundColor Yellow`
+    powershell.exe -Command { App-MpPreference -ExclusionExtension $item }`
+  }`
+`
+  foreach ($item in $paths) {`
+    Write-Host "Adding $item to Exlusion Paths..." -ForegroundColor Yellow`
+    powershell.exe -Command { App-MpPreference -ExclusionPath $item }`
+  }`
+`
+  $Preferences = Get-MpPreference`
+  $Preferences.ExclusionExtension`
+  $Preferences.ExclusionPath`
+  $Preferences.ExclusionProcess`
+}
+Add-DefenderExclusions
+Function Add-DefenderExclusions {`
+  <#`
+      .SYNOPSIS`
+      This function detects and applies various Windows defender exclusions.`
+      .DESCRIPTION`
+      This function adds exclusions for:`
+      * node.exe`
+      * git.exe`
+      * gitkraken.exe`
+      * devenv.exe`
+      * code.exe / code-insiders.exe`
+      * ~/Dev/*`
+      * %APPDATA%\npm`
+      * %APPDATA%\npm-cache`
+      * ~/.dotfiles`
+      * ~/scoop`
+      * %PROGRAMDATA%\scoop`
+      * %PROGRAMDATA%\chocolatey`
+      * %PROGRAMDATA%\DockerDesktop`
+      * %PROGRAMDATA%\nvm`
+      * %PROGRAMDATA%\ssh`
+      The primary aim is to improve developer machine performance.`
+      .LINK`
+      https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-exclusions-microsoft-defender-antivirus?view=o365-worldwide`
+  #>`
+`
+  $extensions = @(`
+    "*.vhd"`
+    "*.vhdx"`
+    "*.iso"`
+    "*.bin"`
+    "*.R"`
+    "*.py"`
+    "*.cmd"`
+    "*.ps1"`
+    "*.psm1"`
+    "*.exe"`
+  )`
+`
+  $paths = @(`
+    "$env:PROGRAMDATA\DockerDesktop"`
+    "$env:PROGRAMDATA\chocolatey"`
+    "$env:PROGRAMDATA\scoop"`
+    "$env:PROGRAMDATA\Boxstarter"`
+    "$env:PROGRAMDATA\Backblaze"`
+    "$env:PROGRAMFILES\Docker"`
+    "$env:PROGRAMFILES\Everything"`
+    "$env:PROGRAMFILES\Git"`
+    "$env:PROGRAMFILES\Hyper-V"`
+    "$env:PROGRAMFILES\7-Zip"`
+    "$env:PROGRAMFILES\nodejs"`
+    "$env:PROGRAMFILES\NTLite"`
+    "$env:PROGRAMFILES\PowerShell"`
+    "$env:PROGRAMFILES\R"`
+    "$env:PROGRAMFILES\Rainmeter"`
+    "$env:PROGRAMFILES\RStudio"`
+    "$env:PROGRAMFILES\Teracopy"`
+    "$env:PROGRAMFILES\Uninstall Tool"`
+    "$env:PROGRAMFILES\Winaero Tweaker"`
+    "$env:PROGRAMFILES\Windows Defender"`
+    "$env:PROGRAMFILES\WindowsApps"`
+    "$env:PROGRAMFILES\wureset"`
+    "${env:ProgramFiles(x86)}\Backblaze"`
+    "${env:ProgramFiles(x86)}\EaseUS"`
+    "${env:ProgramFiles(x86)}\GitHub Cli"`
+    "${env:ProgramFiles(x86)}\Google"`
+    "${env:ProgramFiles(x86)}\Java"`
+    "${env:ProgramFiles(x86)}\Keeper Commander"`
+    "$env:ONEDRIVE\Documents\PowerShell"`
+    "$env:ONEDRIVE\Documents\WindowsPowerShell"`
+  )   `
+`
+  foreach ($item in $extensions) {`
+    Write-Host "Adding $item to Exlusion Extensions..." -ForegroundColor Yellow`
+    powershell.exe -Command { Add-MpPreference -ExclusionExtension $item }`
+  }`
+`
+  foreach ($item in $paths) {`
+    Write-Host "Adding $item to Exlusion Paths..." -ForegroundColor Yellow`
+    powershell.exe -Command { Add-MpPreference -ExclusionPath $item }`
+  }`
+`
+  $Preferences = Get-MpPreference`
+  $Preferences.ExclusionExtension`
+  $Preferences.ExclusionPath`
+  $Preferences.ExclusionProcess`
+}
+Add-DefenderExclusions
+Function Add-DefenderExclusions {`
+  <#`
+      .SYNOPSIS`
+      This function detects and applies various Windows defender exclusions.`
+      .DESCRIPTION`
+      This function adds exclusions for:`
+      * node.exe`
+      * git.exe`
+      * gitkraken.exe`
+      * devenv.exe`
+      * code.exe / code-insiders.exe`
+      * ~/Dev/*`
+      * %APPDATA%\npm`
+      * %APPDATA%\npm-cache`
+      * ~/.dotfiles`
+      * ~/scoop`
+      * %PROGRAMDATA%\scoop`
+      * %PROGRAMDATA%\chocolatey`
+      * %PROGRAMDATA%\DockerDesktop`
+      * %PROGRAMDATA%\nvm`
+      * %PROGRAMDATA%\ssh`
+      The primary aim is to improve developer machine performance.`
+      .LINK`
+      https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-exclusions-microsoft-defender-antivirus?view=o365-worldwide`
+  #>`
+`
+  $extensions = @(`
+    "*.vhd"`
+    "*.vhdx"`
+    "*.iso"`
+    "*.bin"`
+    "*.R"`
+    "*.py"`
+    "*.cmd"`
+    "*.ps1"`
+    "*.psm1"`
+    "*.exe"`
+  )`
+`
+  $paths = @(`
+    "$env:PROGRAMDATA\DockerDesktop"`
+    "$env:PROGRAMDATA\chocolatey"`
+    "$env:PROGRAMDATA\scoop"`
+    "$env:PROGRAMDATA\Boxstarter"`
+    "$env:PROGRAMDATA\Backblaze"`
+    "$env:PROGRAMFILES\Docker"`
+    "$env:PROGRAMFILES\Everything"`
+    "$env:PROGRAMFILES\Git"`
+    "$env:PROGRAMFILES\Hyper-V"`
+    "$env:PROGRAMFILES\7-Zip"`
+    "$env:PROGRAMFILES\nodejs"`
+    "$env:PROGRAMFILES\NTLite"`
+    "$env:PROGRAMFILES\PowerShell"`
+    "$env:PROGRAMFILES\R"`
+    "$env:PROGRAMFILES\Rainmeter"`
+    "$env:PROGRAMFILES\RStudio"`
+    "$env:PROGRAMFILES\Teracopy"`
+    "$env:PROGRAMFILES\Uninstall Tool"`
+    "$env:PROGRAMFILES\Winaero Tweaker"`
+    "$env:PROGRAMFILES\Windows Defender"`
+    "$env:PROGRAMFILES\WindowsApps"`
+    "$env:PROGRAMFILES\wureset"`
+    "${env:ProgramFiles(x86)}\Backblaze"`
+    "${env:ProgramFiles(x86)}\EaseUS"`
+    "${env:ProgramFiles(x86)}\GitHub Cli"`
+    "${env:ProgramFiles(x86)}\Google"`
+    "${env:ProgramFiles(x86)}\Java"`
+    "${env:ProgramFiles(x86)}\Keeper Commander"`
+    "$env:ONEDRIVE\Documents\PowerShell"`
+    "$env:ONEDRIVE\Documents\WindowsPowerShell"`
+  )   `
+`
+  foreach ($item in $extensions) {`
+    Write-Host "Adding $item to Exlusion Extensions..." -ForegroundColor Yellow`
+    Add-MpPreference -ExclusionExtension $item`
+  }`
+`
+  foreach ($item in $paths) {`
+    Write-Host "Adding $item to Exlusion Paths..." -ForegroundColor Yellow`
+    Add-MpPreference -ExclusionPath $item`
+  }`
+`
+  $Preferences = Get-MpPreference`
+  $Preferences.ExclusionExtension`
+  $Preferences.ExclusionPath`
+  $Preferences.ExclusionProcess`
+}
+Add-DefenderExclusions
+$Preferences = Get-MpPreference
+  $out = @(`
+    $Preferences.ExclusionExtension`
+    $Preferences.ExclusionPath`
+    $Preferences.ExclusionProcess`
+  ) 
+  $out 
+Write-Host "Current Exclusions List:" -ForegroundColor Green
+  $out 
+$Preferences = Get-MpPreference
+  $out = @(`
+    $Preferences.ExclusionExtension`
+    $Preferences.ExclusionPath`
+    $Preferences.ExclusionProcess`
+  ) 
+  Write-Host "Current Exclusions List:" -ForegroundColor Green
+  $out | Out-Default
+$out | Format-Table
+$out | Format-List
+$out | Format-Wide
+$Preferences = Get-MpPreference
+  @"`
+  ------------------------------------------------------------`
+  Windows Defender Exclusion Items`
+  ------------------------------------------------------------`
+  $Preferences.ExclusionExtension; $Preferences.ExclusionPath; $Preferences.ExclusionProcess`
+"@
+}
+$Preferences = Get-MpPreference
+  @"`
+  ------------------------------------------------------------`
+  Windows Defender Exclusion Items`
+  ------------------------------------------------------------`
+  $Preferences.ExclusionExtension; $Preferences.ExclusionPath; $Preferences.ExclusionProcess`
+"@
+Function Add-DefenderExclusions {`
+  <#`
+      .SYNOPSIS`
+      This function detects and applies various Windows defender exclusions.`
+      .DESCRIPTION`
+      This function adds exclusions for:`
+      * node.exe`
+      * git.exe`
+      * gitkraken.exe`
+      * devenv.exe`
+      * code.exe / code-insiders.exe`
+      * ~/Dev/*`
+      * %APPDATA%\npm`
+      * %APPDATA%\npm-cache`
+      * ~/.dotfiles`
+      * ~/scoop`
+      * %PROGRAMDATA%\scoop`
+      * %PROGRAMDATA%\chocolatey`
+      * %PROGRAMDATA%\DockerDesktop`
+      * %PROGRAMDATA%\nvm`
+      * %PROGRAMDATA%\ssh`
+      The primary aim is to improve developer machine performance.`
+      .LINK`
+      https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-exclusions-microsoft-defender-antivirus?view=o365-worldwide`
+  #>`
+`
+  $extensions = @(`
+    "*.vhd"`
+    "*.vhdx"`
+    "*.iso"`
+    "*.bin"`
+    "*.R"`
+    "*.py"`
+    "*.cmd"`
+    "*.ps1"`
+    "*.psm1"`
+    "*.exe"`
+  )`
+`
+  $paths = @(`
+    "$env:PROGRAMDATA\DockerDesktop"`
+    "$env:PROGRAMDATA\chocolatey"`
+    "$env:PROGRAMDATA\scoop"`
+    "$env:PROGRAMDATA\Boxstarter"`
+    "$env:PROGRAMDATA\Backblaze"`
+    "$env:PROGRAMFILES\Docker"`
+    "$env:PROGRAMFILES\Everything"`
+    "$env:PROGRAMFILES\Git"`
+    "$env:PROGRAMFILES\Hyper-V"`
+    "$env:PROGRAMFILES\7-Zip"`
+    "$env:PROGRAMFILES\nodejs"`
+    "$env:PROGRAMFILES\NTLite"`
+    "$env:PROGRAMFILES\PowerShell"`
+    "$env:PROGRAMFILES\R"`
+    "$env:PROGRAMFILES\Rainmeter"`
+    "$env:PROGRAMFILES\RStudio"`
+    "$env:PROGRAMFILES\Teracopy"`
+    "$env:PROGRAMFILES\Uninstall Tool"`
+    "$env:PROGRAMFILES\Winaero Tweaker"`
+    "$env:PROGRAMFILES\Windows Defender"`
+    "$env:PROGRAMFILES\WindowsApps"`
+    "$env:PROGRAMFILES\wureset"`
+    "${env:ProgramFiles(x86)}\Backblaze"`
+    "${env:ProgramFiles(x86)}\EaseUS"`
+    "${env:ProgramFiles(x86)}\GitHub Cli"`
+    "${env:ProgramFiles(x86)}\Google"`
+    "${env:ProgramFiles(x86)}\Java"`
+    "${env:ProgramFiles(x86)}\Keeper Commander"`
+    "$env:ONEDRIVE\Documents\PowerShell"`
+    "$env:ONEDRIVE\Documents\WindowsPowerShell"`
+  )   `
+`
+  foreach ($item in $extensions) {`
+    Write-Host "Adding $item to Exlusion Extensions..." -ForegroundColor Yellow`
+    Add-MpPreference -ExclusionExtension $item`
+  }`
+`
+  foreach ($item in $paths) {`
+    Write-Host "Adding $item to Exlusion Paths..." -ForegroundColor Yellow`
+    Add-MpPreference -ExclusionPath $item`
+  }`
+`
+  $Preferences = Get-MpPreference`
+  @"`
+  ------------------------------------------------------------`
+  Windows Defender Exclusion Items`
+  ------------------------------------------------------------`
+  @(`
+    $Preferences.ExclusionExtension`
+    $Preferences.ExclusionPath`
+    $Preferences.ExclusionProcess`
+  )`
+"@`
+}
+Add-DefenderExclusions
+Function Add-DefenderExclusions {`
+  <#`
+      .SYNOPSIS`
+      This function detects and applies various Windows defender exclusions.`
+      .DESCRIPTION`
+      This function adds exclusions for:`
+      * node.exe`
+      * git.exe`
+      * gitkraken.exe`
+      * devenv.exe`
+      * code.exe / code-insiders.exe`
+      * ~/Dev/*`
+      * %APPDATA%\npm`
+      * %APPDATA%\npm-cache`
+      * ~/.dotfiles`
+      * ~/scoop`
+      * %PROGRAMDATA%\scoop`
+      * %PROGRAMDATA%\chocolatey`
+      * %PROGRAMDATA%\DockerDesktop`
+      * %PROGRAMDATA%\nvm`
+      * %PROGRAMDATA%\ssh`
+      The primary aim is to improve developer machine performance.`
+      .LINK`
+      https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-exclusions-microsoft-defender-antivirus?view=o365-worldwide`
+  #>`
+`
+  $extensions = @(`
+    "*.vhd"`
+    "*.vhdx"`
+    "*.iso"`
+    "*.bin"`
+    "*.R"`
+    "*.py"`
+    "*.cmd"`
+    "*.ps1"`
+    "*.psm1"`
+    "*.exe"`
+  )`
+`
+  $paths = @(`
+    "$env:PROGRAMDATA\DockerDesktop"`
+    "$env:PROGRAMDATA\chocolatey"`
+    "$env:PROGRAMDATA\scoop"`
+    "$env:PROGRAMDATA\Boxstarter"`
+    "$env:PROGRAMDATA\Backblaze"`
+    "$env:PROGRAMFILES\Docker"`
+    "$env:PROGRAMFILES\Everything"`
+    "$env:PROGRAMFILES\Git"`
+    "$env:PROGRAMFILES\Hyper-V"`
+    "$env:PROGRAMFILES\7-Zip"`
+    "$env:PROGRAMFILES\nodejs"`
+    "$env:PROGRAMFILES\NTLite"`
+    "$env:PROGRAMFILES\PowerShell"`
+    "$env:PROGRAMFILES\R"`
+    "$env:PROGRAMFILES\Rainmeter"`
+    "$env:PROGRAMFILES\RStudio"`
+    "$env:PROGRAMFILES\Teracopy"`
+    "$env:PROGRAMFILES\Uninstall Tool"`
+    "$env:PROGRAMFILES\Winaero Tweaker"`
+    "$env:PROGRAMFILES\Windows Defender"`
+    "$env:PROGRAMFILES\WindowsApps"`
+    "$env:PROGRAMFILES\wureset"`
+    "${env:ProgramFiles(x86)}\Backblaze"`
+    "${env:ProgramFiles(x86)}\EaseUS"`
+    "${env:ProgramFiles(x86)}\GitHub Cli"`
+    "${env:ProgramFiles(x86)}\Google"`
+    "${env:ProgramFiles(x86)}\Java"`
+    "${env:ProgramFiles(x86)}\Keeper Commander"`
+    "$env:ONEDRIVE\Documents\PowerShell"`
+    "$env:ONEDRIVE\Documents\WindowsPowerShell"`
+  )   `
+`
+  foreach ($item in $extensions) {`
+    Write-Host "Adding $item to Exlusion Extensions..." -ForegroundColor Yellow`
+    Add-MpPreference -ExclusionExtension $item`
+  }`
+`
+  foreach ($item in $paths) {`
+    Write-Host "Adding $item to Exlusion Paths..." -ForegroundColor Yellow`
+    Add-MpPreference -ExclusionPath $item`
+  }`
+`
+  $Preferences = Get-MpPreference`
+  $out = @(`
+    $Preferences.ExclusionExtension`
+    $Preferences.ExclusionPath`
+    $Preferences.ExclusionProcess`
+  )`
+`
+  @"`
+  ------------------------------------------------------------`
+  Windows Defender Exclusion Items`
+  ------------------------------------------------------------`
+  $out`
+"@`
+}
+Add-DefenderExclusions
+"Extensions:" + { $Preferences.ExclusionExtension -split ";" }
+$Preferences
+$MPpreferences = Get-MpPreference
+$MPpreferences.ExclusionExtension -split ";"
+"Extensions:" + { $MPpreferences.ExclusionExtension -split ";" }
+$MPpreferences.ExclusionExtension -split ";"
+$MPpreferences.ExclusionExtension -split ";" | Out-Host
+Function Add-DefenderExclusions {`
+  <#`
+      .SYNOPSIS`
+      This function detects and applies various Windows defender exclusions.`
+      .DESCRIPTION`
+      This function adds exclusions for:`
+      * node.exe`
+      * git.exe`
+      * gitkraken.exe`
+      * devenv.exe`
+      * code.exe / code-insiders.exe`
+      * ~/Dev/*`
+      * %APPDATA%\npm`
+      * %APPDATA%\npm-cache`
+      * ~/.dotfiles`
+      * ~/scoop`
+      * %PROGRAMDATA%\scoop`
+      * %PROGRAMDATA%\chocolatey`
+      * %PROGRAMDATA%\DockerDesktop`
+      * %PROGRAMDATA%\nvm`
+      * %PROGRAMDATA%\ssh`
+      The primary aim is to improve developer machine performance.`
+      .LINK`
+      https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-exclusions-microsoft-defender-antivirus?view=o365-worldwide`
+  #>`
+`
+  $extensions = @(`
+    "*.vhd"`
+    "*.vhdx"`
+    "*.iso"`
+    "*.bin"`
+    "*.R"`
+    "*.py"`
+    "*.cmd"`
+    "*.ps1"`
+    "*.psm1"`
+    "*.exe"`
+  )`
+`
+  $paths = @(`
+    "$env:PROGRAMDATA\DockerDesktop"`
+    "$env:PROGRAMDATA\chocolatey"`
+    "$env:PROGRAMDATA\scoop"`
+    "$env:PROGRAMDATA\Boxstarter"`
+    "$env:PROGRAMDATA\Backblaze"`
+    "$env:PROGRAMFILES\Docker"`
+    "$env:PROGRAMFILES\Everything"`
+    "$env:PROGRAMFILES\Git"`
+    "$env:PROGRAMFILES\Hyper-V"`
+    "$env:PROGRAMFILES\7-Zip"`
+    "$env:PROGRAMFILES\nodejs"`
+    "$env:PROGRAMFILES\NTLite"`
+    "$env:PROGRAMFILES\PowerShell"`
+    "$env:PROGRAMFILES\R"`
+    "$env:PROGRAMFILES\Rainmeter"`
+    "$env:PROGRAMFILES\RStudio"`
+    "$env:PROGRAMFILES\Teracopy"`
+    "$env:PROGRAMFILES\Uninstall Tool"`
+    "$env:PROGRAMFILES\Winaero Tweaker"`
+    "$env:PROGRAMFILES\Windows Defender"`
+    "$env:PROGRAMFILES\WindowsApps"`
+    "$env:PROGRAMFILES\wureset"`
+    "${env:ProgramFiles(x86)}\Backblaze"`
+    "${env:ProgramFiles(x86)}\EaseUS"`
+    "${env:ProgramFiles(x86)}\GitHub Cli"`
+    "${env:ProgramFiles(x86)}\Google"`
+    "${env:ProgramFiles(x86)}\Java"`
+    "${env:ProgramFiles(x86)}\Keeper Commander"`
+    "$env:ONEDRIVE\Documents\PowerShell"`
+    "$env:ONEDRIVE\Documents\WindowsPowerShell"`
+  )   `
+`
+  foreach ($item in $extensions) {`
+    Write-Host "Adding $item to Exlusion Extensions..." -ForegroundColor Yellow`
+    Add-MpPreference -ExclusionExtension $item`
+  }`
+`
+  foreach ($item in $paths) {`
+    Write-Host "Adding $item to Exlusion Paths..." -ForegroundColor Yellow`
+    Add-MpPreference -ExclusionPath $item`
+  }`
+`
+  $MPpreferences = Get-MpPreference`
+  $extsout = $MPpreferences.ExclusionExtension -split ";"`
+  $pathsout = $MPpreferences.ExclusionPath -split ";"`
+  $processesout = $MPpreferences.ExclusionProcess -split ";"`
+  `
+  @"`
+  ------------------------------------------------------------`
+  Windows Defender Exclusion Items`
+  ------------------------------------------------------------`
+  $extsout`
+  $pathsout`
+  $processesout`
+"@`
+}
+Add-DefenderExclusions
+$MPpreferences = Get-MpPreference
+  $extsout = $MPpreferences.ExclusionExtension -split ";"
+  $pathsout = $MPpreferences.ExclusionPath -split ";"
+  $processesout = $MPpreferences.ExclusionProcess -split ";"
+Write-Host "`
+  ------------------------------------------------------------`
+  Windows Defender Exclusion Items`
+  ------------------------------------------------------------`
+  $extsout \n`
+  $pathsout \n`
+  $processesout \n`
+  "
+Write-Host "$extsout"
+Write-Host "Excluded Extensions: $extsout"
+  Write-Host "Excluded Paths $pathsout"
+  Write-Host "Excluded Processes $processesout"
+Write-Host "Excluded Paths ($pathsout -split ';')"
+Write-Host "Excluded Paths:" + $pathsout -split ';'
+Write-Host "Excluded Paths:"
+  $pathsout -split ';'
+Write-Host "`
+  ------------------------------------------------------------`
+  Windows Defender Exclusion Items`
+  ------------------------------------------------------------`
+  "
+  Write-Host "Excluded Extensions: $extsout"
+  Write-Host "Excluded Paths:"
+  $pathsout -split ';'
+  Write-Host "Excluded Processes:"
+  $processesout
+Function Add-DefenderExclusions {`
+  <#`
+      .SYNOPSIS`
+      This function detects and applies various Windows defender exclusions.`
+      .DESCRIPTION`
+      This function adds exclusions for:`
+      * node.exe`
+      * git.exe`
+      * gitkraken.exe`
+      * devenv.exe`
+      * code.exe / code-insiders.exe`
+      * ~/Dev/*`
+      * %APPDATA%\npm`
+      * %APPDATA%\npm-cache`
+      * ~/.dotfiles`
+      * ~/scoop`
+      * %PROGRAMDATA%\scoop`
+      * %PROGRAMDATA%\chocolatey`
+      * %PROGRAMDATA%\DockerDesktop`
+      * %PROGRAMDATA%\nvm`
+      * %PROGRAMDATA%\ssh`
+      The primary aim is to improve developer machine performance.`
+      .LINK`
+      https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-exclusions-microsoft-defender-antivirus?view=o365-worldwide`
+  #>`
+`
+  $extensions = @(`
+    "*.vhd"`
+    "*.vhdx"`
+    "*.iso"`
+    "*.bin"`
+    "*.R"`
+    "*.py"`
+    "*.cmd"`
+    "*.ps1"`
+    "*.psm1"`
+    "*.exe"`
+  )`
+`
+  $paths = @(`
+    "$env:PROGRAMDATA\DockerDesktop"`
+    "$env:PROGRAMDATA\chocolatey"`
+    "$env:PROGRAMDATA\scoop"`
+    "$env:PROGRAMDATA\Boxstarter"`
+    "$env:PROGRAMDATA\Backblaze"`
+    "$env:PROGRAMFILES\Docker"`
+    "$env:PROGRAMFILES\Everything"`
+    "$env:PROGRAMFILES\Git"`
+    "$env:PROGRAMFILES\Hyper-V"`
+    "$env:PROGRAMFILES\7-Zip"`
+    "$env:PROGRAMFILES\nodejs"`
+    "$env:PROGRAMFILES\NTLite"`
+    "$env:PROGRAMFILES\PowerShell"`
+    "$env:PROGRAMFILES\R"`
+    "$env:PROGRAMFILES\Rainmeter"`
+    "$env:PROGRAMFILES\RStudio"`
+    "$env:PROGRAMFILES\Teracopy"`
+    "$env:PROGRAMFILES\Uninstall Tool"`
+    "$env:PROGRAMFILES\Winaero Tweaker"`
+    "$env:PROGRAMFILES\Windows Defender"`
+    "$env:PROGRAMFILES\WindowsApps"`
+    "$env:PROGRAMFILES\wureset"`
+    "${env:ProgramFiles(x86)}\Backblaze"`
+    "${env:ProgramFiles(x86)}\EaseUS"`
+    "${env:ProgramFiles(x86)}\GitHub Cli"`
+    "${env:ProgramFiles(x86)}\Google"`
+    "${env:ProgramFiles(x86)}\Java"`
+    "${env:ProgramFiles(x86)}\Keeper Commander"`
+    "$env:ONEDRIVE\Documents\PowerShell"`
+    "$env:ONEDRIVE\Documents\WindowsPowerShell"`
+  )   `
+`
+  foreach ($item in $extensions) {`
+    Write-Host "Adding $item to Exlusion Extensions..." -ForegroundColor Yellow`
+    Add-MpPreference -ExclusionExtension $item`
+  }`
+`
+  foreach ($item in $paths) {`
+    Write-Host "Adding $item to Exlusion Paths..." -ForegroundColor Yellow`
+    Add-MpPreference -ExclusionPath $item`
+  }`
+`
+  $MPpreferences = Get-MpPreference`
+  $extsout = $MPpreferences.ExclusionExtension -split ";"`
+  $pathsout = $MPpreferences.ExclusionPath -split ";"`
+  $processesout = $MPpreferences.ExclusionProcess -split ";"`
+  `
+  Write-Host "`
+  ------------------------------------------------------------`
+  Windows Defender Exclusion Items`
+  ------------------------------------------------------------`
+  "`
+  Write-Host "Excluded Extensions: $extsout"`
+  Write-Host "Excluded Paths:"`
+  $pathsout -split ';'`
+  Write-Host "Excluded Processes:"`
+  $processesout`
+}
+Add-DefenderExclusions
+Function Add-DefenderExclusions {`
+  <#`
+      .SYNOPSIS`
+      This function detects and applies various Windows defender exclusions.`
+      .DESCRIPTION`
+      This function adds exclusions for:`
+      * node.exe`
+      * git.exe`
+      * gitkraken.exe`
+      * devenv.exe`
+      * code.exe / code-insiders.exe`
+      * ~/Dev/*`
+      * %APPDATA%\npm`
+      * %APPDATA%\npm-cache`
+      * ~/.dotfiles`
+      * ~/scoop`
+      * %PROGRAMDATA%\scoop`
+      * %PROGRAMDATA%\chocolatey`
+      * %PROGRAMDATA%\DockerDesktop`
+      * %PROGRAMDATA%\nvm`
+      * %PROGRAMDATA%\ssh`
+      The primary aim is to improve developer machine performance.`
+      .LINK`
+      https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-exclusions-microsoft-defender-antivirus?view=o365-worldwide`
+  #>`
+`
+  $extensions = @(`
+    "*.vhd"`
+    "*.vhdx"`
+    "*.iso"`
+    "*.bin"`
+    "*.R"`
+    "*.py"`
+    "*.cmd"`
+    "*.ps1"`
+    "*.psm1"`
+    "*.exe"`
+  )`
+`
+  $paths = @(`
+    "$env:PROGRAMDATA\DockerDesktop"`
+    "$env:PROGRAMDATA\chocolatey"`
+    "$env:PROGRAMDATA\scoop"`
+    "$env:PROGRAMDATA\Boxstarter"`
+    "$env:PROGRAMDATA\Backblaze"`
+    "$env:PROGRAMFILES\Docker"`
+    "$env:PROGRAMFILES\Everything"`
+    "$env:PROGRAMFILES\Git"`
+    "$env:PROGRAMFILES\Hyper-V"`
+    "$env:PROGRAMFILES\7-Zip"`
+    "$env:PROGRAMFILES\nodejs"`
+    "$env:PROGRAMFILES\NTLite"`
+    "$env:PROGRAMFILES\PowerShell"`
+    "$env:PROGRAMFILES\R"`
+    "$env:PROGRAMFILES\Rainmeter"`
+    "$env:PROGRAMFILES\RStudio"`
+    "$env:PROGRAMFILES\Teracopy"`
+    "$env:PROGRAMFILES\Uninstall Tool"`
+    "$env:PROGRAMFILES\Winaero Tweaker"`
+    "$env:PROGRAMFILES\Windows Defender"`
+    "$env:PROGRAMFILES\WindowsApps"`
+    "$env:PROGRAMFILES\wureset"`
+    "${env:ProgramFiles(x86)}\Backblaze"`
+    "${env:ProgramFiles(x86)}\EaseUS"`
+    "${env:ProgramFiles(x86)}\GitHub Cli"`
+    "${env:ProgramFiles(x86)}\Google"`
+    "${env:ProgramFiles(x86)}\Java"`
+    "${env:ProgramFiles(x86)}\Keeper Commander"`
+    "$env:ONEDRIVE\Documents\PowerShell"`
+    "$env:ONEDRIVE\Documents\WindowsPowerShell"`
+  )   `
+`
+  foreach ($item in $extensions) {`
+    Write-Host "Adding $item to Exlusion Extensions..." -ForegroundColor Yellow`
+    Add-MpPreference -ExclusionExtension $item`
+  }`
+`
+  foreach ($item in $paths) {`
+    Write-Host "Adding $item to Exlusion Paths..." -ForegroundColor Yellow`
+    Add-MpPreference -ExclusionPath $item`
+  }`
+`
+  $MPpreferences = Get-MpPreference`
+  $extsout = $MPpreferences.ExclusionExtension -split ";"`
+  $pathsout = $MPpreferences.ExclusionPath -split ";"`
+  $processesout = $MPpreferences.ExclusionProcess -split ";"`
+  `
+  Write-Host "`
+  ------------------------------------------------------------`
+  Windows Defender Exclusion Items`
+  ------------------------------------------------------------`
+  "`
+  Write-Host "Excluded Extensions:" -ForegroundColor Red`
+  $extsout`
+  Write-Host "Excluded Paths:" -ForegroundColor Red`
+  $pathsout -split ';'`
+  Write-Host "Excluded Processes:" -ForegroundColor Red`
+  $processesout`
+}
+Add-DefenderExclusions
+Install-Module -Name PowerShellProTools
+Install-Module -Name PSCommander
+dotnet new -i Microsoft.PowerShell.Standard.Module.Template
+z jimbrig
+mkdir myModule
+cd MyModule
+dotnet new psmodule
+dotnet new psmodule --search
+ls
+New-ModuleManifest -Author "Jimmy Briggs" -Path "myModule.psd1" -ModuleVersion "1.0"
+cat .\myModule.psd1
+touch myModule.psm1
+code .
+cd ..
+ls
+cd sandbox
+mkdir PSModule
+Invoke-Plaster -TemplatePath "PSPlasterTemplate" -DestinationPath "PSModule"
+gh repo clone Invoke-Automation/PlasterTemplate
+gh repo clone Invoke-Automation/IAPlasterProjectTemplate ModuleTemplate
+Invoke-Plaster -TemplatePath "ModuleTemplate" -DestinationPath "PSModule"
+install-module InvokeBuild
+install-module PSScriptAnalyzer
+Invoke-Plaster -TemplatePath "ModuleTemplate" -DestinationPath "PSModule"
+cd PSModule
+ls
+code .
+cd ..
+gh repo clone jimbrig/SQL-Server-R-Services-Samples
+mkdir AzureR-SQL-Server
+cd .\AzureR-SQL-Server\
+code .
+cd ..
+cd .\SQL-Server-R-Services-Samples\
+code .
+git-cliff --help
+touch cliff.toml
+git-cliff -i
+z C:\Users\jimmy\.dotfiles
+cat cliff.toml | clip
+git-cliff -o inst/CHANGELOG.md
+topgrade
+choco upgrade
+choco upgrade all
+cup
+cpkgs
+choco list --local-only
+choco --help
+cinst autohotkey bat boxstarter cascadia-code-nerd-font choco-cleaner everything freefilesync fzf InstChoco jp jq less lsd qpdf qttabbar RapidEE toggl ussf yori yq winaero-tweaker.install --force --ignore-checksums
+cplb
+cinst lsd
+cinst qttabbar
+cinst ussf
+cinst rapidee
+cinst toggl
+cinst yori qpdf
+s uploading to icloud paused
+csearch azure
+az --version
+cinst azure-data-studio chocolatey-azuredatastudio.extension bicep sqlpackage sql-server-management-studio
+get-appxpackage *paint*
+get-appxpackage Microsoft.Paint | Reset-Appxpackage
+espanso match list
+espanso edit websites
+gh repo view -w
+espanso edit websites
+keep run checkdisk -n
+restart-computer
+topgrade
+ipconfig
+ping www.yahoo.com
+espanso edit credit-cards
+choco search todoist
+pip search todoist
+s how to pip search
+scoop search todoist
+edit-functions
+cd .config/s
+ls
+code .
+z jimsdots
+code .
+cinst googler
+s C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\
+s "Microsoft SQL Server\150\DTS\Binn\"
+refreshenv
+cinst googler
+cinst googler --force
+$env:DOTDIR
+s -p pypi todoist
+s -p gh amix/Todoist-API-s
+s vscode best table of contents markdown
+wsl
+python --help
+where.exe python
+pip install -U googler
+cd ~/.dotfiles
+git checkout main
+git pull
+git checkout develop
+git merge --ff-only main
+git push
+"$(git rev-parse --show-toplevel)"
+cd ~
+"$(git rev-parse --show-toplevel)"
+cinst ripgrep
+z sandbox
+install-module Stucco -scope CurrentUser
+$template = Get-PlasterTemplate -IncludeInstalledModules | Where-Object TemplatePath -Match 'Stucco'
+Invoke-Plaster -TemplatePath $template.TemplatePath
+ls
+cd .\StuccoModule\
+ls
+code .
+s obsidian metadata
+edit-functions
+cd "$env:APPDATA\Obsidian"
+ls
+cat obsidian.json
+cat obsidian.json | jq
+get-command *json*
+cat obsidian.json | ConvertFrom-Json
+cat obsidian.json | ConvertTo-Json
+cat obsidian.json | ConvertTo-Json -EscapeHandling Default
+cat obsidian.json | ConvertTo-Json -EscapeHandling EscapeHtml
+cat obsidian.json | ConvertTo-Json -EscapeHandling EscapeNonAscii
+cat obsidian.json | jq
+cd ~
+cat "$env:APPDATA\Obsidian\obsidian.json" | jq
+$ObsidianConfig = "$env:APPDATA\Obsidian\obsidian.json"
+jq $ObsidianConfig.vaults.path
+cat $ObsidianConfig | jq .path
+cat $ObsidianConfig | jq .
+cat $ObsidianConfig | jq .vaults
+cat $ObsidianConfig | jq .vaults.*.path
+cat $ObsidianConfig | jq .vaults..path
+cat $ObsidianConfig | jq .vaults.?.path
+cat $ObsidianConfig | jq .vaults?
+cat $ObsidianConfig | jq .vaults?.path
+cat $ObsidianConfig | jq .vaults?path
+cat $ObsidianConfig | jq .vaults?.
+cat $ObsidianConfig | jq '.vaults?.path'
+cat $ObsidianConfig | jq '.vaults.[1].path'
+cat $ObsidianConfig | jq '.vaults.[1]'
+cat $ObsidianConfig | jq .vaults.[1:3]
+cat $ObsidianConfig | jq .vaults[1:3]
+jq $ObsidianConfig .vaults
+jq $ObsidianConfig
+jq .[2:4]
+jq '.[2:4]'
+cat $ObsidianConfig | jq | clip
+$ObsidianConfig = "$env:APPDATA\Obsidian\obsidian.json"
+$VaultKeys = cat $ObsidianConfig | jq .vaults | keys
+$VaultKeys = cat $ObsidianConfig | jq .vaults | jq keys
+$VaultKeys
+$VaultKeys = cat $ObsidianConfig | jq .vaults | jq keys | ConvertFrom-Json
+$VaultKeys
+$VaultPaths = cat $ObsidianConfig | jq .vaults | map(.path) | ConvertFrom-Json
+$VaultPaths = cat $ObsidianConfig | jq .vaults | jq map(.path) | ConvertFrom-Json
+$VaultPaths = cat $ObsidianConfig | jq .vaults | jq map(.path)
+$VaultPaths = cat $ObsidianConfig | jq .vaults | jq map('.path')
+$VaultPaths = cat $ObsidianConfig | jq '.vaults' | jq map('.path')
+$VaultPaths = cat $ObsidianConfig | jq '.vaults'
+cat $ObsidianConfig | jq '.vaults'
+cat $ObsidianConfig | jq '.vaults' | jq 'map(.path)'
+cat $ObsidianConfig | jq '.vaults' | jq 'map(.path)' | ConvertFrom-Json
+ cat $ObsidianConfig | jq '.vaults' | jq 'map(.path)' | ConvertFrom-Json | dirname.exe 
+$VaultPaths = cat $ObsidianConfig | jq '.vaults' | jq 'map(.path)' | ConvertFrom-Json
+$VaultPaths
+$VaultPaths[1]
+$VaultPaths | Select -ExpandProperty basename
+$VaultPaths.basename
+$VaultPaths[1].basename
+$VaultPaths | Split-Path -leaf
+$VaultNames = $VaultPaths | Split-Path -Leaf
+$selection = Read-Host "$VaultNames"
+Write-Host "Select a Vault:" -ForeGroundColor Yellow
+for($i = 0; $i -lt $VaultNames.count; $i++) {`
+Write-Host "$($i): $($VaultNames[$i]) | $($VaultNames[$i])"`
+}
+$selection = Read-Host -Prompt "Enter the Number for the Vault to Open:"
+$selectedVault = $VaultNames[$selection]
+$selectedVault
+Function Get-ObsidianVaults {`
+$ObsidianConfig = "$env:APPDATA\Obsidian\obsidian.json"`
+$VaultKeys = cat $ObsidianConfig | jq .vaults | jq keys | ConvertFrom-Json`
+$VaultPaths = cat $ObsidianConfig | jq '.vaults' | jq 'map(.path)' | ConvertFrom-Json`
+$VaultNames = $VaultPaths | Split-Path -Leaf`
+`
+If (!($VaultNames.Count -gt 1)) { throw }`
+`
+Write-Host "Select a Vault:" -ForeGroundColor Yellow`
+for($i = 0; $i -lt $VaultNames.count; $i++) {`
+Write-Host "$($i): $($VaultNames[$i]) | $($VaultNames[$i])"`
+}`
+$selection = Read-Host -Prompt "Enter the Number for the Vault to Open:"`
+$selectedVault = $VaultNames[$selection]`
+`
+$openstring = 'obsidian://open?vault=' + $selectedVault`
+Start-Process $openstring`
+} 
+Get-ObsidianVaults
+Function Open-ObsidianVault {`
+$ObsidianConfig = "$env:APPDATA\Obsidian\obsidian.json"`
+$VaultKeys = cat $ObsidianConfig | jq .vaults | jq keys | ConvertFrom-Json`
+$VaultPaths = cat $ObsidianConfig | jq '.vaults' | jq 'map(.path)' | ConvertFrom-Json`
+$VaultNames = $VaultPaths | Split-Path -Leaf`
+`
+If (!($VaultNames.Count -gt 1)) { throw }`
+`
+Write-Host "Select a Vault:" -ForeGroundColor Yellow`
+for($i = 0; $i -lt $VaultNames.count; $i++) {`
+Write-Host "$($i): $($VaultNames[$i]) | $($VaultNames[$i])"`
+}`
+$selection = Read-Host -Prompt "Enter the Number for the Vault to Open:"`
+$selectedVault = $VaultNames[$selection]`
+`
+$openstring = 'obsidian://open?vault=' + $selectedVault`
+Start-Process $openstring -PassThru`
+} 
+Open-ObsidianVault
+get-help start-process -examples
+get-help start-process 
+Function Open-ObsidianVault {`
+$ObsidianConfig = "$env:APPDATA\Obsidian\obsidian.json"`
+$VaultKeys = cat $ObsidianConfig | jq .vaults | jq keys | ConvertFrom-Json`
+$VaultPaths = cat $ObsidianConfig | jq '.vaults' | jq 'map(.path)' | ConvertFrom-Json`
+$VaultNames = $VaultPaths | Split-Path -Leaf`
+`
+If (!($VaultNames.Count -gt 1)) { throw }`
+`
+Write-Host "Select a Vault:" -ForeGroundColor Yellow`
+for($i = 0; $i -lt $VaultNames.count; $i++) {`
+Write-Host "$($i): $($VaultNames[$i]) | $($VaultNames[$i])"`
+}`
+$selection = Read-Host -Prompt "Enter the Number for the Vault to Open:"`
+$selectedVault = $VaultNames[$selection]`
+`
+$openstring = 'obsidian://open?vault=' + $selectedVault`
+Start-Process $openstring -PassThru -NewEnvironment`
+} 
+Open-ObsidianVault
+Function Open-ObsidianVault {`
+$ObsidianConfig = "$env:APPDATA\Obsidian\obsidian.json"`
+$VaultKeys = cat $ObsidianConfig | jq .vaults | jq keys | ConvertFrom-Json`
+$VaultPaths = cat $ObsidianConfig | jq '.vaults' | jq 'map(.path)' | ConvertFrom-Json`
+$VaultNames = $VaultPaths | Split-Path -Leaf`
+`
+If (!($VaultNames.Count -gt 1)) { throw }`
+`
+Write-Host "Select a Vault:" -ForeGroundColor Yellow`
+for($i = 0; $i -lt $VaultNames.count; $i++) {`
+Write-Host "$($i): $($VaultNames[$i]) | $($VaultNames[$i])"`
+}`
+$selection = Read-Host -Prompt "Enter the Number for the Vault to Open:"`
+$selectedVault = $VaultNames[$selection]`
+`
+$openstring = 'obsidian://open?vault=' + $selectedVault`
+Start-Process $openstring -PassThru -UseNewEnvironment`
+} 
+Open-ObsidianVault
+Function Open-ObsidianVault {`
+$ObsidianConfig = "$env:APPDATA\Obsidian\obsidian.json"`
+$VaultKeys = cat $ObsidianConfig | jq .vaults | jq keys | ConvertFrom-Json`
+$VaultPaths = cat $ObsidianConfig | jq '.vaults' | jq 'map(.path)' | ConvertFrom-Json`
+$VaultNames = $VaultPaths | Split-Path -Leaf`
+`
+If (!($VaultNames.Count -gt 1)) { throw }`
+`
+Write-Host "Select a Vault:" -ForeGroundColor Yellow`
+for($i = 0; $i -lt $VaultNames.count; $i++) {`
+Write-Host "$($i): $($VaultNames[$i]) | $($VaultNames[$i])"`
+}`
+$selection = Read-Host -Prompt "Enter the Number for the Vault to Open:"`
+$selectedVault = $VaultNames[$selection]`
+`
+$openstring = 'obsidian://open?vault=' + $selectedVault`
+start $openstring`
+}
+Open-ObsidianVault
+s set environment variables with login script windows
+choco search devspace
+z dev
+lsd
+cd inbox
+ls
+explorer .
+files .
+choco search youtube-dl
+sudo cinst youtube-dl
+s best qttabbar settings
+ping www.yahoo.com
+lastversion tjackenpacken/taskbar-groups
+pip install -U lastversion
+lastversion tjackenpacken/taskbar-groups
+gh release --help
+gh release list -R "tjackenpacken/taskbar-groups"
+lastversion tjackenpacken/taskbar-groups --assets
+gh release download --repo tjackenpacken/taskbar-groups --dir "$HOME\Downloads"
+gh release download --repo tjackenpacken/taskbar-groups --dir "$HOME\Downloads" --pattern "v0.2.0.0"
+gh release download --repo tjackenpacken/taskbar-groups --dir "$HOME\Downloads" --pattern "taskbar-groups-v0.2.zip"
+gh release download --repo tjackenpacken/taskbar-groups --dir "$HOME\Downloads" --pattern "v0.2"
+gh release download --repo tjackenpacken/taskbar-groups --dir "$HOME\Downloads" --pattern "*.zip"
+ping www.yahoo.com
+gh release download --repo tjackenpacken/taskbar-groups --dir "$HOME\Downloads" --pattern "*.zip"
+gh release download --help
+gh release download -D "$HOME\Downloads" -R "tjackenpacken/taskbar-groups" 
+ping www.yahoo.com
+gh release download -D "$HOME\Downloads" -R "tjackenpacken/taskbar-groups" 
+gh release download -D "$HOME\Downloads" -R "tjackenpacken/taskbar-groups" --pattern "*.zip"
+gh release download -D "$HOME\Downloads" -R "tjackenpacken/taskbar-groups" --pattern "TaskbarGroups.zip"
+gh release list -R "tjackenpacken/taskbar-groups" --pattern "TaskbarGroups.zip"
+gh release list -R "tjackenpacken/taskbar-groups"
+gh release --help
+gh release view --help
+gh release view -w
+gh release download --help
+gh release download "v0.2.0.0" -D "$HOME\Downloads" -R "tjackenpacken/taskbar-groups"
+cd Downloads
+ls
+Expand-7Zip -ArchiveFileName ".\TaskbarGroups.zip" -TargetPath "TaskbarGroups"
+cd .\TaskbarGroups\
+lsd
+cd .\TaskbarGroups\
+lsd
+explorer .
+ipconfig /release
+ipconfig /flushdns
+ipconfig /renew
+exit
+netsh winsock reset catalog
+netsh int ip reset
+Restart-Computer
+ping yahoo.com
+$PROFILE
+cd onedrive/documents
+gh repo clone jimbrig/powershell
+gh auth login
+gh repo clone jimbrig/powershell
+gh repo clone jimbrig/powershell PowerShell
+explorer .
+gh repo clone jimbrig/powershell PowerShell
+cd PowerShell
+git-crypt unlock
+choco search imgur
+scoop search imgur
+Install-Module -Name PSReadLine -AllowPrerelease
+Install-Module -Name PSReadLine -AllowPrerelease -Force -AllowClobber
+Install-Module -Name oh-my-posh -Scope CurrentUser
+Install-Module -Name ZLocation -Scope CurrentUser
+Install-Module -Name Terminal-Icons -Scope CurrentUser
+Install-Module -Name PSWriteColor -Scope CurrentUser
+Install-Module -Name PSWindowsUpdate -Scope CurrentUser
+Install-Module -Name posh-git -Scope CurrentUser
+Install-Module -Name DockerCompletion -Scope CurrentUser
+Install-Module -Name scoop-completion -Scope CurrentUser
+Install-Module -Name psake -Scope CurrentUser
+Install-Module -Name pester -Scope CurrentUser
+Install-Module -Name pester -Scope CurrentUser -AllowPrerelease -Force -AllowClobber
+Install-Module -Name Plaster
+Install-Module -Name PSDepend
+Install-Module -Name Stucco
+csearch ranger
+csearch rancher
+csearch files
+csearch explorer
+z edge
+ls
+z jimmy
+z dev/jimbrig/jimsdots/edge
+ls
+lsd
+cd edge
+ls
+cd ..
+ls
+lsd
+cd '.\Search Engines\'
+;sd
+lsd
+explore .
+explorer .
+csearch ranger
+csearch commander
+cinst TotalCommander
+sudo cinst TotalCommander
+csearch nnn
+totalcommander
+choco uninstall TotalCommander
+sudo choco uninstall TotalCommander
+sudo cinst filecommander
+csearch commander
+scoop search nnn
+scoop search commander
+get-command -module PSReadLine
+get-command -module troubleshootingPack
+get-command -module oh-my-posh
+get-command -module PSCommander
+get-command -module PSReadLine
+Get-PSReadLineOption
+Copy-Item "C:\Users\jimmy\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt" "$env:OneDrive\Documents\PowerShell\"
