@@ -269,6 +269,7 @@ If (Get-Command gcalcli -ErrorAction SilentlyContinue) {
   ${function:Get-CalendarMonth} = { & gcalcli calm }
   ${function:Get-CalendarWeek} = { & gcalcli calw }
   ${function:New-CalendarEvent} = { & gcalcli add }
+  ${function:Remove-CalendarEvent} = { & gcalcli delete $args }
 }
 
 # -----
