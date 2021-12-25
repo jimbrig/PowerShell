@@ -14,7 +14,7 @@ Set-Alias -Name checkdisk -Value Invoke-Checkdisk
 Set-Alias -Name sfc -Value Invoke-SFCScan
 
 # Remove stupid 'touch' alias for 'set-filetime'
-Remove-Alias -Name touch 
+Remove-Alias -Name touch
 
 # Ensure `R` is for launching an R Terminal:
 if (Get-Command R.exe -ErrorAction SilentlyContinue | Test-Path) {
@@ -45,7 +45,10 @@ If (Get-Command gcalcli -ErrorAction SilentlyContinue) {
 	Set-Alias -Name agenda -Value Get-Agenda
 	Set-Alias -Name gcalm -Value Get-CalendarMonth
 	Set-Alias -Name gcalw -Value Get-CalendarWeek
-	Set-Alias -Name gcalnew -Value New-CalendarEvent
+  Set-Alias -Name calm -Value Get-CalendarMonth
+	Set-Alias -Name calw -Value Get-CalendarWeek
+	Set-Alias -Name gcaladd -Value New-CalendarEvent
+  Set-Alias -Name caladd -Value New-CalendarEvent
 }
 
 # If using code-insiders

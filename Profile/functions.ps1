@@ -118,7 +118,7 @@ ${function:Reset-Network} = {
   netsh int ip reset all
   Write-Host "Resetting Windows HTTP Proxy.." -ForegroundColor Yellow
   netsh winhttp reset proxy
-  Write-Host "Flushing DNS.." -ForegroundColor Yellow 
+  Write-Host "Flushing DNS.." -ForegroundColor Yellow
   ipconfig /flushdns
   Write-Host "✔️ Done." -ForegroundColor Green
   $restart = Read-Host "To apply changes a restart is required, restart now? (y/n)"
@@ -278,5 +278,3 @@ If (Get-Command gcalcli -ErrorAction SilentlyContinue) {
 If (Get-Command lsd -ErrorAction SilentlyContinue) {
   ${function:lsa} = { & lsd -a }
 }
-
-
