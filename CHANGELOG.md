@@ -16,6 +16,7 @@ All notable changes to this project will be documented in this file.
 
 - Release v1.1.0 Changelog
 - Update CHANGELOG
+- Update CHANGELOG.md for new release
 
 ### Features
 
