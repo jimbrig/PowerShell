@@ -8,6 +8,8 @@ Function Open-GitHub { start-process -PassThru 'https://github.com/' }
 
 Function Open-Docker { start-process -PassThru 'C:\Program Files\Docker\Docker\frontend\Docker Desktop.exe' }
 
+Function Open-RProject { Rscript -e 'jimstools::open_project()' }
+
 # ---------------------------------
 # PowerShell Core Profile Functions
 # ---------------------------------
