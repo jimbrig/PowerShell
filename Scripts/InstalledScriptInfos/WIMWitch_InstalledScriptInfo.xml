@@ -1,0 +1,350 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">WIMWitch</S>
+      <S N="Version">3.3.0</S>
+      <S N="Type">Script</S>
+      <S N="Description">WIM Witch is a GUI driven tool used to update and customize Windows_x000A_Image (WIM) files and ISOs. It can also create WIM configuration templates and_x000A_apply them either with the GUI or programatically for bulk creation. WIM Witch_x000A_works as a stand alone tool, as well as integrating with Configuration Manager_x000A__x000A_Version 3.3.0_x000A__x000A_-Support for remote ConfigMgr useage. Installation on PSS no longer required. _x000A__x000A_Version 3.2.5_x000A__x000A_-Bugfix for applying LP/LXP/FOD for Win10 21H2_x000A__x000A_Version 3.2.4_x000A__x000A_-Bugfix for selecting LP/LXP/FOD for 21H2_x000A__x000A_Version 3.2.3_x000A__x000A_-Added support for Windows 10 21H2_x000A_-Dropped support for Windows 10 2004_x000A_-Fixed bug with .Net / ISO import with 20H2+21H1_x000A_-Added workaround to make Windows 11 LCUs work (CAB -&gt; MSU)_x000A_-Added Comment type / Green text to Update-Log function_x000A_-Bugfix for APPX selection_x000A__x000A_Version 3.2.2_x000A__x000A_-Fixed bug in downloading OneDrive client with Windows 11_x000A_-Fixed bug with Windows 11 ISO creation_x000A_-Fixed bug with Downloading Dynamic Updates for Win11 in CM_x000A__x000A_Version 3.2.1_x000A__x000A_-Fixed bug for download Server 2019/2022 and Win11 with OSDSUS_x000A__x000A_Version 3.2.0._x000A__x000A_-Adds support for Windows 11 and Server 2022_x000A_-Adds functionality to better handle SSUs with certain win10 versions_x000A_-Adds functionality to select XML or JSON for Windows 11 Start Menu_x000A_-Improves Windows Type and version during runtime</S>
+      <S N="Author">Donna Ryan</S>
+      <S N="CompanyName">TheNotoriousDRR</S>
+      <Nil N="Copyright" />
+      <DT N="PublishedDate">2021-12-10T18:17:40-05:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2022-01-01T13:49:25.9281223-05:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <Nil N="ProjectUri" />
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>WIM</S>
+          <S>Servicing</S>
+          <S>Offline</S>
+          <S>Image</S>
+          <S>PSScript</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-FormVariables</S>
+                <S>SelectMountDir</S>
+                <S>SelectSourceWIM</S>
+                <S>import-wiminfo</S>
+                <S>SelectJSONFile</S>
+                <S>Parse-JSON</S>
+                <S>SelectDriverSource</S>
+                <S>MakeItSo</S>
+                <S>SelectTargetDir</S>
+                <S>Update-Log</S>
+                <S>Set-Logging</S>
+                <S>DriverInjection</S>
+                <S>ApplyDriver</S>
+                <S>Get-OSDBInstallation</S>
+                <S>Get-OSDSUSInstallation</S>
+                <S>Get-OSDBCurrentVer</S>
+                <S>Get-OSDSUSCurrentVer</S>
+                <S>update-OSDB</S>
+                <S>update-OSDSUS</S>
+                <S>compare-OSDBuilderVer</S>
+                <S>compare-OSDSUSVer</S>
+                <S>check-superceded</S>
+                <S>download-patches</S>
+                <S>update-patchsource</S>
+                <S>Apply-Updates</S>
+                <S>Apply-LCU</S>
+                <S>Select-Appx</S>
+                <S>remove-appx</S>
+                <S>remove-indexes</S>
+                <S>SelectNewJSONDir</S>
+                <S>get-WWAutopilotProfile</S>
+                <S>update-autopilot</S>
+                <S>save-config</S>
+                <S>load-config</S>
+                <S>select-config</S>
+                <S>reset-MISCheckBox</S>
+                <S>run-configfile</S>
+                <S>display-closingtext</S>
+                <S>display-openingtext</S>
+                <S>check-mountpath</S>
+                <S>check-name</S>
+                <S>replace-name</S>
+                <S>check-install</S>
+                <S>select-installfolder</S>
+                <S>install-wimwitch</S>
+                <S>import-iso</S>
+                <S>set-version</S>
+                <S>select-iso</S>
+                <S>inject-dotnet</S>
+                <S>check-dotnetexists</S>
+                <S>Check-WIMWitchVer</S>
+                <S>upgrade-wimwitch</S>
+                <S>Backup-WIMWitch</S>
+                <S>download-onedrive</S>
+                <S>copy-onedrive</S>
+                <S>select-LPFODCriteria</S>
+                <S>select-LanguagePacks</S>
+                <S>select-localexperiencepack</S>
+                <S>select-FODs</S>
+                <S>apply-LanguagePacks</S>
+                <S>apply-localexperiencepack</S>
+                <S>apply-FODs</S>
+                <S>import-LanguagePacks</S>
+                <S>import-LocalExperiencePack</S>
+                <S>import-FOD</S>
+                <S>update-importverCB</S>
+                <S>select-importotherpath</S>
+                <S>pause-makeitso</S>
+                <S>run-script</S>
+                <S>get-imageinfo</S>
+                <S>select-DPs</S>
+                <S>create-CMImagePackage</S>
+                <S>enable-ConfigMgrOptions</S>
+                <S>update-CMImage</S>
+                <S>invoke-UpdateTabOptions</S>
+                <S>invoke-MEMCMUpdatecatalog</S>
+                <S>Invoke-MSUpdateItemDownload</S>
+                <S>invoke-MEMCMUpdateSupersedence</S>
+                <S>invoke-MISUpdates</S>
+                <S>invoke-OSDCheck</S>
+                <S>set-imageproperties</S>
+                <S>detect-configmgr</S>
+                <S>set-configmgr</S>
+                <S>import-CMModule</S>
+                <S>apply-startlayout</S>
+                <S>apply-defaultapp</S>
+                <S>select-defaultapp</S>
+                <S>select-startmenu</S>
+                <S>select-regfiles</S>
+                <S>apply-regfiles</S>
+                <S>invoke-dadjoke</S>
+                <S>stage-isomedia</S>
+                <S>create-iso</S>
+                <S>copy-upgradepackage</S>
+                <S>update-bootwim</S>
+                <S>update-winrewim</S>
+                <S>get-winvernum</S>
+                <S>SelectISODir</S>
+                <S>get-windowstype</S>
+                <S>check-isobinariesexist</S>
+                <S>invoke-checkboxcleanup</S>
+                <S>invoke-removeISOmount</S>
+                <S>check-freespace</S>
+                <S>install-WWCMConsoleExtension</S>
+                <S>invoke-architecturecheck</S>
+                <S>invoke-admincheck</S>
+                <S>invoke-2XXXprereq</S>
+                <S>invoke-textnotification</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-FormVariables</S>
+                <S>SelectMountDir</S>
+                <S>SelectSourceWIM</S>
+                <S>import-wiminfo</S>
+                <S>SelectJSONFile</S>
+                <S>Parse-JSON</S>
+                <S>SelectDriverSource</S>
+                <S>MakeItSo</S>
+                <S>SelectTargetDir</S>
+                <S>Update-Log</S>
+                <S>Set-Logging</S>
+                <S>DriverInjection</S>
+                <S>ApplyDriver</S>
+                <S>Get-OSDBInstallation</S>
+                <S>Get-OSDSUSInstallation</S>
+                <S>Get-OSDBCurrentVer</S>
+                <S>Get-OSDSUSCurrentVer</S>
+                <S>update-OSDB</S>
+                <S>update-OSDSUS</S>
+                <S>compare-OSDBuilderVer</S>
+                <S>compare-OSDSUSVer</S>
+                <S>check-superceded</S>
+                <S>download-patches</S>
+                <S>update-patchsource</S>
+                <S>Apply-Updates</S>
+                <S>Apply-LCU</S>
+                <S>Select-Appx</S>
+                <S>remove-appx</S>
+                <S>remove-indexes</S>
+                <S>SelectNewJSONDir</S>
+                <S>get-WWAutopilotProfile</S>
+                <S>update-autopilot</S>
+                <S>save-config</S>
+                <S>load-config</S>
+                <S>select-config</S>
+                <S>reset-MISCheckBox</S>
+                <S>run-configfile</S>
+                <S>display-closingtext</S>
+                <S>display-openingtext</S>
+                <S>check-mountpath</S>
+                <S>check-name</S>
+                <S>replace-name</S>
+                <S>check-install</S>
+                <S>select-installfolder</S>
+                <S>install-wimwitch</S>
+                <S>import-iso</S>
+                <S>set-version</S>
+                <S>select-iso</S>
+                <S>inject-dotnet</S>
+                <S>check-dotnetexists</S>
+                <S>Check-WIMWitchVer</S>
+                <S>upgrade-wimwitch</S>
+                <S>Backup-WIMWitch</S>
+                <S>download-onedrive</S>
+                <S>copy-onedrive</S>
+                <S>select-LPFODCriteria</S>
+                <S>select-LanguagePacks</S>
+                <S>select-localexperiencepack</S>
+                <S>select-FODs</S>
+                <S>apply-LanguagePacks</S>
+                <S>apply-localexperiencepack</S>
+                <S>apply-FODs</S>
+                <S>import-LanguagePacks</S>
+                <S>import-LocalExperiencePack</S>
+                <S>import-FOD</S>
+                <S>update-importverCB</S>
+                <S>select-importotherpath</S>
+                <S>pause-makeitso</S>
+                <S>run-script</S>
+                <S>get-imageinfo</S>
+                <S>select-DPs</S>
+                <S>create-CMImagePackage</S>
+                <S>enable-ConfigMgrOptions</S>
+                <S>update-CMImage</S>
+                <S>invoke-UpdateTabOptions</S>
+                <S>invoke-MEMCMUpdatecatalog</S>
+                <S>Invoke-MSUpdateItemDownload</S>
+                <S>invoke-MEMCMUpdateSupersedence</S>
+                <S>invoke-MISUpdates</S>
+                <S>invoke-OSDCheck</S>
+                <S>set-imageproperties</S>
+                <S>detect-configmgr</S>
+                <S>set-configmgr</S>
+                <S>import-CMModule</S>
+                <S>apply-startlayout</S>
+                <S>apply-defaultapp</S>
+                <S>select-defaultapp</S>
+                <S>select-startmenu</S>
+                <S>select-regfiles</S>
+                <S>apply-regfiles</S>
+                <S>invoke-dadjoke</S>
+                <S>stage-isomedia</S>
+                <S>create-iso</S>
+                <S>copy-upgradepackage</S>
+                <S>update-bootwim</S>
+                <S>update-winrewim</S>
+                <S>get-winvernum</S>
+                <S>SelectISODir</S>
+                <S>get-windowstype</S>
+                <S>check-isobinariesexist</S>
+                <S>invoke-checkboxcleanup</S>
+                <S>invoke-removeISOmount</S>
+                <S>check-freespace</S>
+                <S>install-WWCMConsoleExtension</S>
+                <S>invoke-architecturecheck</S>
+                <S>invoke-admincheck</S>
+                <S>invoke-2XXXprereq</S>
+                <S>invoke-textnotification</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2/items/psscript</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="9">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="description">WIM Witch is a GUI driven tool used to update and customize Windows_x000A_Image (WIM) files and ISOs. It can also create WIM configuration templates and_x000A_apply them either with the GUI or programatically for bulk creation. WIM Witch_x000A_works as a stand alone tool, as well as integrating with Configuration Manager_x000A__x000A_Version 3.3.0_x000A__x000A_-Support for remote ConfigMgr useage. Installation on PSS no longer required. _x000A__x000A_Version 3.2.5_x000A__x000A_-Bugfix for applying LP/LXP/FOD for Win10 21H2_x000A__x000A_Version 3.2.4_x000A__x000A_-Bugfix for selecting LP/LXP/FOD for 21H2_x000A__x000A_Version 3.2.3_x000A__x000A_-Added support for Windows 10 21H2_x000A_-Dropped support for Windows 10 2004_x000A_-Fixed bug with .Net / ISO import with 20H2+21H1_x000A_-Added workaround to make Windows 11 LCUs work (CAB -&gt; MSU)_x000A_-Added Comment type / Green text to Update-Log function_x000A_-Bugfix for APPX selection_x000A__x000A_Version 3.2.2_x000A__x000A_-Fixed bug in downloading OneDrive client with Windows 11_x000A_-Fixed bug with Windows 11 ISO creation_x000A_-Fixed bug with Downloading Dynamic Updates for Win11 in CM_x000A__x000A_Version 3.2.1_x000A__x000A_-Fixed bug for download Server 2019/2022 and Win11 with OSDSUS_x000A__x000A_Version 3.2.0._x000A__x000A_-Adds support for Windows 11 and Server 2022_x000A_-Adds functionality to better handle SSUs with certain win10 versions_x000A_-Adds functionality to select XML or JSON for Windows 11 Start Menu_x000A_-Improves Windows Type and version during runtime</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">823</S>
+          <S N="downloadCount">31356</S>
+          <S N="packageSize">71881</S>
+          <S N="published">12/10/2021 6:17:40 PM -05:00</S>
+          <S N="created">12/10/2021 6:17:40 PM -05:00</S>
+          <S N="lastUpdated">1/1/2022 5:24:10 PM -05:00</S>
+          <S N="tags">WIM Servicing Offline Image PSScript</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2022-01-01T17:24:10Z</S>
+          <S N="NormalizedVersion">3.3.0</S>
+          <S N="Authors">Donna Ryan</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Script</S>
+          <S N="FileList">WIMWitch.nuspec|WIMWitch.ps1</S>
+          <S N="Functions">Get-FormVariables SelectMountDir SelectSourceWIM import-wiminfo SelectJSONFile Parse-JSON SelectDriverSource MakeItSo SelectTargetDir Update-Log Set-Logging DriverInjection ApplyDriver Get-OSDBInstallation Get-OSDSUSInstallation Get-OSDBCurrentVer Get-OSDSUSCurrentVer update-OSDB update-OSDSUS compare-OSDBuilderVer compare-OSDSUSVer check-superceded download-patches update-patchsource Apply-Updates Apply-LCU Select-Appx remove-appx remove-indexes SelectNewJSONDir get-WWAutopilotProfile update-autopilot save-config load-config select-config reset-MISCheckBox run-configfile display-closingtext display-openingtext check-mountpath check-name replace-name check-install select-installfolder install-wimwitch import-iso set-version select-iso inject-dotnet check-dotnetexists Check-WIMWitchVer upgrade-wimwitch Backup-WIMWitch download-onedrive copy-onedrive select-LPFODCriteria select-LanguagePacks select-localexperiencepack select-FODs apply-LanguagePacks apply-localexperiencepack apply-FODs import-LanguagePacks import-LocalExperiencePack import-FOD update-importverCB select-importotherpath pause-makeitso run-script get-imageinfo select-DPs create-CMImagePackage enable-ConfigMgrOptions update-CMImage invoke-UpdateTabOptions invoke-MEMCMUpdatecatalog Invoke-MSUpdateItemDownload invoke-MEMCMUpdateSupersedence invoke-MISUpdates invoke-OSDCheck set-imageproperties detect-configmgr set-configmgr import-CMModule apply-startlayout apply-defaultapp select-defaultapp select-startmenu select-regfiles apply-regfiles invoke-dadjoke stage-isomedia create-iso copy-upgradepackage update-bootwim update-winrewim get-winvernum SelectISODir get-windowstype check-isobinariesexist invoke-checkboxcleanup invoke-removeISOmount check-freespace install-WWCMConsoleExtension invoke-architecturecheck invoke-admincheck invoke-2XXXprereq invoke-textnotification</S>
+          <S N="GUID">ee1ba506-ac68-45f8-9f37-4555f1902353</S>
+          <S N="CompanyName">@TheNotoriousDRR</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\jimmy\OneDrive\Documents\PowerShell\Scripts</S>
+    </MS>
+  </Obj>
+</Objs>

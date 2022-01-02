@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "ms-vscode.powershell",
+    "tylerleonhardt.vscode-inline-values-powershell",
+    "christian-kohler.path-intellisense",
+    "psioniq.psi-header"
+  ]
+}
