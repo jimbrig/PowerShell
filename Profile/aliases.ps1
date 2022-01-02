@@ -12,6 +12,10 @@ Set-Alias -Name cdd -Value CreateAndSet-Directory
 Set-Alias -Name emptytrash -Value Clear-RecycleBin
 Set-Alias -Name checkdisk -Value Invoke-Checkdisk
 Set-Alias -Name sfc -Value Invoke-SFCScan
+Set-Alias -Name expl -Value explorer.exe
+Set-Alias -Name np -Value 'C:\Program Files\WindowsApps\Microsoft.WindowsNotepad_11.2111.0.0_x64__8wekyb3d8bbwe\Notepad\Notepad.exe'
+Set-Alias -Name files -Value "C:\Program Files\WindowsApps\49306atecsolution.FilesUWP_2.0.34.0_x64__et10x9a9vyk8t\Files.exe"
+
 
 # Remove stupid 'touch' alias for 'set-filetime'
 Remove-Alias -Name touch
