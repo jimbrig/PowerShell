@@ -4,20 +4,64 @@ My customized powershell (core) profile directory `~/Documents/PowerShell` (or `
 
 See the [Changelog](CHANGELOG.md) for details on this repository's development over time.
 
-## Contents
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
 
 - [PowerShell](#powershell)
   - [Contents](#contents)
   - [$PROFILE](#profile)
-    - [Profile Features](#profile-features)
-  - [Custom Functions](#custom-functions)
-  - [Custom Aliases](#custom-aliases)
-  - [Custom Shell Completions](#custom-shell-completions)
+    - [About PowerShell Profiles](#about-powershell-profiles)
+    - [Profile features](#profile-features)
+  - [Options](#options)
+  - [Prompt](#prompt)
+  - [Functions](#functions)
+  - [Aliases](#aliases)
+  - [Shell Completions](#shell-completions)
   - [Modules](#modules)
   - [Scripts](#scripts)
-  - [Functions](#functions)
+  - [Functions](#functions-1)
+  - [Deprecated](#deprecated)
+    - [Removed from Profile](#removed-from-profile)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## $PROFILE
+
+For [profile.ps1](profile.ps1):
+
+Simply dot sources each top-level `*.ps1` file from the [Profile](Profile) directory:
+
+- [aliases.ps1](Profile/aliases.ps1)
+- [completion.ps1](Profile/completion.ps1)
+- [functions.ps1](Profile/functions.ps1)
+- [modules.ps1](Profile/modules.ps1)
+- [options.ps1](Profile/options.ps1)
+- [prompt.ps1](Profile/prompt.ps1)
+
+```powershell
+#Requires -Version 7
+
+# ----------------------------------------------------
+# Current User, All Hosts Powershell Core v7 $PROFILE:
+# ----------------------------------------------------
+
+$psfiles = Join-Path (Split-Path -Parent $profile) "Profile" | Get-ChildItem -Filter "*.ps1"
+ForEach ($file in $psfiles) { . $file }
+```
+
+Optional:
+
+- Import WSL Linux/BASH Interop Commands (ls, awk, tree, etc.)
+- Set `PSReadLine` options
+- Start custom log
+- Map custom `PSDrive`'s to common folders
+
+For [Microsoft.PowerShell_profile.ps1](Microsoft.PowerShell_profile.ps1) and [Microsoft.VSCode_profile.ps1](Microsoft.VSCode_profile.ps1):
+
+I currently do not separate User specific configs from system wide/VSCode specific configs, so nothing here; included for reference.
+
+### About PowerShell Profiles 
 
 Here are the `$PROFILE` path's to various PowerShell 7 Profile Locations on Windows 11 (note that I am currently using OneDrive):
 
@@ -40,117 +84,116 @@ In this repository there are the following profile files:
 - [Microsoft.PowerShell_profile.ps1](Microsoft.PowerShell_profile.ps1) - *CurrentUserCurrentHost* Profile - The Default `$PROFILE`
 - [Microsoft.VSCode_profile.ps1](Microsoft.VSCode_profile.ps1) - VSCode Specific Host Profile
 
-### Profile Features
+### Profile features
 
-For [profile.ps1](profile.ps1):
+All features of the `$PROFILE` come from the [Profile](Profile) directory:
+
+```powershell
+➜ ~\OneDrive\Documents\PowerShell :: git(main)                        01:39:05  
+➜ tree /F /A Profile
+Folder PATH listing
+Volume serial number is 4879-37CA
+C:\USERS\JIMMY\ONEDRIVE\DOCUMENTS\POWERSHELL\PROFILE
+|   aliases.ps1
+|   completion.ps1
+|   functions.ps1
+|   modules.ps1
+|   options.ps1
+|   prompt.ps1
+|   
++---aliases
+|       aliases-export.ps1
+|       
++---completions
+|       aws.ps1
+|       choco.ps1
+|       docker.ps1
+|       dotnet.ps1
+|       gh-cli.ps1
+|       git-cliff.ps1
+|       s-search.ps1
+|       scoop.ps1
+|       spotify.ps1
+|       winget.ps1
+|       yq.ps1
+|       
+\---functions
+        Get-AdminRights.ps1
+        Get-NetAccelerators.ps1
+        Get-NetFramework.ps1
+        Get-RandomAbout.ps1
+        Get-RandomHelp.ps1
+        Launch-AzurePortal.ps1
+        Module-Helpers.ps1
+        System-Functions.ps1
+        Test-WiFi.ps1
+        
+
+```
+
+## Options
+
+See *[options.ps1](Profile/options.ps1)*.
 
 - Trust `PSGallery`
-- Import necessary modules in specific order
-- Enable `posh-git`
-- Set `prompt` theme via `oh-my-posh`
+- Setup some `$PSDefaultParameterValues`
 - Set some PSReadLine Handlers
 
 <details><summary>🔎 View Code</summary>
  <p>
 
 ```powershell
-#Requires -Version 7
-
-# ----------------------------------------------------
-# Current User, All Hosts Powershell Core v7 $PROFILE:
-# ----------------------------------------------------
-
 # Trust PSGallery
 $galleryinfo = Get-PSRepository | Where-Object { $_.Name -eq "PSGallery" }
 if (-not($galleryinfo.InstallationPolicy.Equals("Trusted"))) { Set-PSRepository -Name PSGallery -InstallationPolicy Trusted }
 
-# Import Modules
-Import-Module posh-git
-Import-Module oh-my-posh
-Import-Module Terminal-Icons
-Import-Module WslInterop
-Import-Module PSWindowsUpdate
-Import-Module PSWriteColor
+# Default Parameters
+$PSDefaultParameterValues = @{
+	"Update-Module:Confirm"=$False;
+	"Update-Module:Force"=$True;
+	"Update-Module:Scope"="CurrentUser";
+	"Update-Module:ErrorAction"="SilentlyContinue";
+	"Update-Help:Force"=$True;
+	"Update-Help:ErrorAction"="SilentlyContinue"
+}
 
-# Enable Posh-Git
-$env:POSH_GIT_ENABLED = $true
+# Set PSReadLineOptions's (Beta Version Required):
+Set-PSReadLineOption -PredictionSource History -WarningAction SilentlyContinue -ErrorAction SilentlyContinue
+Set-PSReadLineOption -PredictionViewStyle ListView -WarningAction SilentlyContinue -ErrorAction SilentlyContinue
+Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
+Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
+Set-PSReadlineOption -EditMode Windows
+```
 
+ </p>
+</details>
+
+## Prompt
+
+- Set `prompt` theme via `oh-my-posh`
+- Output useful startup information
+
+From *[prompt.ps1](Profile/prompt.ps1):*
+
+<details><summary>🔎 View Code</summary>
+ <p>
+
+```powershell
 # Prompt
-Set-PoshPrompt -Theme wopian
+Set-PoshPrompt -Theme wopian -ErrorAction SilentlyContinue
+
+# Write Current Version and Execution Policy Details:
+Write-Host "PowerShell Version: $($psversiontable.psversion) - ExecutionPolicy: $(Get-ExecutionPolicy)" -ForegroundColor yellow
 
 # ZLocation must be after all prompt changes:
 Import-Module ZLocation
 Write-Host -Foreground Green "`n[ZLocation] knows about $((Get-ZLocation).Keys.Count) locations.`n"
 ```
 
-Optional:
-
-- Import WSL Linux/BASH Interop Commands (ls, awk, tree, etc.)
-- Set `PSReadLine` options
-- Start custom log
-- Map custom `PSDrive`'s to common folders
-
-Here are my mapped custom drives:
-
-```powershell
-# ---------
-# PSDrives
-# ---------
-
-# Create drive shortcut for '~/Dev':
-if ((Test-Path "$env:USERPROFILE\Dev") -and (-not (Get-PSDrive -Name "Dev" -ErrorAction SilentlyContinue))) {
-  New-PSDrive -Name Dev -PSProvider FileSystem -Root "$env:USERPROFILE\Dev" -Description "Development Folder"
-  function Dev: { Set-Location Dev: }
-}
-
-# Creates drive shortcut for OneDrive, if current user account is using it
-if ((Test-Path HKCU:\SOFTWARE\Microsoft\OneDrive) -and (-not (Get-PSDrive -Name "OneDrive" -ErrorAction SilentlyContinue))) {
-    $onedrive = Get-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\OneDrive
-    if (Test-Path $onedrive.UserFolder) {
-        New-PSDrive -Name OneDrive -PSProvider FileSystem -Root $onedrive.UserFolder -Description "OneDrive"
-        function OneDrive: { Set-Location OneDrive: }
-    }
-    Remove-Variable onedrive
-}
-
-# Dotfiles
-if ((Test-Path "$HOME\.dotfiles") -and (-not (Get-PSDrive -Name "dotfiles" -ErrorAction SilentlyContinue))) {
-  New-PSDrive -Name dotfiles -PSProvider FileSystem -Root "$HOME\.dotfiles" -Description "Dotfiles"
-      function dotfiles: { Set-Location dotfiles: }
-}
-```
-
-</p>
+ </p>
 </details>
 
-For [Microsoft.PowerShell_profile.ps1](Microsoft.PowerShell_profile.ps1):
-
-- Load custom [profile_completion.ps1](profile_completion.ps1)
-- Load custom [profile_functions.ps1](./profile_functions.ps1)
-- Load custom [profile_aliases.ps1](./profile_aliases.ps1)
-
-<details><summary>🔎 View Code</summary>
- <p>
-
-```powershell
-# #Requires -Version 7
-
-# -------------------------------------------------------
-# Current User, Current Host Powershell Core v7 $PROFILE:
-# -------------------------------------------------------
-
-# Load Functions, Aliases, and Completion
-$psdir = (Split-Path -parent $profile)
-
-. "$psdir\profile_functions.ps1"
-. "$psdir\profile_aliases.ps1"
-. "$psdir\profile_completion.ps1"
-```
-
-</p>
-</details>
-
-## Custom Functions
+## Functions
 
 My suite of custom functions to be loaded for every PowerShell session:
   - Search functions via [zquestz/s](https://github.com/zquestz/s)
@@ -166,41 +209,58 @@ My suite of custom functions to be loaded for every PowerShell session:
   - R and RStudio
   - GitKraken
 
-- See [profile_functions.ps1]:
+- See [functions.ps1](Profile/functions.ps1):
 
 <details><summary>🔎 View Code</summary>
  <p>
 
  ```powershell
+# ----------
+# Launchers
+# ----------
+
+Function Open-Todoist { start-process -PassThru 'C:\Users\jimmy\AppData\Local\Programs\todoist\Todoist.exe' }
+
+Function Open-GitHub { start-process -PassThru 'https://github.com/' }
+
+Function Open-Docker { start-process -PassThru 'C:\Program Files\Docker\Docker\frontend\Docker Desktop.exe' }
+
+Function Open-RProject { Rscript -e 'jimstools::open_project()' }
+
 # ---------------------------------
 # PowerShell Core Profile Functions
 # ---------------------------------
 
-# ---------------------
-# Search via `s-cli`
-# ---------------------
+Function Update-ProfileModules {
 
-${function:Search-GitHub} = { s -p github $args }
-${function:Search-GitHubPwsh} = { s -p ghpwsh $args }
-${function:Search-GitHubR} = { s -p ghr $args }
-${function:Search-MyRepos} = { s -p myrepos $args }
+  $modpath = ($env:PSModulePath -split ";")[0]
+  $ymlpath = "$modpath\modules.yml"
+  $mods = (Get-ChildItem $modpath -Directory).Name
+  ConvertTo-Yaml -Data $mods -OutFile $ymlpath -Force
 
-# --------
-# GCalCLI
-# --------
-${function:Get-Agenda} = { & gcalcli agenda }
-${function:Get-CalendarMonth} = { & gcalcli calm }
-${function:Get-CalendarWeek} = { & gcalcli calw }
-${function:New-CalendarEvent} = { & gcalcli add }
+  # Set-Location "$HOME\Documents"
+  # git pull
+  # git add PowerShell/Modules/**
+  # git commit -m "config: Updated modules configurations"
+  # git-cliff -o "$HOME\Documents\CHANGELOG.md"
+  # git add CHANGELOG.md
+  # git commit -m "doc: update CHANGELOG.md for added modules"
+  # git push
 
-# -----
-# LSD
-# -----
-${function:lsa} = { & lsd -a }
+}
 
 # ----------------------
 # System Utilities
 # ----------------------
+
+# Troubleshooters
+
+# Hardware Troubleshooter (unavailable in settings)
+${function:Invoke-HardwareDiagnostic} = { & msdt.exe -id DeviceDiagnostic }
+${function:Invoke-NetworkDiagnostic} = { & msdt.exe -id NetworkDiagnosticsNetworkAdapter }
+${function:Invoke-SearchDiagnostic} = { & msdt.exe -id SearchDiagnostic }
+${function:Invoke-WindowsUpdateDiagnostic} = { & msdt.exe -id WindowsUpdateDiagnostic }
+${function:Invoke-MaintenanceDiagnostic} = { & msdt.exe -id MaintenanceDiagnostic }
 
 # Check Disk
 ${function:Check-Disk} = { & chkdsk C: /f /r /x }
@@ -213,17 +273,18 @@ ${function:Update-Environment} = {
 
 # Clean System
 ${function:Clean-System} = {
-  Write-Verbose -Message 'Emptying Recycle Bin'
-  (New-Object -ComObject Shell.Application).Namespace(0xA).items() | % { rm $_.path -Recurse -Confirm:$false }
-  Write-Verbose 'Removing Windows %TEMP% files'
+  Write-Host -Message 'Emptying Recycle Bin' -ForegroundColor Yellow
+  (New-Object -ComObject Shell.Application).Namespace(0xA).items() | ForEach-Object { Remove-Item $_.path -Recurse -Confirm:$false }
+  Write-Host 'Removing Windows %TEMP% files' -ForegroundColor Yellow
   Remove-Item c:\Windows\Temp\* -Recurse -Force -ErrorAction SilentlyContinue
-  Write-Verbose 'Removing User %TEMP% files'
+  Write-Host 'Removing User %TEMP% files' -ForegroundColor Yellow
   Remove-Item “C:\Users\*\Appdata\Local\Temp\*” -Recurse -Force -ErrorAction SilentlyContinue
-  Write-Verbose 'Removing Custome %TEMP% files (C:/Temp and C:/tmp)'
+  Write-Host 'Removing Custome %TEMP% files (C:/Temp and C:/tmp)' -ForegroundColor Yellow
   Remove-Item c:\Temp\* -Recurse -Force -ErrorAction SilentlyContinue
   Remove-Item c:\Tmp\* -Recurse -Force -ErrorAction SilentlyContinue
-  Write-Verbose 'Launchin cleanmgr'
-  cleanmgr /sagerun:1 | out-Null
+  Write-Host 'Launchin cleanmgr' -ForegroundColor Yellow
+  cleanmgr /sagerun:1 | Out-Null
+  Write-Host '✔️ Done.' -ForegroundColor Green
 }
 
 # New File
@@ -269,8 +330,23 @@ Function Invoke-ForceDelete ( $path ) {
 # Network Utilities
 # ------------------
 
-# Speed Test
-${function:Speed-Test} = { & speed-test } # NOTE: must have speedtest installed
+${function:Reset-Network} = {
+  Write-Host "Resetting Windows Sockets.." -ForegroundColor Yellow
+  netsh winsock reset
+  Write-Host "Resetting Internal IP Addresses.." -ForegroundColor Yellow
+  netsh int ip reset all
+  Write-Host "Resetting Windows HTTP Proxy.." -ForegroundColor Yellow
+  netsh winhttp reset proxy
+  Write-Host "Flushing DNS.." -ForegroundColor Yellow
+  ipconfig /flushdns
+  Write-Host "✔️ Done." -ForegroundColor Green
+  $restart = Read-Host "To apply changes a restart is required, restart now? (y/n)"
+  If ($restart -eq "y") { Restart-Computer }
+}
+
+${function:Get-IP} = {
+  ((ipconfig | findstr [0-9].\.)[0]).Split()[-1]
+}
 
 # Get Public IP
 ${function:Get-PublicIP} = {
@@ -278,64 +354,58 @@ ${function:Get-PublicIP} = {
   "My public IP address is: $($ip.ip)"
 }
 
-# -----------------------
-# Launch Programs
-# -----------------------
-
-# Start Docker
-
-
-# Open GitKraken in Current Repo
-${function:krak} = {
-  $curpath = (get-location).ProviderPath
-  $lapd = $env:localappdata
-  $logf = "$env:temp\krakstart.log"
-  $newestExe = Get-Item "$lapd\gitkraken\app-*\gitkraken.exe"
-  start-process -filepath $newestExe -ArgumentList "--path $curpath" -redirectstandardoutput $logf
-}
-
-# Open RStudio in Current Repo
-${function:rstudio} = {
-  $curpath = (get-location).ProviderPath
-  $exepath = "$env:programfiles\RStudio\bin\rsudio.exe"
-  start-process -filepath $exepath -ArgumentList "--path $curpath" -redirectstandardoutput $logf
-}
-
-# Start Docker:
-${function:Start-Docker} = { Start-Process "C:\Program Files\Docker\Docker\Docker Desktop.exe" }
-
 # --------------------------
 # PowerShell Functions
 # --------------------------
 
 # Edit `profile.ps1`
-${function:Edit-Profile} = { notepad.exe $PROFILE.CurrentUserAllHosts }
+${function:Edit-Profile} = { code $PROFILE.CurrentUserAllHosts }
 
 # Edit profile_functions.ps1
 ${function:Edit-Functions} = {
   $prodir = Split-Path -Path $PROFILE -Parent
-  $funcpath = "$prodir\profile_functions.ps1"
-  notepad.exe $funcpath
+  $funcpath = "$prodir\Profile\functions.ps1"
+  code $funcpath
 }
 
 # Edit profile_aliases.ps1
 ${function:Edit-Aliases} = {
   $prodir = Split-Path -Path $PROFILE -Parent
-  $funcpath = "$prodir\profile_aliases.ps1"
-  notepad.exe $funcpath
+  $funcpath = "$prodir\Profile\aliases.ps1"
+  code $funcpath
 }
 
 # Edit profile_completion.ps1
-${function:Edit-Aliases} = {
+${function:Edit-Completion} = {
   $prodir = Split-Path -Path $PROFILE -Parent
-  $funcpath = "$prodir\profile_completion.ps1"
-  notepad.exe $funcpath
+  $funcpath = "$prodir\Profile\completion.ps1"
+  code $funcpath
 }
 
 # Open Profile Directory in VSCode:
 ${function:Edit-ProfileDirectory} = {
   $prodir = Split-Path -Path $PROFILE -Parent
-  code-insiders $prodir
+  code $prodir
+}
+
+${function:Get-HistPath} = { (Get-PSReadlineoption).HistorySavePath }
+
+# ----------
+# Secrets
+# ----------
+
+Function Get-MySecret($name) {
+  $secrets = (Get-SecretInfo).Name
+  If (!($secrets -contains $name)) { throw "No secret named $name found in vault." }
+  Get-Secret -Name $name -AsPlainText
+}
+
+Function Get-GitCryptStatus {
+  git-crypt status -e
+}
+
+Function Invoke-GitCryptStatus {
+  git-crypt status -f
 }
 
 # ------------------
@@ -352,6 +422,23 @@ Function Invoke-RemoteScript {
     $remainingArgs
   )
   Invoke-Expression "& { $(Invoke-RestMethod $address) } $remainingArgs"
+}
+
+# ------
+# Docker
+# ------
+
+# Docker
+${function:Start-Docker} = { Start-Process "C:\Program Files\Docker\Docker\Docker Desktop.exe" }
+${function:Stop-Docker} = { foreach ($dock in (Get-Process *docker*).ProcessName) { sudo stop-process -name $dock } }
+
+
+# Open RStudio in Current Repo
+${function:rstudio} = {
+  $curpath = (Get-Location).ProviderPath
+  $logf = "$env:temp\rstudiostart.log"
+  $exepath = "$env:programfiles\RStudio\bin\rstudio.exe"
+  Start-Process -FilePath $exepath -ArgumentList "--path $curpath" -RedirectStandardOutput $logf
 }
 
 # -----------
@@ -372,52 +459,147 @@ ${function:rvanilla} = { & "C:\Program Files\R\R-4.1.1\bin\R.exe" --vanilla }
 ${function:radianvanilla} = { & "C:\Python39\Scripts\radian.exe" --vanilla }
 ${function:openrproj} = { & C:\bin\openrproject.bat }
 ${function:pakk} = { Rscript.exe "C:\bin\pakk.R" $args }
+
+# ---------
+# GitKraken
+# ---------
+
+# Open GitKraken in Current Repo
+${function:krak} = {
+  $curpath = (Get-Location).ProviderPath
+  If (!(Test-Path "$curpath\.git")) { Write-Error "Not a git repository. Run 'git init' or select a git tracked directory to open. Exiting.."; return }
+  $logf = "$env:temp\krakstart.log"
+  $newestExe = Resolve-Path "$env:localappdata\gitkraken\app-*\gitkraken.exe"
+  If ($newestExe.Length -gt 1) { $newestExe = $newestExe[1] }
+  Start-Process -FilePath $newestExe -ArgumentList "--path $curpath" -RedirectStandardOutput $logf
+}
+
+# ---------------------
+# Search via `s-cli`
+# ---------------------
+
+If (Get-Command s -ErrorAction SilentlyContinue) {
+
+  ${function:Search-GitHub} = { s -p github $args }
+  ${function:Search-GitHubPwsh} = { s -p ghpwsh $args }
+  ${function:Search-GitHubR} = { s -p ghr $args }
+  ${function:Search-MyRepos} = { s -p myrepos $args }
+
+}
+
+# --------
+# GCalCLI
+# --------
+
+If (Get-Command gcalcli -ErrorAction SilentlyContinue) {
+  ${function:Get-Agenda} = { & gcalcli agenda }
+  ${function:Get-CalendarMonth} = { & gcalcli calm }
+  ${function:Get-CalendarWeek} = { & gcalcli calw }
+  ${function:New-CalendarEvent} = { & gcalcli add }
+  ${function:Remove-CalendarEvent} = { & gcalcli delete $args }
+}
+
+# -----
+# LSD
+# -----
+
+If (Get-Command lsd -ErrorAction SilentlyContinue) {
+  ${function:lsa} = { & lsd -a }
+}
+
  ```
  </p>
 </details>
 
-## Custom Aliases
+## Aliases
 
-- See [profile_aliases.ps1](profile_aliases.ps1):
+- See [aliases.ps1](Profile/aliases.ps1): 
+*(and the exported [aliases-export.ps1](Profile/aliases/aliases-export.ps1))*
 
 <details><summary>🔎 View Code</summary>
  <p>
 
 ```powershell
-Set-Alias -Name irs -Value Invoke-RemoteScript
+# -------------------------
+# PowerShell Aliases
+# -------------------------
+
 Set-Alias -Name pro -Value Edit-Profile
 Set-Alias -Name aliases -Value Get-Alias
-Set-Alias -Name cpkgs -Value chocopkgs
-Set-Alias -Name cclean -Value chococlean
-Set-Alias -Name csearch -Value chocosearch
-Set-Alias -Name cup -Value chocoupgrade
-Set-Alias -Name cbackup -Value chocobackup
 Set-Alias -Name refresh -Value refreshenv
 Set-Alias -Name touch -Value New-File
 Set-Alias -Name rproj -Value openrproj
 Set-Alias -Name chkdisk -Value Check-Disk
 Set-Alias -Name cdd -Value CreateAndSet-Directory
 Set-Alias -Name emptytrash -Value Clear-RecycleBin
-Set-Alias -Name codee -Value code-insiders
-Set-Alias -Name cpkgs -Value chocopkgs
-Set-Alias -Name cup -Value chocoupgrade
-Set-Alias -Name gcal -Value gcalcli
-Set-Alias -Name agenda -Value Get-Agenda
-Set-Alias -Name gcalm -Value Get-CalendarMonth
-Set-Alias -Name gcalw -Value Get-CalendarWeek
-Set-Alias -Name gcalnew -Value New-CalendarEvent
+Set-Alias -Name checkdisk -Value Invoke-Checkdisk
+Set-Alias -Name sfc -Value Invoke-SFCScan
+Set-Alias -Name expl -Value explorer.exe
+Set-Alias -Name np -Value 'C:\Program Files\WindowsApps\Microsoft.WindowsNotepad_11.2111.0.0_x64__8wekyb3d8bbwe\Notepad\Notepad.exe'
+Set-Alias -Name files -Value "C:\Program Files\WindowsApps\49306atecsolution.FilesUWP_2.0.34.0_x64__et10x9a9vyk8t\Files.exe"
+
+
+# Remove stupid 'touch' alias for 'set-filetime'
+Remove-Alias -Name touch
 
 # Ensure `R` is for launching an R Terminal:
 if (Get-Command R.exe -ErrorAction SilentlyContinue | Test-Path) {
   Remove-Item Alias:r -ErrorAction SilentlyContinue
   ${function:r} = { R.exe @args }
 }
+
+# Ensure gpg points to correct program
+# Set-Alias -Name gpg -Value 'C:\Program Files (x86)\GnuPG\bin\gpg.exe'
+
+# Chocolatey
+If (Get-Command choco -ErrorAction SilentlyContinue) {
+	Set-Alias -Name cpkgs -Value chocopkgs
+	Set-Alias -Name csearch -Value chocosearch
+	Set-Alias -Name cup -Value chocoupgrade
+
+	If (Get-Command choco-cleaner) {
+		Set-Alias -Name cclean -Value chococlean
+	}
+	If (Get-Command choco-package-list-backup) {
+		Set-Alias -Name cbackup -Value chocobackup
+	}
+}
+
+# gcalcli
+If (Get-Command gcalcli -ErrorAction SilentlyContinue) {
+	Set-Alias -Name gcal -Value gcalcli
+	Set-Alias -Name agenda -Value Get-Agenda
+	Set-Alias -Name gcalm -Value Get-CalendarMonth
+	Set-Alias -Name gcalw -Value Get-CalendarWeek
+  Set-Alias -Name calm -Value Get-CalendarMonth
+	Set-Alias -Name calw -Value Get-CalendarWeek
+	Set-Alias -Name gcaladd -Value New-CalendarEvent
+  Set-Alias -Name caladd -Value New-CalendarEvent
+}
+
+# git-crypt
+If (Get-Command git-crypt -ErrorAction SilentlyContinue) {
+  Set-Alias -Name gcrypts -Value Get-GitCryptStatus
+  Set-Alias -Name gcrypt -Value git-crypt
+  Set-Alias -Name gcryptf Invoke-GitCryptStatus
+}
+
+# If using code-insiders
+If (Get-Command code-insiders -ErrorAction SilentlyContinue) {
+	Set-Alias -Name codee -Value code-insiders
+}
+
+# lsd
+If (Get-Command lsd -ErrorAction SilentlyContinue) {
+  ${function:lsa} = { & lsd -a }
+}
+
 ```
 
  </p>
 </details>
 
-## Custom Shell Completions
+## Shell Completions
 
 All custom shell completion scripts and invokations are housed in the [Profile/completions](./Profile/completions) directory and dot sourced in via [Profile/completion.ps1](Profile/completion.ps1).
 
@@ -547,3 +729,39 @@ Function Restore-Modules {
 
 Custom folder outside the scope of profile for housing snippets and past-work.
 
+## Deprecated
+
+### Removed from Profile
+
+Here are my mapped custom drives:
+
+```powershell
+# ---------
+# PSDrives
+# ---------
+
+# Create drive shortcut for '~/Dev':
+if ((Test-Path "$env:USERPROFILE\Dev") -and (-not (Get-PSDrive -Name "Dev" -ErrorAction SilentlyContinue))) {
+  New-PSDrive -Name Dev -PSProvider FileSystem -Root "$env:USERPROFILE\Dev" -Description "Development Folder"
+  function Dev: { Set-Location Dev: }
+}
+
+# Creates drive shortcut for OneDrive, if current user account is using it
+if ((Test-Path HKCU:\SOFTWARE\Microsoft\OneDrive) -and (-not (Get-PSDrive -Name "OneDrive" -ErrorAction SilentlyContinue))) {
+    $onedrive = Get-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\OneDrive
+    if (Test-Path $onedrive.UserFolder) {
+        New-PSDrive -Name OneDrive -PSProvider FileSystem -Root $onedrive.UserFolder -Description "OneDrive"
+        function OneDrive: { Set-Location OneDrive: }
+    }
+    Remove-Variable onedrive
+}
+
+# Dotfiles
+if ((Test-Path "$HOME\.dotfiles") -and (-not (Get-PSDrive -Name "dotfiles" -ErrorAction SilentlyContinue))) {
+  New-PSDrive -Name dotfiles -PSProvider FileSystem -Root "$HOME\.dotfiles" -Description "Dotfiles"
+      function dotfiles: { Set-Location dotfiles: }
+}
+```
+
+</p>
+</details>
