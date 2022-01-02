@@ -1,6 +1,37 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.3.0] - 2022-01-02
+
+### Configuration
+
+- Ignore desktop.ini
+- Add vscode workspace settings and extensions
+- Encrypt migrated keeperconfig.json
+- Update git-cliff completion
+- Installed script infos configs
+- Re-encrypt keeperconfig.json
+
+### Documentation
+
+- Add help XML docs
+- Update README with latest changes
+
+### Features
+
+- Add new Open-RProject custom function
+- Add PSGallery Trust and Default params to profile
+- Add to prompt pwsh version and exec. policy
+- Restructure 'Custom' directory
+- Add expl, np, and files aliases
+- Add Fido.ps1 script for downloading ISOs
+- Add posh-git, oh-my-posh, terminal-icons, and readline to module imports
+- Add WIMWitch PSScript
+- Add 5 new function profile imports
+- Add encrypted keeperconfig.json
+- Re-structure and enhance profile segmentations
+- Create/edit modules options prompt and helpers
+
 ## [1.2.0] - 2021-12-25
 
 ### Bug Fixes
