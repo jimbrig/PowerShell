@@ -1,1 +1,1 @@
-config.json filter=git-crypt diff=git-crypt
+keeperconfig.json filter=git-crypt diff=git-crypt
