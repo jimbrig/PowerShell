@@ -2,12 +2,10 @@
 # Modules and Helper Functions
 # -----------------------------
 
-Import-Module posh-git
-Import-Module oh-my-posh
-Import-Module Terminal-Icons
-# Import-Module WslInterop
-# Import-Module PSWindowsUpdate
-# Import-Module PSWriteColor
+Import-Module -Name posh-git
+Import-Module -Name oh-my-posh
+Import-Module -Name Terminal-Icons
+Import-Module -Name PSReadLine
 
 # Enable Posh-Git
 $env:POSH_GIT_ENABLED = $true
