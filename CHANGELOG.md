@@ -1,6 +1,16 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [unreleased]
+
+### Documentation
+
+- New release CHANGELOG docs
+
+### Features
+
+- Add 2 new scripts
+
 ## [1.3.0] - 2022-01-02
 
 ### Configuration
