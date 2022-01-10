@@ -26,9 +26,22 @@ See the [Changelog](CHANGELOG.md) for details on this repository's development o
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## $PROFILE
+## Overview
 
-For [profile.ps1](profile.ps1):
+In this repository there are the following profile files:[^1]
+
+- [profile.ps1](profile.ps1) - *CurrentUserAllHosts* Profile
+- [Microsoft.PowerShell_profile.ps1](Microsoft.PowerShell_profile.ps1) - *CurrentUserCurrentHost* Profile - The Default `$PROFILE`
+- [Microsoft.VSCode_profile.ps1](Microsoft.VSCode_profile.ps1) - VSCode Specific Host Profile
+
+Notes:
+
+- For [Microsoft.PowerShell_profile.ps1](Microsoft.PowerShell_profile.ps1) and [Microsoft.VSCode_profile.ps1](Microsoft.VSCode_profile.ps1):
+- I currently do not separate User specific configs from system wide/VSCode specific configs, so nothing here; included for reference.
+
+## Core `$PROFILE`
+
+For [profile.ps1](profile.ps1) (main `profile`):
 
 Simply dot sources each top-level `*.ps1` file from the [Profile](Profile) directory:
 
@@ -38,6 +51,12 @@ Simply dot sources each top-level `*.ps1` file from the [Profile](Profile) direc
 - [modules.ps1](Profile/modules.ps1)
 - [options.ps1](Profile/options.ps1)
 - [prompt.ps1](Profile/prompt.ps1)
+
+<details><summary>🔎 View Code</summary>
+ <p>
+
+
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./profile.ps1) -->
 
 ```powershell
 #Requires -Version 7
@@ -50,41 +69,11 @@ $psfiles = Join-Path (Split-Path -Parent $profile) "Profile" | Get-ChildItem -Fi
 ForEach ($file in $psfiles) { . $file }
 ```
 
-Optional:
+<!-- MARKDOWN-AUTO-DOCS:END -->
+ </p>
+</details>
 
-- Import WSL Linux/BASH Interop Commands (ls, awk, tree, etc.)
-- Set `PSReadLine` options
-- Start custom log
-- Map custom `PSDrive`'s to common folders
-
-For [Microsoft.PowerShell_profile.ps1](Microsoft.PowerShell_profile.ps1) and [Microsoft.VSCode_profile.ps1](Microsoft.VSCode_profile.ps1):
-
-I currently do not separate User specific configs from system wide/VSCode specific configs, so nothing here; included for reference.
-
-### About PowerShell Profiles 
-
-Here are the `$PROFILE` path's to various PowerShell 7 Profile Locations on Windows 11 (note that I am currently using OneDrive):
-
-```powershell
-➜ $PROFILE
-C:\Users\jimmy\OneDrive\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
-➜ $PROFILE.CurrentUserCurrentHost
-C:\Users\jimmy\OneDrive\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
-➜ $PROFILE.CurrentUserAllHosts
-C:\Users\jimmy\OneDrive\Documents\PowerShell\profile.ps1
-➜ $PROFILE.AllUsersCurrentHost
-C:\Program Files\PowerShell\7\Microsoft.PowerShell_profile.ps1
-➜ $PROFILE.AllUsersAllHosts
-C:\Program Files\PowerShell\7\profile.ps1
-```
-
-In this repository there are the following profile files:
-
-- [profile.ps1](profile.ps1) - *CurrentUserAllHosts* Profile
-- [Microsoft.PowerShell_profile.ps1](Microsoft.PowerShell_profile.ps1) - *CurrentUserCurrentHost* Profile - The Default `$PROFILE`
-- [Microsoft.VSCode_profile.ps1](Microsoft.VSCode_profile.ps1) - VSCode Specific Host Profile
-
-### Profile features
+## The [Profile](Profile) Directory
 
 All features of the `$PROFILE` come from the [Profile](Profile) directory:
 
@@ -127,11 +116,9 @@ C:\USERS\JIMMY\ONEDRIVE\DOCUMENTS\POWERSHELL\PROFILE
         Module-Helpers.ps1
         System-Functions.ps1
         Test-WiFi.ps1
-        
-
 ```
 
-## Options
+### Options
 
 See *[options.ps1](Profile/options.ps1)*.
 
@@ -171,7 +158,7 @@ Set-PSReadlineOption -EditMode Windows
  </p>
 </details>
 
-## Prompt
+### Prompt
 
 - Set `prompt` theme via `oh-my-posh`
 - Output useful startup information
@@ -180,6 +167,8 @@ From *[prompt.ps1](Profile/prompt.ps1):*
 
 <details><summary>🔎 View Code</summary>
  <p>
+
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./Profile/prompt.ps1) -->
 
 ```powershell
 # Prompt
@@ -192,11 +181,12 @@ Write-Host "PowerShell Version: $($psversiontable.psversion) - ExecutionPolicy: 
 Import-Module ZLocation
 Write-Host -Foreground Green "`n[ZLocation] knows about $((Get-ZLocation).Keys.Count) locations.`n"
 ```
-
+	 
+<!-- MARKDOWN-AUTO-DOCS:END -->
  </p>
 </details>
 
-## Functions
+### Functions
 
 My suite of custom functions to be loaded for every PowerShell session:
   - Search functions via [zquestz/s](https://github.com/zquestz/s)
@@ -217,7 +207,8 @@ My suite of custom functions to be loaded for every PowerShell session:
 <details><summary>🔎 View Code</summary>
  <p>
 
- ```powershell
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./Profile/functions.ps1) -->
+```powershell
 # ----------
 # Launchers
 # ----------
@@ -510,11 +501,13 @@ If (Get-Command lsd -ErrorAction SilentlyContinue) {
   ${function:lsa} = { & lsd -a }
 }
 
- ```
+```
+
+<!-- MARKDOWN-AUTO-DOCS:END -->
  </p>
 </details>
 
-## Aliases
+### Aliases
 
 - See [aliases.ps1](Profile/aliases.ps1): 
 *(and the exported [aliases-export.ps1](Profile/aliases/aliases-export.ps1))*
@@ -522,6 +515,8 @@ If (Get-Command lsd -ErrorAction SilentlyContinue) {
 <details><summary>🔎 View Code</summary>
  <p>
 
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./Profile/aliases.ps1) -->
+	 
 ```powershell
 # -------------------------
 # PowerShell Aliases
@@ -598,11 +593,12 @@ If (Get-Command lsd -ErrorAction SilentlyContinue) {
 }
 
 ```
-
+<!-- MARKDOWN-AUTO-DOCS:END -->
  </p>
 </details>
 
-## Shell Completions
+
+### Shell Completions
 
 All custom shell completion scripts and invokations are housed in the [Profile/completions](./Profile/completions) directory and dot sourced in via [Profile/completion.ps1](Profile/completion.ps1).
 
@@ -628,6 +624,8 @@ plus,
 <details><summary>🔎 View Code</summary>
  <p>
 
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./Profile/completion.ps1) -->
+
 ```powershell
 # -------------------------
 # PowerShell Completion
@@ -642,10 +640,12 @@ ForEach ($file in $files) {
 }
 ```
 
+	 
+<!-- MARKDOWN-AUTO-DOCS:END -->
  </p>
 </details>
 
-## Modules
+### Modules
 
 Varies with time but common modules I utilize are:
 
@@ -683,6 +683,11 @@ Varies with time but common modules I utilize are:
 - ZLocation
 
 - See [Profile/modules.ps1](Profile/modules.ps1) and the functions `Backup-Modules`, `Sync-Modules` and `Restore-Modules` that interact with [Modules/modules.yml](Modules/modules.yml).
+
+<details><summary>🔎 View Code</summary>
+ <p>
+
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./Profile/modules.ps1) -->
 
 ```powershell
 # --------
@@ -722,7 +727,11 @@ Function Restore-Modules {
     Install-Module $mod -Scope CurrentUser -Force
   }
 }
-```
+``` 
+	 
+<!-- MARKDOWN-AUTO-DOCS:END -->
+ </p>
+</details>
 
 ## Scripts
 
@@ -732,39 +741,5 @@ Function Restore-Modules {
 
 Custom folder outside the scope of profile for housing snippets and past-work.
 
-## Deprecated
 
-### Removed from Profile
-
-Here are my mapped custom drives:
-
-```powershell
-# ---------
-# PSDrives
-# ---------
-
-# Create drive shortcut for '~/Dev':
-if ((Test-Path "$env:USERPROFILE\Dev") -and (-not (Get-PSDrive -Name "Dev" -ErrorAction SilentlyContinue))) {
-  New-PSDrive -Name Dev -PSProvider FileSystem -Root "$env:USERPROFILE\Dev" -Description "Development Folder"
-  function Dev: { Set-Location Dev: }
-}
-
-# Creates drive shortcut for OneDrive, if current user account is using it
-if ((Test-Path HKCU:\SOFTWARE\Microsoft\OneDrive) -and (-not (Get-PSDrive -Name "OneDrive" -ErrorAction SilentlyContinue))) {
-    $onedrive = Get-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\OneDrive
-    if (Test-Path $onedrive.UserFolder) {
-        New-PSDrive -Name OneDrive -PSProvider FileSystem -Root $onedrive.UserFolder -Description "OneDrive"
-        function OneDrive: { Set-Location OneDrive: }
-    }
-    Remove-Variable onedrive
-}
-
-# Dotfiles
-if ((Test-Path "$HOME\.dotfiles") -and (-not (Get-PSDrive -Name "dotfiles" -ErrorAction SilentlyContinue))) {
-  New-PSDrive -Name dotfiles -PSProvider FileSystem -Root "$HOME\.dotfiles" -Description "Dotfiles"
-      function dotfiles: { Set-Location dotfiles: }
-}
-```
-
-</p>
-</details>
+[^1]: About PowerShell Profiles: Here are the `$PROFILE` path's to various PowerShell 7 Profile Locations on Windows 11 (note that I am currently using OneDrive).
