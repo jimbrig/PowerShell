@@ -1,0 +1,24 @@
+name: Update Code Blocks
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+jobs:
+  auto-update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Markdown AutoDocs
+        uses: dineshsonachalam/markdown-autodocs@v1.0.4
+        with:
+          commit_author: Jimmy Briggs <jimmy.briggs@jimbrig.com>
+          commit_user_email: jimmy.briggs@jimbrig.com
+          commit_message: Apply automatic changes
+          branch: main
+          output_file_paths: '[./README.md]'
+          categories: '[code-block]'
+        
+
+   
