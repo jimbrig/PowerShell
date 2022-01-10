@@ -6,23 +6,8 @@ See the [Changelog](CHANGELOG.md) for details on this repository's development o
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**
 
-- [PowerShell](#powershell)
-  - [Contents](#contents)
-  - [$PROFILE](#profile)
-    - [About PowerShell Profiles](#about-powershell-profiles)
-    - [Profile features](#profile-features)
-  - [Options](#options)
-  - [Prompt](#prompt)
-  - [Functions](#functions)
-  - [Aliases](#aliases)
-  - [Shell Completions](#shell-completions)
-  - [Modules](#modules)
-  - [Scripts](#scripts)
-  - [Functions](#functions-1)
-  - [Deprecated](#deprecated)
-    - [Removed from Profile](#removed-from-profile)
+
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
