@@ -626,40 +626,7 @@ ForEach ($file in $files) {
 
 ### Modules
 
-Varies with time but common modules I utilize are:
-
-- 7Zip4PowerShell
-- AU
-- BurntToast
-- ChocolateyGet
-- ChocolateyProfile
-- DockerCompletion
-- Evergreen
-- Foil
-- InvokeBuild
-- ModuleBuild
-- oh-my-posh
-- PackageManagement
-- posh-git
-- Posh-SSH
-- Posh-Sysmon
-- powershell-yaml
-- PowerShellGet
-- psake
-- PSDepend
-- PSEverything
-- PSGithub
-- PSKubectlCompletion
-- PSFzf
-- PSProfiler
-- PSReadLine
-- PSScriptTools
-- PSTodoist
-- PSWindowsUpdate
-- scoop-completion
-- Terminal-Icons
-- WslInterop
-- ZLocation
+See the [Appendix: Modules](#appendix-modules) for an idea of what modules I interact with regularly.
 
 - See [Profile/modules.ps1](Profile/modules.ps1) and the functions `Backup-Modules`, `Sync-Modules` and `Restore-Modules` that interact with [Modules/modules.yml](Modules/modules.yml).
 
@@ -698,5 +665,43 @@ $env:POSH_GIT_ENABLED = $true
 
 Custom folder outside the scope of profile for housing snippets and past-work.
 
+***
+
+### Appendix: Modules
+
+Varies with time but common modules I utilize are:
+
+- 7Zip4PowerShell
+- AU
+- BurntToast
+- ChocolateyGet
+- ChocolateyProfile
+- DockerCompletion
+- Evergreen
+- Foil
+- InvokeBuild
+- ModuleBuild
+- oh-my-posh
+- PackageManagement
+- posh-git
+- Posh-SSH
+- Posh-Sysmon
+- powershell-yaml
+- PowerShellGet
+- psake
+- PSDepend
+- PSEverything
+- PSGithub
+- PSKubectlCompletion
+- PSFzf
+- PSProfiler
+- PSReadLine
+- PSScriptTools
+- PSTodoist
+- PSWindowsUpdate
+- scoop-completion
+- Terminal-Icons
+- WslInterop
+- ZLocation
 
 [^1]: About PowerShell Profiles: Here are the `$PROFILE` path's to various PowerShell 7 Profile Locations on Windows 11 (note that I am currently using OneDrive).
