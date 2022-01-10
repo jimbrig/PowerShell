@@ -142,6 +142,8 @@ See *[options.ps1](Profile/options.ps1)*.
 <details><summary>🔎 View Code</summary>
  <p>
 
+
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./Profile/options.ps1) -->	 
 ```powershell
 # Trust PSGallery
 $galleryinfo = Get-PSRepository | Where-Object { $_.Name -eq "PSGallery" }
@@ -164,7 +166,7 @@ Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 Set-PSReadlineOption -EditMode Windows
 ```
-
+<!-- MARKDOWN-AUTO-DOCS:END -->
  </p>
 </details>
 
