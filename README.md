@@ -143,8 +143,9 @@ See *[options.ps1](Profile/options.ps1)*.
  <p>
 
 
-<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./Profile/options.ps1) -->	 
-```powershell
+<!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./Profile/options.ps1) -->
+<!-- The below code snippet is automatically added from ./Profile/options.ps1 -->
+```ps1
 # Trust PSGallery
 $galleryinfo = Get-PSRepository | Where-Object { $_.Name -eq "PSGallery" }
 if (-not($galleryinfo.InstallationPolicy.Equals("Trusted"))) { Set-PSRepository -Name PSGallery -InstallationPolicy Trusted }
