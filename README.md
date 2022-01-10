@@ -57,8 +57,8 @@ Simply dot sources each top-level `*.ps1` file from the [Profile](Profile) direc
 
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./profile.ps1) -->
-
-```powershell
+<!-- The below code snippet is automatically added from ./profile.ps1 -->
+```ps1
 #Requires -Version 7
 
 # ----------------------------------------------------
@@ -68,7 +68,6 @@ Simply dot sources each top-level `*.ps1` file from the [Profile](Profile) direc
 $psfiles = Join-Path (Split-Path -Parent $profile) "Profile" | Get-ChildItem -Filter "*.ps1"
 ForEach ($file in $psfiles) { . $file }
 ```
-
 <!-- MARKDOWN-AUTO-DOCS:END -->
  </p>
 </details>
@@ -169,8 +168,8 @@ From *[prompt.ps1](Profile/prompt.ps1):*
  <p>
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./Profile/prompt.ps1) -->
-
-```powershell
+<!-- The below code snippet is automatically added from ./Profile/prompt.ps1 -->
+```ps1
 # Prompt
 Set-PoshPrompt -Theme wopian -ErrorAction SilentlyContinue
 
@@ -181,7 +180,6 @@ Write-Host "PowerShell Version: $($psversiontable.psversion) - ExecutionPolicy: 
 Import-Module ZLocation
 Write-Host -Foreground Green "`n[ZLocation] knows about $((Get-ZLocation).Keys.Count) locations.`n"
 ```
-	 
 <!-- MARKDOWN-AUTO-DOCS:END -->
  </p>
 </details>
@@ -208,7 +206,8 @@ My suite of custom functions to be loaded for every PowerShell session:
  <p>
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./Profile/functions.ps1) -->
-```powershell
+<!-- The below code snippet is automatically added from ./Profile/functions.ps1 -->
+```ps1
 # ----------
 # Launchers
 # ----------
@@ -500,9 +499,7 @@ If (Get-Command gcalcli -ErrorAction SilentlyContinue) {
 If (Get-Command lsd -ErrorAction SilentlyContinue) {
   ${function:lsa} = { & lsd -a }
 }
-
 ```
-
 <!-- MARKDOWN-AUTO-DOCS:END -->
  </p>
 </details>
@@ -516,8 +513,8 @@ If (Get-Command lsd -ErrorAction SilentlyContinue) {
  <p>
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./Profile/aliases.ps1) -->
-	 
-```powershell
+<!-- The below code snippet is automatically added from ./Profile/aliases.ps1 -->
+```ps1
 # -------------------------
 # PowerShell Aliases
 # -------------------------
@@ -591,7 +588,6 @@ If (Get-Command code-insiders -ErrorAction SilentlyContinue) {
 If (Get-Command lsd -ErrorAction SilentlyContinue) {
   ${function:lsa} = { & lsd -a }
 }
-
 ```
 <!-- MARKDOWN-AUTO-DOCS:END -->
  </p>
@@ -625,8 +621,8 @@ plus,
  <p>
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./Profile/completion.ps1) -->
-
-```powershell
+<!-- The below code snippet is automatically added from ./Profile/completion.ps1 -->
+```ps1
 # -------------------------
 # PowerShell Completion
 # -------------------------
@@ -639,8 +635,6 @@ ForEach ($file in $files) {
   . $file
 }
 ```
-
-	 
 <!-- MARKDOWN-AUTO-DOCS:END -->
  </p>
 </details>
@@ -688,47 +682,25 @@ Varies with time but common modules I utilize are:
  <p>
 
 <!-- MARKDOWN-AUTO-DOCS:START (CODE:src=./Profile/modules.ps1) -->
+<!-- The below code snippet is automatically added from ./Profile/modules.ps1 -->
+```ps1
+# -----------------------------
+# Modules and Helper Functions
+# -----------------------------
 
-```powershell
-# --------
-# Helpers
-# --------
-
-Function Backup-Modules {
-  $modpath = ($env:PSModulePath -split ";")[0]
-  $ymlpath = "$modpath\modules.yml"
-  $jsonpath = "$modpath\modules.json"
-  $mods = (Get-ChildItem $modpath -Directory).Name
-  If (!(Get-Module -Name powershell-yaml -ErrorAction SilentlyContinue)) {
-    ConvertTo-Json $mods > $jsonpath
-  } else {
-    ConvertTo-Yaml -Data $mods -OutFile $ymlpath -Force  
-  }
-  
+# Required PSReadLine Beta Version
+If (!(!((Get-Module -Name PSReadLine).Version.Major -ge 2)) -and (!(Get-Module -Name PSReadLine).Version.Minor -ge 2)) {
+    Install-Module -Name PSReadLine -AllowPrerelease -Force -AllowClobber -Scope CurrentUser
 }
 
-Function Sync-Modules {
-  $psdir = (Split-Path -Parent $profile)
-  Set-Location $psdir
-  git pull
-  git add PowerShell/Modules/**
-  git commit -m "config: Updated modules configurations"
-  git-cliff -o "$HOME\Documents\CHANGELOG.md"
-  git add CHANGELOG.md
-  git commit -m "doc: update CHANGELOG.md for added modules"
-  git push
-}
+Import-Module -Name PSReadLine
+Import-Module -Name posh-git
+Import-Module -Name oh-my-posh
+Import-Module -Name Terminal-Icons
 
-Function Restore-Modules {
-  $mods = Get-Content ~/.dotfiles/powershell/modules.json | ConvertFrom-Json
-
-  foreach ($mod in $mods) {
-    Write-Host "Installing PowerShell Module for Current User: $mod" -ForegroundColor Yellow
-    Install-Module $mod -Scope CurrentUser -Force
-  }
-}
-``` 
-	 
+# Enable Posh-Git
+$env:POSH_GIT_ENABLED = $true
+```
 <!-- MARKDOWN-AUTO-DOCS:END -->
  </p>
 </details>
