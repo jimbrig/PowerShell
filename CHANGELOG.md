@@ -10,6 +10,11 @@ All notable changes to this project will be documented in this file.
 ### Features
 
 - Add 2 new scripts
+- Add `ffsend` completion
+
+### Miscellaneous Tasks
+
+- Autopublish 2022-01-10T22:48:58Z
 
 ## [1.3.0] - 2022-01-02
 
