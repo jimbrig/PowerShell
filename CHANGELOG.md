@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 ### Documentation
 
 - New release CHANGELOG docs
+- Add ffsend to README
 
 ### Features
 
@@ -15,6 +16,8 @@ All notable changes to this project will be documented in this file.
 ### Miscellaneous Tasks
 
 - Autopublish 2022-01-10T22:48:58Z
+- Autopublish 2022-02-23T18:00:44Z
+- Update TOC
 
 ## [1.3.0] - 2022-01-02
 
