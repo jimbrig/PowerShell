@@ -6,8 +6,20 @@ See the [Changelog](CHANGELOG.md) for details on this repository's development o
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
 
-
+- [Overview](#overview)
+- [Core `$PROFILE`](#core-profile)
+- [The Profile Directory](#the-profile-directory)
+  - [Options](#options)
+  - [Prompt](#prompt)
+  - [Functions](#functions)
+  - [Aliases](#aliases)
+  - [Shell Completions](#shell-completions)
+  - [Modules](#modules)
+- [Scripts](#scripts)
+- [Functions](#functions-1)
+  - [Appendix: Modules](#appendix-modules)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
