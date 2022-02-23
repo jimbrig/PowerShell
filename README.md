@@ -601,16 +601,17 @@ Included are shell completions for the following tools:
 
 plus,
 
-- AWS-CLI: [Profile/completions/aws.ps1](Profile/completions/aws.ps1)
-- Chocolatey: [Profile/completions/choco.ps1](Profile/completions/choco.ps1)
-- Docker: [Profile/completions/docker.ps1](Profile/completions/docker.ps1) *(via `DockerCompletion` Module)*
-- DotNet: [Profile/completions/dotnet.ps1](Profile/completions/dotnet.ps1)
-- GitHub-CLI: [Profile/completions/gh-cli.ps1](Profile/completions/gh-cli.ps1)
-- Git-Cliff: [Profile/completions/git-cliff.ps1](Profile/completions/git-cliff.ps1)
-- S (search): [Profile/completions/s-search.ps1](Profile/completions/s-search.ps1)
-- Scoop: [Profile/completions/scoop.ps1](Profile/completions/scoop.ps1) *(via `scoop-completion` Module)*
-- Spotify: [Profile/completions/spotify.ps1](Profile/completions/spotify.ps1)
-- WinGet: [Profile/completions/winget.ps1](Profile/completions/winget.ps1)
+- AWS-CLI: [aws.ps1](Profile/completions/aws.ps1)
+- Chocolatey: [choco.ps1](Profile/completions/choco.ps1)
+- Docker: [docker.ps1](Profile/completions/docker.ps1) *(via `DockerCompletion` Module)*
+- DotNet: [dotnet.ps1](Profile/completions/dotnet.ps1)
+- GitHub-CLI: [gh-cli.ps1](Profile/completions/gh-cli.ps1)
+- Git-Cliff: [git-cliff.ps1](Profile/completions/git-cliff.ps1)
+- S (search): [s-search.ps1](Profile/completions/s-search.ps1)
+- Scoop: [scoop.ps1](Profile/completions/scoop.ps1) *(via `scoop-completion` Module)*
+- Spotify: [spotify.ps1](Profile/completions/spotify.ps1)
+- WinGet: [winget.ps1](Profile/completions/winget.ps1) 
+- ffsend: [ffsend.ps1](Profile/completions/ffsend.ps1)
 
 *See [Profile/completion.ps1](Profile/completion.ps1):*
 
