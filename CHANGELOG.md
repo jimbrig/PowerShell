@@ -12,12 +12,14 @@ All notable changes to this project will be documented in this file.
 
 - Add 2 new scripts
 - Add `ffsend` completion
+- Make completion scripts robust to errors
 
 ### Miscellaneous Tasks
 
 - Autopublish 2022-01-10T22:48:58Z
 - Autopublish 2022-02-23T18:00:44Z
 - Update TOC
+- Autopublish 2022-02-23T18:03:59Z
 
 ## [1.3.0] - 2022-01-02
 
