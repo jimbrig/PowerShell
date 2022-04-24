@@ -14,16 +14,14 @@ Set-Alias -Name checkdisk -Value Invoke-Checkdisk
 Set-Alias -Name sfc -Value Invoke-SFCScan
 Set-Alias -Name expl -Value explorer.exe
 Set-Alias -Name np -Value 'C:\Program Files\WindowsApps\Microsoft.WindowsNotepad_11.2111.0.0_x64__8wekyb3d8bbwe\Notepad\Notepad.exe'
-Set-Alias -Name files -Value "C:\Program Files\WindowsApps\49306atecsolution.FilesUWP_2.0.34.0_x64__et10x9a9vyk8t\Files.exe"
-
 
 # Remove stupid 'touch' alias for 'set-filetime'
 Remove-Alias -Name touch
 
 # Ensure `R` is for launching an R Terminal:
 if (Get-Command R.exe -ErrorAction SilentlyContinue | Test-Path) {
-  Remove-Item Alias:r -ErrorAction SilentlyContinue
-  ${function:r} = { R.exe @args }
+	Remove-Item Alias:r -ErrorAction SilentlyContinue
+	${function:r} = { R.exe @args }
 }
 
 # Ensure gpg points to correct program
@@ -35,10 +33,10 @@ If (Get-Command choco -ErrorAction SilentlyContinue) {
 	Set-Alias -Name csearch -Value chocosearch
 	Set-Alias -Name cup -Value chocoupgrade
 
-	If (Get-Command choco-cleaner) {
+	If (Get-Command choco-cleaner -ErrorAction SilentlyContinue) {
 		Set-Alias -Name cclean -Value chococlean
 	}
-	If (Get-Command choco-package-list-backup) {
+	If (Get-Command choco-package-list-backup -ErrorAction SilentlyContinue) {
 		Set-Alias -Name cbackup -Value chocobackup
 	}
 }
@@ -49,17 +47,17 @@ If (Get-Command gcalcli -ErrorAction SilentlyContinue) {
 	Set-Alias -Name agenda -Value Get-Agenda
 	Set-Alias -Name gcalm -Value Get-CalendarMonth
 	Set-Alias -Name gcalw -Value Get-CalendarWeek
-  Set-Alias -Name calm -Value Get-CalendarMonth
+	Set-Alias -Name calm -Value Get-CalendarMonth
 	Set-Alias -Name calw -Value Get-CalendarWeek
 	Set-Alias -Name gcaladd -Value New-CalendarEvent
-  Set-Alias -Name caladd -Value New-CalendarEvent
+	Set-Alias -Name caladd -Value New-CalendarEvent
 }
 
 # git-crypt
 If (Get-Command git-crypt -ErrorAction SilentlyContinue) {
-  Set-Alias -Name gcrypts -Value Get-GitCryptStatus
-  Set-Alias -Name gcrypt -Value git-crypt
-  Set-Alias -Name gcryptf Invoke-GitCryptStatus
+	Set-Alias -Name gcrypts -Value Get-GitCryptStatus
+	Set-Alias -Name gcrypt -Value git-crypt
+	Set-Alias -Name gcryptf Invoke-GitCryptStatus
 }
 
 # If using code-insiders
@@ -69,5 +67,5 @@ If (Get-Command code-insiders -ErrorAction SilentlyContinue) {
 
 # lsd
 If (Get-Command lsd -ErrorAction SilentlyContinue) {
-  ${function:lsa} = { & lsd -a }
+	${function:lsa} = { & lsd -a }
 }
