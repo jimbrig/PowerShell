@@ -9,7 +9,6 @@ If (!(!((Get-Module -Name PSReadLine).Version.Major -ge 2)) -and (!(Get-Module -
 
 Import-Module -Name PSReadLine
 Import-Module -Name posh-git
-Import-Module -Name oh-my-posh
 Import-Module -Name Terminal-Icons
 
 # Enable Posh-Git

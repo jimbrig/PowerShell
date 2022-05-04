@@ -1,5 +1,6 @@
 # Prompt
-Set-PoshPrompt -Theme wopian -ErrorAction SilentlyContinue
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\wopian.omp.json" | Invoke-Expression
+# Set-PoshPrompt -Theme wopian -ErrorAction SilentlyContinue
 
 # Write Current Version and Execution Policy Details:
 Write-Host "PowerShell Version: $($psversiontable.psversion) - ExecutionPolicy: $(Get-ExecutionPolicy)" -ForegroundColor yellow
