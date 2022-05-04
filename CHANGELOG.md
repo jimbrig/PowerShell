@@ -3,10 +3,16 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+### Bug Fixes
+
+- Fix aliases
+- Quotes
+
 ### Documentation
 
 - New release CHANGELOG docs
 - Add ffsend to README
+- Update HELP
 
 ### Features
 
@@ -14,6 +20,9 @@ All notable changes to this project will be documented in this file.
 - Add `ffsend` completion
 - Make completion scripts robust to errors
 - Add Archived items back
+- Enhance vscode settings
+- Add choco to CurrentUserCurrentHost
+- Add PSVirtualEnv shell completion
 
 ### Miscellaneous Tasks
 
@@ -22,6 +31,7 @@ All notable changes to this project will be documented in this file.
 - Update TOC
 - Autopublish 2022-02-23T18:03:59Z
 - Autopublish 2022-02-26T23:17:42Z
+- Autopublish 2022-02-26T23:19:17Z
 
 ## [1.3.0] - 2022-01-02
 
