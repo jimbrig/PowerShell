@@ -2,17 +2,46 @@
 # Launchers
 # ----------
 
-Function Open-Todoist { start-process -PassThru 'C:\Users\jimmy\AppData\Local\Programs\todoist\Todoist.exe' }
+Function Open-Todoist { Start-Process -PassThru 'C:\Users\jimmy\AppData\Local\Programs\todoist\Todoist.exe' }
 
-Function Open-GitHub { start-process -PassThru 'https://github.com/' }
+Function Open-GitHub { Start-Process -PassThru 'https://github.com/' }
 
-Function Open-Docker { start-process -PassThru 'C:\Program Files\Docker\Docker\frontend\Docker Desktop.exe' }
+Function Open-Docker { Start-Process -PassThru 'C:\Program Files\Docker\Docker\frontend\Docker Desktop.exe' }
 
 Function Open-RProject { Rscript -e 'jimstools::open_project()' }
 
 # ---------------------------------
 # PowerShell Core Profile Functions
 # ---------------------------------
+
+Function Remove-OldModules {
+
+  Write-Host 'this will remove all old versions of installed modules'
+  Write-Host 'be sure to run this as an admin' -ForegroundColor yellow
+  Write-Host '(You can update all your Azure RM modules with update-module Azurerm -force)'
+
+  $mods = Get-InstalledModule
+
+  foreach ($mod in $mods) {
+    Write-Host "Checking $($mod.name)"
+    $latest = Get-InstalledModule $mod.name
+    $specificmods = Get-InstalledModule $mod.name -AllVersions
+    Write-Host "$($specificmods.count) versions of this module found [ $($mod.name) ]"
+  
+    foreach ($sm in $specificmods) {
+      if ($sm.version -ne $latest.version) {
+        Write-Host "uninstalling $($sm.name) - $($sm.version) [latest is $($latest.version)]"
+        $sm | Uninstall-Module -Force
+        Write-Host "done uninstalling $($sm.name) - $($sm.version)"
+        Write-Host '    --------'
+      }
+	
+    }
+    Write-Host '------------------------'
+  }
+  Write-Host 'done'
+
+}
 
 Function Update-ProfileModules {
 
@@ -91,8 +120,7 @@ Function New-Link ($target, $link) {
 Function Invoke-TakeOwnership ( $path ) {
   if ((Get-Item $path) -is [System.IO.DirectoryInfo]) {
     sudo TAKEOWN /F $path /R /D Y
-  }
-  else {
+  } else {
     sudo TAKEOWN /F $path
   }
 }
@@ -103,8 +131,7 @@ Function Invoke-ForceDelete ( $path ) {
   sudo remove-item -path $path -Force -Recurse -ErrorAction SilentlyContinue
   if (!(Test-Path $path)) {
     Write-Host "✔️ Successfully Removed $path" -ForegroundColor Green
-  }
-  else {
+  } else {
     Write-Host "❌ Failed to Remove $path" -ForegroundColor Red
   }
 }
