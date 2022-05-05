@@ -8,11 +8,16 @@ All notable changes to this project will be documented in this file.
 - Fix aliases
 - Quotes
 
+### Configuration
+
+- Edit CRLF
+
 ### Documentation
 
 - New release CHANGELOG docs
 - Add ffsend to README
 - Update HELP
+- Add sub-directory READMEs
 
 ### Features
 
@@ -40,6 +45,7 @@ All notable changes to this project will be documented in this file.
 - Autopublish 2022-02-26T23:19:17Z
 - Autopublish 2022-05-04T03:43:14Z
 - Autopublish 2022-05-05T03:01:33Z
+- Autopublish 2022-05-05T03:09:20Z
 
 ## [1.3.0] - 2022-01-02
 
