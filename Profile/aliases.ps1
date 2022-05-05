@@ -14,8 +14,8 @@ Set-Alias -Name checkdisk -Value Invoke-Checkdisk
 Set-Alias -Name sfc -Value Invoke-SFCScan
 Set-Alias -Name expl -Value explorer.exe
 Set-Alias -Name np -Value 'C:\Program Files\WindowsApps\Microsoft.WindowsNotepad_11.2111.0.0_x64__8wekyb3d8bbwe\Notepad\Notepad.exe'
-Set-Alias -Name files -Value 'C:\Program Files\WindowsApps\49306atecsolution.FilesUWP_2.0.34.0_x64__et10x9a9vyk8t\Files.exe'
 
+# Set-Alias -Name files -Value 'C:\Program Files\WindowsApps\49306atecsolution.FilesUWP_2.0.34.0_x64__et10x9a9vyk8t\Files.exe'
 
 # Remove stupid 'touch' alias for 'set-filetime'
 Remove-Alias -Name touch
@@ -40,10 +40,10 @@ If (Get-Command choco -ErrorAction SilentlyContinue) {
 	Set-Alias -Name csearch -Value chocosearch
 	Set-Alias -Name cup -Value chocoupgrade
 
-	If (Get-Command choco-cleaner) {
+	If (Get-Command choco-cleaner -ErrorAction SilentlyContinue) {
 		Set-Alias -Name cclean -Value chococlean
 	}
-	If (Get-Command choco-package-list-backup) {
+	If (Get-Command choco-package-list-backup -ErrorAction SilentlyContinue) {
 		Set-Alias -Name cbackup -Value chocobackup
 	}
 }
