@@ -7,7 +7,6 @@ If (!(!((Get-Module -Name PSReadLine).Version.Major -ge 2)) -and (!(Get-Module -
     Install-Module -Name PSReadLine -AllowPrerelease -Force -AllowClobber -Scope CurrentUser
 }
 
-Import-Module -Name PSReadLine
 Import-Module -Name posh-git
 Import-Module -Name Terminal-Icons
 
