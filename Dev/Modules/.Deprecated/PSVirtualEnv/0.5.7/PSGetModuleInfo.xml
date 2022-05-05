@@ -1,0 +1,203 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">PSVirtualEnv</S>
+      <Version N="Version">0.5.7</Version>
+      <S N="Type">Module</S>
+      <S N="Description">The module PSVirtualEnv is a set of powershell extensions to Ian Bickings virtualenv tool in python. The module includes wrappers for creating and deleting virtual environments and otherwise managing your development workflow, making it easier to work on more than one project at a time without introducing conflicts in their dependencies.</S>
+      <S N="Author">Wolfgang Brandenburger &lt;wolfgang.brandenburger@outlook.com&gt;</S>
+      <S N="CompanyName">wbrandenburger</S>
+      <S N="Copyright">(c) Wolfgang Brandenburger. All rights reserved.</S>
+      <DT N="PublishedDate">2019-09-22T18:14:09-04:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2022-05-03T23:39:54.6108074-04:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://github.com/wbrandenburger/PSVirtualEnv</URI>
+      <URI N="ProjectUri">https://github.com/wbrandenburger/PSVirtualEnv</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>virtualenv</S>
+          <S>virtualenvwrapper</S>
+          <S>virtualenv-manager</S>
+          <S>python</S>
+          <S>powershell</S>
+          <S>windows</S>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST>
+                <S>ActivateVirtualEnvAutocompletion</S>
+                <S>Get-VirtualEnv</S>
+                <S>Get-ActiveVirtualEnv</S>
+                <S>Invoke-VirtualEnv</S>
+                <S>Install-VirtualEnv</S>
+                <S>New-VirtualEnv</S>
+                <S>Remove-VirtualEnv</S>
+                <S>Set-VirtualEnvLocation</S>
+                <S>Start-VirtualEnv</S>
+                <S>Stop-VirtualEnv</S>
+                <S>Set-VirtualEnv</S>
+                <S>Restore-VirtualEnv</S>
+                <S>Write-VirtualEnvStatus</S>
+                <S>ValidateVirtualEnvDirectories</S>
+                <S>ValidateVirtualEnvRequirement</S>
+                <S>ValidateVirtualEnvLocalDirectories</S>
+                <S>Find-Python</S>
+                <S>New-VirtualEnvLocal</S>
+                <S>Get-Requirement</S>
+                <S>Edit-Requirement</S>
+                <S>New-Requirement</S>
+                <S>Get-VirtualEnvConfig</S>
+                <S>Edit-VirtualEnvConfig</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>ActivateVirtualEnvAutocompletion</S>
+                <S>Get-VirtualEnv</S>
+                <S>Get-ActiveVirtualEnv</S>
+                <S>Invoke-VirtualEnv</S>
+                <S>Install-VirtualEnv</S>
+                <S>New-VirtualEnv</S>
+                <S>Remove-VirtualEnv</S>
+                <S>Set-VirtualEnvLocation</S>
+                <S>Start-VirtualEnv</S>
+                <S>Stop-VirtualEnv</S>
+                <S>Set-VirtualEnv</S>
+                <S>Restore-VirtualEnv</S>
+                <S>Write-VirtualEnvStatus</S>
+                <S>ValidateVirtualEnvDirectories</S>
+                <S>ValidateVirtualEnvRequirement</S>
+                <S>ValidateVirtualEnvLocalDirectories</S>
+                <S>Find-Python</S>
+                <S>New-VirtualEnvLocal</S>
+                <S>Get-Requirement</S>
+                <S>Edit-Requirement</S>
+                <S>New-Requirement</S>
+                <S>Get-VirtualEnvConfig</S>
+                <S>Edit-VirtualEnvConfig</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="9">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">PSIni</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">3.1.2</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:PSIni/3.1.2</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) Wolfgang Brandenburger. All rights reserved.</S>
+          <S N="description">The module PSVirtualEnv is a set of powershell extensions to Ian Bickings virtualenv tool in python. The module includes wrappers for creating and deleting virtual environments and otherwise managing your development workflow, making it easier to work on more than one project at a time without introducing conflicts in their dependencies.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">568</S>
+          <S N="downloadCount">769</S>
+          <S N="packageSize">45075</S>
+          <S N="published">9/22/2019 6:14:09 PM -04:00</S>
+          <S N="created">9/22/2019 6:14:09 PM -04:00</S>
+          <S N="lastUpdated">4/13/2022 10:31:00 AM -04:00</S>
+          <S N="tags">virtualenv virtualenvwrapper virtualenv-manager python powershell windows PSModule PSFunction_ActivateVirtualEnvAutocompletion PSCommand_ActivateVirtualEnvAutocompletion PSFunction_Get-VirtualEnv PSCommand_Get-VirtualEnv PSFunction_Get-ActiveVirtualEnv PSCommand_Get-ActiveVirtualEnv PSFunction_Invoke-VirtualEnv PSCommand_Invoke-VirtualEnv PSFunction_Install-VirtualEnv PSCommand_Install-VirtualEnv PSFunction_New-VirtualEnv PSCommand_New-VirtualEnv PSFunction_Remove-VirtualEnv PSCommand_Remove-VirtualEnv PSFunction_Set-VirtualEnvLocation PSCommand_Set-VirtualEnvLocation PSFunction_Start-VirtualEnv PSCommand_Start-VirtualEnv PSFunction_Stop-VirtualEnv PSCommand_Stop-VirtualEnv PSFunction_Set-VirtualEnv PSCommand_Set-VirtualEnv PSFunction_Restore-VirtualEnv PSCommand_Restore-VirtualEnv PSFunction_Write-VirtualEnvStatus PSCommand_Write-VirtualEnvStatus PSFunction_ValidateVirtualEnvDirectories PSCommand_ValidateVirtualEnvDirectories PSFunction_ValidateVirtualEnvRequirement PSCommand_ValidateVirtualEnvRequirement PSFunction_ValidateVirtualEnvLocalDirectories PSCommand_ValidateVirtualEnvLocalDirectories PSFunction_Find-Python PSCommand_Find-Python PSFunction_New-VirtualEnvLocal PSCommand_New-VirtualEnvLocal PSFunction_Get-Requirement PSCommand_Get-Requirement PSFunction_Edit-Requirement PSCommand_Edit-Requirement PSFunction_New-Requirement PSCommand_New-Requirement PSFunction_Get-VirtualEnvConfig PSCommand_Get-VirtualEnvConfig PSFunction_Edit-VirtualEnvConfig PSCommand_Edit-VirtualEnvConfig PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2022-04-13T10:31:00Z</S>
+          <S N="NormalizedVersion">0.5.7</S>
+          <S N="Authors">Wolfgang Brandenburger &lt;wolfgang.brandenburger@outlook.com&gt;</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">PSVirtualEnv.nuspec|config_format.json|default_config.ini|module_format.json|PSVirtualEnv.psd1|PSVirtualEnv.psm1|PSVirtualEnv.Tests.ps1|PSVirtualEnv_Alias.ps1|PSVirtualEnv_Config.ps1|PSVirtualEnv_Environment.ps1|PSVirtualEnv_Functions.ps1|PSVirtualEnv_Settings.ps1|Classes\ModuleValidation.ps1|Functions\ActivatePSVirtualEnv.ps1|Functions\Copy-VirtualEnvLocal.ps1|Functions\Edit-Requirement.ps1|Functions\Edit-VirtualEnvConfig.ps1|Functions\Find-Python.ps1|Functions\Get-Requirement.ps1|Functions\Get-VirtualEnv.ps1|Functions\Get-VirtualEnvConfig.ps1|Functions\Get-VirtualEnvLocal.ps1|Functions\Install-VirtualEnv.ps1|Functions\Invoke-VirtualEnv.ps1|Functions\ModuleUtils.ps1|Functions\New-Requirement.ps1|Functions\New-VirtualEnv.ps1|Functions\Remove-VirtualEnv.ps1|Functions\Repair-Python.ps1|Functions\Set-VirtualEnvLocation.ps1|Functions\Start-VirtualEnv.ps1|Functions\Stop-VirtualEnv.ps1|Functions\Test-VirtualEnv.ps1|Functions\Write-VirtualEnvStatus.ps1|PSModuleUtils\PSModuleUtils.psd1|PSModuleUtils\PSModuleUtils.psm1|PSModuleUtils\Functions\Config.ps1|PSModuleUtils\Functions\FormatFileContent.ps1|PSModuleUtils\Functions\Message.ps1|PSModuleUtils\Functions\Prompt.ps1|PSModuleUtils\Functions\ScriptBlock.ps1|PSModuleUtils\Functions\Set-Window.ps1|PSModuleUtils\Functions\Utils.ps1</S>
+          <S N="GUID">ca0b4a5a-af4a-416f-a478-e12d116f95b4</S>
+          <S N="PowerShellVersion">6.0</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\jimmy\Documents\PowerShell\Modules\PSVirtualEnv\0.5.7</S>
+    </MS>
+  </Obj>
+</Objs>

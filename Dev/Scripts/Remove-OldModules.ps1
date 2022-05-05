@@ -4,7 +4,7 @@ Write-Host '(You can update all your Azure RM modules with update-module Azurerm
 
 $mods = Get-InstalledModule
 
-foreach ($Mod in $mods) {
+foreach ($mod in $mods) {
     Write-Host "Checking $($mod.name)"
     $latest = Get-InstalledModule $mod.name
     $specificmods = Get-InstalledModule $mod.name -AllVersions
