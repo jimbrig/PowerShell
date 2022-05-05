@@ -12,6 +12,8 @@ I manage my modules using a custom [modules.json](modules.json) / [modules.yml](
 
 The installed modules are backed up into a simple `JSON` file: [modules.json](modules.json) and created via [modules.ps1](modules.ps1).
 
+Additionally, utilize the [Remove-OldModules.ps1](Remove-OldModules.ps1) script to remove any outdated versions of installed modules.
+
 ## Installed Modules
 
 - [**BuildHelpers**](BuildHelpers)
