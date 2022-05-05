@@ -22,8 +22,13 @@ All notable changes to this project will be documented in this file.
 - Add Archived items back
 - Enhance vscode settings
 - Add choco to CurrentUserCurrentHost
+- New aliases setup
 - Add PSVirtualEnv shell completion
 - Deprecate venv completion
+- Add oh-my-posh shell completion
+- Add new alias for code vs code-insiders
+- New oh-my-posh setup
+- Add Dev folder and test module "PSProfileTools"
 
 ### Miscellaneous Tasks
 
@@ -34,6 +39,7 @@ All notable changes to this project will be documented in this file.
 - Autopublish 2022-02-26T23:17:42Z
 - Autopublish 2022-02-26T23:19:17Z
 - Autopublish 2022-05-04T03:43:14Z
+- Autopublish 2022-05-05T03:01:33Z
 
 ## [1.3.0] - 2022-01-02
 
