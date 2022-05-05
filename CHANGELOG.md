@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 
 - Fix aliases
 - Quotes
+- No duplicate import of psreadline
 
 ### Configuration
 
@@ -18,6 +19,7 @@ All notable changes to this project will be documented in this file.
 - Add ffsend to README
 - Update HELP
 - Add sub-directory READMEs
+- Update modules README
 
 ### Features
 
@@ -34,6 +36,11 @@ All notable changes to this project will be documented in this file.
 - Add new alias for code vs code-insiders
 - New oh-my-posh setup
 - Add Dev folder and test module "PSProfileTools"
+- Deprecate venv completion
+- Add Remove-OldModules script
+- Restructure Dev
+- Add deleteold-drivers script
+- Add remove-oldmodules custom profile function
 
 ### Miscellaneous Tasks
 
@@ -46,6 +53,7 @@ All notable changes to this project will be documented in this file.
 - Autopublish 2022-05-04T03:43:14Z
 - Autopublish 2022-05-05T03:01:33Z
 - Autopublish 2022-05-05T03:09:20Z
+- Autopublish 2022-05-05T03:54:00Z
 
 ## [1.3.0] - 2022-01-02
 
