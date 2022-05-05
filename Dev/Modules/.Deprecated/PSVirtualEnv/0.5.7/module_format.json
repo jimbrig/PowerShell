@@ -1,0 +1,22 @@
+[
+    {
+        "Name":"Manifest", 
+        "Value":"%(Dir)s\\%(Name)s.psd1"
+    },
+    {
+        "Name":"ClassDir", 
+        "Value":"%(Dir)s\\Classes"
+    },
+    {
+        "Name": "FunctionsDir", 
+        "Value":"%(Dir)s\\Functions"
+    },
+    {
+        "Name":"TestsDir", 
+        "Value":"%(Dir)s\\Tests"
+    },
+    {
+        "Name":"ConfigFormat", 
+        "Value":"%(Dir)s\\config_format.json"
+    }
+]

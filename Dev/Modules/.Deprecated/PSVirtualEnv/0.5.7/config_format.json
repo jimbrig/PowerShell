@@ -1,0 +1,63 @@
+[
+    {
+        "Id" : "WorkDir", 
+        "Field" : "venv-work-dir", 
+        "Section" : "user", 
+        "Default" : "%(WorkDir)s",
+        "Required" : true,
+        "Folder" : true
+    },
+    {
+        "Id" : "RequireDir",
+        "Field" : "venv-require-dir", 
+        "Section" : "user",
+        "Default" : "%(WorkDir)s\\.require",
+        "Required" : true,
+        "Folder" : true
+    },
+    {
+        "Id" : "LocalDir",
+        "Field" : "venv-local-dir", 
+        "Section" : "user", 
+        "Default" : "%(WorkDir)s\\.temp",
+        "Required" : true,
+        "Folder" :  true
+    },
+    {
+        "Id" : "Editor",
+        "Field" : "default-editor",
+        "Section" : "user", 
+        "Default" : "notepad"
+    },
+    {
+        "Id" : "EditorArgs",
+        "Field" : "editor-arguments", 
+        "Section" : "user", 
+        "Default" : ""
+    },
+    {
+        "Id" : "Python",
+        "Field" : "python", 
+        "Section" : "user", 
+        "Default" : "%(PYTHONHOME)s",
+        "Required"  : true
+    },
+    {
+        "Id" : "VirtualEnv",
+        "Field" : "venv", 
+        "Section" : "psvirtualenv",  
+        "Default" : "Scripts\\python.exe"
+    },
+    {
+        "Id" : "Activation", 
+        "Field" : "venv-activation", 
+        "Section" : "psvirtualenv", 
+        "Default" : "Scripts\\activate.ps1"
+    },
+    {
+        "Id" : "Deactivation",
+        "Field" : "venv-deactivation", 
+        "Section" : "psvirtualenv",  
+        "Default" : "deactivate"
+    }
+]
