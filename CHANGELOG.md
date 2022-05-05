@@ -41,6 +41,7 @@ All notable changes to this project will be documented in this file.
 - Restructure Dev
 - Add deleteold-drivers script
 - Add remove-oldmodules custom profile function
+- Cleanup
 
 ### Miscellaneous Tasks
 
@@ -54,6 +55,7 @@ All notable changes to this project will be documented in this file.
 - Autopublish 2022-05-05T03:01:33Z
 - Autopublish 2022-05-05T03:09:20Z
 - Autopublish 2022-05-05T03:54:00Z
+- Autopublish 2022-05-05T04:48:47Z
 
 ## [1.3.0] - 2022-01-02
 
