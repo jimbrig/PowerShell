@@ -15,6 +15,8 @@ Set-Alias -Name sfc -Value Invoke-SFCScan
 Set-Alias -Name expl -Value explorer.exe
 Set-Alias -Name np -Value 'C:\Program Files\WindowsApps\Microsoft.WindowsNotepad_11.2111.0.0_x64__8wekyb3d8bbwe\Notepad\Notepad.exe'
 
+# Set-Alias -Name files -Value 'C:\Program Files\WindowsApps\49306atecsolution.FilesUWP_2.0.34.0_x64__et10x9a9vyk8t\Files.exe'
+
 # Remove stupid 'touch' alias for 'set-filetime'
 Remove-Alias -Name touch
 
@@ -22,6 +24,11 @@ Remove-Alias -Name touch
 if (Get-Command R.exe -ErrorAction SilentlyContinue | Test-Path) {
 	Remove-Item Alias:r -ErrorAction SilentlyContinue
 	${function:r} = { R.exe @args }
+}
+
+# VSCode / VSCode Insiders
+If (!(Get-Command code -ErrorAction SilentlyContinue)) {
+	Set-Alias -Name code -Value code-insiders
 }
 
 # Ensure gpg points to correct program
