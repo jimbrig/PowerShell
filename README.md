@@ -168,7 +168,9 @@ From *[prompt.ps1](Profile/prompt.ps1):*
 <!-- The below code snippet is automatically added from ./Profile/prompt.ps1 -->
 ```ps1
 # Prompt
-Set-PoshPrompt -Theme wopian -ErrorAction SilentlyContinue
+If (Get-Command oh-my-posh -ErrorAction SilentlyContinue) {
+    oh-my-posh init pwsh --config $ENV:POSH_THEMES_PATH\wopian.omp.json | Invoke-Expression
+}
 
 # Write Current Version and Execution Policy Details:
 Write-Host "PowerShell Version: $($psversiontable.psversion) - ExecutionPolicy: $(Get-ExecutionPolicy)" -ForegroundColor yellow
@@ -529,6 +531,8 @@ Set-Alias -Name sfc -Value Invoke-SFCScan
 Set-Alias -Name expl -Value explorer.exe
 Set-Alias -Name np -Value 'C:\Program Files\WindowsApps\Microsoft.WindowsNotepad_11.2111.0.0_x64__8wekyb3d8bbwe\Notepad\Notepad.exe'
 
+# Set-Alias -Name files -Value 'C:\Program Files\WindowsApps\49306atecsolution.FilesUWP_2.0.34.0_x64__et10x9a9vyk8t\Files.exe'
+
 # Remove stupid 'touch' alias for 'set-filetime'
 Remove-Alias -Name touch
 
@@ -536,6 +540,11 @@ Remove-Alias -Name touch
 if (Get-Command R.exe -ErrorAction SilentlyContinue | Test-Path) {
 	Remove-Item Alias:r -ErrorAction SilentlyContinue
 	${function:r} = { R.exe @args }
+}
+
+# VSCode / VSCode Insiders
+If (!(Get-Command code -ErrorAction SilentlyContinue)) {
+	Set-Alias -Name code -Value code-insiders
 }
 
 # Ensure gpg points to correct program
@@ -658,7 +667,6 @@ If (!(!((Get-Module -Name PSReadLine).Version.Major -ge 2)) -and (!(Get-Module -
 
 Import-Module -Name PSReadLine
 Import-Module -Name posh-git
-Import-Module -Name oh-my-posh
 Import-Module -Name Terminal-Icons
 
 # Enable Posh-Git
