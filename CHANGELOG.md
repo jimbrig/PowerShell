@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+### Features
+
+- Add gh-label CLI completion
+
+## [1.4.0] - 2022-05-05
+
 ### Bug Fixes
 
 - Fix aliases
@@ -56,6 +62,7 @@ All notable changes to this project will be documented in this file.
 - Autopublish 2022-05-05T03:09:20Z
 - Autopublish 2022-05-05T03:54:00Z
 - Autopublish 2022-05-05T04:48:47Z
+- Autopublish 2022-05-05T04:53:56Z
 
 ## [1.3.0] - 2022-01-02
 
