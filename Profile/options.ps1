@@ -4,12 +4,12 @@ if (-not($galleryinfo.InstallationPolicy.Equals("Trusted"))) { Set-PSRepository 
 
 # Default Parameters
 $PSDefaultParameterValues = @{
-	"Update-Module:Confirm"=$False;
-	"Update-Module:Force"=$True;
-	"Update-Module:Scope"="CurrentUser";
-	"Update-Module:ErrorAction"="SilentlyContinue";
-	"Update-Help:Force"=$True;
-	"Update-Help:ErrorAction"="SilentlyContinue"
+	"Update-Module:Confirm"     = $False;
+	"Update-Module:Force"       = $True;
+	"Update-Module:Scope"       = "CurrentUser";
+	"Update-Module:ErrorAction" = "SilentlyContinue";
+	"Update-Help:Force"         = $True;
+	"Update-Help:ErrorAction"   = "SilentlyContinue";
 }
 
 # Set PSReadLineOptions's (Beta Version Required):
@@ -17,4 +17,4 @@ Set-PSReadLineOption -PredictionSource History -WarningAction SilentlyContinue -
 Set-PSReadLineOption -PredictionViewStyle ListView -WarningAction SilentlyContinue -ErrorAction SilentlyContinue
 Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
-Set-PSReadlineOption -EditMode Windows
+Set-PSReadLineOption -EditMode Windows
