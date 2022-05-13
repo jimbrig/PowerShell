@@ -3,9 +3,24 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+### Bug Fixes
+
+- Fix psdefaultparams
+
+### Configuration
+
+- Tweak completions loop
+
 ### Features
 
 - Add gh-label CLI completion
+- Add new script for markdown filetree
+- Update winget completion
+- Update installed scripts
+
+### Miscellaneous Tasks
+
+- Autopublish 2022-05-13T01:07:25Z
 
 ## [1.4.0] - 2022-05-05
 
