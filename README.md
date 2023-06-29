@@ -58,6 +58,8 @@ Simply dot sources each top-level `*.ps1` file from the [Profile](Profile) direc
 ```ps1
 #Requires -Version 7
 
+# Version: 0.1.0
+
 # ----------------------------------------------------
 # Current User, All Hosts Powershell Core v7 $PROFILE:
 # ----------------------------------------------------
