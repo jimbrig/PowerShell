@@ -11,6 +11,10 @@ All notable changes to this project will be documented in this file.
 
 - Tweak completions loop
 
+### Documentation
+
+- Create index.md in docs/
+
 ### Features
 
 - Add gh-label CLI completion
@@ -23,6 +27,7 @@ All notable changes to this project will be documented in this file.
 - Autopublish 2022-05-13T01:07:25Z
 - Autopublish 2022-05-13T02:41:38Z
 - Autopublish 2022-05-13T02:46:03Z
+- Autopublish 2022-08-20T21:56:43Z
 
 ## [1.4.0] - 2022-05-05
 
