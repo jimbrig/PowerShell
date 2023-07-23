@@ -14,6 +14,7 @@ All notable changes to this project will be documented in this file.
 ### Documentation
 
 - Create index.md in docs/
+- Update docs/index.md with latest content
 
 ### Features
 
@@ -28,6 +29,7 @@ All notable changes to this project will be documented in this file.
 - Autopublish 2022-05-13T02:41:38Z
 - Autopublish 2022-05-13T02:46:03Z
 - Autopublish 2022-08-20T21:56:43Z
+- Autopublish 2023-07-23T00:42:45Z
 
 ## [1.4.0] - 2022-05-05
 
