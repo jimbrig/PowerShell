@@ -22,6 +22,7 @@ All notable changes to this project will be documented in this file.
 - Add new script for markdown filetree
 - Update winget completion
 - Update installed scripts
+- Add PowerShell.Installation.Tests.ps1
 
 ### Miscellaneous Tasks
 
@@ -30,6 +31,7 @@ All notable changes to this project will be documented in this file.
 - Autopublish 2022-05-13T02:46:03Z
 - Autopublish 2022-08-20T21:56:43Z
 - Autopublish 2023-07-23T00:42:45Z
+- Autopublish 2023-07-23T03:14:54Z
 
 ## [1.4.0] - 2022-05-05
 
