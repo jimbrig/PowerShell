@@ -26,6 +26,7 @@ All notable changes to this project will be documented in this file.
 - Add GitConfig.Tests.ps1
 - Add Network.Tests.ps1
 - Add root PowerShell.Tests.ps1 runner
+- Add VSCode .vscode/tasks.json
 
 ### Miscellaneous Tasks
 
@@ -38,6 +39,7 @@ All notable changes to this project will be documented in this file.
 - Autopublish 2023-11-18T17:19:04Z
 - Autopublish 2023-11-18T17:19:39Z
 - Autopublish 2023-11-18T17:20:28Z
+- Autopublish 2023-11-18T17:30:47Z
 
 ## [1.4.0] - 2022-05-05
 
