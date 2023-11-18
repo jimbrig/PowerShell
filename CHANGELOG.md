@@ -25,6 +25,7 @@ All notable changes to this project will be documented in this file.
 - Add PowerShell.Installation.Tests.ps1
 - Add GitConfig.Tests.ps1
 - Add Network.Tests.ps1
+- Add root PowerShell.Tests.ps1 runner
 
 ### Miscellaneous Tasks
 
@@ -36,6 +37,7 @@ All notable changes to this project will be documented in this file.
 - Autopublish 2023-07-23T03:14:54Z
 - Autopublish 2023-11-18T17:19:04Z
 - Autopublish 2023-11-18T17:19:39Z
+- Autopublish 2023-11-18T17:20:28Z
 
 ## [1.4.0] - 2022-05-05
 
