@@ -1,0 +1,66 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "windows": {
+    "options": {
+      "shell": {
+        "executable": "pwsh.exe",
+        "args": [
+          "-NoProfile",
+          "-ExecutionPolicy ByPass",
+          "-NonInteractive",
+          "-Command"
+        ]
+      }
+    }
+  },
+  "linux": {
+    "options": {
+      "shell": {
+        "executable": "/usr/bin/pwsh",
+        "args": [
+          "-NoProfile",
+          "-Command"
+        ]
+      }
+    }
+  },
+  "tasks": [
+    {
+      "label": "Build",
+      "type": "shell",
+      "group": "build",
+      "command": "Invoke-Build Build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Clean",
+      "type": "shell",
+      "command": "Invoke-Build Clean",
+      "problemMatcher": []
+    },
+    {
+      "label": "Install",
+      "type": "shell",
+      "command": "Invoke-Build Install",
+      "problemMatcher": []
+    },
+    {
+      "label": "Update docs",
+      "type": "shell",
+      "command": "Invoke-Build UpdateDocs",
+      "problemMatcher": []
+    },
+    {
+      "label": "Test",
+      "type": "shell",
+      "command": "Invoke-Pester -Path ${workspaceFolder}/Tests",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": false,
+        "showReuseMessage": false
+      }
+    }
+  ]
+}
