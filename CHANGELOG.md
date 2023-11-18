@@ -23,6 +23,7 @@ All notable changes to this project will be documented in this file.
 - Update winget completion
 - Update installed scripts
 - Add PowerShell.Installation.Tests.ps1
+- Add GitConfig.Tests.ps1
 
 ### Miscellaneous Tasks
 
@@ -32,6 +33,7 @@ All notable changes to this project will be documented in this file.
 - Autopublish 2022-08-20T21:56:43Z
 - Autopublish 2023-07-23T00:42:45Z
 - Autopublish 2023-07-23T03:14:54Z
+- Autopublish 2023-11-18T17:19:04Z
 
 ## [1.4.0] - 2022-05-05
 
